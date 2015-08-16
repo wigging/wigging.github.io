@@ -1,0 +1,201 @@
+/* Global 
+----------------------------------------------------------------------------- */
+
+a {
+    border: 0;
+    border-style: none;
+    text-decoration: none;
+}
+
+a:hover img {
+    opacity: 0.6;
+}
+
+body {
+    background-color: gray;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.1em;
+}
+
+code {
+    font-size: 1.0em;
+    line-height: 1.4em;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h1, h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+img {
+    border: 0;
+    border-style: none;
+}
+
+p {
+    line-height: 1.4em;
+    width: 80%;
+}
+
+strong {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.0em;
+}
+
+/* Rows
+----------------------------------------------------------------------------- */
+
+div.row{
+    background-color: white;
+    color: black;
+    margin: 0px auto;
+    padding: 10px;
+    width: 780px;
+}
+
+img#profile {
+    float: right;
+    height: 180px; width: 180px;
+}
+
+img.row {
+    clear: both;
+    float: right;
+    height: 100px; width: 100px;
+    margin-top: 20px;
+}
+
+p#intro {
+    width: 70%;
+}
+
+img#email, img#twit, img#git {
+    height: 32px; width: 32px;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+/* Footer
+----------------------------------------------------------------------------- */
+
+div#footer {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin: 0px auto;
+    text-align: center;
+    width: 800px;
+}
+
+div#footer p {
+    width: 100%;
+}
+
+/* iPhone 5 and below screen
+----------------------------------------------------------------------------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+/* Global */
+
+body {
+    font-size: 1.0em;
+}
+
+h1 {
+    clear: both;
+    font-size: 18pt;
+    text-align: center;
+}
+
+p {
+    width: auto;
+}
+
+/* Rows */
+
+div.row{
+    background-color: white;
+    color: black;
+    margin: 0px auto;
+    padding: 10px;
+    width: auto;
+}
+
+img#profile {
+    display: block;
+    float: none;
+    margin: 10px auto;
+    height: 100px; width: 100px;
+}
+
+img#email, img#twit, img#git {
+    height: 32px; width: 32px;
+    margin-top: 8px;
+    margin-left: 44px;
+}
+
+img.row {
+    clear: none;
+    float: none;
+    height: 80px; width: 80px;
+    margin-right: 16px;
+}
+
+p#intro {
+    width: 100%;
+}
+
+/* Footer */
+
+div#footer {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin: 0px auto;
+    text-align: center;
+    width: auto;
+}
+
+div#footer p {
+    width: 100%;
+}
+
+}
+
+/* iPhone 6 screen
+----------------------------------------------------------------------------- */
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+img#email, img#twit, img#git {
+    margin-left: 58px;
+}
+
+}
+
+/* iPhone 6+ screen
+----------------------------------------------------------------------------- */
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+
+img#email, img#twit, img#git {
+    margin-left: 68px;
+}
+
+}
