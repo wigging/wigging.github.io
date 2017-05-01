@@ -1,0 +1,63 @@
+body {
+  background-color: #586E75;
+  color: #FDF6E3;
+}
+
+.container {
+  max-width: 700px;
+}
+
+#img-profile {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+a {
+  color: #FDF6E3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FDF6E3;
+}
+
+.btn-social {
+  background-color: #93A1A1;
+}
+
+#btn-research {
+  background-color: #2AA198;
+}
+
+#btn-presentations {
+  background-color: #268BD2;
+}
+
+#btn-publications {
+  background-color: #6C71C4;
+}
+
+#btn-organizations {
+  background-color: #D33682;
+}
+
+#btn-applications {
+  background-color: #B58900;
+}
+
+#btn-education {
+  background-color: #CB4B16;
+}
+
+.btn-social, #btn-research, #btn-presentations, #btn-publications, #btn-organizations, #btn-applications, #btn-education {
+  border: 0 none;
+  border-radius: 0;
+  color: #FDF6E3;
+}
+
+.btn-social:hover, #btn-research:hover, #btn-presentations:hover, #btn-publications:hover, #btn-organizations:hover, #btn-applications:hover, #btn-education:hover {
+  background-color: #073642;
+  color: #FDF6E3;
+  text-decoration: none;
+}
+
