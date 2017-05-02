@@ -61,3 +61,10 @@ a:hover {
   text-decoration: none;
 }
 
+#banner-research {
+  background-color: #2AA198;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
