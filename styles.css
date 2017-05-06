@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #FDF6E3;
+  color: #1DDFD4;
   text-decoration: none;
 }
 
@@ -21,50 +21,11 @@ a:hover {
   color: #FDF6E3;
 }
 
-.btn-social {
-  background-color: #93A1A1;
+h1 {
+  margin-bottom: 20px;
 }
 
-#btn-research {
-  background-color: #2AA198;
-}
-
-#btn-presentations {
-  background-color: #268BD2;
-}
-
-#btn-publications {
-  background-color: #6C71C4;
-}
-
-#btn-organizations {
-  background-color: #D33682;
-}
-
-#btn-applications {
-  background-color: #B58900;
-}
-
-#btn-education {
-  background-color: #CB4B16;
-}
-
-.btn-social, #btn-research, #btn-presentations, #btn-publications, #btn-organizations, #btn-applications, #btn-education {
-  border: 0 none;
-  border-radius: 0;
-  color: #FDF6E3;
-}
-
-.btn-social:hover, #btn-research:hover, #btn-presentations:hover, #btn-publications:hover, #btn-organizations:hover, #btn-applications:hover, #btn-education:hover {
-  background-color: #073642;
-  color: #FDF6E3;
-  text-decoration: none;
-}
-
-#banner-research {
-  background-color: #2AA198;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+hr {
+  border-color: #FDF6E3;
 }
 
