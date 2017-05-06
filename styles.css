@@ -13,15 +13,16 @@ body {
 }
 
 a {
-  color: #1DDFD4;
+  color: #62E4DD;
   text-decoration: none;
 }
 
 a:hover {
-  color: #FDF6E3;
+  color: #1DDFD4;
 }
 
 h1 {
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
