@@ -22,11 +22,16 @@ a:hover {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 24pt;
   margin-bottom: 20px;
 }
 
 hr {
   border-color: #FDF6E3;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14pt;
 }
 
