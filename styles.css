@@ -75,6 +75,7 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
 code {
   background-color: #fffff8;
   color: #111; 
@@ -91,12 +92,16 @@ code {
   max-width: 700px;
 }
 
+.figure-caption {
+  font-size: 1.2rem;
+}
+
 /* CSS
 *******************************************************************************/
 
 #img-profile {
-	height: 100px;
-	margin-top: 20px;
+  height: 100px;
+  margin-top: 20px;
 }
 
 h1 { margin-top: 1.5rem; }
@@ -107,36 +112,36 @@ p, dl, li { font-size: 1.3rem; }
 
 a:link {
   color: #0303B0;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
   color: #0303B0;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
   color: #0303B0;
   background: #EEEEEE;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:active {
   color: #E00505;
   background: #EEEEEE;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* Mobile CSS
 *******************************************************************************/
  
 @media (max-width: 480px) {
-
-	h1 { font-size: 2.2rem; }
-
-	h2 { font-size: 1.6rem; }
-
-	p, dl, li { font-size: 1.1rem; }
+  
+  h1 { font-size: 2.2rem; }
+  
+  h2 { font-size: 1.6rem; }
+  
+  p, dl, li { font-size: 1.1rem; }
 
 }
 
