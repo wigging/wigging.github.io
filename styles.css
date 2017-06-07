@@ -92,10 +92,6 @@ code {
   max-width: 700px;
 }
 
-.figure-caption {
-  font-size: 1.2rem;
-}
-
 /* CSS
 *******************************************************************************/
 
@@ -132,6 +128,8 @@ a:active {
   text-decoration: none;
 }
 
+figcaption { font-size: 1.1rem; }
+
 /* Mobile CSS
 *******************************************************************************/
  
@@ -142,6 +140,8 @@ a:active {
   h2 { font-size: 1.6rem; }
   
   p, dl, li { font-size: 1.1rem; }
+
+  figcaption { font-size: 1rem; }
 
 }
 
