@@ -40,12 +40,13 @@ pressure vs altitude. The example code is available on
 [GitHub](https://github.com/wigging/python).
 
 <figure class="text-center">
-  <img src="{{ site.url }}/assets/atmpressure.svg" alt="pressure plot" class="img-fluid">
+  <img src="/assets/atmpressure.svg" alt="pressure plot" class="img-fluid">
   <figcaption>Plot of atmospheric pressure at different altitudes.</figcaption>
 </figure>
 
-To learn more about atmosperic pressure, visit the sites listed below.
-
-- [Practical Meteorology: An Algebra-based Survey of Atmospheric Science](https://www.eoas.ubc.ca/books/Practical_Meteorology/) by Roland Stull 
-- [Barometric Formula](https://en.wikipedia.org/wiki/Barometric_formula) article on Wikipedia
+To learn more about atmosperic pressure, see the online book [Practical
+Meteorology: An Algebra-based Survey of Atmospheric
+Science](https://www.eoas.ubc.ca/books/Practical_Meteorology/) by Roland Stull
+and the [Barometric Formula](https://en.wikipedia.org/wiki/Barometric_formula)
+article on Wikipedia.
 
