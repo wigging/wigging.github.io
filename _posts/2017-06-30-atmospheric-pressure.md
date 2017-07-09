@@ -7,8 +7,8 @@ The average (standard or atmospheric) pressure at sea level is 101.325 kPa.
 This pressure decreases as the altitude above sea level increases. To calculate
 this decrease in pressure, the geopotential height (H) is used to compensate
 for the decrease of gravity above the Earth's surface. In the equation below,
-the average radius of the Earth is R0 = 6356.766 km and z represents the
-altitude in km.
+the average radius of the Earth is R<sub>0</sub> = 6356.766 km and z represents
+the altitude in km.
 
 $$ H = (R_0 \cdot z) / (R_0 + z) $$
 
@@ -35,6 +35,8 @@ P &= 0.1109 \exp(-0.1262\, (H - 47))	  & \text{47 km} \leq H \leq \text{51 km}
 \end{align}
 $$
 
+## Python Example
+
 The above equations are implemented in `atmpressure.py` to plot the change in
 pressure vs altitude. The example code is available on
 [GitHub](https://github.com/wigging/python).
@@ -43,6 +45,8 @@ pressure vs altitude. The example code is available on
   <img src="/assets/atmpressure.svg" alt="pressure plot" class="img-fluid">
   <figcaption>Plot of atmospheric pressure at different altitudes.</figcaption>
 </figure>
+
+## Further Reading
 
 To learn more about atmosperic pressure, see the online book [Practical
 Meteorology: An Algebra-based Survey of Atmospheric
