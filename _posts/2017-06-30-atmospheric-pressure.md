@@ -3,6 +3,8 @@ title: Atmospheric Pressure
 layout: post
 ---
 
+# Atmospheric Pressure
+
 The average (standard or atmospheric) pressure at sea level is 101.325 kPa.
 This pressure decreases as the altitude above sea level increases. To calculate
 this decrease in pressure, the geopotential height (H) is used to compensate
