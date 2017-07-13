@@ -5,17 +5,17 @@ layout: post
 
 # Atmospheric Pressure
 
-The average (standard or atmospheric) pressure at sea level is 101.325 kPa.
-This pressure decreases as the altitude above sea level increases. To calculate
-this decrease in pressure, the geopotential height (H) is used to compensate
-for the decrease of gravity above the Earth's surface. In the equation below,
-the average radius of the Earth is R<sub>0</sub> = 6356.766 km and z represents
-the altitude in km.
+The standard (atmospheric) pressure at sea level is 101.325 kPa. This pressure
+decreases as the altitude above sea level increases. To calculate this decrease
+in pressure, the geopotential height (H) is used to compensate for the decrease
+of gravity above the Earth's surface. In the equation below, the average radius
+of the Earth is R<sub>0</sub> = 6356.766 km and z represents the altitude in
+km.
 
 $$ H = (R_0 \cdot z) / (R_0 + z) $$
 
 Below a geopotential altitude of 51 km, the standard temperature (K) and
-pressure (Pa) can be calculated with the equations shown below.
+pressure (Pa) can be calculated with the following equations:
 
 $$
 \begin{align}
@@ -40,8 +40,8 @@ $$
 ## Python Example
 
 The above equations are implemented in `atmpressure.py` to plot the change in
-pressure vs altitude. The example code is available on
-[GitHub](https://github.com/wigging/python).
+pressure vs altitude. The code used to create the plot is available on
+[GitHub](https://github.com/wigging/python/blob/master/atmpressure.py).
 
 <figure class="text-center">
   <img src="/assets/atmpressure.svg" alt="pressure plot" class="img-fluid">

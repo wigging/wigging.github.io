@@ -56,9 +56,9 @@
         <div class="col">
           <h2>Articles</h2>
           <hr>
-          <p>Various articles about programming and web development are listed below. Please let me know if you find any
-          errors or have suggestions for an article.</p>
-          {% for post in site.posts %}
+          <p>Various articles about programming, science, and web development are listed below. Please let me know if you find any errors or if any of the articles need to be updated.</p>
+          {% assign sortedPosts = site.posts | sort: 'title' %}
+          {% for post in sortedPosts %}
             <p><a href="{{ post.url }}">{{ post.title }}</a></p>
           {% endfor %}
         </div>
