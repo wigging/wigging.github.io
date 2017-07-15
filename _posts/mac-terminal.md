@@ -1,0 +1,25 @@
+# macOS Terminal
+
+Terminal commands specific to macOS.
+
+Open a file from the terminal:
+
+```bash
+open fileA.txt            # open a file in its default application
+open -a safari fileA.txt  # opens with the specified application
+open -R fileA.txt         # selects the file in a Finder window
+```
+
+Mount and unmount a volume:
+
+```bash
+hdiutil attach Secure.dmg       # mount a dmg volume named "Secure.dmg"
+hdiutil detach /Volumes/Secure  # unmount a volume named "Secure"
+```
+
+Permissions for folders and files:
+
+```bash
+chmod 755   # folder permissions
+chmod 644   # file permissions
+```
