@@ -1,3 +1,8 @@
+---
+title: macOS Installation
+layout: post
+---
+
 # macOS Installation
 
 To create a bootable installer on an external USB drive:
@@ -6,12 +11,12 @@ https://support.apple.com/en-us/HT201372
 To boot from an external drive, hold down the `Option` key during start up. If
 using a Windows keyboard, the `Alt` key is equivalent to the option key.
 
-# Before selling your Mac
+## Before selling your Mac
 
 Perform the following steps before selling your Mac:
 https://support.apple.com/en-us/HT201065
 
-# Create a live USB to install Ubuntu
+## Create a live USB to install Ubuntu
 
 Plugin the USB stick and format it using "Disk Utility". For example, to
 prepare a bootable USB of Ubuntu, format the drive as FAT.
