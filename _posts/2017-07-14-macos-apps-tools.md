@@ -137,9 +137,15 @@ git config --global core.excludesfile '~/.gitignore'
 ## GNU Units
 
 An excellent command line unit converter. Documentation at
-[gnu.org](https://www.gnu.org/software/units/).
+[gnu.org](https://www.gnu.org/software/units/). Install via Homebrew with `brew
+install gnu-units`. Invoke the unit converter with the command `gunits`.
 
-Install via Homebrew with `brew install gnu-units`. Invoke with command `gunits`.
+## speedtest-cli
+
+Command line interface tool built with Python for testing internet bandwidth
+using speedtest.net. Install via Homebrew with `brew install speedtest-cli`.
+Type `speedtest-cli` in the terminal to run a test that displays ping, download
+speed, and upload speed.
 
 ## aria2
 
