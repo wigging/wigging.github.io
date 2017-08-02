@@ -1,9 +1,9 @@
 ---
-title: macOS Applications and Command Line Tools
+title: Apps and Command Line Tools for macOS
 layout: post
 ---
 
-# macOS Applications and Command Line Tools
+# Apps and Command Line Tools for macOS
 
 Essential apps and command line tools to install on a new Mac. Some apps are
 installed via the Mac App Store which requires an iCloud account. My preferred
