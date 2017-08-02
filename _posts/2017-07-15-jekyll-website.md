@@ -32,7 +32,7 @@ alphabetically list these posts (or articles) by title in a webpage, use the
 following Liquid and HTML syntax:
 
 ```html
-{% raw %}{% assign sortedPosts = site.posts | sort_natural: 'title' %}
+{% raw %}{% assign sortedPosts = site.posts | sort:'title' %}
 {% for post in sortedPosts %}
   <p><a href="{{ post.url }}">{{ post.title }}</a></p>
 {% endfor %}{% endraw %}
