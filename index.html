@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,7 +36,7 @@
             <img id="img-profile" src="assets/profile.png" alt="profile image">
           </div>
           <h1 class="text-center">Gavin Wiggins</h1>
-          <p class="text-center"><a href="#apps">Apps</a> / <a href="#presentations">Presentations</a> / <a href="#publications">Publications</a></p>
+          <p class="text-center"><a href="#apps">Apps</a> / <a href="#articles">Articles</a> / <a href="#presentations">Presentations</a> / <a href="#publications">Publications</a></p>
         </div>
       </div>
 
@@ -61,21 +64,30 @@
         </div>
       </div>
 
+      <!-- Articles -->
+
+      <div class="row" id="articles">
+        <div class="col">
+          <h2>Articles</h2>
+          <hr>
+          <p>Various articles on topics ranging from programming, engineering, science, and website design.</p>
+          {% for article in site.articles %}
+            <p><a href="{{ article.url }}">{{ article.title }}</a></p>
+          {% endfor %}
+        </div>
+      </div>
+
       <!-- Presentations -->
 
       <div class="row" id="presentations">
         <div class="col">
           <h2>Presentations</h2>
           <hr>
-          <p><a href="assets/17-knoxcocoa-realm.pdf">Realm Mobile Database.</a> Knoxville CocoaHeads meetup in
-          Knoxville, TN on April 18, 2017.</p>
-          <p><a href="assets/16-tcs-chapelhill.pdf">Modeling the Impact of Biomass Particle Size Distribution and
-            Shape on Heating Behavior During Fast Pyrolysis.</a> TCS 2016 Symposium, Chapel Hill, NC, November 1-4,
-          2016.</p>
-          <p><a href="assets/16-knoxcocoa-nsuserdefaults.pdf">NSUserDefaults in Swift.</a> Knoxville CocoaHeads meetup
-          in Knoxville, TN on April 19, 2016.</p>
-          <p><a href="assets/16-knoxcocoa-firebase.pdf">Firebase for iOS.</a> Knoxville CocoaHeads meetup in Knoxville,
-          TN on August 16, 2016.</p>
+          <p>PDFs of conference and group presentations can be downloaded by clicking on the titles listed below.</p>
+          <p><a href="assets/17-knoxcocoa-realm.pdf">Realm Mobile Database.</a> Knoxville CocoaHeads meetup in Knoxville, TN on April 18, 2017.</p>
+          <p><a href="assets/16-tcs-chapelhill.pdf">Modeling the Impact of Biomass Particle Size Distribution and Shape on Heating Behavior During Fast Pyrolysis.</a> TCS 2016 Symposium, Chapel Hill, NC, November 1-4, 2016.</p>
+          <p><a href="assets/16-knoxcocoa-nsuserdefaults.pdf">NSUserDefaults in Swift.</a> Knoxville CocoaHeads meetup in Knoxville, TN on April 19, 2016.</p>
+          <p><a href="assets/16-knoxcocoa-firebase.pdf">Firebase for iOS.</a> Knoxville CocoaHeads meetup in Knoxville, TN on August 16, 2016.</p>
 	</div>
       </div>
 
