@@ -1,6 +1,6 @@
 ---
 title: Bash Scripting
-date: 2017-09-23
+date: 2017-10-11
 layout: article
 ---
 
@@ -26,6 +26,13 @@ retrieved with the `$` symbol.
 ```bash
 name="Bart Simpson"
 echo "My name is $name"
+```
+
+Move all files from one folder to another folder. Example below demonstrates
+moving files from the Downloads folder to the Videos folder.
+
+```bash
+mv ~/Downloads/* ~/Videos
 ```
 
 Test operators can be used in a Bash script to determine if a file or directory
