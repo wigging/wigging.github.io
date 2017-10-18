@@ -71,7 +71,8 @@
           <h2>Articles</h2>
           <hr>
           <p>Various articles on topics ranging from programming, engineering, science, and website design.</p>
-          {% for article in site.articles %}
+          {% assign sortedArticles = site.articles | sort: 'title' %}
+          {% for article in sortedArticles %}
             <p><a href="{{ article.url }}">{{ article.title }}</a></p>
           {% endfor %}
         </div>
