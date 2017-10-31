@@ -1,7 +1,7 @@
 ---
 title: Wget to Download Files
 date: 2017-09-23
-layout: article
+layout: notes
 ---
 
 # Wget to Download Files

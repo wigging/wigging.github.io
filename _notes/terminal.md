@@ -1,7 +1,7 @@
 ---
 title: Terminal Commands
 date: 2017-10-18
-layout: article
+layout: notes
 ---
 
 # Terminal Commands

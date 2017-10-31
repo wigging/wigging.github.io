@@ -1,7 +1,7 @@
 ---
 title: Git and GitHub
 date: 2017-09-23
-layout: article
+layout: notes
 ---
 
 # Git and GitHub

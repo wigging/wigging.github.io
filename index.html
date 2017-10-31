@@ -36,7 +36,13 @@
             <img id="img-profile" src="assets/profile.png" alt="profile image">
           </div>
           <h1 class="text-center">Gavin Wiggins</h1>
-          <p class="text-center"><a href="#apps">Apps</a> / <a href="#articles">Articles</a> / <a href="#presentations">Presentations</a> / <a href="#publications">Publications</a></p>
+          <p class="text-center">
+            <a href="#apps">Apps</a> / 
+            <a href="#code">Code</a> / 
+            <a href="#notes">Notes</a> / 
+            <a href="#presentations">Presentations</a> / 
+            <a href="#publications">Publications</a>
+          </p>
         </div>
       </div>
 
@@ -64,16 +70,26 @@
         </div>
       </div>
 
-      <!-- Articles -->
-
-      <div class="row" id="articles">
+      <div class="row" id="code">
         <div class="col">
-          <h2>Articles</h2>
+          <h2>Code</h2>
           <hr>
-          <p>Various articles on topics ranging from programming, engineering, science, and website design.</p>
-          {% assign sortedArticles = site.articles | sort: 'title' %}
-          {% for article in sortedArticles %}
-            <p><a href="{{ article.url }}">{{ article.title }}</a></p>
+          <p>A list of my code examples and projects hosted on GitHub. Use the Issues page for each project to provide
+          feedback or submit a Pull Request to contribute to the code.</p>
+          <p><a href="https://github.com/wigging/python-parameters">Python Parameters and Data Validation</a></p>
+        </div>
+      </div>
+
+      <!-- Notes -->
+
+      <div class="row" id="notes">
+        <div class="col">
+          <h2>Notes</h2>
+          <hr>
+          <p>Various notes on topics ranging from programming, engineering, science, and website design.</p>
+          {% assign sortedNotes = site.notes | sort: 'title' %}
+          {% for note in sortedNotes %}
+            <p><a href="{{ note.url }}">{{ note.title }}</a></p>
           {% endfor %}
         </div>
       </div>

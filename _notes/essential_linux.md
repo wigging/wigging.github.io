@@ -1,7 +1,7 @@
 ---
 title: Essential Linux
 date: 2017-09-24
-layout: article
+layout: notes
 ---
 
 # Ubuntu installation

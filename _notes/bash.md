@@ -1,7 +1,7 @@
 ---
 title: Bash Scripting
 date: 2017-10-18
-layout: article
+layout: notes
 ---
 
 # Bash Scripting

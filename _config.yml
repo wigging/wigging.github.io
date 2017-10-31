@@ -1,4 +1,4 @@
 collections:
-  articles:
+  notes:
     output: true
 
