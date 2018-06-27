@@ -78,12 +78,10 @@ body {
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
-code {
+.highlight {
   background-color: #fffff8;
-  color: #111;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  /*font-size: 1.1rem;*/
-  /*line-height: 1.42;*/
+  font-size: 0.95rem;
 }
 
 figcaption {
@@ -133,8 +131,6 @@ hr {
 li { padding: 0.3rem 0; }
 
 p, dl, ol, ul { font-size: 1.3rem; }
-
-p code { font-size: 1.0rem; }
 
 /* Mobile CSS
 *******************************************************************************/

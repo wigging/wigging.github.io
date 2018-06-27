@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,6 +38,7 @@
           <p class="text-center">
             <a href="#apps">Apps</a> /
             <a href="#code">Code</a> /
+            <a href="#notes">Notes</a> /
             <a href="#presentations">Presentations</a> /
             <a href="#publications">Publications</a>
           </p>
@@ -76,6 +79,18 @@
           <p><a href="https://github.com/batterysim">batterysim</a> - code developed for CAEBAT research activities</p>
           <p><a href="https://github.com/knoxpy">knoxpy</a> - a Python users group in Knoxville</p>
           <p><a href="https://github.com/knoxcocoa">knoxcocoa</a> - iOS and macOS developers group in Knoxville</p>
+        </div>
+      </div>
+
+      <!-- Notes -->
+
+      <div class="row" id="notes">
+        <div class="col">
+          <h2>Notes</h2>
+          <hr>
+          {% for note in site.notes %}
+            <p><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></p>
+          {% endfor %}
         </div>
       </div>
 
