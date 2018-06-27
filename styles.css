@@ -1,5 +1,4 @@
-/* Webfont based on Edward Tufte typeface
- * downloaded from https://github.com/edwardtufte/tufte-css
+/* Webfont from Tufte CSS https://github.com/edwardtufte/tufte-css
 *******************************************************************************/
 
 @font-face {
@@ -34,8 +33,7 @@
   font-style: normal;
 }
 
-/* Bootstrap CSS
- * override Bootstrap 4 styles at https://v4-alpha.getbootstrap.com
+/* Override Bootstrap 4 https://v4-alpha.getbootstrap.com
 *******************************************************************************/
 
 .container {
@@ -46,8 +44,22 @@
   font-size: 100%;
 }
 
-/* CSS
- * based on styles from https://github.com/edwardtufte/tufte-css
+/* Code blocks
+*******************************************************************************/
+
+.highlight {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9rem;
+}
+
+pre {
+  border-bottom: 1px dotted lightgray;
+  border-top: 1px dotted lightgray;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* Styles based on Tufte CSS https://github.com/edwardtufte/tufte-css
 *******************************************************************************/
 
 a:link {
@@ -76,12 +88,6 @@ body {
   background-color: #fffff8;
   color: #111;
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-}
-
-.highlight {
-  background-color: #fffff8;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.95rem;
 }
 
 figcaption {
