@@ -41,6 +41,7 @@
 }
 
 .nav-link {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-size: 1.3rem;
 }
 
@@ -133,9 +134,15 @@ hr {
   padding: 0;
 }
 
-#img-profile {
+#logo {
   height: 100px;
+  margin-bottom: 20px;
   margin-top: 40px;
+}
+
+#profile {
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 p, dl, ol, ul { font-size: 1.3rem; }
