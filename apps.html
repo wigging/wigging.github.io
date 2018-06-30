@@ -32,21 +32,19 @@
           <!-- <img class="mx-auto d-block" id="logo" src="logo.svg"> -->
           <img class="mx-auto d-block" id="img-profile" alt="profile image" src="assets/profile.png">
           <h1 class="text-center">Gavin Wiggins</h1>
-          <nav class="nav flex-sm-column justify-content-center">
+          <nav class="nav flex-sm-column justify-content-center text-center">
             <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="apps.html">Apps</a>
+            <a class="nav-link" href="apps.html">< Apps ></a>
             <a class="nav-link" href="code.html">Code</a>
-            <a class="nav-link" href="index.html">< Notes ></a>
+            <a class="nav-link" href="index.html">Notes</a>
             <a class="nav-link" href="presentations.html">Presentations</a>
             <a class="nav-link" href="publications.html">Publications</a>
           </nav>
         </div>
         <div class="col-sm-8">
-          <h1>Notes</h1>
-          <p>Various notes about various topics but mainly about programming stuff.</p>
-          {% for note in site.notes %}
-            <p><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></p>
-          {% endfor %}
+          <h1>Apps</h1>
+          <p><a href="http://weathrclip.com">WeathrClip</a> provides current weather conditions, 5-day forecast, hourly forecast, and precipitation radar for your Mac and iPhone.</p>
+          <p><a href="https://github.com/wigging/un1ts-mac-app">Un1ts</a> is a comprehensive unit converter for the Mac. It was previously available on the Mac App Store but is now open-source software.</p>
         </div>
       </div>
     </div>
@@ -58,4 +56,3 @@
 
   </body>
 </html>
-

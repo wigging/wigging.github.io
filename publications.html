@@ -32,21 +32,24 @@
           <!-- <img class="mx-auto d-block" id="logo" src="logo.svg"> -->
           <img class="mx-auto d-block" id="img-profile" alt="profile image" src="assets/profile.png">
           <h1 class="text-center">Gavin Wiggins</h1>
-          <nav class="nav flex-sm-column justify-content-center">
+          <nav class="nav flex-sm-column justify-content-center text-center">
             <a class="nav-link" href="about.html">About</a>
             <a class="nav-link" href="apps.html">Apps</a>
             <a class="nav-link" href="code.html">Code</a>
-            <a class="nav-link" href="index.html">< Notes ></a>
+            <a class="nav-link" href="index.html">Notes</a>
             <a class="nav-link" href="presentations.html">Presentations</a>
-            <a class="nav-link" href="publications.html">Publications</a>
+            <a class="nav-link" href="publications.html">< Publications ></a>
           </nav>
         </div>
         <div class="col-sm-8">
-          <h1>Notes</h1>
-          <p>Various notes about various topics but mainly about programming stuff.</p>
-          {% for note in site.notes %}
-            <p><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></p>
-          {% endfor %}
+          <h1>Publications</h1>
+          <p><b>Simulating Biomass Fast Pyrolysis at the Single Particle Scale</b>. From the book "Fast Pyrolysis of Biomass", 2017, Chapter 11, pp. 231-253. <a href="http://pubs.rsc.org/en/content/chapter/bk9781782626183-00231/978-1-78801-024-5">[Link]</a></p>
+          <p><b>Low-Order Modeling of Internal Heat Transfer in Biomass Particle Pyrolysis</b>. Energy &amp; Fuels, 2016, 30 (6), pp 4960–4969. <a href="http://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.6b00554">[Link]</a></p>
+          <p><b>Development of a Low-Order Computational Model for Biomass Fast Pyrolysis: Accounting for Particle Residence Time</b>. Technical Report, 2016, ORNL/TM-2016/69. <a href="publications/16-02-dev-low-order.pdf">[PDF]</a></p>
+          <p><b>Coupling DAEM and CFD for simulating biomass fast pyrolysis in fluidized beds</b>. Journal of Analytical and Applied Pyrolysis, 2016, 117, pp 176-181. <a href="http://www.sciencedirect.com/science/article/pii/S0165237015302199">[Link]</a></p>
+          <p><b>Biomass Particle Models with Realistic Morphology and Resolved Microstructure for Simulations of Intraparticle Transport Phenomena</b>. Energy Fuels, 2015, 29 (1), pp 242–254. <a href="http://pubs.acs.org/doi/abs/10.1021/ef502204v">[Link]</a></p>
+          <p><b>Evaluation of Biomass and Coal Briquettes for a Spreader Stoker Boiler Using an Experimental Furnace — Modeling and Test</b>. Clemson University, 2011. <a href="http://search.proquest.com/openview/a64aa7eaf57f657e66048f913355baa9/1?pq-origsite=gscholar&cbl=18750&diss=y">[Link]</a></p>
+          <p><b>System Modeling of ORNL's 20 MW(t) Wood-fired Gasifying Boiler</b>. Conference: American Flame Research Committee, Pacific Rim Combustion Symposium, 2010. <a href="https://www.osti.gov/scitech/biblio/992112">[Link]</a></p>
         </div>
       </div>
     </div>
@@ -58,4 +61,3 @@
 
   </body>
 </html>
-

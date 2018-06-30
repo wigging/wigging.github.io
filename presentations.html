@@ -32,21 +32,26 @@
           <!-- <img class="mx-auto d-block" id="logo" src="logo.svg"> -->
           <img class="mx-auto d-block" id="img-profile" alt="profile image" src="assets/profile.png">
           <h1 class="text-center">Gavin Wiggins</h1>
-          <nav class="nav flex-sm-column justify-content-center">
+          <nav class="nav flex-sm-column justify-content-center text-center">
             <a class="nav-link" href="about.html">About</a>
             <a class="nav-link" href="apps.html">Apps</a>
             <a class="nav-link" href="code.html">Code</a>
-            <a class="nav-link" href="index.html">< Notes ></a>
-            <a class="nav-link" href="presentations.html">Presentations</a>
+            <a class="nav-link" href="index.html">Notes</a>
+            <a class="nav-link" href="presentations.html">< Presentations ></a>
             <a class="nav-link" href="publications.html">Publications</a>
           </nav>
         </div>
         <div class="col-sm-8">
-          <h1>Notes</h1>
-          <p>Various notes about various topics but mainly about programming stuff.</p>
-          {% for note in site.notes %}
-            <p><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></p>
-          {% endfor %}
+          <h1>Presentations</h1>
+          <p><b>Combining high and low-order computational models to simulate biomass fast pyrolysis reactors</b>. AIChE Spring Meeting and 8th World Congress on Particle Technology in Orlando, FL. April 23, 2018. <a href="presentations/18-04-aiche-wcpt-orlando.pdf">[PDF]</a></p>
+          <p><b>Scraping with Selenium</b>. KnoxPy Meetup in Knoxville, TN. April 5, 2018. <a href="http://slides.com/wigging/selenium">[View]</a></p>
+          <p><b>Realm Mobile Database</b>. Knoxville CocoaHeads Meetup in Knoxville, TN. April 18, 2017. <a href="presentations/17-04-knoxcocoa-realm.pdf">[PDF]</a></p>
+          <p><b>Modeling the impact of biomass particle size distribution and shape on heating behavior during fast pyrolysis</b>. TCS 2016 Symposium in Chapel Hill, NC. November 1, 2016. <a href="presentations/16-11-tcs-chapelhill.pdf">[PDF]</a></p>
+          <p><b>Modeling the impact of biomass particle residence time on fast pyrolysis yield and composition</b>. AIChE Annual Meeting in San Francisco, CA. November, 13, 2016. <a href="presentations/16-11-aiche-sanfran.pdf">[PDF]</a></p>
+          <p><b>Firebase for iOS</b>. Knoxville CocoaHeads in Knoxville, TN. August 16, 2016. <a href="presentations/16-08-knoxcocoa-firebase.pdf">[PDF]</a></p>
+          <p><b>NSUserDefaults in Swift</b>. Knoxville CocoaHeads in Knoxville, TN. April 19, 2016. <a href="presentations/16-04-knoxcocoa-nsuserdefaults.pdf">[PDF]</a></p>
+          <p><b>Low-order modeling of biomass particle mixing and reaction in a bubbling-bed fast pyrolysis reactor</b>. AIChE 2014 Annual Meeting in Atlanta, GA. November 20, 2014. <a href="presentations/14-11-aiche-atlanta.pdf">[PDF]</a></p>
+          <p><b>Particle-scale computational modeling of woody biomass pyrolysis</b>. TCS 2014 Symposium in Denver, CO. September 4, 2014. <a href="presentations/14-09-tcs-denver.pdf">[PDF]</a></p>
         </div>
       </div>
     </div>
@@ -58,4 +63,3 @@
 
   </body>
 </html>
-
