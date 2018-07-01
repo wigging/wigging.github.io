@@ -45,7 +45,7 @@
           {% for note in sorted %}
             <p>
               <b><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></b>
-              <em style="float:right;">{{ note.date | date: "%Y-%m-%d" }}</em> <br>
+              <em style="float:right;">{{ note.date | date: "%m-%d-%Y" }}</em> <br>
               {{ note.excerpt }}
             </p>
           {% endfor %}

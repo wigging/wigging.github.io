@@ -41,13 +41,10 @@
         </div>
         <div class="col-sm-8">
           <h1>Publications</h1>
-          <p><b><a href="http://pubs.rsc.org/en/content/chapter/bk9781782626183-00231/978-1-78801-024-5">Simulating Biomass Fast Pyrolysis at the Single Particle Scale</a></b>. From the book "Fast Pyrolysis of Biomass", 2017, Chapter 11, pp. 231-253.</p>
-          <p>Low-Order Modeling of Internal Heat Transfer in Biomass Particle Pyrolysis. Energy &amp; Fuels, 2016, 30 (6), pp 4960–4969. <a href="http://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.6b00554">[Link]</a></p>
-          <p>Development of a Low-Order Computational Model for Biomass Fast Pyrolysis: Accounting for Particle Residence Time. Technical Report, 2016, ORNL/TM-2016/69. <a href="publications/16-02-dev-low-order.pdf">[PDF]</a></p>
-          <p>Coupling DAEM and CFD for simulating biomass fast pyrolysis in fluidized beds. Journal of Analytical and Applied Pyrolysis, 2016, 117, pp 176-181. <a href="http://www.sciencedirect.com/science/article/pii/S0165237015302199">[Link]</a></p>
-          <p>Biomass Particle Models with Realistic Morphology and Resolved Microstructure for Simulations of Intraparticle Transport Phenomena. Energy Fuels, 2015, 29 (1), pp 242–254. <a href="http://pubs.acs.org/doi/abs/10.1021/ef502204v">[Link]</a></p>
-          <p>Evaluation of Biomass and Coal Briquettes for a Spreader Stoker Boiler Using an Experimental Furnace — Modeling and Test. Clemson University, 2011. <a href="http://search.proquest.com/openview/a64aa7eaf57f657e66048f913355baa9/1?pq-origsite=gscholar&cbl=18750&diss=y">[Link]</a></p>
-          <p>System Modeling of ORNL's 20 MW(t) Wood-fired Gasifying Boiler. Conference: American Flame Research Committee, Pacific Rim Combustion Symposium, 2010. <a href="https://www.osti.gov/scitech/biblio/992112">[Link]</a></p>
+          {% for pub in site.data.publications %}
+          <p><b><a href="{{ pub.link }}">{{ pub.title }}</a></b>. {{ pub.desc }}.</p>
+          {% endfor %}
+          <br>
         </div>
       </div>
     </div>

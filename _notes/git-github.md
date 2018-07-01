@@ -1,16 +1,16 @@
 ---
 title: Git and GitHub
 excerpt: Tips and tricks for working with Git and GitHub.
-date: 2017-12-07
+date: 2018-07-01
 ---
 
 # Git and GitHub
 
-Tips on using Git and GitHub.
+Git is a great version control system that is the foundation of the online GitHub platform for sharing code. The sections below provide configuration settings and tips for working with these tools.
 
-## Configuration
+## Git configuration
 
-Set the user name and email address for every commit with the config command. The list option will show the current configuration settings on your system or for the particular project.
+Set the user name and email address for every commit with the "git config" command. The "git config --list" option will show the current configuration settings.
 
 ```bash
 # Set system wide user name and email for git
@@ -20,30 +20,29 @@ git config --global user.email "johndoe@example.com"
 # View configuration information
 git config --list
 
-# Set a different user name and email for a specific project
-git config user.name "John Doe"
-git config user.email "johndoe@example.com"
+# Set a different user name and email for the current repository
+git config user.name "Jane Bane"
+git config user.email "janedoe@example.com"
 ```
 
-To keep your email private in your commits, GitHub offers a noreply email
-address. On your GitHub profile, go to Settings then Emails to enable the
-private email address feature.
-
-You should also add a global ignore file. Use
-[gitignore.io](https://www.gitignore.io) to create a file for macOS, vim,
-python, and xcode. The contents of the ignore file will depend on your operating system and the applications you have installed. Place the file in
-gitignore then tell Git to use it.
+The "gitignore" file tells Git to not place certain types of files under version control. The file can be applied globally or just for a particular project. See the [gitignore.io](https://www.gitignore.io) online tool to easily create an ignore file.
 
 ```bash
 git config --global core.excludesfile "~/.gitignore"
 ```
 
+## GitHub settings
+
+To keep your email private in your commits, GitHub offers a noreply email
+address. On your GitHub profile, go to Settings then Emails to enable the
+private email address feature.
+
 ## Branch
 
-The commands below demonstrate working with branches in Git and GitHub; the branch is referred to as name-of-branch.
+A branch is a set of code changes with a unique name. Each repository can have one or more branches.
 
 ```bash
-# Create and checkout a new branch 
+# Create and checkout a new branch called name-of-branch
 git checkout -b name-of-branch
 
 # Push the new branch to a remote server named origin
@@ -63,9 +62,7 @@ git branch -r
 git branch -dr origin/name-of-branch
 ```
 
-## Orphan branch
-
-When hosting a website on GitHub, the gh-pages branch can be used to keep the
+When hosting a website on GitHub, the "gh-pages" branch can be used to keep the
 web files separate from the project files. Since this branch is typically not
 merged with other branches and would have its own history, the orphan option can be used. After creating the orphan branch, you should clear its
 index and working tree to isolate it from the master branch.
@@ -73,20 +70,6 @@ index and working tree to isolate it from the master branch.
 ```bash
 git checkout --orphan gh-pages
 git rm -rf .
-```
-
-Further reading about orphan branches: [git-checkout](https://git-scm.com/docs/git-checkout), [git branch gh-pages](http://stackoverflow.com/questions/4750520/git-branch-gh-pages), and [simple way for unrelated branch](http://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository).
-
-## Remote repository
-
-Commands for working with remote repositories are shown below.
-
-```bash
-# List all remote branches
-git branch -r
-
-# Change url to remote repository
-git remote set-url origin https://github.com/USERNAME/OTHERREPOSITORY.git
 ```
 
 ## Reset a Git and GitHub repository
