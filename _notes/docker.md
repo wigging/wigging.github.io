@@ -1,5 +1,7 @@
 ---
-title: Docker commands
+title: Docker
+excerpt: Useful commands for working with containers.
+date: 2016-11-05
 ---
 
 # Docker commands

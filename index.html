@@ -41,9 +41,13 @@
         </div>
         <div class="col-sm-8">
           <h1>Notes</h1>
-          <p>Various notes about various topics but mainly about programming stuff.</p>
-          {% for note in site.notes %}
-            <p><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></p>
+          {% assign sorted = site.notes | reverse %}
+          {% for note in sorted %}
+            <p>
+              <b><a href="{{ site.url }}{{ note.url }}">{{ note.title }}</a></b>
+              <em style="float:right;">{{ note.date | date: "%Y-%m-%d" }}</em> <br>
+              {{ note.excerpt }}
+            </p>
           {% endfor %}
         </div>
       </div>

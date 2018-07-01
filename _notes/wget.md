@@ -1,5 +1,7 @@
 ---
 title: Wget to download files
+excerpt: Use the wget tool to download files from websites.
+date: 2017-12-24
 ---
 
 # Wget to download files

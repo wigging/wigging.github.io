@@ -1,5 +1,7 @@
 ---
 title: Bash scripting
+excerpt: Notes about writing bash scripts.
+date: 2017-08-18
 ---
 
 # Bash Scripting

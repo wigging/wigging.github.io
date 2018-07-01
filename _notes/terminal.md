@@ -1,5 +1,7 @@
 ---
 title: Terminal commands
+excerpt: Tips for working in the command line.
+date: 2017-12-23
 ---
 
 # Terminal commands

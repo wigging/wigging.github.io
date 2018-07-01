@@ -1,5 +1,7 @@
 ---
-title: Mac notes
+title: Mac configuration
+excerpt: Notes on setting up a new Mac.
+date: 2017-12-15
 ---
 
 # Mac notes
