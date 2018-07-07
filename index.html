@@ -28,18 +28,10 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
-          <img class="mx-auto d-block" id="logo" alt="logo" src="assets/gw-logo.svg">
-          <nav class="nav flex-sm-column justify-content-center text-center">
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="apps.html">Apps</a>
-            <a class="nav-link" href="code.html">Code</a>
-            <a class="nav-link" href="index.html">< Notes ></a>
-            <a class="nav-link" href="presentations.html">Presentations</a>
-            <a class="nav-link" href="publications.html">Publications</a>
-          </nav>
+        <div class="col">
+          {% include nav.html %}
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <h1>Notes</h1>
           {% assign sorted = site.notes | reverse %}
           {% for note in sorted %}
@@ -49,6 +41,9 @@
               {{ note.excerpt }}
             </p>
           {% endfor %}
+        </div>
+        <div class="col">
+          <!-- empty column used to center second column -->
         </div>
       </div>
     </div>

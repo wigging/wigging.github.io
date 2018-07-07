@@ -28,21 +28,16 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
-          <img class="mx-auto d-block" id="logo" alt="logo" src="assets/gw-logo.svg">
-          <nav class="nav flex-sm-column justify-content-center text-center">
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="apps.html">< Apps ></a>
-            <a class="nav-link" href="code.html">Code</a>
-            <a class="nav-link" href="index.html">Notes</a>
-            <a class="nav-link" href="presentations.html">Presentations</a>
-            <a class="nav-link" href="publications.html">Publications</a>
-          </nav>
+        <div class="col">
+          {% include nav.html %}
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <h1>Apps</h1>
           <p><b><a href="http://weathrclip.com">WeathrClip</a></b> provides current weather conditions, 5-day forecast, hourly forecast, and precipitation radar for your Mac and iPhone.</p>
           <p><b><a href="https://github.com/wigging/un1ts-mac-app">Un1ts</a></b> is a comprehensive unit converter for the Mac. It was previously available on the Mac App Store but is now open-source software.</p>
+        </div>
+        <div class="col">
+          <!-- empty column used to center second column -->
         </div>
       </div>
     </div>
