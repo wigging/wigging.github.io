@@ -1,9 +1,9 @@
 <img class="mx-auto d-block" id="logo" alt="logo" src="assets/logo.svg">
 <nav class="nav flex-sm-column justify-content-center text-center">
-  <a class="nav-link" href="about.html">About</a>
-  <a class="nav-link" href="apps.html">Apps</a>
-  <a class="nav-link" href="code.html">Code</a>
-  <a class="nav-link" href="index.html">Notes</a>
-  <a class="nav-link" href="presentations.html">Presentations</a>
-  <a class="nav-link" href="publications.html">Publications</a>
+  <a class="nav-link" {% if page.url == "/about.html" %}style="color:rgb(160,0,0);"{% endif %} href="about.html">About</a>
+  <a class="nav-link" {% if page.url == "/apps.html" %}style="color:rgb(160,0,0);"{% endif %} href="apps.html">Apps</a>
+  <a class="nav-link" {% if page.url == "/code.html" %}style="color:rgb(160,0,0);"{% endif %} href="code.html">Code</a>
+  <a class="nav-link" {% if page.url == "/" %}style="color:rgb(160,0,0);"{% endif %} href="index.html">Notes</a>
+  <a class="nav-link" {% if page.url == "/presentations.html" %}style="color:rgb(160,0,0);"{% endif %} href="presentations.html">Presentations</a>
+  <a class="nav-link" {% if page.url == "/publications.html" %}style="color:rgb(160,0,0);"{% endif %} href="publications.html">Publications</a>
 </nav>
