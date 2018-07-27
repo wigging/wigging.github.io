@@ -45,15 +45,20 @@ A branch is a set of code changes with a unique name. Each repository can have o
 # Create and checkout a new branch called name-of-branch
 git checkout -b name-of-branch
 
-# Push the new branch to a remote server named origin
-git push origin name-of-branch
-
 # List all local branches in normal or verbose mode
 git branch
 git branch -v
 
 # Remove a local branch
 git branch -d name-of-branch
+
+# Merge local branch to master then delete it
+git checkout master
+git merge name-of-branch
+git branch -d name-of-branch
+
+# Push the new branch to a remote server named origin
+git push origin name-of-branch
 
 # List all remote branches
 git branch -r
