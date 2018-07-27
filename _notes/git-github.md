@@ -1,7 +1,7 @@
 ---
 title: Git and GitHub
 excerpt: Tips and tricks for working with Git and GitHub.
-date: 2018-07-01
+date: 2018-07-27
 ---
 
 # Git and GitHub
