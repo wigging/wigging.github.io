@@ -57,13 +57,6 @@
   font-size: 0.9rem;
 }
 
-pre {
-  border-bottom: 1px dotted lightgray;
-  border-top: 1px dotted lightgray;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
 /* Styles based on Tufte CSS https://github.com/edwardtufte/tufte-css
 *******************************************************************************/
 
