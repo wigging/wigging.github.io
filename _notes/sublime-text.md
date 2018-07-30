@@ -27,7 +27,7 @@ My preferred settings for the awesome [Sublime Text](https://www.sublimetext.com
 }
 ```
 
-Some excellent packages to customize Sublime Text are listed below. Some packages have dependencies so read the installation instructions before proceeding.
+A list of excellent packages to customize Sublime Text is shown below. Some packages have dependencies so read the installation instructions before proceeding. Package Control must be installed first since it is the package manager for Sublime Text. 
 
 - [Package Control](https://packagecontrol.io)
 - [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
