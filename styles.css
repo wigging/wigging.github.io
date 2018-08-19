@@ -1,4 +1,4 @@
-/* Webfont from Tufte CSS https://github.com/edwardtufte/tufte-css
+/* Web font from Tufte CSS https://github.com/edwardtufte/tufte-css
 *******************************************************************************/
 
 @font-face {
@@ -37,24 +37,7 @@
 *******************************************************************************/
 
 .container {
-  max-width: 1050px;
-}
-
-.nav-link {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 1.3rem;
-}
-
-.small {
-  font-size: 100%;
-}
-
-/* Code blocks
-*******************************************************************************/
-
-.highlight {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.9rem;
+  max-width: 700px;
 }
 
 /* Styles based on Tufte CSS https://github.com/edwardtufte/tufte-css
@@ -88,76 +71,31 @@ body {
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
-#contact {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-size: 1.3rem;
-}
-
-figcaption {
-  font-size: 1.1rem;
-  margin-top: 6px;
-}
-
-h1 {
-  font-weight: 400;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: 3.2rem;
-  line-height: 1;
-}
-
 h2 {
-  font-weight: 400;
-  margin-top: 2.1rem;
-  margin-bottom: 1.0rem;
+  border-bottom: 1px solid #ccc;
   font-size: 2.2rem;
+  font-weight: 400;
   line-height: 1;
-}
-
-h3 {
-  font-weight: 300;
-  font-size: 1.7rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  width: 55%;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-#logo {
-  height: 100px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 3rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 10px;
 }
 
 #profile {
   height: 100px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
 p, dl, ol, ul { font-size: 1.3rem; }
 
-/* Mobile CSS
+/* Styles for mobile devices
 *******************************************************************************/
 
 @media (max-width: 480px) {
 
-  figcaption { font-size: 1rem; }
+  h2 { font-size: 1.4rem; }
 
-  h1 { font-size: 2.2rem; }
-
-  h2 { font-size: 1.6rem; }
-
-  .nav-link { font-size: 1.2rem; }
-
-  p, dl, li { font-size: 1.2rem; }
+  p, dl, ol, ul { font-size: 1.1rem; }
 
 }
