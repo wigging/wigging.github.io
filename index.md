@@ -36,6 +36,8 @@ Get in touch: <a href = "mailto:wiggingATmeDOTcom" onclick = "this.href=this.hre
 
 ## Publications
 
+If you do not have access to a publication, please contact me and I will be genuinely delighted to send you a copy of the manuscript.
+
 {% for pub in site.data.publications %}
 <p><a href="{{ pub.link }}">{{ pub.title }}</a>. {{ pub.desc }}.</p>
 {% endfor %}
