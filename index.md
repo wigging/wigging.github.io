@@ -58,5 +58,6 @@ If you do not have access to a publication, please contact me and I will be genu
 [git]: https://github.com/wigging
 [red]: https://www.reddit.com/user/wiggitt
 [so]: https://stackoverflow.com/users/1084875/wigging
+[tw]: https://twitter.com/wigging
 [wc]: http://weathrclip.com
 [un]: https://github.com/wigging/un1ts-mac-app
