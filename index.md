@@ -23,19 +23,17 @@ available on the Mac App Store but is now open-source software.
 
 ## Code
 
-[wigging](https://github.com/wigging) - Personal projects and GitHub profile.
+See my [GitHub][] profile for examples of my iOS, macOS, Swift and Python code.
+Organizations on GitHub that I contribute to are the [Knoxville CocoaHeads][],
+[CCPC][], [KnoxPy][], [BatterySim][], [Fluidization][], and [Chemics][].
 
-[ccpcode](https://github.com/ccpcode) - Code developed for CCPC research activities.
-
-[batterysim](https://github.com/batterysim) - Code developed for CAEBAT research activities.
-
-[ios-examples](https://github.com/wigging/ios-examples) - iOS examples written in Swift.
-
-[knoxpy](https://github.com/knoxpy) - Python users group in Knoxville, TN.
-
-[knoxcocoa](https://github.com/knoxcocoa) - iOS and macOS developers group in Knoxville, TN.
-
-[macos-examples](https://github.com/wigging/macos-examples) - macOS examples written in Swift.
+[GitHub]: https://github.com/wigging
+[Knoxville CocoaHeads]: https://github.com/knoxcocoa
+[CCPC]: https://github.com/ccpcode
+[KnoxPy]: https://github.com/knoxpy
+[BatterySim]: https://github.com/batterysim
+[Fluidization]: https://github.com/fluidization
+[Chemics]: https://github.com/chemics
 
 ## Presentations
 
