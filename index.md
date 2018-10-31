@@ -22,6 +22,7 @@ forecast, and precipitation radar for your Mac and iPhone.
 available on the Mac App Store but is now open-source software.
 
 ## Code
+
 See Gavin's [GitHub][] profile for examples of his iOS, macOS, Swift and Python
 code. Organizations on GitHub that he contributes to are [Knoxville CocoaHeads][],
 [CCPC][], [KnoxPy][], [BatterySim][], [Fluidization][], and [Chemics][].
@@ -42,7 +43,8 @@ code. Organizations on GitHub that he contributes to are [Knoxville CocoaHeads][
 
 ## Publications
 
-If you do not have access to a publication, please contact me and I will be genuinely delighted to send you a copy of the manuscript.
+If you do not have access to a publication, please contact me and I will be
+genuinely delighted to send you a copy of the manuscript.
 
 {% for pub in site.data.publications %}
 <p><a href="{{ pub.link }}">{{ pub.title }}</a>. {{ pub.desc }}.</p>
