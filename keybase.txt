@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/wigging
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://gavinw.me
+  * I am wigging (https://keybase.io/wigging) on keybase.
+  * I have a public key ASCrFyn0guzplJPYp925eEc3h8R_K1be_ArRsKYbA4u8tgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ab1729f482ece99493d8a7ddb978473787c47f2b56defc0ad1b0a61b038bbcb60a",
+      "host": "keybase.io",
+      "kid": "0120ab1729f482ece99493d8a7ddb978473787c47f2b56defc0ad1b0a61b038bbcb60a",
+      "uid": "fd8fcd051b64e51c9e2e07754181a019",
+      "username": "wigging"
+    },
+    "merkle_root": {
+      "ctime": 1543979823,
+      "hash": "93443411820c684abf424fdc26ea63108f204e25c25eec8772c7dc3b73d388e2407d71d44d636fab28e68451a6c3b0abc9b3ada9af1ce388bdeeaec0cd3cae4b",
+      "hash_meta": "ab4cac7c559d082d1053599020b6e70134ec3b8a41598f5b40df2b461c5c89a1",
+      "seqno": 4053992
+    },
+    "service": {
+      "entropy": "gD+5gpjf81QiRxA8ikViXLAn",
+      "hostname": "gavinw.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.11.0"
+  },
+  "ctime": 1543979831,
+  "expire_in": 504576000,
+  "prev": "885c07d7c48d6f8c85ee683c0dc6c80aea3bb81b78bbe95fb719fed72a3ea72a",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgqxcp9ILs6ZST2KfduXhHN4fEfytW3vwK0bCmGwOLvLYKp3BheWxvYWTESpcCBMQgiFwH18SNb4yF7mg8DcbICuo7uBt4u+lftxn+1yo+pyrEIFNrhybQslbhQbHSM/X8nT4YoaPIs38r5PTaGYPNHYu7AgHCo3NpZ8RAM/8aZfv2exFT1N1RZG4vVcsTxrDw9Kq4dD3Mq+hNKSDIGV0+ln6q9brUyhpz9uUmapN/CxOlKjUhehRbmLrGD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILrXJjtPfUkHZGFYbiKcM74nhlpFLX5NiTHDarMEobBIo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wigging
+
+==================================================================
