@@ -1,5 +1,5 @@
 
-let pres = [
+let presentations = [
     {
         title: "Combining high and low-order computational models to simulate biomass fast pyrolysis reactors",
         desc: "AIChE Spring Meeting and 8th World Congress on Particle Technology in Orlando, FL on April 23, 2018",
@@ -45,14 +45,13 @@ let pres = [
         desc: "TCS 2014 Symposium in Denver, CO on September 4, 2014",
         url: "presentations/14-09-tcs-denver.pdf"
     }
-]
+];
 
-for (var i=0, len=pres.length; i<len; i++) {
+for (let pres of presentations) {
     var pElement = document.createElement('p');
-    var title = '<strong>' + pres[i].title + '</strong>';
-    var desc = pres[i].desc;
-    // var url = '<a href=' + pres[i].url + '>Link</a>';
-    var url = `<a href=${pres[i].url}>Link</a>`;
+    var title = '<b>' + pres.title + '</b>';
+    var desc = pres.desc;
+    var url = `<a href=${pres.url}>Link</a>`;
     pElement.innerHTML = `${title}. ${desc}. ${url}.`;
     document.getElementById('pres').appendChild(pElement);
 }

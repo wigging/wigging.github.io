@@ -1,5 +1,5 @@
 
-let pubs = [
+let publications = [
     {
         title: "Integrated Particle- and Reactor-Scale Simulation of Pine Pyrolysis in a Fluidized Bed",
         desc: "Energy & Fuels, 32 (10), pp. 10683-10694, 2018",
@@ -45,13 +45,13 @@ let pubs = [
         desc: "Conference: American Flame Research Committee, Pacific Rim Combustion Symposium, 2010",
         url: "https://www.osti.gov/scitech/biblio/992112"
     }
-]
+];
 
-for (var i=0, len=pubs.length; i<len; i++) {
+for (let pubs of publications) {
     var pElement = document.createElement('p');
-    var title = '<strong>' + pubs[i].title + '</strong>';
-    var desc = pubs[i].desc;
-    var url = `<a href=${pubs[i].url}>Link</a>`;
+    var title = '<b>' + pubs.title + '</b>';
+    var desc = pubs.desc;
+    var url = `<a href=${pubs.url}>Link</a>`;
     pElement.innerHTML = `${title}. ${desc}. ${url}.`;
     document.getElementById('pubs').appendChild(pElement);
 }
