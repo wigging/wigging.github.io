@@ -51,7 +51,11 @@ for (let pubs of publications) {
     var pElement = document.createElement('p');
     var title = '<b>' + pubs.title + '</b>';
     var desc = pubs.desc;
-    var url = `<a href=${pubs.url}>Link</a>`;
-    pElement.innerHTML = `${title}. ${desc}. ${url}.`;
+    if (pubs.url.includes('pdf')) {
+        var url = `<a href=${pubs.url}>Download PDF</a>`;
+    } else {
+        var url = `<a href=${pubs.url}>View Online</a>`;
+    }
+    pElement.innerHTML = `${title}. ${desc}<br>${url}`;
     document.getElementById('pubs').appendChild(pElement);
 }
