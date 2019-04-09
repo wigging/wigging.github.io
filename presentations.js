@@ -52,9 +52,9 @@ for (let pres of presentations) {
     var title = '<b>' + pres.title + '</b>';
     var desc = pres.desc;
     if (pres.url.includes('pdf')) {
-        var url = `<a href=${pubs.url}>Download PDF</a>`;
+        var url = `<a href=${pres.url}>Download PDF</a>`;
     } else {
-        var url = `<a href=${pubs.url}>View Online</a>`;
+        var url = `<a href=${pres.url}>View Online</a>`;
     }
     pElement.innerHTML = `${title}. ${desc}.<br>${url}`;
     document.getElementById('pres').appendChild(pElement);

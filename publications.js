@@ -56,6 +56,6 @@ for (let pubs of publications) {
     } else {
         var url = `<a href=${pubs.url}>View Online</a>`;
     }
-    pElement.innerHTML = `${title}. ${desc}<br>${url}`;
+    pElement.innerHTML = `${title}. ${desc}.<br>${url}`;
     document.getElementById('pubs').appendChild(pElement);
 }
