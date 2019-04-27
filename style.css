@@ -6,12 +6,7 @@
 /* Styles
 *******************************************************************************/
 
-a:link {
-  color: #0303B0;
-  text-decoration: none;
-}
-
-a:visited {
+a:link, a:visited {
   color: #0303B0;
   text-decoration: none;
 }
@@ -30,10 +25,7 @@ a:active {
 
 b { font-weight: 600; }
 
-body {
-  background-color: #fffff8;
-  color: #111;
-}
+body { background-color: #fffff8; }
 
 h1 { font-weight: 400; }
 
