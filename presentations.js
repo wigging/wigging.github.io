@@ -1,6 +1,11 @@
 
 let presentations = [
     {
+        title: "Unit Conversion in Swift",
+        desc: "Knoxville CocoaHeads Meetup in Knoxville, TN on April 29, 2019",
+        url: "presentations/19-04-knoxcocoa-unitconv.pdf"
+    },
+    {
         title: "Combining high and low-order computational models to simulate biomass fast pyrolysis reactors",
         desc: "AIChE Spring Meeting and 8th World Congress on Particle Technology in Orlando, FL on April 23, 2018",
         url: "presentations/18-04-aiche-wcpt-orlando.pdf"
@@ -56,6 +61,6 @@ for (let pres of presentations) {
     } else {
         var url = `<a href=${pres.url}>View Online</a>`;
     }
-    pElement.innerHTML = `${title}. ${desc}.<br>${url}`;
+    pElement.innerHTML = `${title}. ${desc}. ${url}`;
     document.getElementById('pres').appendChild(pElement);
 }
