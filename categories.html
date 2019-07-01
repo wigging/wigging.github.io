@@ -7,10 +7,12 @@ layout: default
 <hr>
 
 {% assign categories = site.articles | group_by: "category" | reverse %}
+{% assign articles = site.articles | sort: "title" %}
+
 {% for category in categories %}
     <h4>{{ category.name }} ({{ category.size }})</h4>
     <p>
-    {% for article in site.articles %}
+    {% for article in articles %}
     {% if article.category contains category.name %}
         <a href="{{ article.url }}"><strong style="float: left;">{{ article.title }}</strong></a>
         <small style="float: right;">{{ article.date | date_to_string: "ordinal", "US" }}</small> <br>

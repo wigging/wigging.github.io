@@ -7,10 +7,12 @@ layout: default
 <hr>
 
 {% assign tags = site.articles | map: "tags" | join: ","  | split: ","  | group_by: tag | sort: "name" %}
+{% assign articles = site.articles | sort: "title" %}
+
 {% for tag in tags %}
     <h4>{{ tag.name }} ({{ tag.size }})</h4>
     <p>
-    {% for article in site.articles %}
+    {% for article in articles %}
     {% if article.tags contains tag.name %}
         <a href="{{ article.url }}"><strong style="float: left;">{{ article.title }}</strong></a>
         <small style="float: right;">{{ article.date | date_to_string: "ordinal", "US" }}</small> <br>
