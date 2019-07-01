@@ -30,7 +30,7 @@
             <h4>📓 Articles</h4>
 
             <p>
-            {% assign articles = site.articles | sort_natural %}
+            {% assign articles = site.articles | sort: "title" %}
             {% for article in articles %}
                 <a href="{{ article.url }}"><strong style="float: left;">{{ article.title }}</strong></a>
                 <small style="float: right;">{{ article.date | date_to_string: "ordinal", "US" }}</small> <br>
