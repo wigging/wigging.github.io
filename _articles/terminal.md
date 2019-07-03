@@ -6,8 +6,6 @@ tags: [software]
 layout: article
 ---
 
-# Terminal commands
-
 Useful commands for working in the terminal. Some of the commands are specific
 to macOS.
 

@@ -6,8 +6,6 @@ tags: [software]
 layout: article
 ---
 
-# Wget to download files
-
 GNU Wget is a free software package for retrieving files using HTTP, HTTPS and
 FTP. It is a non-interactive commandline tool that can be called from scripts,
 cron jobs, terminals, etc. The tool is useful for downloading all images or

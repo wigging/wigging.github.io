@@ -6,8 +6,6 @@ tags: [software]
 layout: article
 ---
 
-# Vim
-
 My `.vimrc` file for Mac computers.
 
 ```bash

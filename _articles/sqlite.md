@@ -6,8 +6,6 @@ tags: [database]
 layout: article
 ---
 
-# SQLite database
-
 SQLite is a serverless relational database management system. Since it is self-contained it can be embedded in mobile apps, game consoles, and other media devices. The notes below are for the `sqlite3` command-line tool.
 
 ```bash

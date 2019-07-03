@@ -6,8 +6,6 @@ tags: [macos]
 layout: article
 ---
 
-# Mac configuration
-
 Notes about selling a Mac, configuring a new Mac, essential apps to install,
 and useful command line tools.
 

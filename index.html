@@ -32,7 +32,7 @@
             <p>
             {% assign articles = site.articles | sort: "title" %}
             {% for article in articles %}
-                <a href="{{ article.url }}"><strong style="float: left;">{{ article.title }}</strong></a>
+                <a href="{{ article.url }}"><span style="float: left;">{{ article.title }}</span></a>
                 <small style="float: right;">{{ article.date | date_to_string: "ordinal", "US" }}</small> <br>
             {% endfor %}
             </p>
@@ -57,6 +57,7 @@
 
             <br>
             <p><small>Made on a <a href="https://www.apple.com/mac/">Mac</a>. Generated with <a href="https://jekyllrb.com">Jekyll</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</small></p>
+            <br>
 
         </div>
     </div>

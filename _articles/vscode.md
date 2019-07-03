@@ -6,8 +6,6 @@ tags: [software]
 layout: article
 ---
 
-# Visual Studio Code
-
 My favorite extensions, theme, settings, and key bindings for working with
 Python in [Visual Studio Code](https://code.visualstudio.com) on the Mac.
 

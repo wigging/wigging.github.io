@@ -6,8 +6,6 @@ tags: [software]
 layout: article
 ---
 
-# Sublime Text 3
-
 Various settings, key bindings, and packages for using Sublime Text 3 on the Mac.
 
 ## Preferences

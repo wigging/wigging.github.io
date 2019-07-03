@@ -6,8 +6,6 @@ tags: [bash, terminal]
 layout: article
 ---
 
-# Bash programming
-
 Comments in Bash begin with the "#" symbol.
 
 ```bash

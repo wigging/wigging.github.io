@@ -6,8 +6,6 @@ tags: basics
 layout: article
 ---
 
-# Python Dictionary
-
 Stuff goes here.
 
 ```python

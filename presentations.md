@@ -3,8 +3,6 @@ title: Presentations
 layout: default
 ---
 
-# Presentations
-
 In addition to the PDFs and links provided below, presentations are also available on my [Slides.com](https://slides.com/wigging) page.
 
 **Unit Conversion in Swift**. Knoxville CocoaHeads Meetup in Knoxville, TN on April 29, 2019. [Download PDF](assets/pdfs/1904-knoxcocoa-unitconv.pdf)

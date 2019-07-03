@@ -6,9 +6,7 @@ tags: [bash, terminal]
 layout: article
 ---
 
-# Bash profile
-
-My `.bash_profile` for Mac computers.
+My current `.bash_profile` for the Mac.
 
 ```bash
 # git completion and git prompt, requires Xcode to be installed

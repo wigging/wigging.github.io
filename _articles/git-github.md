@@ -6,8 +6,6 @@ tags: [terminal]
 layout: article
 ---
 
-# Git and GitHub
-
 Git is a great version control system that is the foundation of the online
 GitHub platform for sharing code. The sections below provide configuration
 settings and examples for working with these tools.

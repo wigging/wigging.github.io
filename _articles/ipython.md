@@ -6,8 +6,6 @@ tags: [software]
 layout: article
 ---
 
-# iPython
-
 Some notes on setting up iPython on macOS.
 
 Create a configuration file with the command shown below. The file will be

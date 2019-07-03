@@ -3,8 +3,6 @@ title: Publications
 layout: default
 ---
 
-# Publications
-
 If you do not have access to a publication, please contact me and I will be genuinely delighted to send you a copy of the manuscript.
 
 **Integrated Particle- and Reactor-Scale Simulation of Pine Pyrolysis in a Fluidized Bed**. Energy & Fuels, 32 (10), pp. 10683-10694, 2018. [View Online](https://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.8b02309)

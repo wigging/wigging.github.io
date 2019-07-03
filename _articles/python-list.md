@@ -6,8 +6,6 @@ tags: basics
 layout: article
 ---
 
-# Python List
-
 Stuff goes here.
 
 ```python
