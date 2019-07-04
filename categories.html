@@ -1,5 +1,5 @@
 ---
-title: 🗂 Categories
+title: Categories
 layout: default
 ---
 
@@ -7,7 +7,7 @@ layout: default
 {% assign articles = site.articles | sort: "title" %}
 
 {% for category in categories %}
-    <h4>{{ category.name }} ({{ category.size }})</h4>
+    <h4>{% octicon file-directory %} {{ category.name }} ({{ category.size }})</h4>
     <p>
     {% for article in articles %}
     {% if article.category contains category.name %}

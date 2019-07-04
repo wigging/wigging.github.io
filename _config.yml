@@ -2,3 +2,5 @@ collections:
   articles:
     output: true
 
+plugins:
+  - jekyll-octicons

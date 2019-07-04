@@ -27,7 +27,7 @@
 
             <hr>
 
-            <h4>📓 Articles</h4>
+            <h4>{% octicon file %} Articles</h4>
 
             <p>
             {% assign articles = site.articles | sort: "title" %}
@@ -37,7 +37,7 @@
             {% endfor %}
             </p>
 
-            <h4>🗂 Categories</h4>
+            <h4>{% octicon file-directory %} Categories</h4>
 
             <p>
             {% assign categories = site.articles | group_by: "category" %}
@@ -46,7 +46,7 @@
             {% endfor %}
             </p>
 
-            <h4>🏷 Tags</h4>
+            <h4>{% octicon tag %} Tags</h4>
 
             {% assign tags = site.articles | map: "tags" | join: ","  | split: ","  | group_by: tag | sort: "name" %}
             {% for tag in tags %}
