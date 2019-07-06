@@ -14,8 +14,8 @@
         <div class="col-md">
             <h1>{{ page.title }}</h1>
             <p>
-                {% octicon file-directory %} {{ page.category }} &nbsp;
-                {% octicon tag %} {{ page.tags | sort | join: ", "}}
+                <img src="/assets/images/folder.svg" class="icon-sm"> {{ page.category }} &nbsp;
+                <img src="/assets/images/tag.svg" class="icon-sm"> {{ page.tags | sort | join: ", "}}
             </p>
             <hr>
             {{ content }}

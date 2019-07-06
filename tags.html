@@ -7,7 +7,7 @@ layout: default
 {% assign articles = site.articles | sort: "title" %}
 
 {% for tag in tags %}
-    <h4>{% octicon tag %} {{ tag.name }} ({{ tag.size }})</h4>
+    <h4><img src="assets/images/tag.svg" class="icon-lg"> {{ tag.name }} ({{ tag.size }})</h4>
     <p>
     {% for article in articles %}
     {% if article.tags contains tag.name %}

@@ -1,5 +1,5 @@
 ---
-title: Text view in Swift
+title: Text view in SwiftUI
 date: 2019-07-04
 category: swift
 tags: [swiftui, macos]
