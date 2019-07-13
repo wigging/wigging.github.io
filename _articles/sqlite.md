@@ -1,8 +1,6 @@
 ---
 title: SQLite database
 date: 2018-09-12
-category: notes
-tags: [database]
 layout: article
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Git and GitHub
 date: 2019-06-29
-category: notes
-tags: [terminal]
 layout: article
 ---
 

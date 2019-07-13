@@ -1,8 +1,6 @@
 ---
 title: Docker commands
 date: 2019-05-24
-category: notes
-tags: [docker, terminal]
 layout: article
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Visual Studio Code
 date: 2018-12-14
-category: notes
-tags: [software]
 layout: article
 ---
 

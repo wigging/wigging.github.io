@@ -1,8 +1,6 @@
 ---
 title: Terminal commands
 date: 2019-02-08
-category: notes
-tags: [software]
 layout: article
 ---
 

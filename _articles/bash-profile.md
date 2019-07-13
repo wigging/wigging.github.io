@@ -1,8 +1,6 @@
 ---
 title: Bash profile
 date: 2018-08-19
-category: notes
-tags: [bash, terminal]
 layout: article
 ---
 

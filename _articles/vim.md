@@ -1,8 +1,6 @@
 ---
 title: Vim
 date: 2018-08-19
-category: notes
-tags: [software]
 layout: article
 ---
 

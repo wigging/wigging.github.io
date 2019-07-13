@@ -1,57 +1,41 @@
----
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <title>Gavin Wiggins</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col-md">
-
             <h1>Gavin Wiggins</h1>
 
             <p>
-                <a href="about"><b>About</b></a> /
                 <a href="apps"><b>Apps</b></a> /
+                <a href="articles"><b>Articles</b></a> /
                 <a href="presentations"><b>Presentations</b></a> /
                 <a href="publications"><b>Publications</b></a>
             </p>
 
             <hr>
 
-            <h4><img src="assets/images/file.svg" class="icon-lg"> Articles</h4>
-
             <p>
-            {% assign articles = site.articles | sort: "title" %}
-            {% for article in articles %}
-                <a href="{{ article.url }}"><span style="float: left;">{{ article.title }}</span></a>
-                <small style="float: right;">{{ article.date | date_to_string: "ordinal", "US" }}</small> <br>
-            {% endfor %}
+                I am a research scientist at the Oak Ridge National Laboratory in Tennessee. My current work is developing computational models to simulate the fast pyrolysis of biomass in fluidized reactors. This research is part of the <a href="http://cpcbiomass.org/">Consortium for Computational Physics and Chemistry</a> for the U.S. DOE Bioenergy Technologies Office. I am also involved in various battery simulation activities as part of the <a href="https://vibe.ornl.gov/">Consortium for Advanced Battery Simulation</a> project. As an enthusiastic developer, I organize the <a href="http://knoxcocoa.org/">Knoxville CocoaHeads</a> and <a href="http://knoxpy.org/">KnoxPy</a> programming groups.
             </p>
 
-            <h4><img src="assets/images/folder.svg" class="icon-lg"> Categories</h4>
-
             <p>
-            {% assign categories = site.articles | group_by: "category" %}
-            {% for category in categories %}
-                <a href="categories">{{ category.name }}</a> ({{ category.size }}) &nbsp;
-            {% endfor %}
+                <img src="assets/images/profile.png" alt="Gavin Wiggins" width="100px">
             </p>
 
-            <h4><img src="assets/images/tag.svg" class="icon-lg"> Tags</h4>
-
-            {% assign tags = site.articles | map: "tags" | join: ","  | split: ","  | group_by: tag | sort: "name" %}
-            {% for tag in tags %}
-                <a href="tags">{{ tag.name }}</a> ({{ tag.size }}) &nbsp;
-            {% endfor %}
+            <p>
+                <a href="mailto:wiggingATmeDOTcom" onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')"><b>Email</b></a> /
+                <a href="https://github.com/wigging"><b>GitHub</b></a> /
+                <a href="https://keybase.io/wigging"><b>Keybase</b></a> /
+                <a href="https://twitter.com/wigging"><b>Twitter</b></a>
+            </p>
 
             <hr>
 

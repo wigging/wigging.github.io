@@ -1,8 +1,6 @@
 ---
 title: Mac configuration
 date: 2018-10-29
-category: notes
-tags: [macos]
 layout: article
 ---
 

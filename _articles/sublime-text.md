@@ -1,8 +1,6 @@
 ---
 title: Sublime Text 3
 date: 2019-02-13
-category: notes
-tags: [software]
 layout: article
 ---
 

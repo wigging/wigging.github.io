@@ -1,8 +1,6 @@
 ---
 title: iPython
 date: 2018-10-03
-category: python
-tags: [software]
 layout: article
 ---
 

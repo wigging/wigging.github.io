@@ -13,14 +13,11 @@
     <div class="row">
         <div class="col-md">
             <h1>{{ page.title }}</h1>
-            <p>
-                <img src="/assets/images/folder.svg" class="icon-sm"> {{ page.category }} &nbsp;
-                <img src="/assets/images/tag.svg" class="icon-sm"> {{ page.tags | sort | join: ", "}}
-            </p>
+            <p>{{ page.date | date_to_string: "ordinal", "US" }}</p>
             <hr>
             {{ content }}
             <hr>
-            <p><a href="/"><b>Back</b></a></p>
+            <p><a href="/articles"><b>Back</b></a></p>
             <br>
         </div>
     </div>
