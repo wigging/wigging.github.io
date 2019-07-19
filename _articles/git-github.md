@@ -55,8 +55,16 @@ To keep your email private in your commits, GitHub offers a noreply email addres
 # Create and checkout a new branch
 git checkout -b <branch-name>
 
-# List all local branches in normal or verbose mode
+# List all local branches
 git branch
+
+# List all local and remote-tracking branches
+git branch -a
+
+# List all remote branches
+git branch -r
+
+# List all local branches along with commit message
 git branch -v
 
 # Remove a local branch
@@ -71,9 +79,6 @@ git branch -d <branch-name>
 # Update a branch against the master branch
 git checkout <branch-name>
 git rebase master
-
-# List all remote branches
-git branch -r
 
 # Push a new branch to the remote
 git push origin <branch-name>
