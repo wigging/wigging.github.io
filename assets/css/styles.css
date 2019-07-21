@@ -2,7 +2,7 @@
     max-width: 700px;
 }
 
-a:hover, span:hover {
+a:hover {
   color: #4407E6;
   background: #EEEEEE;
   text-decoration: none;
