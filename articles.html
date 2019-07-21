@@ -5,7 +5,7 @@ layout: default
 
 {% assign articles = site.articles | sort: "title" %}
 {% for article in articles %}
-<div>
+<div style="margin-bottom: 6px;">
     <a href="{{ article.url }}"><b>{{ article.title }}</b></a>
     <small class="float-right">{{ article.date | date_to_string: "ordinal", "US" }}</small>
 </div>
