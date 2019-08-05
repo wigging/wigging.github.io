@@ -1,6 +1,6 @@
 ---
 title: Exponential Sums
-date: 2019-07-20
+date: 2019-08-04
 layout: article
 ---
 
@@ -8,11 +8,13 @@ An exponential sum is represented by the following equation
 
 $$\sum_{n=1}^N e^{2 \pi i f(n)}$$
 
-where the exponential is a complex number. The function $f(n)$ is a real-valued function defined for a sequence of positive integers.
+where the exponential is a complex number. The function $f(n)$ is a real-valued function defined for a sequence of positive integers. The exponential sum can be plotted in the complex plane as a progression of partial sums. The x-axis on the plot is the real part and the y-axis is the imaginary part.
 
-The Python package `expsum` is a command line tool that plots the exponential sum in the complex plane as a progression of partial sums. The x-axis on the plot is the real part and the y-axis is the imaginary part. See the [exponential-sums](https://github.com/wigging/exponential-sums) repository on GitHub for installation and usage instructions.
+## Python package
 
-Example functions for $f(n)$ are shown below. Command line arguments along with the generated plot from the `expsum` package are given for each function.
+The Python package `expsum` is a command line tool to plot and optionally animate the exponential sum for a specific function. See the [exponential-sums](https://github.com/wigging/exponential-sums) repository on GitHub for installation and usage instructions. Examples of using the `expsum` tool for various functions are shown below. An animated plot can be displayed using the optional `--anim` argument. See the GitHub repo for more details.
+
+## Function 1
 
 $$f(n) = \frac{n}{a} + \frac{n^2}{b} + \frac{n^3}{c}$$
 
@@ -20,13 +22,15 @@ $$f(n) = \frac{n}{a} + \frac{n^2}{b} + \frac{n^3}{c}$$
 >>> python expsum func1 2000 10 7 17
 ```
 
-![func1a plot](/assets/images/func1a.pdf)
+![func1a plot](/assets/images/func1a.pdf){: .center-image }
 
 ```bash
 >>> python expsum func1 8000 11 21 31
 ```
 
-![func1b plot](/assets/images/func1b.pdf)
+![func1b plot](/assets/images/func1b.pdf){: .center-image }
+
+## Function 2
 
 $$f(n) = \log(n) + \frac{n^2}{a}$$
 
@@ -34,13 +38,15 @@ $$f(n) = \log(n) + \frac{n^2}{a}$$
 >>> python expsum func2 1200 100
 ```
 
-![func2a plot](/assets/images/func2a.pdf)
+![func2a plot](/assets/images/func2a.pdf){: .center-image }
 
 ```bash
 >>> python expsum func2 4000 800
 ```
 
-![func2b plot](/assets/images/func2b.pdf)
+![func2b plot](/assets/images/func2b.pdf){: .center-image }
+
+## Function 3
 
 $$f(n) = \log(n)^{4.1}$$
 
@@ -48,13 +54,15 @@ $$f(n) = \log(n)^{4.1}$$
 >>> python expsum func3 1000
 ```
 
-![func3a plot](/assets/images/func3a.pdf)
+![func3a plot](/assets/images/func3a.pdf){: .center-image }
 
 ```bash
 >>> python expsum func3 4000
 ```
 
-![func3b plot](/assets/images/func3b.pdf)
+![func3b plot](/assets/images/func3b.pdf){: .center-image }
+
+## Function 4
 
 $$f(n) = (\log(n))^a$$
 
@@ -62,7 +70,9 @@ $$f(n) = (\log(n))^a$$
 >>> python expsum func4 4000 4
 ```
 
-![func4a plot](/assets/images/func4a.pdf)
+![func4a plot](/assets/images/func4a.pdf){: .center-image }
+
+## Function 5
 
 $$f(n) = \log(n) + \frac{n^2}{a} + \frac{n^3}{b}$$
 
@@ -70,7 +80,9 @@ $$f(n) = \log(n) + \frac{n^2}{a} + \frac{n^3}{b}$$
 >>> python expsum func5 4000 50 100
 ```
 
-![func5a plot](/assets/images/func5a.pdf)
+![func5a plot](/assets/images/func5a.pdf){: .center-image }
+
+## Function 6
 
 $$f(n) = \frac{\sqrt n}{a}$$
 
@@ -78,7 +90,9 @@ $$f(n) = \frac{\sqrt n}{a}$$
 >>> python expsum func6 2000 4
 ```
 
-![func6a plot](/assets/images/func6a.pdf)
+![func6a plot](/assets/images/func6a.pdf){: .center-image }
+
+## Function 7
 
 $$f(n) = \frac{\sqrt{n^3}}{a}$$
 
@@ -86,7 +100,7 @@ $$f(n) = \frac{\sqrt{n^3}}{a}$$
 >>> python expsum func7 8000 4
 ```
 
-![func7a plot](/assets/images/func7a.pdf)
+![func7a plot](/assets/images/func7a.pdf){: .center-image }
 
 ## References
 
