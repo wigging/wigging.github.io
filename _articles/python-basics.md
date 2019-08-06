@@ -1,10 +1,39 @@
 ---
 title: Python Basics
-date: 2019-07-25
+date: 2019-08-05
 layout: article
 ---
 
 Basics of the Python programming language.
+
+- [String](#string)
+- [Dictionary](#dictionary)
+- [List](#list)
+- [Further Reading](#further-reading)
+
+## String
+
+A string in Python is represented by a series of characters enclosed by single or double quotes.
+
+```python
+# declare a string
+s = 'hello there'
+t = "yap, it's another string"
+```
+
+```python
+# return a capitalized version of the string
+>>> s = 'hello there'
+>>> s.capitalize()
+'Hello there'
+```
+
+```python
+# return a caseless (un-capitalized) version of the string
+>>> s = 'HeLlo TheRe'
+>>> s.casefold()
+'hello there'
+```
 
 ## Dictionary
 
@@ -25,7 +54,7 @@ params.update(case1)
 ## List
 
 ```python
-d = [1, 2, 3, 4]
+a = [1, 2, 3, 4]
 ```
 
 ## Further Reading
