@@ -39,7 +39,7 @@ Knoxville CocoaHeads / Knoxville, TN / April 19, 2016 / [PDF](assets/pdfs/1604-k
 KnoxPy / Knoxville, TN / April 7, 2016 / [URL](https://slides.com/wigging/numpy)
 
 **An Introduction to Git and GitHub**<br>
-Knoxville CocoaHeads / Knoxville, TN / October 20, 2015 / [URL](https://slides.com/wigging/gitandgithub)
+Knoxville CocoaHeads / Knoxville, TN / October 20, 2015 / [PDF](assets/pdfs/1510-knoxcocoa-git-github.pdf)
 
 **Resolution Independence with PaintCode**<br>
 Knoxville CocoaHeads / Knoxville, TN / June 9, 2015 / [URL](https://slides.com/wigging/paintcode)
