@@ -21,7 +21,7 @@ AIChE Spring Meeting and 8th World Congress on Particle Technology / Orlando, FL
 Knoxville CocoaHeads / Knoxville, TN / April 18, 2017 / [PDF](assets/pdfs/1704-knoxcocoa-realm.pdf)
 
 **Scraping with Selenium**<br>
-KnoxPy / Knoxville, TN / April 5, 2018 / [URL](http://slides.com/wigging/selenium)
+KnoxPy / Knoxville, TN / April 5, 2018 / [PDF](assets/pdfs/1804-knoxpy-selenium.pdf)
 
 **Modeling the impact of biomass particle size distribution and shape on heating behavior during fast pyrolysis**<br>
 TCS 2016 Symposium / Chapel Hill, NC / November 1, 2016 / [PDF](assets/pdfs/1611-tcs-chapelhill.pdf)
