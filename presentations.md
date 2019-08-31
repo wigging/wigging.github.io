@@ -42,7 +42,7 @@ KnoxPy / Knoxville, TN / April 7, 2016 / [PDF](assets/pdfs/1604-knoxpy-numpy.pdf
 Knoxville CocoaHeads / Knoxville, TN / October 20, 2015 / [PDF](assets/pdfs/1510-knoxcocoa-git-github.pdf)
 
 **Resolution Independence with PaintCode**<br>
-Knoxville CocoaHeads / Knoxville, TN / June 9, 2015 / [URL](https://slides.com/wigging/paintcode)
+Knoxville CocoaHeads / Knoxville, TN / June 9, 2015 / [PDF](assets/pdfs/1506-knoxcocoa-paintcode.pdf)
 
 **Modeling Thermochemical Biomass Pyrolysis in Python**<br>
 PyKnoxville / Knoxville, TN / April 8, 2015 / [PDF](assets/pdfs/1504-pyknoxville.pdf)
