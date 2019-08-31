@@ -3,8 +3,6 @@ title: Presentations
 layout: default
 ---
 
-In addition to the PDFs and links provided below, presentations are also available on my [Slides.com](https://slides.com/wigging) page.
-
 **A Pythonic Equivalent Circuit Model for Battery Research**<br>
 SciPy 2019 / Austin, TX / July 10, 2019 / [PDF](assets/pdfs/1907-scipy-battery.pdf)
 
