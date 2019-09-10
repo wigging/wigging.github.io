@@ -3,6 +3,9 @@ title: Presentations
 layout: default
 ---
 
+**Python Workshop**<br>
+KnoxPy / Knoxville, TN / September, 5, 2019 / [PDF](assets/pdfs/1909-knoxpy-python-workshop.pdf)
+
 **A Pythonic Equivalent Circuit Model for Battery Research**<br>
 SciPy 2019 / Austin, TX / July 10, 2019 / [PDF](assets/pdfs/1907-scipy-battery.pdf)
 
