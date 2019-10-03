@@ -1,7 +1,7 @@
 ---
 title: Text view in SwiftUI
 date: 2019-07-04
-layout: article
+layout: note
 ---
 
 The `Text` structure in SwiftUI is a view that displays lines of text. Various modifiers are available to customize the appearance and style of text.

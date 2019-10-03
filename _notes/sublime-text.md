@@ -1,7 +1,7 @@
 ---
 title: Sublime Text 3
 date: 2019-02-13
-layout: article
+layout: note
 ---
 
 Various settings, key bindings, and packages for using Sublime Text 3 on the Mac.

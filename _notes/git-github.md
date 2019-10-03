@@ -1,7 +1,7 @@
 ---
 title: Git and GitHub
 date: 2019-06-29
-layout: article
+layout: note
 ---
 
 Git is a great version control system that is the foundation of the online
@@ -116,7 +116,7 @@ git remote -v
 # Remove a remote repository from a local git project
 git remote remove origin
 
-# Remove local branches that no longer exist on remote 
+# Remove local branches that no longer exist on remote
 git remote prune origin
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: Bash profile
 date: 2018-08-19
-layout: article
+layout: note
 ---
 
 My current `.bash_profile` for the Mac.
@@ -27,7 +27,7 @@ alias ll="gls -hl --color --group-directories-first"
 # move up one directory
 alias ..="cd .."
 
-# call ls command after changing to another directory 
+# call ls command after changing to another directory
 cd() { builtin cd "$@" && la; }
 
 # added by Miniconda3 installer

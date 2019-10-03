@@ -1,7 +1,7 @@
 ---
 title: Vim
 date: 2018-08-19
-layout: article
+layout: note
 ---
 
 My `.vimrc` file for Mac computers.
@@ -45,12 +45,12 @@ set laststatus=2
 imap jj <Esc>
 
 " Press F1 to save and quit a file
-" use :update to only save when changes have been made 
+" use :update to only save when changes have been made
 nnoremap <F1> :update<CR>:q<CR>
 inoremap <F1> <Esc>:update<CR>:q<CR>
 
 " Press F2 to save file
-" use :update to only save when changes have been made 
+" use :update to only save when changes have been made
 nnoremap <F2> :update<CR>
 inoremap <F2> <Esc>:update<CR>
 

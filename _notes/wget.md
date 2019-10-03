@@ -1,7 +1,7 @@
 ---
 title: Wget to download files
 date: 2018-08-19
-layout: article
+layout: note
 ---
 
 GNU Wget is a free software package for retrieving files using HTTP, HTTPS and
@@ -21,7 +21,7 @@ the Ray Wenderlich home page and saving into a folder named "ray".
 wget -nd -r -P ./ray -A jpg,png http://www.raywenderlich.com
 ```
 
-The next command will download all PDFs on a web page and place them into a 
+The next command will download all PDFs on a web page and place them into a
 folder named "docs".
 
 ```bash

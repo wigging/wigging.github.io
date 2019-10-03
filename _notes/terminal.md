@@ -1,7 +1,7 @@
 ---
 title: Terminal commands
 date: 2019-02-08
-layout: article
+layout: note
 ---
 
 Useful commands for working in the terminal. Some of the commands are specific

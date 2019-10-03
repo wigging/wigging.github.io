@@ -1,7 +1,7 @@
 ---
 title: Docker commands
 date: 2019-05-24
-layout: article
+layout: note
 ---
 
 An overview of various Docker commands are discussed below. The commands were tested on a Mac but they should be similar on other systems. Name of the image is represented by `<image>`. Name of the container is represented by `<container>` while name of a volume is represented by `<volume>`.

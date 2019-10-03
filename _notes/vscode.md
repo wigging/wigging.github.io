@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Code
 date: 2018-12-14
-layout: article
+layout: note
 ---
 
 My favorite extensions, theme, settings, and key bindings for working with
@@ -12,7 +12,7 @@ Python in [Visual Studio Code](https://code.visualstudio.com) on the Mac.
 For the Rewrap extension, word wrapping can be automatically enabled with
 `Cmd+Shift+P` then select `Rewrap: Toggle Auto-Wrap`.
 
-- LaTeX 
+- LaTeX
 - One Dark Pro
 - Python
 - reStructuredText

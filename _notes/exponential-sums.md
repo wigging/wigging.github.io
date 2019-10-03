@@ -1,7 +1,7 @@
 ---
 title: Exponential Sums
 date: 2019-08-04
-layout: article
+layout: note
 ---
 
 An exponential sum is represented by the following equation

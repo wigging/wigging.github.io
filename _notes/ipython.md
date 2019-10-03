@@ -1,7 +1,7 @@
 ---
 title: iPython
 date: 2018-10-03
-layout: article
+layout: note
 ---
 
 Some notes on setting up iPython on macOS.

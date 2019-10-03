@@ -1,7 +1,7 @@
 ---
 title: Mac configuration
 date: 2018-10-29
-layout: article
+layout: note
 ---
 
 Notes about selling a Mac, configuring a new Mac, essential apps to install,
@@ -49,7 +49,7 @@ Build iOS and Mac apps with the Xcode IDE. Download via the Mac App Store.
 
 Git is already installed in macOS; however, the username and email for commit
 messages need to be set. See my [git](https://github.com/wigging/notes/blob/master/git.md) notes to learn more about Git and GitHub.
- 
+
 ## Git LFS
 
 Git Large File Storage (LFS) replaces large files such as audio samples,

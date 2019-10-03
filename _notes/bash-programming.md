@@ -1,7 +1,7 @@
 ---
 title: Bash programming
 date: 2018-08-19
-layout: article
+layout: note
 ---
 
 Comments in Bash begin with the "#" symbol.

@@ -1,7 +1,7 @@
 ---
 title: Python Basics
 date: 2019-08-05
-layout: article
+layout: note
 ---
 
 Basics of the Python programming language.
