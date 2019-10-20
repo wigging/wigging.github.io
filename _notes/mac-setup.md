@@ -4,8 +4,6 @@ date: 2019-10-20
 layout: note
 ---
 
-# Mac setup
-
 My preferred macOS Catalina setup for a new Mac. Install and/or configure items in the order they appear on this list. This assumes the computer is starting from a fresh Catalina installation.
 
 ## Local machine name
