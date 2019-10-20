@@ -154,3 +154,7 @@ Move the photos library `~/Pictures/Photos Library.photoslibrary` from the old M
 ## AppCleaner
 
 Download from https://freemacsoft.net/appcleaner/
+
+## Jekyll
+
+Installation instructions at https://jekyllrb.com
