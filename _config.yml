@@ -1,3 +1,6 @@
+exclude: [README.md]
+
 collections:
   notes:
     output: true
+    permalink: /:collection/:name
