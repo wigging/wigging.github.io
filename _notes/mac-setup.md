@@ -1,6 +1,6 @@
 ---
 title: Mac setup
-date: 2019-10-20
+date: 2019-10-24
 layout: note
 ---
 
@@ -22,13 +22,17 @@ Install Xcode from the App Store which will also install Git.
 
 Open Xcode to make sure developer tools are installed.
 
-## iTerm
+## iTerm2
 
 Download from https://iterm2.com
 
-## Oh My Zsh
+Snazzy theme available at https://github.com/sindresorhus/iterm2-snazzy
 
-Installation instructions available at https://ohmyz.sh
+## Prezto
+
+See installation instructions at https://github.com/sorin-ionescu/prezto
+
+Add the git module to `.zpreztorc`
 
 ## Vim
 
@@ -90,7 +94,7 @@ To open Sublime Text from the command line add the following alias to `~/.zshrc`
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 ```
 
-Preferences for Sublime Text are given below. Go to "Sublime Text -> Preferences -> Settings".
+Preferences for Sublime Text are given below. Go to Sublime Text -> Preferences -> Settings.
 
 ```json
 {
@@ -100,6 +104,25 @@ Preferences for Sublime Text are given below. Go to "Sublime Text -> Preferences
     "theme": "Adaptive.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
+}
+```
+
+Install package control with Command-Shift-P.
+
+Install SublimeLinter package, see instructions at http://sublimelinter.com/
+
+Install SublimeLinter-flake8 for Python, see https://github.com/SublimeLinter/SublimeLinter-flake8
+
+In Sublime Text, go to Preferences -> Package Settings -> SublimeLinter -> Settings and add the following linter options:
+
+```json
+{
+    "gutter_theme": "Default",
+    "linters": {
+        "flake8": {
+            "args": ["--ignore=E501,W605"]
+        }
+    }
 }
 ```
 
@@ -138,7 +161,13 @@ Download from http://www.tug.org/mactex/
 
 Installer available at https://docs.conda.io/en/latest/miniconda.html
 
-To permanently enable the Miniconda Python add the following to `~/.zshrc`:
+To disable auto activate use:
+
+```bash
+conda config --set auto_activate_base False
+```
+
+To permanently enable Miniconda Python use the following in `~/.zshrc`:
 
 ```bash
 # Set Python PATH to Miniconda3
