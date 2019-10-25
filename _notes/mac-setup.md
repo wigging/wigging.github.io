@@ -24,13 +24,13 @@ Open Xcode to make sure developer tools are installed.
 
 ## iTerm2
 
-Download from https://iterm2.com
+Download from [iterm2.com](https://iterm2.com)
 
-Snazzy theme available at https://github.com/sindresorhus/iterm2-snazzy
+Snazzy theme available at [github.com/sindresorhus/iterm2-snazzy](https://github.com/sindresorhus/iterm2-snazzy)
 
 ## Prezto
 
-See installation instructions at https://github.com/sorin-ionescu/prezto
+See installation instructions at [github.com/sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto)
 
 Add the git module to `.zpreztorc`
 
@@ -85,7 +85,7 @@ endif
 
 ## Sublime Text
 
-Download from https://www.sublimetext.com
+Download from [sublimetext.com](https://www.sublimetext.com)
 
 To open Sublime Text from the command line add the following alias to `~/.zshrc`:
 
@@ -109,11 +109,11 @@ Preferences for Sublime Text are given below. Go to Sublime Text -> Preferences 
 
 Install package control with Command-Shift-P.
 
-Install SublimeLinter package, see instructions at http://sublimelinter.com/
+Install SublimeLinter package, see instructions at [sublimelinter.com](http://sublimelinter.com/)
 
-Install SublimeLinter-flake8 for Python, see https://github.com/SublimeLinter/SublimeLinter-flake8
+Install SublimeLinter-flake8 for Python, see [github.com/SublimeLinter/SublimeLinter-flake8](https://github.com/SublimeLinter/SublimeLinter-flake8)
 
-In Sublime Text, go to Preferences -> Package Settings -> SublimeLinter -> Settings and add the following linter options:
+In Sublime Text, go to `Preferences -> Package Settings -> SublimeLinter -> Settings` and add the following linter options:
 
 ```json
 {
@@ -126,6 +126,29 @@ In Sublime Text, go to Preferences -> Package Settings -> SublimeLinter -> Setti
 }
 ```
 
+Vim key bindings shown below are for exiting Vim insert mode in Sublime Text. These settings are accessed from the menu `Sublime Text -> Preferences -> Key Bindings`.
+
+```json
+[
+    {
+        "keys": ["j", "j"],
+        "command": "exit_insert_mode",
+        "context": [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false}
+        ]
+    },
+]
+```
+
+These settings are for the SideBarEnhancements plugin. The settings are available in the menu at `Sublime Text -> Preferences -> Package Settings -> Side Bar - > Settings`.
+
+```json
+{
+    "close_affected_buffers_when_deleting_even_if_dirty": true,
+}
+```
+
 ## Git
 
 Configure Git in the terminal using the following commands (change name and email accordingly):
@@ -135,7 +158,7 @@ git config --global user.name "John Doe"
 git config --global user.email "johndoe@example.com"
 ```
 
-Use https://www.gitignore.io to create a Git ignore file at `~/.gitignore` and set it as the global file with:
+Use [gitignore.io](https://www.gitignore.io) to create a Git ignore file at `~/.gitignore` and set it as the global file with:
 
 ```bash
 git config --global core.excludesfile ~/.gitignore
@@ -143,23 +166,23 @@ git config --global core.excludesfile ~/.gitignore
 
 ## Homebrew
 
-Installation instructions are provided at https://brew.sh
+Installation instructions are provided at [brew.sh](https://brew.sh)
 
 ## Jekyll
 
-Installation instructions at https://jekyllrb.com
+Installation instructions at [jekyllrb.com](https://jekyllrb.com)
 
 ## aria2
 
-Installation instructions provided at https://aria2.github.io
+Installation instructions provided at [aria2.github.io](https://aria2.github.io)
 
 ## LaTeX
 
-Download from http://www.tug.org/mactex/
+Download from [www.tug.org/mactex/](http://www.tug.org/mactex/)
 
 ## Miniconda
 
-Installer available at https://docs.conda.io/en/latest/miniconda.html
+Installer available at [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
 To disable auto activate use:
 
@@ -180,8 +203,8 @@ Move the photos library `~/Pictures/Photos Library.photoslibrary` from the old M
 
 ## AppCleaner
 
-Download from https://freemacsoft.net/appcleaner/
+Download from [freemacsoft.net/appcleaner](https://freemacsoft.net/appcleaner/)
 
 ## Jekyll
 
-Installation instructions at https://jekyllrb.com
+Installation instructions at [jekyllrb.com](https://jekyllrb.com)
