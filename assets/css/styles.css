@@ -20,6 +20,10 @@ img {
     max-width: 400px;
 }
 
+.large-img {
+    max-width: 100%;
+}
+
 .center-image {
     margin: 0 auto;
     display: block;
