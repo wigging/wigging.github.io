@@ -4,6 +4,8 @@ date: 2019-11-15
 layout: note
 ---
 
+There are plenty of books, videos, and online resources for developing iOS, tvOS, watchOS, and iPadOS apps. Despite the fact that all of these platforms require a Mac for code development, there is very little information about actually creating native Mac applications. The examples given below demonstrate various aspects of Mac app development and will hopefully reinvigorate interest in this neglected platform.
+
 See the [swift-macos](https://github.com/wigging/swift-macos) repository for example code.
 
 **Contents**
