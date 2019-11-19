@@ -1,6 +1,6 @@
 ---
 title: Swift Programming for macOS
-date: 2019-11-15
+date: 2019-11-18
 layout: note
 ---
 
@@ -12,6 +12,7 @@ See the [swift-macos](https://github.com/wigging/swift-macos) repository for exa
 
 - [Preferences window](#preferences-window)
 - [Sidebar navigation](#sidebar-navigation)
+- [Text field](#text-field)
 - [Text view](#text-view)
 - [Window size](#window-size)
 
@@ -153,9 +154,61 @@ struct AppleView: View {
 }
 ```
 
+## Text field
+
+The `TextField` structure is a control that provides an editable text field. Various modifiers are available to customize the appearance and text alignment. Actions can be performed when editing begins and ends for the text field or when the return key is pressed.
+
+![text field](/assets/images/text-field.png)
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    @State private var text1 = ""
+
+    var body: some View {
+        VStack {
+            TextField("Example 1", text: $text1)
+
+            TextField("Example 2", text: $text1)
+                .fixedSize()
+
+            TextField("Example 3", text: $text1)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+
+            TextField("Example 4", text: $text1)
+                .multilineTextAlignment(.center)
+
+            TextField("Example 5", text: $text1)
+                .multilineTextAlignment(.trailing)
+
+            TextField("Example 6", text: $text1)
+                .foregroundColor(.red)
+
+            TextField("Example 7", text: $text1, onEditingChanged: { editing in
+                if editing {
+                    print("is editing")
+                } else {
+                    print("not editing")
+                }
+            })
+
+            TextField("Example 8", text: $text1) {
+                print("on commit")
+            }
+
+        }
+        .padding()
+        .frame(width: 480, height: 300)
+    }
+}
+```
+
 ## Text view
 
 The `Text` structure in SwiftUI is a view that displays lines of text. Various modifiers are available to customize the appearance and style of text.
+
+![text view](/assets/images/text-view.png)
 
 ```swift
 import SwiftUI
@@ -178,11 +231,11 @@ struct ContentView: View {
 }
 ```
 
-![text view](/assets/images/text-view.png)
-
 ## Window size
 
 The window size is defined by the frame size of the containing view. In this example the VStack frame is set to a width of 500 and height of 300 which makes the window width 500 and height 300.
+
+![window size](/assets/images/window-size.png)
 
 ```swift
 import SwiftUI
@@ -196,5 +249,3 @@ struct ContentView : View {
     }
 }
 ```
-
-![window size](/assets/images/window-size.png)
