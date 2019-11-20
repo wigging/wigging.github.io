@@ -1,6 +1,6 @@
 ---
 title: Git and GitHub
-date: 2019-06-29
+date: 2019-11-20
 layout: note
 ---
 
@@ -70,6 +70,9 @@ git branch -v
 # Remove a local branch
 # Use -D instead of -d to force delete the branch
 git branch -d <branch-name>
+
+# Rename a local branch
+git branch -m <new-branch-name>
 
 # Merge local branch to master then delete it
 git checkout master
