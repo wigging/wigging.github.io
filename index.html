@@ -1,50 +1,86 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>Gavin Wiggins</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>Gavin Wiggins</title>
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md">
-            <h1>Gavin Wiggins</h1>
+  <div class="row">
+    <div class="col-md">
+      <h1>Gavin Wiggins</h1>
 
-            <p>
-                <a href="apps"><b>Apps</b></a> /
-                <a href="notes"><b>Notes</b></a> /
-                <a href="presentations"><b>Presentations</b></a> /
-                <a href="publications"><b>Publications</b></a>
-            </p>
+      <p>
+        <img src="assets/images/profile.png" id="profile-img" alt="Gavin Wiggins">
+      </p>
 
-            <hr>
+      <p>
+        I'm a research scientist at the Oak Ridge National Laboratory in Tennessee. My current work is developing computational models to simulate the fast pyrolysis of biomass in fluidized reactors. This research is part of the <a href="http://cpcbiomass.org/">Consortium for Computational Physics and Chemistry</a> for the U.S. DOE Bioenergy Technologies Office. I am also involved in various battery simulation activities as part of the <a href="https://vibe.ornl.gov/">Consortium for Advanced Battery Simulation</a> project. As an enthusiastic developer, I organize the <a href="http://knoxcocoa.org/">Knoxville CocoaHeads</a> and <a href="http://knoxpy.org/">KnoxPy</a> programming groups.
+      </p>
 
-            <p>
-                I am a research scientist at the Oak Ridge National Laboratory in Tennessee. My current work is developing computational models to simulate the fast pyrolysis of biomass in fluidized reactors. This research is part of the <a href="http://cpcbiomass.org/">Consortium for Computational Physics and Chemistry</a> for the U.S. DOE Bioenergy Technologies Office. I am also involved in various battery simulation activities as part of the <a href="https://vibe.ornl.gov/">Consortium for Advanced Battery Simulation</a> project. As an enthusiastic developer, I organize the <a href="http://knoxcocoa.org/">Knoxville CocoaHeads</a> and <a href="http://knoxpy.org/">KnoxPy</a> programming groups.
-            </p>
+      <p>
+        <a href="mailto:wiggingATmeDOTcom" onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')"><b>Email</b></a> /
+        <a href="https://github.com/wigging"><b>GitHub</b></a> /
+        <a href="https://keybase.io/wigging"><b>Keybase</b></a> /
+        <a href="https://twitter.com/wigging"><b>Twitter</b></a>
+      </p>
 
-            <p>
-                <img src="assets/images/profile.png" alt="Gavin Wiggins" width="100px">
-            </p>
+      <h3>Applications</h3>
+      <hr>
+      {% for app in site.data.applications %}
+      <p>{{ app.desc }}</p>
+      {% endfor %}
 
-            <p>
-                <a href="mailto:wiggingATmeDOTcom" onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')"><b>Email</b></a> /
-                <a href="https://github.com/wigging"><b>GitHub</b></a> /
-                <a href="https://keybase.io/wigging"><b>Keybase</b></a> /
-                <a href="https://twitter.com/wigging"><b>Twitter</b></a>
-            </p>
+      <h3>Notes</h3>
+      <hr>
+      <div id="notes-list">
+      {% assign notes = site.notes | sort: "title" %}
+      {% for note in notes %}
+      <p >
+          <a href="{{ note.url }}"><b>{{ note.title }}</b></a>
+      </p>
+      {% endfor %}
+      </div>
 
-            <hr>
 
-            <br>
-            <p><small>Made on a <a href="https://www.apple.com/mac/">Mac</a>. Generated with <a href="https://jekyllrb.com">Jekyll</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</small></p>
-            <br>
+      <h3>Presentations</h3>
+      <hr>
+      {% for pres in site.data.presentations %}
+      <p>
+        <strong>{{ pres.title }}</strong>.
+        {{ pres.desc }}.
+        <a href="{{ pres.pdf }}">Download PDF</a>
+      </p>
+      {% endfor %}
 
-        </div>
+      <h3>Publications</h3>
+      <hr>
+      <p>If you do not have access to a publication, please contact me and I will be genuinely delighted to send you a copy of the manuscript.</p>
+      {% for pub in site.data.publications %}
+      <p>
+        <strong>{{ pub.title }}</strong>.
+        {{ pub.desc }}.
+        {% if pub.link != null %}
+        <a href="{{ pub.link }}">View Online</a>
+        {% else %}
+        <a href="{{ pub.pdf }}">Download PDF</a>
+        {% endif %}
+      </p>
+      {% endfor %}
+
+      <hr>
+
+      <br>
+      <p><small>Made on a <a href="https://www.apple.com/mac/">Mac</a>. Generated with <a href="https://jekyllrb.com">Jekyll</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</small></p>
+      <br>
+
     </div>
+  </div>
 </div>
 </body>
 </html>

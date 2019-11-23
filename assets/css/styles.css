@@ -12,7 +12,7 @@ body {
     background-color: #fffff8;
 }
 
-h1 {
+h1, h3 {
     margin-top: 40px;
 }
 
@@ -20,11 +20,20 @@ img {
     max-width: 400px;
 }
 
+#notes-list {
+    columns: 2 auto;
+}
+
+#profile-img {
+    margin-top: 10px;
+    width: 100px;
+}
+
 .large-img {
     max-width: 100%;
 }
 
-.center-image {
+.center-img {
     margin: 0 auto;
     display: block;
 }
@@ -33,6 +42,10 @@ img {
 
     img {
         max-width: 100%;
+    }
+
+    #notes-list {
+        columns: 1;
     }
 
 }

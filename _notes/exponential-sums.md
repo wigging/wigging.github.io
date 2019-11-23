@@ -22,13 +22,13 @@ $$f(n) = \frac{n}{a} + \frac{n^2}{b} + \frac{n^3}{c}$$
 >>> python expsum func1 2000 10 7 17
 ```
 
-![func1a plot](/assets/images/func1a.pdf){: .center-image }
+![func1a plot](/assets/images/func1a.pdf){: .center-img }
 
 ```bash
 >>> python expsum func1 8000 11 21 31
 ```
 
-![func1b plot](/assets/images/func1b.pdf){: .center-image }
+![func1b plot](/assets/images/func1b.pdf){: .center-img }
 
 ## Function 2
 
@@ -38,13 +38,13 @@ $$f(n) = \log(n) + \frac{n^2}{a}$$
 >>> python expsum func2 1200 100
 ```
 
-![func2a plot](/assets/images/func2a.pdf){: .center-image }
+![func2a plot](/assets/images/func2a.pdf){: .center-img }
 
 ```bash
 >>> python expsum func2 4000 800
 ```
 
-![func2b plot](/assets/images/func2b.pdf){: .center-image }
+![func2b plot](/assets/images/func2b.pdf){: .center-img }
 
 ## Function 3
 
@@ -54,13 +54,13 @@ $$f(n) = \log(n)^{4.1}$$
 >>> python expsum func3 1000
 ```
 
-![func3a plot](/assets/images/func3a.pdf){: .center-image }
+![func3a plot](/assets/images/func3a.pdf){: .center-img }
 
 ```bash
 >>> python expsum func3 4000
 ```
 
-![func3b plot](/assets/images/func3b.pdf){: .center-image }
+![func3b plot](/assets/images/func3b.pdf){: .center-img }
 
 ## Function 4
 
@@ -70,7 +70,7 @@ $$f(n) = (\log(n))^a$$
 >>> python expsum func4 4000 4
 ```
 
-![func4a plot](/assets/images/func4a.pdf){: .center-image }
+![func4a plot](/assets/images/func4a.pdf){: .center-img }
 
 ## Function 5
 
@@ -80,7 +80,7 @@ $$f(n) = \log(n) + \frac{n^2}{a} + \frac{n^3}{b}$$
 >>> python expsum func5 4000 50 100
 ```
 
-![func5a plot](/assets/images/func5a.pdf){: .center-image }
+![func5a plot](/assets/images/func5a.pdf){: .center-img }
 
 ## Function 6
 
@@ -90,7 +90,7 @@ $$f(n) = \frac{\sqrt n}{a}$$
 >>> python expsum func6 2000 4
 ```
 
-![func6a plot](/assets/images/func6a.pdf){: .center-image }
+![func6a plot](/assets/images/func6a.pdf){: .center-img }
 
 ## Function 7
 
@@ -100,7 +100,7 @@ $$f(n) = \frac{\sqrt{n^3}}{a}$$
 >>> python expsum func7 8000 4
 ```
 
-![func7a plot](/assets/images/func7a.pdf){: .center-image }
+![func7a plot](/assets/images/func7a.pdf){: .center-img }
 
 ## References
 
