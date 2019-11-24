@@ -1,6 +1,6 @@
 ---
 title: Swift Programming for macOS
-date: 2019-11-18
+date: 2019-11-23
 layout: note
 ---
 
