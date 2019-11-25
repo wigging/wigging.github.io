@@ -1,6 +1,6 @@
 ---
 title: Swift Programming for macOS
-date: 2019-11-23
+date: 2019-11-24
 layout: note
 ---
 
@@ -10,12 +10,74 @@ See the [swift-macos](https://github.com/wigging/swift-macos) repository for exa
 
 **Contents**
 
+- [Picker control](#picker-control)
 - [Preferences window](#preferences-window)
 - [Sidebar navigation](#sidebar-navigation)
 - [Stepper control](#stepper-control)
 - [Text field](#text-field)
 - [Text view](#text-view)
 - [Window size](#window-size)
+
+## Picker control
+
+The picker control selects an item from a set of values. The appearance of the picker can be changed with the available styles and label modifier.
+
+![picker](/assets/images/picker.png)
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+
+    let bands = ["Nirvana", "Pearl Jam", "NIN"]
+    @State private var selectedBand = 0
+
+    @State private var selectedName = 0
+
+    var body: some View {
+        VStack(spacing: 20) {
+
+            Picker("Band", selection: $selectedBand) {
+                ForEach(0..<bands.count) {
+                    Text(self.bands[$0])
+                }
+            }
+
+            Picker("Band", selection: $selectedBand) {
+                ForEach(0..<bands.count) {
+                    Text(self.bands[$0])
+                }
+            }
+            .pickerStyle(RadioGroupPickerStyle())
+
+            Picker("Band", selection: $selectedBand) {
+                ForEach(0..<bands.count) {
+                    Text(self.bands[$0])
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+
+            Picker("Name", selection: $selectedName) {
+                Text("Homer Simpson").tag(0)
+                Text("Lisa Simpson").tag(1)
+                Text("Bart Simpson").tag(2)
+            }
+            .fixedSize()
+
+            Picker("Name", selection: $selectedName) {
+                Text("Homer Simpson").tag(0)
+                Text("Lisa Simpson").tag(1)
+                Text("Bart Simpson").tag(2)
+            }
+            .labelsHidden()
+            .fixedSize()
+
+        }
+        .padding()
+        .frame(width: 400, height: 300)
+    }
+}
+```
 
 ## Preferences window
 
