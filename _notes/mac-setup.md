@@ -215,10 +215,4 @@ Download from [freemacsoft.net/appcleaner](https://freemacsoft.net/appcleaner/)
 
 ## Jekyll
 
-Instructions for installing Jekyll for use with GitHub Pages are detailed here.
-
-First, install Bundler per the instructions at [bundler.io](https://bundler.io)
-
-Next, create a GitHub Pages gemfile install it as discussed at [github.com/github/pages-gem](https://github.com/github/pages-gem)
-
-For documentation about Jekyll see [jekyllrb.com](https://jekyllrb.com)
+Instructions for installing Jekyll for use with GitHub Pages are detailed in the [README](https://github.com/wigging/wigging.github.io) for my personal website.
