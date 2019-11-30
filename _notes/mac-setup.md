@@ -159,7 +159,7 @@ These settings are for the SideBarEnhancements plugin. The settings are availabl
 }
 ```
 
-## Git
+## Git and GitHub
 
 Configure Git in the terminal using the following commands (change name and email accordingly):
 
@@ -173,6 +173,8 @@ Use [gitignore.io](https://www.gitignore.io) to create a Git ignore file at `~/.
 ```bash
 git config --global core.excludesfile ~/.gitignore
 ```
+
+Use a personal access token as the GitHub password for the command line. See [here](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) for more details.
 
 ## Homebrew
 
