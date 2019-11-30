@@ -1,6 +1,6 @@
 ---
 title: Mac setup
-date: 2019-10-24
+date: 2019-11-30
 layout: note
 ---
 
@@ -10,9 +10,15 @@ My preferred macOS Catalina setup for a new Mac. Install and/or configure items 
 
 Go to System Preferences -> Sharing and set the computer name.
 
+## Finder
+
+Go to Finder -> Preferences and configure preferences.
+
 ## iCloud
 
-Sign in to iCloud to sync bookmarks, email, etc.
+If the new Mac is replacing an older Mac, then sign out of iCloud on the old Mac.
+
+Sign in to iCloud on the new Mac to sync bookmarks, email, etc.
 
 Disable FaceTime by opening the app and signing out.
 
@@ -20,7 +26,11 @@ Disable FaceTime by opening the app and signing out.
 
 Install Xcode from the App Store which will also install Git.
 
-Open Xcode to make sure developer tools are installed.
+Open Xcode to make sure developer tools and components are installed.
+
+## Wipr
+
+Install Wipr from the App Store then open Wipr to enable it in Safari.
 
 ## iTerm2
 
@@ -85,7 +95,7 @@ endif
 
 ## Sublime Text
 
-Download from [sublimetext.com](https://www.sublimetext.com)
+Download from [sublimetext.com](https://www.sublimetext.com) then use license key to register the application.
 
 To open Sublime Text from the command line add the following alias to `~/.zshrc`:
 
@@ -166,11 +176,7 @@ git config --global core.excludesfile ~/.gitignore
 
 ## Homebrew
 
-Installation instructions are provided at [brew.sh](https://brew.sh)
-
-## Jekyll
-
-Installation instructions at [jekyllrb.com](https://jekyllrb.com)
+Installation instructions are provided at [brew.sh](https://brew.sh) and don't forget to disable analytics via link provided after installation.
 
 ## aria2
 
@@ -184,10 +190,12 @@ Download from [www.tug.org/mactex/](http://www.tug.org/mactex/)
 
 Installer available at [docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
+Copy the contents of `.bash_profile` into the `.zshrc` file.
+
 To disable auto activate use:
 
 ```bash
-conda config --set auto_activate_base False
+conda config --set auto_activate_base false
 ```
 
 To permanently enable Miniconda Python use the following in `~/.zshrc`:
@@ -207,4 +215,10 @@ Download from [freemacsoft.net/appcleaner](https://freemacsoft.net/appcleaner/)
 
 ## Jekyll
 
-Installation instructions at [jekyllrb.com](https://jekyllrb.com)
+Instructions for installing Jekyll for use with GitHub Pages are detailed here.
+
+First, install Bundler per the instructions at [bundler.io](https://bundler.io)
+
+Next, create a GitHub Pages gemfile install it as discussed at [github.com/github/pages-gem](https://github.com/github/pages-gem)
+
+For documentation about Jekyll see [jekyllrb.com](https://jekyllrb.com)
