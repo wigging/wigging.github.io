@@ -1,6 +1,6 @@
 ---
 title: Swift Programming for macOS
-date: 2019-11-24
+date: 2019-12-02
 layout: note
 ---
 
@@ -348,6 +348,7 @@ struct ContentView: View {
             Text("Hello World").underline(true, color: .red)
             Text("Hello World").strikethrough()
             Text("Hello World").strikethrough(true, color: .green)
+            Text("Hello > ").foregroundColor(.green) + Text("World").foregroundColor(.blue)
          }
          .frame(width: 400, height: 300)
     }
