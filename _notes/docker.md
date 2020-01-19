@@ -1,5 +1,6 @@
 ---
 title: Docker commands
+desc: Some useful commands for working with Docker images and containers
 date: 2019-05-24
 layout: note
 ---

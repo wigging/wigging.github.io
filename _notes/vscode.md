@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Code
+desc: Settings and configuration notes for working with Python in VSCode
 date: 2018-12-14
 layout: note
 ---

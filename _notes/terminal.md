@@ -1,5 +1,6 @@
 ---
 title: Terminal commands
+desc: Useful commands for working in the terminal
 date: 2019-02-08
 layout: note
 ---

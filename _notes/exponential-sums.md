@@ -1,5 +1,6 @@
 ---
-title: Exponential Sums
+title: Exponential sums
+desc: Examples of plotting exponential sums with Python
 date: 2019-08-04
 layout: note
 ---

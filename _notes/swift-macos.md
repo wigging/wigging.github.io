@@ -1,5 +1,6 @@
 ---
-title: Swift Programming for macOS
+title: Swift programming for macOS
+desc: Notes and example code for developing Mac apps in Swift
 date: 2019-12-02
 layout: note
 ---

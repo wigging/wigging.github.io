@@ -1,5 +1,6 @@
 ---
 title: SQLite database
+desc: Helpful commands for working with a SQLite database
 date: 2018-09-12
 layout: note
 ---

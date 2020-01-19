@@ -1,5 +1,6 @@
 ---
 title: Wget to download files
+desc: Examples of downloading things with the wget command line tool
 date: 2018-08-19
 layout: note
 ---

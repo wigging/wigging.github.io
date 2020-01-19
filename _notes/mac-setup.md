@@ -1,5 +1,6 @@
 ---
 title: Mac setup
+desc: Notes for setting up and configuring a new Mac
 date: 2019-11-30
 layout: note
 ---

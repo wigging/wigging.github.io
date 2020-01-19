@@ -1,5 +1,6 @@
 ---
 title: Bash programming
+desc: Just the basics of programming with Bash
 date: 2018-08-19
 layout: note
 ---

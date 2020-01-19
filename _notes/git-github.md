@@ -1,5 +1,6 @@
 ---
 title: Git and GitHub
+desc: Various notes about using Git and GitHub for version control
 date: 2019-11-20
 layout: note
 ---
