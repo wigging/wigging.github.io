@@ -448,6 +448,7 @@ struct ContentView: View {
     }
 }
 ```
+![web view](/assets/images/web-view.png)
 
 ## Window size
 
