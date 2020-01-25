@@ -1,11 +1,11 @@
 ---
 title: Swift programming for macOS
 desc: Notes and example code for developing Mac apps in Swift
-date: 2019-12-02
+date: 2020-01-24
 layout: note
 ---
 
-There are plenty of books, videos, and online resources for developing iOS, tvOS, watchOS, and iPadOS apps. Despite the fact that all of these platforms require a Mac for code development, there is very little information about actually creating native Mac applications. The examples given below demonstrate various aspects of Mac app development and will hopefully reinvigorate interest in this neglected platform.
+There are plenty of books, videos, and online resources for developing iOS, tvOS, watchOS, and iPadOS apps. Despite the fact that all of these platforms require a Mac for code development, there is very little information about actually creating native Mac applications. The examples given below demonstrate various aspects of Mac app development and will hopefully provide a useful resource for developers.
 
 See the [swift-macos](https://github.com/wigging/swift-macos) repository for example code.
 
@@ -17,6 +17,7 @@ See the [swift-macos](https://github.com/wigging/swift-macos) repository for exa
 - [Stepper control](#stepper-control)
 - [Text field](#text-field)
 - [Text view](#text-view)
+- [Web view](#web-view)
 - [Window size](#window-size)
 
 ## Picker control
@@ -352,6 +353,98 @@ struct ContentView: View {
             Text("Hello > ").foregroundColor(.green) + Text("World").foregroundColor(.blue)
          }
          .frame(width: 400, height: 300)
+    }
+}
+```
+
+## Web view
+
+A WKWebView from the WebKit framework is used to display web content in a window. The web view can be wrapped with NSViewRepresentable to make it usable with SwiftUI. Content for the web view can be loaded using a website url, a string representing HTML content, or by loading an HTML file.
+
+```swift
+import SwiftUI
+import WebKit
+
+// A view representing a WKWebView for displaying a webpage using a url.
+
+struct WebView: NSViewRepresentable {
+
+    let url: String
+
+    func makeNSView(context: Context) -> WKWebView {
+
+        guard let url = URL(string: self.url) else {
+            return WKWebView()
+        }
+
+        let webview = WKWebView()
+        let request = URLRequest(url: url)
+        webview.load(request)
+        return webview
+    }
+
+    func updateNSView(_ nsView: WKWebView, context: Context) { }
+}
+```
+
+```swift
+// A view representing a WKWebView for displaying HTML content.
+
+struct WebView: NSViewRepresentable {
+
+    let content: String
+
+    func makeNSView(context: Context) -> WKWebView {
+
+        let webview = WKWebView()
+        webview.loadHTMLString(self.content, baseURL: nil)
+        return webview
+    }
+
+    func updateNSView(_ nsView: WKWebView, context: Context) { }
+}
+```
+
+```swift
+// A view representing a WKWebView for displaying an HTML file.
+
+struct WebView: NSViewRepresentable {
+
+    let file: String
+
+    func makeNSView(context: Context) -> WKWebView {
+
+        guard let url = Bundle.main.url(forResource: self.file, withExtension: "html") else {
+            return WKWebView()
+        }
+
+        let webview = WKWebView()
+        webview.loadFileURL(url, allowingReadAccessTo: url)
+        return webview
+    }
+
+    func updateNSView(_ nsView: WKWebView, context: Context) { }
+}
+```
+
+For SwiftUI to properly display the WebView, it must be within a GeometryReader and ScrollView.
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack {
+            GeometryReader { geom in
+                ScrollView {
+                    WebView(url: "https://www.apple.com")
+                        .frame(height: geom.size.height)
+                }
+            }
+            Text("Apple's website")
+        }
+        .padding()
+        .frame(width: 480, height: 600)
     }
 }
 ```
