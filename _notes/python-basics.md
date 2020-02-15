@@ -1,7 +1,7 @@
 ---
 title: Python basics
 desc: The basics of the Python programming language
-date: 2019-08-05
+date: 2019-02-14
 layout: note
 ---
 
@@ -56,6 +56,27 @@ params.update(case1)
 
 ```python
 a = [1, 2, 3, 4]
+```
+
+## Enumerate and zip
+
+Iterate over two lists along with their indices.
+
+```python
+x = ['apple', 'orange', 'melon', 'peach']
+y = [3.4, 2.56, 5.10, 7.02]
+
+for i, (x, y) in enumerate(zip(x, y)):
+    print(i, x, y)
+```
+
+Prints the following:
+
+```
+0 apple 3.4
+1 orange 2.56
+2 melon 5.1
+3 peach 7.02
 ```
 
 ## Further Reading
