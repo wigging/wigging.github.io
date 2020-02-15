@@ -37,9 +37,9 @@
         {% assign notes = site.notes | sort: "title" %}
         {% for note in notes %}
         <p>
-            <strong>{{ note.title }}</strong>. {{ note.desc }}. {{ note.date | date: '%B %d, %Y' }}.
+            <strong>{{ note.title }}</strong>. {{ note.desc }}. Posted on {{ note.date | date: '%B %d, %Y' }}.
             <br>
-            <a href="{{ note.url }}">Read Notes</a>
+            <a href="{{ note.url }}">Read</a>
         </p>
         {% endfor %}
 
