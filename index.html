@@ -36,8 +36,8 @@
         <hr>
         {% for post in site.posts %}
         <p>
-            <strong>{{ post.title }}</strong> <br>
-            {{ post.excerpt | strip_html }} <a href="{{ post.url }}">Read</a>
+            <b>{{ post.title }}</b>. {{ post.excerpt | strip_html }}
+            <a href="{{ post.url }}">Read</a>
         </p>
         {% endfor %}
 
@@ -45,9 +45,8 @@
         <hr>
         {% for pres in site.data.presentations %}
         <p>
-            <strong>{{ pres.title }}</strong>. {{ pres.desc }}.
-            <br>
-            <a href="{{ pres.pdf }}">Download PDF</a>
+            <b>{{ pres.title }}</b>. {{ pres.desc }}.
+            <a href="{{ pres.pdf }}">PDF</a>
         </p>
         {% endfor %}
 
@@ -56,12 +55,11 @@
         <p>If you do not have access to a publication, please contact me and I will be genuinely delighted to send you a copy of the manuscript.</p>
         {% for pub in site.data.publications %}
         <p>
-            <strong>{{ pub.title }}</strong>. {{ pub.desc }}.
-            <br>
+            <b>{{ pub.title }}</b>. {{ pub.desc }}.
             {% if pub.link != null %}
-            <a href="{{ pub.link }}">View Online</a>
+            <a href="{{ pub.link }}">URL</a>
             {% else %}
-            <a href="{{ pub.pdf }}">Download PDF</a>
+            <a href="{{ pub.pdf }}">PDF</a>
             {% endif %}
         </p>
         {% endfor %}
