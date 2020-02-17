@@ -1,6 +1,10 @@
 exclude: [README.md]
 
-collections:
-  notes:
-    output: true
-    permalink: /:collection/:name
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+permalink: /:title

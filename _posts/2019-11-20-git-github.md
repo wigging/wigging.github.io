@@ -1,9 +1,8 @@
 ---
 title: Git and GitHub
-desc: Various notes about using Git and GitHub for version control
-date: 2019-11-20
-layout: note
 ---
+
+Various notes about using Git and GitHub for version control.
 
 Git is a great version control system that is the foundation of the online
 GitHub platform for sharing code. The sections below provide configuration

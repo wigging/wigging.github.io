@@ -1,11 +1,10 @@
 ---
 title: Python basics
-desc: The basics of the Python programming language
-date: 2019-02-14
-layout: note
 ---
 
-Basics of the Python programming language.
+Some of my notes related to the awesomeness that is the Python programming language.
+
+Contents:
 
 - [String](#string)
 - [Dictionary](#dictionary)

@@ -1,8 +1,6 @@
 ---
 title: Swift programming for macOS
 desc: Notes and example code for developing Mac apps in Swift
-date: 2020-01-24
-layout: note
 ---
 
 There are plenty of books, videos, and online resources for developing iOS, tvOS, watchOS, and iPadOS apps. Despite the fact that all of these platforms require a Mac for code development, there is very little information about actually creating native Mac applications. The examples given below demonstrate various aspects of Mac app development and will hopefully provide a useful resource for developers.

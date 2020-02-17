@@ -1,9 +1,8 @@
 ---
 title: Exponential sums
-desc: Examples of plotting exponential sums with Python
-date: 2019-08-04
-layout: note
 ---
+
+Examples of plotting exponential sums with Python.
 
 An exponential sum is represented by the following equation
 

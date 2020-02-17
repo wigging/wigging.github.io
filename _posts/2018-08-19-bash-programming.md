@@ -1,9 +1,8 @@
 ---
 title: Bash programming
-desc: Just the basics of programming with Bash
-date: 2018-08-19
-layout: note
 ---
+
+Just some basic notes about writing and executing Bash scripts on a Mac.
 
 Comments in Bash begin with the "#" symbol.
 

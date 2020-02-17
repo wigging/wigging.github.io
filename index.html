@@ -26,24 +26,22 @@
             <a href="https://twitter.com/wigging"><b>Twitter</b></a>
         </p>
 
-        <h3>Applications</h3>
+        <h2>Applications</h2>
         <hr>
         {% for app in site.data.applications %}
         <p>{{ app.desc }}</p>
         {% endfor %}
 
-        <h3>Notes</h3>
+        <h2>Posts</h2>
         <hr>
-        {% assign notes = site.notes | sort: "title" %}
-        {% for note in notes %}
+        {% for post in site.posts %}
         <p>
-            <strong>{{ note.title }}</strong>. {{ note.desc }}. Posted on {{ note.date | date: '%B %d, %Y' }}.
-            <br>
-            <a href="{{ note.url }}">Read</a>
+            <strong>{{ post.title }}</strong> <br>
+            {{ post.excerpt | strip_html }} <a href="{{ post.url }}">Read</a>
         </p>
         {% endfor %}
 
-        <h3>Presentations</h3>
+        <h2>Presentations</h2>
         <hr>
         {% for pres in site.data.presentations %}
         <p>
@@ -53,7 +51,7 @@
         </p>
         {% endfor %}
 
-        <h3>Publications</h3>
+        <h2>Publications</h2>
         <hr>
         <p>If you do not have access to a publication, please contact me and I will be genuinely delighted to send you a copy of the manuscript.</p>
         {% for pub in site.data.publications %}
