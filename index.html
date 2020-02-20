@@ -29,7 +29,12 @@
         <h2>Applications</h2>
         <hr>
         {% for app in site.data.applications %}
-        <p>{{ app.desc }}</p>
+        <p>
+            <b>{{ app.name }}</b>. {{ app.desc }}
+            {% if app.link != null %}
+            <a href="{{ app.link }}">[URL]</a>
+            {% endif %}
+        </p>
         {% endfor %}
 
         <h2>Posts</h2>
@@ -37,7 +42,7 @@
         {% for post in site.posts %}
         <p>
             <b>{{ post.title }}</b>. {{ post.excerpt | strip_html }}
-            <a href="{{ post.url }}">Read</a>
+            <a href="{{ post.url }}">[Read]</a>
         </p>
         {% endfor %}
 
@@ -46,7 +51,7 @@
         {% for pres in site.data.presentations %}
         <p>
             <b>{{ pres.title }}</b>. {{ pres.desc }}.
-            <a href="{{ pres.pdf }}">PDF</a>
+            <a href="{{ pres.pdf }}">[PDF]</a>
         </p>
         {% endfor %}
 
@@ -57,9 +62,9 @@
         <p>
             <b>{{ pub.title }}</b>. {{ pub.desc }}.
             {% if pub.link != null %}
-            <a href="{{ pub.link }}">URL</a>
+            <a href="{{ pub.link }}">[URL]</a>
             {% else %}
-            <a href="{{ pub.pdf }}">PDF</a>
+            <a href="{{ pub.pdf }}">[PDF]</a>
             {% endif %}
         </p>
         {% endfor %}
