@@ -1,9 +1,8 @@
 ---
 title: Swift programming for macOS
-desc: Notes and example code for developing Mac apps in Swift
 ---
 
-There are plenty of books, videos, and online resources for developing iOS, tvOS, watchOS, and iPadOS apps. Despite the fact that all of these platforms require a Mac for code development, there is very little information about actually creating native Mac applications. The examples given below demonstrate various aspects of Mac app development and will hopefully provide a useful resource for developers.
+There are plenty of books, videos, and online resources for developing iOS apps. Despite the fact that iPhone and iPad apps require a Mac for code development, there is very little information about actually creating native Mac applications. The examples in this post demonstrate various aspects of Mac app development and will hopefully provide a useful resource for developers.
 
 See the [swift-macos](https://github.com/wigging/swift-macos) repository for example code.
 
@@ -138,81 +137,126 @@ struct PreferencesView_Previews: PreviewProvider {
 
 ## Sidebar navigation
 
-A navigation view contains a sidebar and detail view. Selecting an item in the sidebar will change the detail view accordingly. The selection binding for the list view must be implemented otherwise items will not be selectable when the app launches.
+A navigation view contains a master and detail view. In this example, the master view displays a list of fruits in the sidebar. The detail view determines which view to display based on which item is selected in the sidebar.
 
 ![sidebar](/assets/images/sidebar.png)
+
+The content view of the window is a navigation view that contains the master and detail views. An enum defines the state of the sidebar list selection and is used to determine which view is displayed by the detail view. UserDefaults stores the selection so that the detail view displays the last viewed item when the app is relaunched.
 
 ```swift
 // ContentView.swift
 
 import SwiftUI
 
-struct SidebarView: View {
-
-    // This binding must be implemented with List otherwise item selection
-    // will not work properly when the app launches.
-    @State private var selected = Set<String>()
-
-    private let items = ["🍎 Apple", "🍌 Banana", "🥥 Coconut", "🍒 Cherry", "🥜 Peanut", "🍑 Peach", "🍅 Tomato", "🍞 Bread", "🍕 Pizza", "🥦 Broccoli", "🥝 Kiwi", "🧀 Cheese", "🍉 Watermelon"]
-
-    var body: some View {
-        List(items, id: \.self, selection: $selected) { item in
-            NavigationLink(destination: DetailView(selection: item)) {
-                Text("\(item)")
-            }
-        }
-        .listStyle(SidebarListStyle())
-    }
-}
-
-struct DetailView: View {
-
-    var selection: String
-
-    var body: some View {
-        switch selection {
-        case "🍎 Apple":
-            return AnyView(AppleView())
-        case "🍌 Banana":
-            return AnyView(BananaView())
-        case "🥥 Coconut":
-            return AnyView(CoconutView())
-        default:
-            return AnyView(
-                Text("Some \(selection) view here")
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-            )
-        }
-    }
-}
-
 struct ContentView: View {
+
+    @State private var selectedFruit: Fruit?
+
     var body: some View {
         NavigationView {
-            SidebarView()
-            DetailView(selection: "🍎 Apple")
+            NavigationMaster(selectedFruit: $selectedFruit)
+            NavigationDetail(fruit: $selectedFruit)
         }
-        .frame(height: 300)
     }
+}
+
+// NavigationMaster.swift
+
+struct NavigationMaster: View {
+
+    @Binding var selectedFruit: Fruit?
+    private let defaultFruit = Fruit(rawValue: UserDefaults.standard.object(forKey: "SelectedFruit") as? String ?? "🥭 Mango")
+
+    var body: some View {
+        List(Fruit.allCases, id: \.self, selection: $selectedFruit) { fruit in
+            Text("\(fruit.rawValue)")
+        }
+        .listStyle(SidebarListStyle())
+        .onAppear {
+            self.selectedFruit = self.defaultFruit
+        }
+    }
+}
+
+// NavigationDetail.swift
+
+struct NavigationDetail: View {
+
+    @Binding var fruit: Fruit?
+
+    var body: some View {
+
+        switch fruit {
+        case .apple:
+            UserDefaults.standard.set(Fruit.apple.rawValue, forKey: "SelectedFruit")
+            return AnyView(AppleView())
+        case .coconut:
+            UserDefaults.standard.set(Fruit.coconut.rawValue, forKey: "SelectedFruit")
+            return AnyView(CoconutView())
+        case .mango:
+            UserDefaults.standard.set(Fruit.mango.rawValue, forKey: "SelectedFruit")
+            return AnyView(MangoView())
+        case .kiwi:
+            UserDefaults.standard.set(Fruit.kiwi.rawValue, forKey: "SelectedFruit")
+            return AnyView(KiwiView())
+        case .none:
+            return AnyView(Text("Default View").frame(width: 300, height: 200))
+        }
+    }
+}
+
+// Fruit.swift
+
+enum Fruit: String, CaseIterable {
+    case apple = "🍎 Apple"
+    case coconut = "🥥 Coconut"
+    case mango = "🥭 Mango"
+    case kiwi = "🥝 Kiwi"
 }
 ```
 
-Detail views are defined in separate files such as the apple view shown below.
+To properly render the entire navigation view in the window, the frame is specified for each detail view. Note that each detail view is the same size. If the views are different sizes the window will try to adjust its size accordingly. Unfortunately, macOS windows animating size changes with SwiftUI is buggy so in this example I use a scroll view for large detail views.
 
 ```swift
 // AppleView.swift
 
-import SwiftUI
-
 struct AppleView: View {
     var body: some View {
-        VStack(spacing: 10) {
-            Text("Hello from")
-                .font(.title)
-            Text("🍎 Apple View")
-                .font(.largeTitle)
+        VStack {
+            Text("Apple View").font(.largeTitle)
+            Text("🍎").font(.title)
         }
-        .frame(width: 480, height: 300)
+        .frame(width: 300, height: 200)
+    }
+}
+
+// CoconutView.swift
+
+struct CoconutView: View {
+    var body: some View {
+        VStack {
+            Text("Coconut View").font(.largeTitle)
+            Text("🥥").font(.title)
+        }
+        .frame(width: 300, height: 200)
+    }
+}
+
+// Mango.swift
+
+struct MangoView: View {
+    var body: some View {
+        ScrollView(.vertical) {
+            VStack {
+                Text("Mango View").font(.largeTitle)
+                Text("🥭").font(.largeTitle)
+                ForEach(1..<20) {
+                    Text("Mango \($0)")
+                }
+            }
+            .frame(width: 300)
+            .padding(.vertical)
+        }
     }
 }
 ```
