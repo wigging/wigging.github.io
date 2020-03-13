@@ -1,8 +1,8 @@
 ---
-title: Swift programming for macOS
+title: Swift Programming for macOS
 ---
 
-There are plenty of books, videos, and online resources for developing iOS apps. Despite the fact that iPhone and iPad apps require a Mac for code development, there is very little information about actually creating native Mac applications. The examples in this post demonstrate various aspects of Mac app development and will hopefully provide a useful resource for developers.
+There are plenty of books, videos, and online resources for developing iOS apps. Despite the fact that iPhone and iPad apps require a Mac for code development, there is very little information about actually creating native Mac applications. The examples in this post demonstrate various aspects of Mac app development using the latest versions of Swift and SwiftUI. Hopefully these examples will provide a useful resource for Mac developers.
 
 See the [swift-macos](https://github.com/wigging/swift-macos) repository for example code.
 
@@ -14,6 +14,7 @@ See the [swift-macos](https://github.com/wigging/swift-macos) repository for exa
 - [Stepper control](#stepper-control)
 - [Text field](#text-field)
 - [Text view](#text-view)
+- [Text vertical](#text-vertical)
 - [Web view](#web-view)
 - [Window size](#window-size)
 
@@ -398,6 +399,31 @@ struct ContentView: View {
     }
 }
 ```
+
+## Text vertical
+
+Vertical text can be accomplished by rotating a text view 90 degrees. To rotate the frame of the text view, the fixed size modifier must be implemented along with defining the frame size.
+
+```swift
+import SwiftUI
+
+struct ContentView: View {
+
+    var body: some View {
+        HStack {
+            Text("Vertical text")
+                .rotationEffect(.degrees(-90))
+                .fixedSize()
+                .frame(width: 20, height: 180)
+            Circle()
+                .frame(width: 200)
+        }
+        .frame(width: 400, height: 300)
+    }
+}
+```
+
+![text vertical](/assets/images/text-vertical.png)
 
 ## Web view
 

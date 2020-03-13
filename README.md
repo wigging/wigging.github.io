@@ -33,11 +33,11 @@ $ bundle exec jekyll serve
 
 ## Updating
 
+Use the following commands to update the Ruby Bundler gem and the GitHub pages gem:
+
 ```bash
-# Update the Ruby Bundler gem
 $ gem update bundler
 
-# Update the GitHub Pages gem
 $ bundle update github-pages
 ```
 
