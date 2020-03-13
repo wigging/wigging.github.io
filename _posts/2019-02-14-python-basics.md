@@ -1,5 +1,5 @@
 ---
-title: Python basics
+title: Python Basics
 ---
 
 Some of my notes related to the awesomeness that is the Python programming language.

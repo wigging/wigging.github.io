@@ -1,8 +1,8 @@
 ---
-title: Exponential sums
+title: Exponential Sums
 ---
 
-Examples of plotting exponential sums with Python.
+Exponential sums are an area of math represented by a series with terms that are complex exponentials. These types of sums are related to Fourier analysis and number theory. Plotting exponential sums produces various designs based on the type of input function.
 
 An exponential sum is represented by the following equation
 
