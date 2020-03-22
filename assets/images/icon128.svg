@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>icon128</title>
+    <title>logo128</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
@@ -13,9 +13,9 @@
             <stop stop-color="#888888" offset="100%"></stop>
         </linearGradient>
         <circle id="path-3" cx="64" cy="64" r="54"></circle>
-        <filter x="-5.6%" y="-5.6%" width="111.1%" height="111.1%" filterUnits="objectBoundingBox" id="filter-4">
+        <filter x="-7.4%" y="-7.4%" width="114.8%" height="114.8%" filterUnits="objectBoundingBox" id="filter-4">
             <feGaussianBlur stdDeviation="2" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
-            <feOffset dx="0" dy="8" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feOffset dx="0" dy="6" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
@@ -26,11 +26,11 @@
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
     </defs>
-    <g id="icon128" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="logo128" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Oval">
             <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
             <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
-            <circle stroke="url(#linearGradient-2)" stroke-width="6" stroke-linejoin="square" cx="64" cy="64" r="51"></circle>
+            <use stroke="url(#linearGradient-2)" stroke-width="6" xlink:href="#path-3"></use>
         </g>
         <g id="u" fill-rule="nonzero">
             <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
