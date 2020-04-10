@@ -1,7 +1,0 @@
-- name: WeathrClip
-  desc: WeathrClip provided current weather conditions, 5-day forecast, hourly forecast, and precipitation radar for the Mac and iPhone. I discontinued this app because the Weather Underground API is no longer available.
-  link:
-
-- name: Un1ts
-  desc: A comprehensive unit converter for the Mac. The original version of the app was written in Objective-C and was temporarily removed from the App Store. I have rereleased Un1ts as a completely new version written in Swift and SwiftUI to support the latest features of macOS.
-  link: un1ts

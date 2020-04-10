@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Gavin Wiggins</title>
 </head>
 <body>
@@ -30,23 +30,12 @@
 
         <h2>Applications</h2>
         <hr>
-        {% for app in site.data.applications %}
-        <p>
-            <b>{{ app.name }}</b>. {{ app.desc }}
-            {% if app.link != null %}
-            <a href="{{ app.link }}">[URL]</a>
-            {% endif %}
-        </p>
-        {% endfor %}
+        <p><b>Un1ts</b>. A comprehensive unit converter for the Mac. The original version of the app was written in Objective-C and was temporarily removed from the App Store. I have rereleased Un1ts as a completely new version written in Swift and SwiftUI to support the latest features of macOS. <a href="/un1ts">[URL]</a></p>
+        <p><b>WeathrClip</b>. WeathrClip provided current weather conditions, 5-day forecast, hourly forecast, and precipitation radar for the Mac and iPhone. I discontinued this app because the Weather Underground API is no longer available.</p>
 
-        <h2>Posts</h2>
+        <h2>Books</h2>
         <hr>
-        {% for post in site.posts %}
-        <p>
-            <b>{{ post.title }}</b>. {{ post.excerpt | strip_html }}
-            <a href="{{ post.url }}">[Read]</a>
-        </p>
-        {% endfor %}
+        <p><b>Swift Programming for macOS</b>. There are plenty of books, videos, and online resources for developing iOS apps. Despite the fact that iPhone and iPad apps require a Mac for code development, there is little information about actually creating native Mac applications. This book demonstrates various aspects of modern Mac app development using the latest versions of Swift and SwiftUI. Hopefully the examples will provide a useful resource for Mac developers. <a href="https://gavinw.me/swift-macos/">[Read]</a></p>
 
         <h2>Presentations</h2>
         <hr>
@@ -72,13 +61,10 @@
         {% endfor %}
 
         <hr>
-        <br>
-        <p><small>Made on a <a href="https://www.apple.com/mac/">Mac</a>. Generated with <a href="https://jekyllrb.com">Jekyll</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>. Stats by <a href="https://www.goatcounter.com">GoatCounter</a>.</small></p>
-        <br>
+        <p class="text-center small my-5">Developed by Gavin Wiggins. Last updated on {{ site.time | date: '%B %d, %Y' }}.<br>Made on a <a href="https://www.apple.com/mac/">Mac</a>. Generated with <a href="https://jekyllrb.com">Jekyll</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</p>
 
     </div>
     </div>
 </div>
-<script data-goatcounter="https://gavinw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
