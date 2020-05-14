@@ -42,7 +42,9 @@
         {% for pres in site.data.presentations %}
         <p>
             <b>{{ pres.title }}</b>. {{ pres.desc }}.
-            <a href="{{ pres.pdf }}">[PDF]</a>
+            {% if pres.pdf != null %}
+                <a href="{{ pres.pdf }}">[PDF]</a>
+            {% endif %}
         </p>
         {% endfor %}
 

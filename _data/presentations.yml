@@ -1,3 +1,7 @@
+- title: String formatting in Python
+  desc: KnoxPy meeting in Knoxville, TN on May 14, 2020. Live demo via Jupyter Notebook
+  pdf:
+
 - title: Reduced-Order Modeling Techniques for Fluidized-Bed Biomass Pyrolysis
   desc: TC Biomass conference in Rosemont, IL on October 7, 2019
   pdf: assets/pdfs/1910-tcbiomass-poster.pdf
