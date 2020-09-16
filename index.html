@@ -54,6 +54,9 @@
             {% if pres.pdf != null %}
                 <a href="{{ pres.pdf }}">[PDF]</a>
             {% endif %}
+            {% if pres.url != null %}
+                <a href="{{ pres.url }}">[URL]</a>
+            {% endif %}
         </p>
         {% endfor %}
 

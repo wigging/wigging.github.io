@@ -1,6 +1,10 @@
+- title: Getting Started with Python
+  desc: KnoxPy online meetup in Knoxville, TN on September 10, 2020
+  pdf: assets/pdfs/2009-knoxpy-getting-started-python.pdf
+  url: https://youtu.be/bVMraf-Nx-4
+
 - title: String formatting in Python
   desc: KnoxPy meeting in Knoxville, TN on May 14, 2020. Live demo via Jupyter Notebook
-  pdf:
 
 - title: Reduced-Order Modeling Techniques for Fluidized-Bed Biomass Pyrolysis
   desc: TC Biomass conference in Rosemont, IL on October 7, 2019
