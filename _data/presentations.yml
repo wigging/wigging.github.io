@@ -1,6 +1,6 @@
 - title: An open-source one-dimensional model for bubbling fluidized bed reactors
   desc: Workshop on Multiphase Flow Science presented online on August 3, 2021
-  url: assets/pdfs/2108-multiphase-workshop.pdf
+  pdf: assets/pdfs/2108-multiphase-workshop.pdf
 
 - title: Using Lists in Python
   desc: KnoxPy online meetup in Knoxville, TN on October 1, 2020
