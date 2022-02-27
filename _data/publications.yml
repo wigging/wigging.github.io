@@ -1,3 +1,8 @@
+- title: "Liionpack: A Python package for simulating packs of batteries with PyBaMM"
+  desc: Journal of Open Source Software, volume 7, number 70, page 4051, 2022
+  link: https://doi.org/10.21105/joss.04051
+  pdf:
+
 - title: "Multiscale CFD simulation of biomass fast pyrolysis with a machine learning derived intra-particle model and detailed pyrolysis kinetics"
   desc: Chemical Engineering Journal, volume 431, page 133853, 2022
   link: https://doi.org/10.1016/j.cej.2021.133853
