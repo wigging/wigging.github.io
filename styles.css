@@ -1,5 +1,9 @@
 .container {
-    max-width: 700px;
+    background-color: white;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    max-width: 740px;
+    padding: 40px;
 }
 
 a:hover {
@@ -9,7 +13,7 @@ a:hover {
 }
 
 body {
-    background-color: #fffff8;
+    background-color: rgb(246, 248, 250);
 }
 
 h2 {
@@ -42,6 +46,32 @@ img {
 
     img {
         max-width: 100%;
+    }
+
+}
+
+/*--- Dark mode ---*/
+
+@media screen and (prefers-color-scheme: dark) {
+
+    .container {
+        background-color: rgb(14, 17, 22);
+        border-left: 1px solid rgb(34, 38, 44);
+        border-right: 1px solid rgb(34, 38, 44);
+    }
+
+    a {
+        color: deepskyblue;
+    }
+
+    a:hover {
+        background: rgb(1, 4, 9);
+        color: dodgerblue;
+    }
+
+    body {
+        background-color: rgb(1, 4, 9);
+        color: rgb(223, 223, 224);
     }
 
 }
