@@ -1,3 +1,8 @@
+- title: "Using Chemical Reactor Models to Predict Fluidized Bed Pyrolysis Yields of Biomass Feedstocks"
+  desc: Oak Ridge National Laboratory, ORNL/TM-2021/2335, 2022
+  link:
+  pdf: assets/pdfs/2206-chem-reactors-pyrolysis.pdf
+
 - title: "Liionpack: A Python package for simulating packs of batteries with PyBaMM"
   desc: Journal of Open Source Software, volume 7, number 70, page 4051, 2022
   link: https://doi.org/10.21105/joss.04051
