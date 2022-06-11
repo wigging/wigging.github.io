@@ -1,3 +1,3 @@
 # Personal Website
 
-Repository containing my peronsal website [https://gavinw.me](https://gavinw.me).
+Repository containing my personal website [https://gavinw.me](https://gavinw.me).
