@@ -2,8 +2,26 @@
     background-color: white;
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgrey;
-    max-width: 740px;
+    max-width: 800px;
     padding: 40px;
+}
+
+.large-img {
+    max-width: 100%;
+}
+
+.center-img {
+    margin: 0 auto;
+    display: block;
+}
+
+#notes-list {
+    columns: 2 auto;
+}
+
+#profile-img {
+    margin-top: 20px;
+    width: 100px;
 }
 
 a {
@@ -25,24 +43,6 @@ h2 {
 
 img {
     max-width: 400px;
-}
-
-#notes-list {
-    columns: 2 auto;
-}
-
-#profile-img {
-    margin-top: 20px;
-    width: 100px;
-}
-
-.large-img {
-    max-width: 100%;
-}
-
-.center-img {
-    margin: 0 auto;
-    display: block;
 }
 
 @media (max-width: 480px) {
