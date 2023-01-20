@@ -1,22 +1,21 @@
-.container {
-    background-color: white;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
-    max-width: 800px;
-    padding: 40px;
+a {
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.large-img {
-    max-width: 100%;
+a:hover {
+    color: #4407e6;
+    background: #eeeeee;
 }
 
-.center-img {
-    margin: 0 auto;
-    display: block;
+body {
+    background-color: #f7fbfb;
+    max-width: 720px;
+    margin: auto;
 }
 
-#notes-list {
-    columns: 2 auto;
+h2 {
+    margin-top: 3rem;
 }
 
 #profile-img {
@@ -24,57 +23,24 @@
     width: 100px;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #4407E6;
-    background: #EEEEEE;
-}
-
-body {
-    background-color: rgb(246, 248, 250);
-}
-
-h2 {
-    margin-top: 60px;
-}
-
-img {
-    max-width: 400px;
-}
-
-@media (max-width: 480px) {
-
-    img {
-        max-width: 100%;
-    }
-
-}
-
-/*--- Dark mode ---*/
-
 @media screen and (prefers-color-scheme: dark) {
-
-    .container {
-        background-color: rgb(14, 17, 22);
-        border-left: 1px solid rgb(34, 38, 44);
-        border-right: 1px solid rgb(34, 38, 44);
-    }
 
     a {
         color: deepskyblue;
     }
 
     a:hover {
-        background: rgb(1, 4, 9);
         color: dodgerblue;
+        background: none;
     }
 
     body {
-        background-color: rgb(1, 4, 9);
+        background-color: rgb(35, 39, 45);
         color: rgb(223, 223, 224);
+    }
+
+    code {
+        color: hotpink;
     }
 
 }
