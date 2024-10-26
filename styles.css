@@ -15,7 +15,11 @@ body {
 }
 
 h2 {
-    margin-top: 4rem;
+    margin-top: 2rem;
+}
+
+h6 {
+    color: grey;
 }
 
 @media screen and (prefers-color-scheme: dark) {
