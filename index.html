@@ -4,39 +4,40 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://gavinw.me">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gavin Wiggins">
+    <meta property="og:description" content="Programming, science, and engineering.">
+    <meta property="og:image" content="https://example.com/testsite/img/apple.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
     <title>Gavin Wiggins</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
-    <div class="col-md">
-        <div class="d-flex align-items-center my-3">
-            <div class="flex-shrink-0">
-                <img src="assets/images/profile.png" alt="Gavin Wiggins" width="100">
-            </div>
-            <div class="flex-grow-1 ms-3">
-                <h1>Gavin Wiggins</h1>
-            </div>
-        </div>
+        <div class="col-md">
 
-        <p>Hello, I'm a research scientist at the Oak Ridge National Laboratory involved in various modeling, simulation, and programming activities. I currently work on external instrument control for neutron equipment and interconnected device programming. Previous areas of research include fluidized bed reactors, battery cells and battery packs, rotor dynamics, water treatment, and biomass pyrolysis. I am also creator of the Un1ts macOS app, Chemics Python package, BioComp web app, and the Genja static website generator. I was organizer of the KnoxPy Python users group along with the Knoxville CocoaHeads group for iOS and macOS developers. See the sections below for information about my software projects, presentations, and publications.</p>
+        <h1 style="margin-top:20px">
+            <picture style="margin-right:10px">
+                <source srcset="assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
+                <img src="assets/images/mac-icon.svg">
+            </picture>
+            Gavin Wiggins
+        </h1>
 
-        <p>
-            <b>Contact</b> <br>
-            <a href="mailto:mailATgavinwDOTme" onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')">Email</a> &nbsp; / &nbsp;
-            <a href="https://github.com/wigging">GitHub</a> &nbsp; / &nbsp;
-            <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a>
-        </p>
+        <p style="margin-top:20px">About &ensp;/&ensp; <a href="notes.html">Notes</a> &ensp;/&ensp; <a href="">Photos</a></p>
 
-        <p>
-            <b>Support</b> <br>
-            <a href="https://github.com/sponsors/wigging">GitHub Sponsors</a> &nbsp; / &nbsp;
-            <a href="https://www.patreon.com/wigging">Patreon</a> &nbsp; / &nbsp;
-            <a href="https://www.buymeacoffee.com/wigging">Buy Me A Coffee</a> &nbsp; / &nbsp;
-            <a href="https://www.paypal.me/gavinwiggins">PayPal</a>
-        </p>
+        <p>Hello, I'm a research scientist at the Oak Ridge National Laboratory involved in various modeling, simulation, and programming activities. I currently work on external instrument control for neutron equipment and interconnected device programming. Previous areas of research include fluidized bed reactors, battery cells and battery packs, rotor dynamics, water treatment, and biomass pyrolysis. I am also creator of the Numerix Swift package, Un1ts macOS app, Chemics Python package, BioComp web app, and the Genja static website generator. I was organizer of the KnoxPy Python users group along with the Knoxville CocoaHeads group for iOS and macOS developers.</p>
+
+        <p>Contact me via <a href="mailto:mailATgavinwDOTme" onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')">Email</a>, <a href="https://github.com/wigging">GitHub</a>, or <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a>. If you want to support my work, a monetary donation can be sent using <a href="https://github.com/sponsors/wigging">GitHub Sponsors</a>, <a href="https://www.patreon.com/wigging">Patreon</a>, <a href="https://www.buymeacoffee.com/wigging">Buy Me A Coffee</a>, or <a href="https://www.paypal.me/gavinwiggins">PayPal</a>. More information about my software, presentations, and publications is given below.</p>
 
         <h2>Software</h2>
         <hr>
@@ -280,7 +281,7 @@
 
         <p>
             <a href="http://pubs.rsc.org/en/content/chapter/bk9781782626183-00231/978-1-78801-024-5">Simulating Biomass Fast Pyrolysis at the Single Particle Scale</a>
-            <br> From the book 'Fast Pyrolysis of Biomass', chapter 11, pages 231-253, 2017.
+            <br> From the book <q>Fast Pyrolysis of Biomass</q>, chapter 11, pages 231-253, 2017.
         </p>
 
         <p>
@@ -315,9 +316,9 @@
 
         <hr class="mt-5">
 
-        <p class="text-center small my-5">Updated on October 7, 2024 by Gavin Wiggins.<br>Made on a <a href="https://www.apple.com/mac/">Mac 🍎</a>. Hosted with <a href="https://pages.github.com">GitHub Pages</a>.</p>
+        <p class="text-center small my-5">Updated on October 25, 2024.<br>Made on a <a href="https://www.apple.com/mac/">Mac 🍎</a>. Hosted with <a href="https://pages.github.com">GitHub Pages</a>.</p>
 
-    </div>
+        </div>
     </div>
 </div>
 </body>
