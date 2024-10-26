@@ -27,25 +27,30 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md">
+    <div class="col-md">
 
-            <h1 style="margin-top:20px">
-                <picture style="margin-right:10px">
-                    <source srcset="../assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
-                    <img src="../assets/images/mac-icon.svg">
-                </picture>
-                Gavin Wiggins
-            </h1>
+        <h1 style="margin-top:20px">
+            <picture style="margin-right:10px">
+                <source srcset="../assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
+                <img src="../assets/images/mac-icon.svg">
+            </picture>
+            Gavin Wiggins
+        </h1>
 
-            <p style="margin-top:20px"><a href="../index.html">About</a> &ensp;/&ensp; <a href="../notes.html">Notes</a> &ensp;/&ensp; <a href="">Photos</a></p>
+        <p style="margin-top:20px"><a href="../index.html">About</a> &ensp;/&ensp; <a href="../notes.html">Notes</a> &ensp;/&ensp; <a href="">Photos</a></p>
 
-            <h2>{{ meta['title'][0] }}</h2>
-            <h6>Written on {{ meta['date'][0] }}</h6>
-            <hr>
+        <h2>{{ meta['title'][0] }}</h2>
+        <h6>Written on {{ meta['date'][0] }}</h6>
+        <hr>
 
-            {{ content }}
+        {{ content }}
 
-        </div>
+    </div>
+    </div>
+    <div class="row my-5">
+    <div class="col-md">
+        <p class="text-center small">Gavin Wiggins © 2024</p>
+    </div>
     </div>
 </div>
 </body>

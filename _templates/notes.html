@@ -22,39 +22,44 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md">
+    <div class="col-md">
 
-        <h1 style="margin-top:20px">
-            <picture style="margin-right:10px">
-                <source srcset="assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
-                <img src="assets/images/mac-icon.svg">
-            </picture>
-            Gavin Wiggins
-        </h1>
+    <h1 style="margin-top:20px">
+        <picture style="margin-right:10px">
+            <source srcset="assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
+            <img src="assets/images/mac-icon.svg">
+        </picture>
+        Gavin Wiggins
+    </h1>
 
-        <p style="margin-top:20px"><a href="index.html">About</a> &ensp;/&ensp; Notes &ensp;/&ensp; <a href="">Photos</a></p>
+    <p style="margin-top:20px"><a href="index.html">About</a> &ensp;/&ensp; Notes &ensp;/&ensp; <a href="">Photos</a></p>
 
-        <p>This page is a collection of my notes on various programming topics. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
+    <p>This page is a collection of my notes on various programming topics. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
 
-        <h2>Fruits</h2>
-        <ul>
-        {% for page in pages %}
-        {% if page.category == 'fruits' %}
-            <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
+    <h2>Fruits</h2>
+    <ul>
+    {% for page in pages %}
+    {% if page.category == 'fruits' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
 
-        <h2>Python</h2>
-        <ul>
-        {% for page in pages %}
-        {% if page.category == 'python' %}
-            <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-        </ul>
+    <h2>Python</h2>
+    <ul>
+    {% for page in pages %}
+    {% if page.category == 'python' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
 
-        </div>
+    </div>
+    </div>
+    <div class="row my-5">
+    <div class="col-md">
+        <p class="text-center small">Gavin Wiggins © 2024</p>
+    </div>
     </div>
 </div>
 </body>

@@ -1,5 +1,5 @@
 ---
-title: Use Dask in a script
+title: Dask in a script
 date: November 8, 2022
 ---
 
