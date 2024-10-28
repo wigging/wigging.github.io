@@ -2,6 +2,6 @@
 # See https://github.com/wigging/genja for more info about genja.
 
 base_url = "https://gavinw.me"
-markdown_dir = "_notes"
-template_dir = "_templates"
+markdown_dir = "notes"
+template_dir = "templates"
 output_dir = "."
