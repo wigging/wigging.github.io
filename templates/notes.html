@@ -72,6 +72,15 @@
     {% endfor %}
     </ul>
 
+    <h2>Python</h2>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'python' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
     </div>
     </div>
     <div class="row my-5">
