@@ -32,47 +32,13 @@
         Gavin Wiggins
     </h1>
 
-    <p style="margin-top:20px"><a href="index.html">About</a> &ensp;/&ensp; Notes &ensp;/&ensp; <a href="">Photos</a></p>
+    <p style="margin-top:20px;margin-bottom:30px;"><a href="index.html">About</a> &ensp;/&ensp; <span style="font-weight:500">Notes</span> &ensp;/&ensp; <a href="">Photos</a></p>
 
     <p>This page is a collection of my notes on various programming topics. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
 
-    <h2>Dask and Ray</h2>
-    <ul>
-    {% for page in pages %}
-    {% if page.category == 'dask' or page.category == 'ray' %}
-        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-    <h2>Flask</h2>
-    <ul style="columns:2;">
-    {% for page in pages %}
-    {% if page.category == 'flask' %}
-        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-    <h2>Matplotlib</h2>
-    <ul style="columns:2;">
-    {% for page in pages %}
-    {% if page.category == 'matplotlib' %}
-        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-    <h2>NumPy</h2>
-    <ul style="columns:2;">
-    {% for page in pages %}
-    {% if page.category == 'numpy' %}
-        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
     <h2>Python</h2>
+    <hr>
+
     <ul style="columns:2;">
     {% for page in pages %}
     {% if page.category == 'python' %}
@@ -81,11 +47,62 @@
     {% endfor %}
     </ul>
 
+    <p><strong>Dask and Ray</strong></p>
+    <ul>
+    {% for page in pages %}
+    {% if page.category == 'dask' or page.category == 'ray' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p><strong>Flask</strong></p>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'flask' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p><strong>Matplotlib</strong></p>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'matplotlib' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p><strong>NumPy and SciPy</strong></p>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'numpy' or page.category == 'scipy' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p><strong>Tkinter</strong></p>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'tkinter' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <h2>Swift</h2>
+    <hr>
+
+    <p>here</p>
+
     </div>
     </div>
+
     <div class="row my-5">
     <div class="col-md">
-        <p class="text-center small">Gavin Wiggins © 2024</p>
+        <p class="text-center small">Gavin Wiggins © 2024.<br>Made on a <a href="https://www.apple.com/mac/">Mac 🍎</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</p>
     </div>
     </div>
 </div>
