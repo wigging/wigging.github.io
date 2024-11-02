@@ -47,6 +47,13 @@ pre code {
     max-width: 1000px;
 }
 
+#inline-img {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 @media screen and (prefers-color-scheme: dark) {
 
     a {
