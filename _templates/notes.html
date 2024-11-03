@@ -39,6 +39,8 @@
     <h2>Python</h2>
     <hr>
 
+    <p>Code examples can be found in the <a href="https://github.com/wigging/pythonic">pythonic</a> repository on GitHub.</p>
+
     <ul style="columns:2;">
     {% for page in pages %}
     {% if page.category == 'python' %}
@@ -98,6 +100,24 @@
     <ul style="columns:2;">
     {% for page in pages %}
     {% if page.category == 'swift' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p><strong>Accelerate</strong></p>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'accelerate' %}
+        <li><a href="{{ page.link }}">{{ page.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <p><strong>Metal</strong></p>
+    <ul style="columns:2;">
+    {% for page in pages %}
+    {% if page.category == 'metal' %}
         <li><a href="{{ page.link }}">{{ page.title }}</a></li>
     {% endif %}
     {% endfor %}
