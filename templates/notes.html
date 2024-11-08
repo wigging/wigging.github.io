@@ -36,13 +36,13 @@
 
     <p>This page is a collection of my notes on various programming topics. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
 
-    <h2>Python</h2>
+    <h2>🐍 Python</h2>
     <hr>
 
     <p>Code examples can be found in the <a href="https://github.com/wigging/pythonic">pythonic</a> repository on GitHub.</p>
 
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'python' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -51,7 +51,7 @@
 
     <p><strong>Dask and Ray</strong></p>
     <ul>
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'dask' or post.category == 'ray' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -60,7 +60,7 @@
 
     <p><strong>Flask</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'flask' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -69,7 +69,7 @@
 
     <p><strong>Matplotlib</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'matplotlib' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -78,7 +78,7 @@
 
     <p><strong>NumPy and SciPy</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'numpy' or post.category == 'scipy' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -87,7 +87,7 @@
 
     <p><strong>Tkinter</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title')  %}
     {% if post.category == 'tkinter' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -98,7 +98,7 @@
     <hr>
 
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'swift' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -107,7 +107,7 @@
 
     <p><strong>SwiftUI</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'swiftui' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -116,7 +116,7 @@
 
     <p><strong>Accelerate</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'accelerate' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
@@ -125,15 +125,23 @@
 
     <p><strong>Metal</strong></p>
     <ul style="columns:2;">
-    {% for post in posts %}
+    {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'metal' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
     {% endfor %}
     </ul>
 
-    <h2>JavaScript</h2>
+    <h2>🧮 Julia</h2>
     <hr>
+
+    <ul style="columns:2;">
+    {% for post in posts | sort(attribute='title') %}
+    {% if post.category == 'julia' %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
 
     </div>
     </div>
