@@ -36,9 +36,41 @@
 
     <p>This page is a collection of my notes on various programming topics. Subscribe to this page using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader or follow me on <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a> where I share links to new articles.</p>
 
-    <h2 id="python">🐍 Python</h2>
+    <h2>⚙️ C++</h2>
     <hr>
 
+    <ul style="columns:2;">
+    {% for post in posts | sort(attribute='title') %}
+    {% if post.category == 'cpp' %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <h2>☕️ JavaScript</h2>
+    <hr>
+
+    <ul style="columns:2;">
+    {% for post in posts | sort(attribute='title') %}
+    {% if post.category == 'javascript' %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <h2>🧮 Julia</h2>
+    <hr>
+
+    <ul style="columns:2;">
+    {% for post in posts | sort(attribute='title') %}
+    {% if post.category == 'julia' %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+
+    <h2>🐍 Python</h2>
+    <hr>
     <p>Code examples can be found in the <a href="https://github.com/wigging/pythonic">pythonic</a> repository on GitHub.</p>
 
     <ul style="columns:2;">
@@ -127,28 +159,6 @@
     <ul style="columns:2;">
     {% for post in posts | sort(attribute='title') %}
     {% if post.category == 'metal' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-    <h2>🧮 Julia</h2>
-    <hr>
-
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'julia' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
-    {% endif %}
-    {% endfor %}
-    </ul>
-
-    <h2>⚙️ C++</h2>
-    <hr>
-
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'cpp' %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
     {% endfor %}
