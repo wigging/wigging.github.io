@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/config-dataclass.html",
+            "url": "https://gavinw.me/notes/python/config-dataclass.html",
+            "title": "Configuration using a dataclass",
+            "date_published": "2024-11-21T00:00:00Z",
+            "content_html": "<p>A data class in Python can be used to store configuration settings for an application or service. Default configuration values are assigned to fields on the data class. However, the user can overload those values by using a class method to load the configuration settings from a file.</p><p><a href=\"https://gavinw.me/notes/python/config-dataclass.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/swift/discardable-result.html",
             "url": "https://gavinw.me/notes/swift/discardable-result.html",
             "title": "Discardable result",
