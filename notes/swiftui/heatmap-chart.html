@@ -34,23 +34,23 @@
 <div class="row">
 <div class="col-md">
 
-    <h1 style="margin-top:20px">
-        <picture style="margin-right:10px">
+    <h1 class="mt-4">
+        <picture class="me-2">
             <source srcset="../../assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
             <img src="../../assets/images/mac-icon.svg">
         </picture>
         Gavin Wiggins
     </h1>
 
-    <p style="margin-top:20px;margin-bottom:30px;">
-        <a href="../../index.html">About</a> &ensp;/&ensp;
-        <a href="../../notes.html">Notes</a> &ensp;/&ensp;
+    <p class="my-3">
+        <a href="../../index.html">About</a> &emsp;
+        <a href="../../notes.html">Notes</a> &emsp;
         <a href="../../photos.html">Photos</a>
     </p>
+    <hr>
 
     <h1>Heat map chart</h1>
     <h6>Written on July 8, 2023</h6>
-    <hr>
 
     <p>Use a <code>RectangleMark()</code> in a Swift Chart to create a 2D heat map of data. In this example, the data is represented using a <code>Grid</code> struct that contains an array of <code>Point</code> structs. The <code>Point</code> struct defines the x and y coordinate of the associated value. The x coordinate is a range based on the number of columns, the y coordinate is a range based on the number of columns, and the value is a random number from 0 to 1. Faint lines may appear on the chart if the frame size is not evenly divisible by the number of rows and columns defined by the <code>Grid</code> struct; this is likely caused by each <code>RectangleMark()</code> not perfectly aligning to the screen pixels.</p>
 <p><img src="../../assets/images/swiftui-heatmap.png" style="max-width:400px;" alt="heat map chart"></p>

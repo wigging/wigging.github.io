@@ -34,23 +34,23 @@
 <div class="row">
 <div class="col-md">
 
-    <h1 style="margin-top:20px">
-        <picture style="margin-right:10px">
+    <h1 class="mt-4">
+        <picture class="me-2">
             <source srcset="../../assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
             <img src="../../assets/images/mac-icon.svg">
         </picture>
         Gavin Wiggins
     </h1>
 
-    <p style="margin-top:20px;margin-bottom:30px;">
-        <a href="../../index.html">About</a> &ensp;/&ensp;
-        <a href="../../notes.html">Notes</a> &ensp;/&ensp;
+    <p class="my-3">
+        <a href="../../index.html">About</a> &emsp;
+        <a href="../../notes.html">Notes</a> &emsp;
         <a href="../../photos.html">Photos</a>
     </p>
+    <hr>
 
     <h1>Protocol</h1>
     <h6>Written on July 13, 2024</h6>
-    <hr>
 
     <p>A protocol is a way to define structural typing or "duck typing" in Python. It defines a set of attributes and/or methods that an object must have in order to be considered compatible with that protocol. Below is a protocol defined as an <code>Activity</code> class which must have <code>name</code> and <code>duration</code> attributes along with a <code>get_message</code> method.</p>
 <pre><code class="language-python">from typing import Protocol

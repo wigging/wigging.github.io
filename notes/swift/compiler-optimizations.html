@@ -34,23 +34,23 @@
 <div class="row">
 <div class="col-md">
 
-    <h1 style="margin-top:20px">
-        <picture style="margin-right:10px">
+    <h1 class="mt-4">
+        <picture class="me-2">
             <source srcset="../../assets/images/mac-icon-dark.svg" media="(prefers-color-scheme:dark)">
             <img src="../../assets/images/mac-icon.svg">
         </picture>
         Gavin Wiggins
     </h1>
 
-    <p style="margin-top:20px;margin-bottom:30px;">
-        <a href="../../index.html">About</a> &ensp;/&ensp;
-        <a href="../../notes.html">Notes</a> &ensp;/&ensp;
+    <p class="my-3">
+        <a href="../../index.html">About</a> &emsp;
+        <a href="../../notes.html">Notes</a> &emsp;
         <a href="../../photos.html">Photos</a>
     </p>
+    <hr>
 
     <h1>Compiler optimizations</h1>
     <h6>Written on February 24, 2024</h6>
-    <hr>
 
     <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
 <p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
