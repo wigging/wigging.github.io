@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/package-data.html",
+            "url": "https://gavinw.me/notes/python/package-data.html",
+            "title": "Package with data",
+            "date_published": "2024-11-24T00:00:00Z",
+            "content_html": "<p>The file structure below represents a project for a Python package named <code>mypackage</code> that includes data files. The data files in this example are CSV text files located in the package's source directory at <code>src/mypackage/data/</code>. The package can be installed using <code>pip install .</code> from the root level of the project.</p><p><a href=\"https://gavinw.me/notes/python/package-data.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/config-dataclass.html",
             "url": "https://gavinw.me/notes/python/config-dataclass.html",
             "title": "Configuration using a dataclass",
@@ -1088,13 +1095,6 @@
             "title": "Numbers",
             "date_published": "2022-11-08T00:00:00Z",
             "content_html": "<p>Python includes three numeric types such as integers <code>int</code>, float <code>float</code>, and complex <code>complex</code> numbers.</p><p><a href=\"https://gavinw.me/notes/python/numbers.html\">Continue reading...</a></p>"
-        },
-        {
-            "id": "https://gavinw.me/notes/python/package-data.html",
-            "url": "https://gavinw.me/notes/python/package-data.html",
-            "title": "Package with data",
-            "date_published": "2022-11-08T00:00:00Z",
-            "content_html": "<p>The file structure below represents a Python package that includes data files. Notice the data directory is within the package at <code>src/mypackage/</code>. This source directory approach follows the conventions outlined in the <a href=\"https://packaging.python.org/en/latest/\">Python Packaging User Guide</a>.</p><p><a href=\"https://gavinw.me/notes/python/package-data.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/scipy/sparse-diag.html",

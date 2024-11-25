@@ -50,42 +50,81 @@
     <hr>
 
     <h1>Package with data</h1>
-    <h6>Written on November 8, 2022</h6>
+    <h6>Written on November 24, 2024</h6>
 
-    <p>The file structure below represents a Python package that includes data files. Notice the data directory is within the package at <code>src/mypackage/</code>. This source directory approach follows the conventions outlined in the <a href="https://packaging.python.org/en/latest/">Python Packaging User Guide</a>.</p>
-<pre><code>mypackage-data
-├── README.md
-├── examples
-│   ├── add_numbers.py
-│   └── read_fruits_data.py
-├── pyproject.toml
-├── src
-│   └── mypackage
+    <p>The file structure below represents a project for a Python package named <code>mypackage</code> that includes data files. The data files in this example are CSV text files located in the package's source directory at <code>src/mypackage/data/</code>. The package can be installed using <code>pip install .</code> from the root level of the project.</p>
+<pre><code class="language-text">my-project/
+├── src/
+│   └── mypackage/
+│       ├── data/
+│       │   ├── fruits.csv
+│       │   └── veggies.csv
 │       ├── __init__.py
-│       ├── adder.py
-│       ├── data
-│       │   └── fruits.csv
-│       └── read_fruits.py
-└── tests
-    ├── test_adder.py
-    └── test_read_fruits.py
+│       └── reader.py
+├── README.md
+├── example.py
+└── pyproject.toml
 </code></pre>
-<p>The <code>importlib.resources</code> module should be used to get a path to the data files. This ensures the data file's path is correct even when the package is installed on different systems.</p>
-<pre><code class="language-python">import pandas as pd
-from importlib.resources import files
+<p>The content of the <code>pyproject.toml</code> file is shown below. Notice the data directory does not need to be explicitly stated in the pyproject file - well, at least for the hatchling build system.</p>
+<pre><code class="language-toml">[build-system]
+requires = [&quot;hatchling&quot;]
+build-backend = &quot;hatchling.build&quot;
+
+[project]
+name = &quot;mypackage&quot;
+version = &quot;0.1&quot;
+authors = [{name = &quot;Bart Simpson&quot;}]
+description = &quot;A small example package&quot;
+requires-python = &quot;&gt;=3.10&quot;
+dependencies = [&quot;pandas&quot;, &quot;ruff&quot;]
+</code></pre>
+<p>In the <code>reader.py</code> module are functions that read the CSV files in the data directory and print out the data. Below is a function that reads the <code>fruits.csv</code> file and prints the fruit data. Notice the use of the <code>importlib.resources</code> module to get a path to the data file. This ensures the data file's path is correct even when the package is installed on different systems.</p>
+<pre><code class="language-python"># reader.py
+
+import pandas as pd
+import importlib.resources
 
 
 def read_fruits():
-    &quot;&quot;&quot;
-    Read fruit data from CSV file.
-    &quot;&quot;&quot;
-    path = files('mypackage') / 'data/fruits.csv'
-    print(f'File path is\n{path}')
+    &quot;&quot;&quot;Read fruits CSV file and print data.&quot;&quot;&quot;
+    data_res = importlib.resources.files(&quot;mypackage&quot;) / &quot;data&quot;
 
-    df = pd.read_csv(path)
-    print(f'Pandas dataframe is\n{df}')
+    with importlib.resources.as_file(data_res / &quot;fruits.csv&quot;) as f:
+        df = pd.read_csv(f)
 
+    print(f&quot;\nFruits data from `fruits.csv` is below\n{df}&quot;)
 </code></pre>
+<p>The content of the <code>example.py</code> file is shown next. The output from running the example is also shown. The data from the CSV files is successfully read and printed out from the example script.</p>
+<pre><code class="language-python"># example.py
+
+import mypackage as mypkg
+
+
+def main():
+    &quot;&quot;&quot;Run functions from the package.&quot;&quot;&quot;
+    mypkg.read_fruits()
+    mypkg.read_veggies()
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<pre><code class="language-console">$ python example.py
+
+Fruits data from `fruits.csv` is below
+      name   quantity   price
+0   apples          3    2.50
+1   lemons          1    0.45
+2  bananas          6    3.99
+
+Veggies data from `veggies.csv` is below
+       name   quantity   price
+0   carrots          3    4.89
+1  broccoli          1    1.25
+2   spinach          6    2.50
+3     beans         18    3.20
+</code></pre>
+<p>See the <a href="https://docs.python.org/3/library/importlib.resources.html">Python docs</a> for more information about the <code>importlib.resources</code> module.</p>
 
 </div>  <!-- End col-md -->
 </div>  <!-- End row -->
