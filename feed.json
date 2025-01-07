@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/run-script-uv.html",
+            "url": "https://gavinw.me/notes/python/run-script-uv.html",
+            "title": "Run scripts with uv",
+            "date_published": "2025-01-06T00:00:00Z",
+            "content_html": "<p>A Python script is a file intended for standalone execution. The uv tool can be used to directly run a script even if other Python packages are needed to run it. This offers a more streamlined approach for running scripts compared to manually managing a virtual environment and its dependencies.</p><p><a href=\"https://gavinw.me/notes/python/run-script-uv.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/virtual-env-uv.html",
             "url": "https://gavinw.me/notes/python/virtual-env-uv.html",
             "title": "Virtual environments with uv",
