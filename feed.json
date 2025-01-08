@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/projects-uv.html",
+            "url": "https://gavinw.me/notes/python/projects-uv.html",
+            "title": "Projects with uv",
+            "date_published": "2025-01-07T00:00:00Z",
+            "content_html": "<p>Managing a virtual environment and its dependencies can be a hassle for Python projects. Choosing between the different techniques to install Python and different package managers can be a daunting task. Luckily, uv makes this process much easier.</p><p><a href=\"https://gavinw.me/notes/python/projects-uv.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/run-script-uv.html",
             "url": "https://gavinw.me/notes/python/run-script-uv.html",
             "title": "Run scripts with uv",
