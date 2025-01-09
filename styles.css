@@ -48,6 +48,12 @@ pre code {
     max-width: 1000px;
 }
 
+.icon {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-left: 1.5em;
+}
+
 #inline-img {
     display: inline-block;
     margin-bottom: 20px;
