@@ -1,5 +1,5 @@
 ---
-title: Modules
+title: Modules in JavaScript
 date: February 27, 2023
 ---
 

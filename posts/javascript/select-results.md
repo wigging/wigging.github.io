@@ -1,5 +1,5 @@
 ---
-title: Select results
+title: Select results with JavaScript
 date: March 23, 2023
 ---
 

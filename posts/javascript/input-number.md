@@ -1,5 +1,5 @@
 ---
-title: Input number
+title: Input number with JavaScript
 date: March 18, 2023
 ---
 

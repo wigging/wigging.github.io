@@ -1,5 +1,5 @@
 ---
-title: Select units
+title: Select units with JavaScript
 date: March 17, 2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Fizz buzz
+title: Fizz buzz in JavaScript
 date: March 18, 2023
 ---
 

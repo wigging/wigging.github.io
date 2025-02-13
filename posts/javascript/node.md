@@ -1,5 +1,5 @@
 ---
-title: Node
+title: Node for JavaScript
 date: April 28, 2023
 ---
 

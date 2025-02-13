@@ -1,5 +1,5 @@
 ---
-title: Scroll columns
+title: Scroll columns with JavaScript
 date: March 24, 2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Strings
+title: Strings in JavaScript
 date: March 19, 2023
 ---
 

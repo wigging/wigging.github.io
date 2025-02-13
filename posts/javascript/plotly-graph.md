@@ -1,5 +1,5 @@
 ---
-title: Plotly graph
+title: Plotly graph with JavaScript
 date: March 19, 2023
 ---
 

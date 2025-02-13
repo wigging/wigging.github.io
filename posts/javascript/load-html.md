@@ -1,5 +1,5 @@
 ---
-title: Load content from HTML files
+title: Load content from HTML files with JavaScript
 date: March 26, 2023
 ---
 
