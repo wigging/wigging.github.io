@@ -1,5 +1,5 @@
 ---
-title: Bokeh graph with Htmx
+title: Bokeh graph with Htmx and Flask
 date: February 4, 2023
 ---
 

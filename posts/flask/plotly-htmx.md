@@ -1,5 +1,5 @@
 ---
-title: Plotly graph with Htmx
+title: Plotly graph with Htmx and Flask
 date: February 4, 2023
 ---
 

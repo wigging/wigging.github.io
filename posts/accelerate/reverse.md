@@ -1,5 +1,5 @@
 ---
-title: Reverse array elements
+title: Reverse array elements with Accelerate
 date: November 11, 2022
 ---
 

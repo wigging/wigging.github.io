@@ -1,5 +1,5 @@
 ---
-title: Form input
+title: Form input with Flask
 date: February 4, 2023
 ---
 

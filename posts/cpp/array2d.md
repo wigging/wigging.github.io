@@ -1,5 +1,5 @@
 ---
-title: Array with two-dimensions
+title: Array with two-dimensions in C++
 date: August 13, 2023
 ---
 

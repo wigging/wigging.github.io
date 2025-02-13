@@ -1,5 +1,5 @@
 ---
-title: Hello world
+title: Hello world in C++
 date: December 13, 2022
 ---
 

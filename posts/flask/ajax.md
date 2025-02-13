@@ -1,5 +1,5 @@
 ---
-title: Update page with Ajax
+title: Update page with Ajax and Flask
 date: February 4, 2023
 ---
 

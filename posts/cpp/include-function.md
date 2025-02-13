@@ -1,5 +1,5 @@
 ---
-title: Include function
+title: Include function in C++
 date: July 25, 2023
 ---
 

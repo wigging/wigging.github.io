@@ -1,5 +1,5 @@
 ---
-title: Numbers
+title: Numbers in C++
 date: December 13, 2022
 ---
 

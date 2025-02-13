@@ -1,5 +1,5 @@
 ---
-title: Command line arguments
+title: Command line arguments with C++
 date: December 13, 2022
 ---
 

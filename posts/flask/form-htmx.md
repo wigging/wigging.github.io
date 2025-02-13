@@ -1,5 +1,5 @@
 ---
-title: Form input with Htmx
+title: Form input with Htmx and Flask
 date: February 4, 2023
 ---
 

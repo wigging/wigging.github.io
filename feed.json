@@ -75,18 +75,18 @@
             "content_html": "<p>The functions shown below are examples of measuring elapsed time in Swift. The sleep function is used to delay the code execution for 4 seconds. Consequently, the elapsed time for each example is approximately 4 seconds.</p><p><a href=\"https://gavinw.me/notes/swift/elapsed-time.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/accelerate/complex-multiplication.html",
-            "url": "https://gavinw.me/notes/accelerate/complex-multiplication.html",
-            "title": "Complex multiplication",
+            "id": "https://gavinw.me/notes/accelerate/complex-multiply.html",
+            "url": "https://gavinw.me/notes/accelerate/complex-multiply.html",
+            "title": "Complex multiplication with Accelerate",
             "date_published": "2024-05-11T00:00:00Z",
-            "content_html": "<p>Use the <code>cblas_cgemv</code> function in Accelerate to multiply a matrix and vector with single-precision complex values. For this example, a structure named <code>Complex</code> with <code>real</code> and <code>imag</code> properties is utilized but <code>DSPComplex</code> can also be used.</p><p><a href=\"https://gavinw.me/notes/accelerate/complex-multiplication.html\">Continue reading...</a></p>"
+            "content_html": "<p>Use the <code>cblas_cgemv</code> function in Accelerate to multiply a matrix and vector with single-precision complex values. For this example, a structure named <code>Complex</code> with <code>real</code> and <code>imag</code> properties is utilized but <code>DSPComplex</code> can also be used.</p><p><a href=\"https://gavinw.me/notes/accelerate/complex-multiply.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/accelerate/matrix-multiplication.html",
-            "url": "https://gavinw.me/notes/accelerate/matrix-multiplication.html",
-            "title": "Matrix multiplication",
+            "id": "https://gavinw.me/notes/accelerate/matrix-multiply.html",
+            "url": "https://gavinw.me/notes/accelerate/matrix-multiply.html",
+            "title": "Matrix multiplication with Accelerate",
             "date_published": "2024-05-04T00:00:00Z",
-            "content_html": "<p>Accelerate provides two functions for performing matrix multiplication. The first is the <code>vDSP_mmulD</code> function which is demonstrated below.</p><p><a href=\"https://gavinw.me/notes/accelerate/matrix-multiplication.html\">Continue reading...</a></p>"
+            "content_html": "<p>Accelerate provides two functions for performing matrix multiplication. The first is the <code>vDSP_mmulD</code> function which is demonstrated below.</p><p><a href=\"https://gavinw.me/notes/accelerate/matrix-multiply.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/metal/matrix-multiplication.html",
@@ -231,14 +231,14 @@
         {
             "id": "https://gavinw.me/notes/cpp/array2d.html",
             "url": "https://gavinw.me/notes/cpp/array2d.html",
-            "title": "Array with two-dimensions",
+            "title": "Array with two-dimensions in C++",
             "date_published": "2023-08-13T00:00:00Z",
             "content_html": "<p>A two-dimensional array can be created using the traditional C-style array or with the C++ standard array container. Both approaches are demonstrated below.</p><p><a href=\"https://gavinw.me/notes/cpp/array2d.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/cpp/include-function.html",
             "url": "https://gavinw.me/notes/cpp/include-function.html",
-            "title": "Include function",
+            "title": "Include function in C++",
             "date_published": "2023-07-25T00:00:00Z",
             "content_html": "<p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p><p><a href=\"https://gavinw.me/notes/cpp/include-function.html\">Continue reading...</a></p>"
         },
@@ -455,56 +455,56 @@
         {
             "id": "https://gavinw.me/notes/flask/form-htmx.html",
             "url": "https://gavinw.me/notes/flask/form-htmx.html",
-            "title": "Form input with Htmx",
+            "title": "Form input with Htmx and Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The example below uses Htmx in a Flask app to submit a form when the page loads. Results calculated from the form values are displayed on the same page.</p><p><a href=\"https://gavinw.me/notes/flask/form-htmx.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/plotly-restyle.html",
             "url": "https://gavinw.me/notes/flask/plotly-restyle.html",
-            "title": "Plotly graph restyle",
+            "title": "Plotly graph restyle with Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. The example below demonstrates using the Plotly JavaScript library in a Flask app. When the page first loads, a default line graph is shown. New data points are added to the graph using the form inputs. The <code>Plotly.restyle</code> function is used to redraw the graph when new data points are submitted; this approach avoids recreating an entirely new Plotly graph each time the data is updated.</p><p><a href=\"https://gavinw.me/notes/flask/plotly-restyle.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/ajax.html",
             "url": "https://gavinw.me/notes/flask/ajax.html",
-            "title": "Update page with Ajax",
+            "title": "Update page with Ajax and Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p>This Flask webapp example uses Ajax to update the page with results from the post request. The results are returned as JSON which is used to update the div tags.</p><p><a href=\"https://gavinw.me/notes/flask/ajax.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/bokeh-htmx.html",
             "url": "https://gavinw.me/notes/flask/bokeh-htmx.html",
-            "title": "Bokeh graph with Htmx",
+            "title": "Bokeh graph with Htmx and Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://bokeh.org\">Bokeh</a> is a visualization library for Python that makes it easy to plot data in Jupyter notebooks or web pages. <a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The example below uses Htmx in a Flask app to display a Bokeh graph in a web page without updating the entire page.</p><p><a href=\"https://gavinw.me/notes/flask/bokeh-htmx.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/plotly-graph.html",
             "url": "https://gavinw.me/notes/flask/plotly-graph.html",
-            "title": "Plotly graph",
+            "title": "Plotly graph with Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. The example below demonstrates using the Plotly JavaScript library in a Flask app.</p><p><a href=\"https://gavinw.me/notes/flask/plotly-graph.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/plotly-htmx.html",
             "url": "https://gavinw.me/notes/flask/plotly-htmx.html",
-            "title": "Plotly graph with Htmx",
+            "title": "Plotly graph with Htmx and Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The example below uses Htmx in a Flask app to display a Plotly graph in a web page without updating the entire page.</p><p><a href=\"https://gavinw.me/notes/flask/plotly-htmx.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/bokeh-graph.html",
             "url": "https://gavinw.me/notes/flask/bokeh-graph.html",
-            "title": "Bokeh graph",
+            "title": "Bokeh graph with Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://bokeh.org\">Bokeh</a> is a visualization library for Python that makes it easy to plot data in Jupyter notebooks or web pages. The example below uses Flask to serve a web page, handle the form input data, then plot the data on a separate page using Bokeh.</p><p><a href=\"https://gavinw.me/notes/flask/bokeh-graph.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/flask/form-input.html",
             "url": "https://gavinw.me/notes/flask/form-input.html",
-            "title": "Form input",
+            "title": "Form input with Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p>An HTML form collects user input on a web page. Using Flask, the input can be evaluated in Python and used elsewhere in the web application. As an example, in the <code>app.py</code> file shown below, the index or home page renders the HTML form. The input from the form is handled as two numbers. The sum, product, and fraction of the numbers are calculated then passed to the results page.</p><p><a href=\"https://gavinw.me/notes/flask/form-input.html\">Continue reading...</a></p>"
         },
@@ -630,7 +630,7 @@
         {
             "id": "https://gavinw.me/notes/cpp/strings.html",
             "url": "https://gavinw.me/notes/cpp/strings.html",
-            "title": "Strings",
+            "title": "Strings in C++",
             "date_published": "2022-12-13T00:00:00Z",
             "content_html": "<p>Examples of working with strings are given below.</p><p><a href=\"https://gavinw.me/notes/cpp/strings.html\">Continue reading...</a></p>"
         },
@@ -644,7 +644,7 @@
         {
             "id": "https://gavinw.me/notes/cpp/helloworld.html",
             "url": "https://gavinw.me/notes/cpp/helloworld.html",
-            "title": "Hello world",
+            "title": "Hello world in C++",
             "date_published": "2022-12-13T00:00:00Z",
             "content_html": "<p>Here is a simple example of a C++ program in a file named <code>helloworld.cpp</code>.</p><p><a href=\"https://gavinw.me/notes/cpp/helloworld.html\">Continue reading...</a></p>"
         },
@@ -665,14 +665,14 @@
         {
             "id": "https://gavinw.me/notes/cpp/numbers.html",
             "url": "https://gavinw.me/notes/cpp/numbers.html",
-            "title": "Numbers",
+            "title": "Numbers in C++",
             "date_published": "2022-12-13T00:00:00Z",
             "content_html": "<p>Examples of integer, float, and double numbers are given below. An integer is just a whole number (no decimals). A float is a number with up to 7 decimal digits and a double is up to 15 decimal digits of precision.</p><p><a href=\"https://gavinw.me/notes/cpp/numbers.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/cpp/commandline.html",
             "url": "https://gavinw.me/notes/cpp/commandline.html",
-            "title": "Command line arguments",
+            "title": "Command line arguments with C++",
             "date_published": "2022-12-13T00:00:00Z",
             "content_html": "<p>To pass command line arguments to a program, define <code>main()</code> with two arguments. The <code>argc</code> argument is the number of command line arguments including the program name while <code>argv</code> is the list of arguments passed to the program.</p><p><a href=\"https://gavinw.me/notes/cpp/commandline.html\">Continue reading...</a></p>"
         },
@@ -931,21 +931,21 @@
         {
             "id": "https://gavinw.me/notes/accelerate/absolute-value.html",
             "url": "https://gavinw.me/notes/accelerate/absolute-value.html",
-            "title": "Absolute value",
+            "title": "Absolute value with Accelerate",
             "date_published": "2022-11-11T00:00:00Z",
             "content_html": "<p>Get the absolute values of a vector using the vDSP.absolute function.</p><p><a href=\"https://gavinw.me/notes/accelerate/absolute-value.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/accelerate/sort.html",
             "url": "https://gavinw.me/notes/accelerate/sort.html",
-            "title": "Sort array values",
+            "title": "Sort array values with Accelerate",
             "date_published": "2022-11-11T00:00:00Z",
             "content_html": "<p>Sort the values in an array by ascending or descending order. Values of the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/accelerate/sort.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/accelerate/reverse.html",
             "url": "https://gavinw.me/notes/accelerate/reverse.html",
-            "title": "Reverse array elements",
+            "title": "Reverse array elements with Accelerate",
             "date_published": "2022-11-11T00:00:00Z",
             "content_html": "<p>Reverse the order of elements in an array using the vDSP.reverse function. Values in the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/accelerate/reverse.html\">Continue reading...</a></p>"
         },
@@ -1186,13 +1186,6 @@
             "title": "Installing Python",
             "date_published": "2022-11-05T00:00:00Z",
             "content_html": "<p>The most common way to install Python is at <a href=\"https://www.python.org\">https://www.python.org</a>. Go to the Downloads section for step-by-step instructions on how to download and install Python for your operating system. For scientific computing, check out the Anaconda distribution of Python available at <a href=\"https://www.anaconda.com\">https://www.anaconda.com</a>. Go to the Products section and select the open source Individual Edition.</p><p><a href=\"https://gavinw.me/notes/python/install-python.html\">Continue reading...</a></p>"
-        },
-        {
-            "id": "https://gavinw.me/notes/flask/heroku.html",
-            "url": "https://gavinw.me/notes/flask/heroku.html",
-            "title": "Deploy on Heroku",
-            "date_published": "2022-11-01T00:00:00Z",
-            "content_html": "<p><a href=\"https://www.heroku.com\">Heroku</a> makes it easy to deploy a Python Flask application. To get started, create a project folder and a virtual environment in that folder. Notice that <code>env</code> is the name of the virtual environment discussed below; it can be called <code>myenv</code> or something else.</p><p><a href=\"https://gavinw.me/notes/flask/heroku.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/julia/testing.html",
