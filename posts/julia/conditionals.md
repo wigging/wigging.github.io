@@ -1,5 +1,5 @@
 ---
-title: Conditional statements
+title: Conditional statements in Julia
 date: June 13, 2021
 ---
 

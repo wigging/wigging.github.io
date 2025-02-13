@@ -1,5 +1,5 @@
 ---
-title: Strings
+title: Strings in Julia
 date: May 22, 2021
 ---
 

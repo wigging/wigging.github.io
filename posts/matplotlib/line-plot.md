@@ -1,5 +1,5 @@
 ---
-title: Line plot
+title: Line plot with Matplotlib
 date: February 4, 2023
 ---
 

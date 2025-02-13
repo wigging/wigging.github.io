@@ -1,5 +1,5 @@
 ---
-title: Debugging
+title: Debugging in Julia
 date: June 22, 2021
 ---
 

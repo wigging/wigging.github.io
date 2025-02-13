@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: Getting started with Julia
 date: June 20, 2021
 ---
 

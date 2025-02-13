@@ -1,5 +1,5 @@
 ---
-title: Dictionaries
+title: Dictionaries in Julia
 date: May 22, 2021
 ---
 

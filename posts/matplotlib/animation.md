@@ -1,5 +1,5 @@
 ---
-title: Animation
+title: Animation with Matplotlib
 date: February 4, 2023
 ---
 

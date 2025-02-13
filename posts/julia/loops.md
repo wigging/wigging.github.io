@@ -1,5 +1,5 @@
 ---
-title: Loops
+title: Loops in Julia
 date: May 25, 2021
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Imshow plot
+title: Imshow plot with Matplotlib
 date: May 10, 2023
 ---
 

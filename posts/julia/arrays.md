@@ -1,5 +1,5 @@
 ---
-title: Arrays
+title: Arrays in Julia
 date: June 20, 2021
 ---
 

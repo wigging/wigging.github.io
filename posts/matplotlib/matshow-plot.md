@@ -1,5 +1,5 @@
 ---
-title: Matshow plot
+title: Matshow plot with Matplotlib
 date: May 10, 2023
 ---
 

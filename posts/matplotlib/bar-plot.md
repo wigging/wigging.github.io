@@ -1,5 +1,5 @@
 ---
-title: Bar plot
+title: Bar plot with Matplotlib
 date: February 9, 2023
 ---
 

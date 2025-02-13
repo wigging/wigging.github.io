@@ -1,5 +1,5 @@
 ---
-title: Tuples
+title: Tuples in Julia
 date: May 23, 2021
 ---
 

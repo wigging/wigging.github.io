@@ -1,5 +1,5 @@
 ---
-title: JSON parsing
+title: JSON parsing with Julia
 date: June 8, 2021
 ---
 

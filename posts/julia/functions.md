@@ -1,5 +1,5 @@
 ---
-title: Functions
+title: Functions in Julia
 date: May 27, 2021
 ---
 
