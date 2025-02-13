@@ -642,13 +642,6 @@
             "content_html": "<p>Check if the clang compiler is installed on your Mac using the following terminal command:</p><p><a href=\"https://gavinw.me/notes/cpp/clang-macos.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/cpp/comments.html",
-            "url": "https://gavinw.me/notes/cpp/comments.html",
-            "title": "Comments",
-            "date_published": "2022-12-13T00:00:00Z",
-            "content_html": "<p>C++ supports single-line and multiline comments. A single-line comment is represented by two forward slashes <code>//</code>.</p><p><a href=\"https://gavinw.me/notes/cpp/comments.html\">Continue reading...</a></p>"
-        },
-        {
             "id": "https://gavinw.me/notes/cpp/helloworld.html",
             "url": "https://gavinw.me/notes/cpp/helloworld.html",
             "title": "Hello world",
@@ -920,13 +913,6 @@
             "title": "Strings",
             "date_published": "2022-11-12T00:00:00Z",
             "content_html": "<p>A string in Swift is represented by characters wrapped with double quotation marks <code>\" \"</code>. Multiline strings are wrapped with three double quotation marks <code>\"\"\" \"\"\"</code>. Use a backslash <code>\\</code> to ignore a line break in a multiline string.</p><p><a href=\"https://gavinw.me/notes/swift/strings.html\">Continue reading...</a></p>"
-        },
-        {
-            "id": "https://gavinw.me/notes/swift/comments.html",
-            "url": "https://gavinw.me/notes/swift/comments.html",
-            "title": "Comments",
-            "date_published": "2022-11-12T00:00:00Z",
-            "content_html": "<p>Single-line comments begin with two forward-slashes <code>//</code> while multiline comments are wrapped with forward-slashes and asterisks such as <code>/* */</code>.</p><p><a href=\"https://gavinw.me/notes/swift/comments.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/swift/date-formatting.html",
@@ -1249,13 +1235,6 @@
             "title": "Conditional statements",
             "date_published": "2021-06-13T00:00:00Z",
             "content_html": "<p>A conditional statement is written with the <code>if-elseif-else</code> syntax. The ternary operator <code>? :</code> offers a concise syntax for a conditional expression.</p><p><a href=\"https://gavinw.me/notes/julia/conditionals.html\">Continue reading...</a></p>"
-        },
-        {
-            "id": "https://gavinw.me/notes/julia/comments.html",
-            "url": "https://gavinw.me/notes/julia/comments.html",
-            "title": "Comments",
-            "date_published": "2021-06-13T00:00:00Z",
-            "content_html": "<p>Single line and inline comments begin with <code>#</code> in Julia. Wrap multiple lines of text with <code>#= =#</code> for multiline comments.</p><p><a href=\"https://gavinw.me/notes/julia/comments.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/julia/modules.html",
