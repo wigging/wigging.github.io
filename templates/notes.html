@@ -35,143 +35,157 @@
     </p>
     <hr>
 
-    <p class="mt-4">This page is a collection of my notes on various programming topics. Subscribe to this page using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader or follow me on <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a> where I share links to new articles. See the <a href="#categories">categories</a> section for notes grouped by category and links to GitHub repositories that contain code examples.</p>
+    <p class="mt-4">This page is a collection of my notes on various programming topics. Subscribe to this page using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader or follow me on <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a> where I share links to new articles. Notes are organized into the following categories: C++, JavaScript, Julia, Python, and Swift.</p>
+
+    <!-- C++ -->
+
+    <h2 class="icon" style="background-image:url(assets/icons/cpp.svg);">C++</h2>
+    <p>Code examples are available on GitHub in the <a href="https://github.com/wigging/cpp-programs">cpp-programs</a> repository.</p>
 
     {% for post in posts | sort(attribute='iso_date', reverse=true) %}
+    {% if post.category == 'cpp' %}
     <p class="py-2">
         <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
         <span class="float-end">{{ post.date }}</span>
     </p>
-    {% endfor %}
-
-    <!-- Categories -->
-
-    <h3 id="categories" class="icon" style="background-image:url(assets/icons/cpp.svg);">C++</h3>
-    <p>Code examples are available on GitHub in the <a href="https://github.com/wigging/cpp-programs">cpp-programs</a> repository.</p>
-
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'cpp' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <h3 class="icon" style="background-image:url(assets/icons/javascript.svg);">JavaScript</h3>
+    <!-- JavaScript -->
+
+    <h2 class="icon" style="background-image:url(assets/icons/javascript.svg);margin-top:4rem;">JavaScript</h2>
     <p>Code examples are available in the <a href="https://github.com/wigging/javascripts">javascripts</a> GitHub repository.</p>
 
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'javascript' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <h3 class="icon" style="background-image:url(assets/icons/julia.svg);">Julia</h3>
+    <!-- Julia -->
+
+    <h2 class="icon" style="background-image:url(assets/icons/julia.svg);margin-top:4rem;">Julia</h2>
     <p>Code examples are available in the <a href="https://github.com/wigging/computing-julia">computing-julia</a> repository on GitHub.</p>
 
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'julia' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <h3 class="icon" style="background-image:url(assets/icons/python.svg);">Python</h3>
+    <!-- Python -->
+
+    <h2 class="icon" style="background-image:url(assets/icons/python.svg);margin-top:4rem;">Python</h2>
     <p>Code examples can be found in the <a href="https://github.com/wigging/pythonic">pythonic</a> repository on GitHub.</p>
 
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'python' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>Dask and Ray</strong></p>
-    <ul>
-    {% for post in posts | sort(attribute='title') %}
+    <h4>Dask and Ray</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'dask' or post.category == 'ray' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>Flask</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    <h4>Flask</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'flask' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>Matplotlib</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    <h4>Matplotlib</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'matplotlib' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>NumPy and SciPy</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    <h4>NumPy and SciPy</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'numpy' or post.category == 'scipy' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>Tkinter</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title')  %}
+    <h4>Tkinter</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'tkinter' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <h3 class="icon" style="background-image:url(assets/icons/swift.svg);">Swift</h3>
+    <!-- Swift -->
+
+    <h2 class="icon" style="background-image:url(assets/icons/swift.svg);margin-top:4rem;">Swift</h2>
     <p>Code examples are available on GitHub in the <a href="https://github.com/wigging/swift-macos">swift-macos</a> repository.</p>
 
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'swift' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>SwiftUI</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    <h4>SwiftUI</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'swiftui' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>Accelerate</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    <h4>Accelerate</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'accelerate' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
-    <p><strong>Metal</strong></p>
-    <ul style="columns:2;">
-    {% for post in posts | sort(attribute='title') %}
+    <h4>Metal</h4>
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if post.category == 'metal' %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+    <p class="py-2">
+        <span class="float-start"><a href="{{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end">{{ post.date }}</span>
+    </p>
     {% endif %}
     {% endfor %}
-    </ul>
 
 </div>
 </div>
