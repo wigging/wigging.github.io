@@ -1,5 +1,5 @@
 ---
-title: Sampler
+title: Metal sampler
 date: October 10, 2023
 ---
 

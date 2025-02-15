@@ -1,5 +1,5 @@
 ---
-title: Large array memory usage
+title: Memory usage of large NumPy array
 date: February 4, 2023
 ---
 

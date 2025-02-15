@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://gavinw.me/notes/numpy/large-array-memory.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Large array memory usage">
+    <meta property="og:description" content="Memory usage of large NumPy array">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -45,7 +45,7 @@
     </p>
     <hr>
 
-    <h1>Large array memory usage</h1>
+    <h2>Memory usage of large NumPy array</h2>
     <h6>Written on February 4, 2023</h6>
 
     <p>In the examples below, a 500x2000x2000 three-dimensional NumPy array named <code>a</code> is initialized with zeros. At each iteration, a random two-dimensional array <code>r</code> is inserted into array <code>a</code>. This approach could represent a larger piece of code where the <code>r</code> array would be created from various calculations during each iteration of the for-loop. Consequently, each slice in the z dimension of the <code>a</code> array is calculated at each iteration.</p>

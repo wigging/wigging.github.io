@@ -1,5 +1,5 @@
 ---
-title: Full array
+title: Full array in NumPy
 date: November 7, 2022
 ---
 

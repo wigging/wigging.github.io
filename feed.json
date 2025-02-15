@@ -91,7 +91,7 @@
         {
             "id": "https://gavinw.me/notes/metal/matrix-multiplication.html",
             "url": "https://gavinw.me/notes/metal/matrix-multiplication.html",
-            "title": "Matrix multiplication",
+            "title": "Matrix multiplication with Metal",
             "date_published": "2024-05-03T00:00:00Z",
             "content_html": "<p>Metal Performance Shaders provide <code>MPSMatrix</code> and <code>MPSMatrixMultiplication</code> objects to perform matrix multiplication on the GPU. The code below demonstrates multiplication of two matrices.</p><p><a href=\"https://gavinw.me/notes/metal/matrix-multiplication.html\">Continue reading...</a></p>"
         },
@@ -175,49 +175,49 @@
         {
             "id": "https://gavinw.me/notes/metal/sampler.html",
             "url": "https://gavinw.me/notes/metal/sampler.html",
-            "title": "Sampler",
+            "title": "Metal sampler",
             "date_published": "2023-10-10T00:00:00Z",
             "content_html": "<p>This example uses a Metal <code>sampler</code> to upscale a noise texture as the Metal view increases in size. The left image shown below represents the actual size of the texture. The right image is the sampled (upscaled) texture due to the larger window size which increases the size of the Metal view.</p><p><a href=\"https://gavinw.me/notes/metal/sampler.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/metal/noise.html",
             "url": "https://gavinw.me/notes/metal/noise.html",
-            "title": "Noise",
+            "title": "Noise with Metal",
             "date_published": "2023-09-29T00:00:00Z",
             "content_html": "<p>This example creates noise using a shader function that is based on the Golden Ratio. It is adapted from a function on the <a href=\"https://www.shadertoy.com/view/ltB3zD\">Shadertoy</a> website.</p><p><a href=\"https://gavinw.me/notes/metal/noise.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/metal/triangle.html",
             "url": "https://gavinw.me/notes/metal/triangle.html",
-            "title": "Triangle",
+            "title": "Triangle with Metal",
             "date_published": "2023-09-19T00:00:00Z",
             "content_html": "<p>This example creates a triangle using vertex and fragment shaders.</p><p><a href=\"https://gavinw.me/notes/metal/triangle.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/metal/clear-color.html",
             "url": "https://gavinw.me/notes/metal/clear-color.html",
-            "title": "Clear color",
+            "title": "Clear color with Metal",
             "date_published": "2023-09-10T00:00:00Z",
             "content_html": "<p>This example sets the clear color to blue for the Metal view. This color is like the background color of the view.</p><p><a href=\"https://gavinw.me/notes/metal/clear-color.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/metal/color-compute.html",
             "url": "https://gavinw.me/notes/metal/color-compute.html",
-            "title": "Color view with compute kernel",
+            "title": "Color view with Metal compute kernel",
             "date_published": "2023-09-08T00:00:00Z",
             "content_html": "<p>Here is a basic example of using Metal to change the color of a view using a compute function (kernel). The pixels in the view are represented in Metal as a grid. The sliders change the RGB color values for each pixel in the grid.</p><p><a href=\"https://gavinw.me/notes/metal/color-compute.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/gauss.html",
             "url": "https://gavinw.me/notes/numpy/gauss.html",
-            "title": "Gauss-Legendre points and weights",
+            "title": "Gauss-Legendre points and weights with NumPy",
             "date_published": "2023-08-31T00:00:00Z",
             "content_html": "<p>The function below returns the Gauss-Legendre integration points and weights for a 2D quadrilateral using values from a 1D quadrature. The 1D values are obtained from NumPy's <code>leggauss()</code> function.</p><p><a href=\"https://gavinw.me/notes/numpy/gauss.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/metal/particles.html",
             "url": "https://gavinw.me/notes/metal/particles.html",
-            "title": "Particles",
+            "title": "Particles with Metal",
             "date_published": "2023-08-29T00:00:00Z",
             "content_html": "<p>This example uses Metal to draw particles (pixels) in a view. The particles move throughout the view based on their position and velocity. This example is inspired by the <a href=\"https://metalkit.org/2017/11/30/working-with-particles-in-metal-part-3/\">Working with Particles in Metal part 3</a> article by Marius Horga. However, this example is implemented with SwiftUI for macOS whereas Marius' example runs in an Xcode playground.</p><p><a href=\"https://gavinw.me/notes/metal/particles.html\">Continue reading...</a></p>"
         },
@@ -441,7 +441,7 @@
         {
             "id": "https://gavinw.me/notes/numpy/index-max.html",
             "url": "https://gavinw.me/notes/numpy/index-max.html",
-            "title": "Index of max value",
+            "title": "Index of max value with NumPy",
             "date_published": "2023-02-06T00:00:00Z",
             "content_html": "<p>Use NumPy's <code>argmax()</code> function to get the index of the maximum value in an array.</p><p><a href=\"https://gavinw.me/notes/numpy/index-max.html\">Continue reading...</a></p>"
         },
@@ -553,7 +553,7 @@
         {
             "id": "https://gavinw.me/notes/numpy/large-array-memory.html",
             "url": "https://gavinw.me/notes/numpy/large-array-memory.html",
-            "title": "Large array memory usage",
+            "title": "Memory usage of large NumPy array",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p>In the examples below, a 500x2000x2000 three-dimensional NumPy array named <code>a</code> is initialized with zeros. At each iteration, a random two-dimensional array <code>r</code> is inserted into array <code>a</code>. This approach could represent a larger piece of code where the <code>r</code> array would be created from various calculations during each iteration of the for-loop. Consequently, each slice in the z dimension of the <code>a</code> array is calculated at each iteration.</p><p><a href=\"https://gavinw.me/notes/numpy/large-array-memory.html\">Continue reading...</a></p>"
         },
@@ -1120,56 +1120,56 @@
         {
             "id": "https://gavinw.me/notes/numpy/clip-array.html",
             "url": "https://gavinw.me/notes/numpy/clip-array.html",
-            "title": "Clip array values",
+            "title": "Clip array values with NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>The <code>clip</code> function limits the values in an array based on a given interval or minimum or maximum value.</p><p><a href=\"https://gavinw.me/notes/numpy/clip-array.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/bool-index.html",
             "url": "https://gavinw.me/notes/numpy/bool-index.html",
-            "title": "Boolean indexing",
+            "title": "Boolean indexing with NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>Use boolean indexing in NumPy arrays to assign values. The example below assigns a zero to array items that are less than zero.</p><p><a href=\"https://gavinw.me/notes/numpy/bool-index.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/full-array.html",
             "url": "https://gavinw.me/notes/numpy/full-array.html",
-            "title": "Full array",
+            "title": "Full array in NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>Use the <code>full</code> function in NumPy to create a new array filled with a given value.</p><p><a href=\"https://gavinw.me/notes/numpy/full-array.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/maximum-array.html",
             "url": "https://gavinw.me/notes/numpy/maximum-array.html",
-            "title": "Maximum array",
+            "title": "Maximum array with NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>The <code>maximum</code> function returns a new array that contains the maximum values of the two given arrays.</p><p><a href=\"https://gavinw.me/notes/numpy/maximum-array.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/difference.html",
             "url": "https://gavinw.me/notes/numpy/difference.html",
-            "title": "Set difference of two arrays",
+            "title": "Set difference of two NumPy arrays",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>The <code>setdiff1d</code> function returns the unique values in array 1 that are not in array 2.</p><p><a href=\"https://gavinw.me/notes/numpy/difference.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/loop-columns.html",
             "url": "https://gavinw.me/notes/numpy/loop-columns.html",
-            "title": "Loop over columns",
+            "title": "Loop over columns with NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>Loop over columns in an array by iterating over the transpose of the array.</p><p><a href=\"https://gavinw.me/notes/numpy/loop-columns.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/compare-inv-solve.html",
             "url": "https://gavinw.me/notes/numpy/compare-inv-solve.html",
-            "title": "Compare inv and solve functions",
+            "title": "Compare inv and solve functions in NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>Solve equation <code>A*x=b</code> for <code>x</code> and compare results using the <code>np.linalg.solve()</code> function to the <code>np.linalg.inv()</code> approach.</p><p><a href=\"https://gavinw.me/notes/numpy/compare-inv-solve.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/numpy/save-load-arrays.html",
             "url": "https://gavinw.me/notes/numpy/save-load-arrays.html",
-            "title": "Save and load arrays",
+            "title": "Save and load NumPy arrays",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>NumPy arrays can be saved and loaded using different file formats. Examples of using the NumPy file formats <code>.npy</code> and <code>.npz</code> as well as a plain text format are given below.</p><p><a href=\"https://gavinw.me/notes/numpy/save-load-arrays.html\">Continue reading...</a></p>"
         },

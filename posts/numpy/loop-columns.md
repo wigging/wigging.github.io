@@ -1,5 +1,5 @@
 ---
-title: Loop over columns
+title: Loop over columns with NumPy
 date: November 7, 2022
 ---
 

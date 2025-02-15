@@ -1,5 +1,5 @@
 ---
-title: Triangle
+title: Triangle with Metal
 date: September 19, 2023
 ---
 

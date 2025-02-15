@@ -1,5 +1,5 @@
 ---
-title: Clear color
+title: Clear color with Metal
 date: September 10, 2023
 ---
 

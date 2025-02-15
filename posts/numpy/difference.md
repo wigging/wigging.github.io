@@ -1,5 +1,5 @@
 ---
-title: Set difference of two arrays
+title: Set difference of two NumPy arrays
 date: November 7, 2022
 ---
 
