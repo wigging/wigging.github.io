@@ -1,5 +1,5 @@
 ---
-title: Protocol
+title: Protocols in Python
 date: July 13, 2024
 ---
 

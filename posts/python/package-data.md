@@ -1,5 +1,5 @@
 ---
-title: Package with data
+title: Python package with data
 date: November 24, 2024
 ---
 

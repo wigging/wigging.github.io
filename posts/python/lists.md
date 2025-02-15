@@ -1,5 +1,5 @@
 ---
-title: Lists
+title: Lists in Python
 date: November 8, 2022
 ---
 

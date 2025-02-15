@@ -1,5 +1,5 @@
 ---
-title: Makefiles
+title: Makefiles for Python projects
 date: March 14, 2024
 ---
 

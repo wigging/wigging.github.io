@@ -1,5 +1,5 @@
 ---
-title: Secrets
+title: Secrets in Python
 date: November 8, 2022
 ---
 

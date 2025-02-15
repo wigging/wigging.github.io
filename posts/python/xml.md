@@ -1,5 +1,5 @@
 ---
-title: XML
+title: Parsing XML with Python
 date: November 8, 2022
 ---
 

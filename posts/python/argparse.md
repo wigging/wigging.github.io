@@ -1,5 +1,5 @@
 ---
-title: Argparse
+title: Command-line arguments with Python
 date: September 28, 2024
 ---
 

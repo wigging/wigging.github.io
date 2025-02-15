@@ -1,5 +1,5 @@
 ---
-title: Dictionaries
+title: Dictionaries in Python
 date: November 15, 2022
 ---
 

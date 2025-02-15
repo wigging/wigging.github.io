@@ -1,5 +1,5 @@
 ---
-title: Tuples
+title: Tuples in Python
 date: November 8, 2022
 ---
 

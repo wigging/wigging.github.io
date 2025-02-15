@@ -1,5 +1,5 @@
 ---
-title: Counter
+title: Counter in Python
 date: November 8, 2022
 ---
 

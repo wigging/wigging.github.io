@@ -1,5 +1,5 @@
 ---
-title: Configuration using a dataclass
+title: Configuration using a Python dataclass
 date: November 21, 2024
 ---
 

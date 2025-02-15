@@ -1,5 +1,5 @@
 ---
-title: Debugger
+title: Debugger in Python
 date: July 18, 2023
 ---
 

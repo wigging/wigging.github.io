@@ -1,5 +1,5 @@
 ---
-title: Cache function
+title: Cache function in Python
 date: January 13, 2024
 ---
 

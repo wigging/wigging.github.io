@@ -1,14 +1,9 @@
 ---
-title: Pre-allocate list
+title: Pre-allocate a Python list
 date: November 8, 2022
 ---
 
-If the size of a list is known, then pre-allocating the list can provide
-performance improvements; especially for a large list. The example below
-measures the performance of appending items to an empty list. Pre-allocating
-a list of known size and assigning items to it gives better performance than
-appending to the list. The list comprehension approach (see Example 3) gives
-the best elapsed time.
+If the size of a list is known, then pre-allocating the list can provide performance improvements; especially for a large list. The example below measures the performance of appending items to an empty list. Pre-allocating a list of known size and assigning items to it gives better performance than appending to the list. The list comprehension approach (see Example 3) gives the best elapsed time.
 
 - Example 1 = 11.6552 ms
 - Example 2 = 8.9583 ms

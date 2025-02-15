@@ -1,5 +1,5 @@
 ---
-title: JSON
+title: JSON with Python
 date: November 8, 2022
 ---
 

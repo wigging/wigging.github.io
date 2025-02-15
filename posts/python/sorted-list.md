@@ -1,5 +1,5 @@
 ---
-title: Sorted list of items
+title: Sorted list of items with Python
 date: February 4, 2023
 ---
 

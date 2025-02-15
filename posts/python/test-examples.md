@@ -1,5 +1,5 @@
 ---
-title: Test examples
+title: Test examples with Python
 date: November 8, 2022
 ---
 

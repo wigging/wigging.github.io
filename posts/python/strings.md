@@ -1,5 +1,5 @@
 ---
-title: Strings
+title: Strings in Python
 date: November 11, 2022
 ---
 

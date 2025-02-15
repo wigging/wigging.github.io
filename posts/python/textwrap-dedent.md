@@ -1,5 +1,5 @@
 ---
-title: Textwrap dedent
+title: Dedent text with Python
 date: February 29, 2024
 ---
 
