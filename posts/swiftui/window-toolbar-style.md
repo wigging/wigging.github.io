@@ -1,5 +1,5 @@
 ---
-title: Window and toolbar style
+title: Window and toolbar style in SwiftUI
 date: November 13, 2022
 ---
 

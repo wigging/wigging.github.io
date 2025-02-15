@@ -1,5 +1,5 @@
 ---
-title: Cursors
+title: Cursors in a SwiftUI app
 date: November 13, 2022
 ---
 

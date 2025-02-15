@@ -1,5 +1,5 @@
 ---
-title: Menu items
+title: Menu items in a SwiftUI app
 date: November 13, 2022
 ---
 

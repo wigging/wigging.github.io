@@ -1,5 +1,5 @@
 ---
-title: Toolbar dropdown
+title: Toolbar dropdown in SwiftUI
 date: November 13, 2022
 ---
 

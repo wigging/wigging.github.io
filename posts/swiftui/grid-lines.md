@@ -1,5 +1,5 @@
 ---
-title: Grid lines
+title: Grid lines in SwiftUI view
 date: February 4, 2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Credits
+title: Credits in SwiftUI app
 date: November 13, 2022
 ---
 

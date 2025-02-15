@@ -1,5 +1,5 @@
 ---
-title: Sidebar toggle
+title: Sidebar toggle in SwiftUI
 date: November 13, 2022
 ---
 

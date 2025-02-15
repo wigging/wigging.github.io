@@ -1,5 +1,5 @@
 ---
-title: Open a window
+title: Open a window in SwiftUI
 date: November 13, 2022
 ---
 

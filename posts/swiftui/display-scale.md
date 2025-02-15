@@ -1,5 +1,5 @@
 ---
-title: Display scale
+title: Display scale with SwiftUI
 date: August 28, 2023
 ---
 

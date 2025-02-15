@@ -1,5 +1,5 @@
 ---
-title: ViewBuilder
+title: ViewBuilder in SwiftUI
 date: November 13, 2022
 ---
 

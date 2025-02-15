@@ -1,5 +1,5 @@
 ---
-title: Table
+title: Table view in SwiftUI
 date: November 13, 2022
 ---
 

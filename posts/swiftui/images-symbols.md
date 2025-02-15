@@ -1,5 +1,5 @@
 ---
-title: Images and symbols
+title: Images and symbols in SwiftUI app
 date: November 13, 2022
 ---
 

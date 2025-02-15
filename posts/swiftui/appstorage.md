@@ -1,5 +1,5 @@
 ---
-title: AppStorage
+title: App storage in SwiftUI
 date: November 13, 2022
 ---
 

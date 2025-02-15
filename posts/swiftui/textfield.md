@@ -1,5 +1,5 @@
 ---
-title: TextField
+title: Text field in SwiftUI
 date: November 13, 2022
 ---
 

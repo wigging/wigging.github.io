@@ -1,5 +1,5 @@
 ---
-title: Toggle animation
+title: Toggle animation in SwiftUI
 date: November 13, 2022
 ---
 

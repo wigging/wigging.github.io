@@ -1,5 +1,5 @@
 ---
-title: Line chart
+title: Line chart in SwiftUI
 date: March 28, 2023
 ---
 

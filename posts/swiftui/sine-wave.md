@@ -1,5 +1,5 @@
 ---
-title: Sine wave
+title: Sine wave in SwiftUI view
 date: February 4, 2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Path markers
+title: Path markers in SwiftUI
 date: November 13, 2022
 ---
 

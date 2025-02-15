@@ -1,5 +1,5 @@
 ---
-title: Image from colormap filter
+title: Image from colormap filter in SwiftUI
 date: July 22, 2023
 ---
 

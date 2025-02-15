@@ -1,5 +1,5 @@
 ---
-title: Window resizability
+title: Window resizability in SwiftUI
 date: February 21, 2023
 ---
 

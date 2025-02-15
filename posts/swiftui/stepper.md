@@ -1,5 +1,5 @@
 ---
-title: Stepper
+title: Stepper in SwiftUI
 date: November 13, 2022
 ---
 

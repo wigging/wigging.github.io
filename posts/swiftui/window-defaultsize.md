@@ -1,5 +1,5 @@
 ---
-title: Window default size
+title: Window default size with SwiftUI
 date: February 22, 2023
 ---
 

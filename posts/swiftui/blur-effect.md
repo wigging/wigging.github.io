@@ -1,5 +1,5 @@
 ---
-title: Blur effect
+title: Blur effect with SwiftUI
 date: February 4, 2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: ProgressView
+title: Progress view in SwiftUI
 date: November 13, 2022
 ---
 

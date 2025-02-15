@@ -1,5 +1,5 @@
 ---
-title: Heat map chart
+title: Heat map chart in SwiftUI
 date: July 8, 2023
 ---
 

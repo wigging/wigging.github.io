@@ -1,5 +1,5 @@
 ---
-title: Preferences window
+title: Preferences window in SwiftUI
 date: November 13, 2022
 ---
 

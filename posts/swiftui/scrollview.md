@@ -1,5 +1,5 @@
 ---
-title: ScrollView
+title: Scroll view in SwiftUI
 date: November 13, 2022
 ---
 

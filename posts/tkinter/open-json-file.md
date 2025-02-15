@@ -1,5 +1,5 @@
 ---
-title: Open JSON file
+title: Open JSON file in Tkinter
 date: February 4, 2023
 ---
 

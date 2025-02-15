@@ -1,5 +1,5 @@
 ---
-title: Picker control
+title: Picker control in SwiftUI
 date: November 13, 2022
 ---
 

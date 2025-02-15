@@ -1,5 +1,5 @@
 ---
-title: LabeledContent
+title: Labeled content with SwiftUI
 date: November 13, 2022
 ---
 

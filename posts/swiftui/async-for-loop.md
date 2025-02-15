@@ -1,5 +1,5 @@
 ---
-title: Async for-in loop
+title: Async for-in loop in SwiftUI
 date: June 13, 2023
 ---
 

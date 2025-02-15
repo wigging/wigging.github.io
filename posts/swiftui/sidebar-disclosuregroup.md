@@ -1,5 +1,5 @@
 ---
-title: Sidebar DisclosureGroup
+title: Sidebar disclosure group in SwiftUI
 date: November 13, 2022
 ---
 

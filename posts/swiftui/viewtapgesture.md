@@ -1,5 +1,5 @@
 ---
-title: View Tap Gesture
+title: SwiftUI tap gesture
 date: November 13, 2022
 ---
 

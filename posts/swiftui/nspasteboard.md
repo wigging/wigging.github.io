@@ -1,5 +1,5 @@
 ---
-title: NSPasteboard
+title: Pasteboard in a SwiftUI app
 date: November 13, 2022
 ---
 

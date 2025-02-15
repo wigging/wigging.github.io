@@ -1,5 +1,5 @@
 ---
-title: Label
+title: Labels with SwiftUI
 date: November 13, 2022
 ---
 

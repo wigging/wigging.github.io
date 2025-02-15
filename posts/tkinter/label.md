@@ -1,5 +1,5 @@
 ---
-title: Update Label text
+title: Update label text in Tkinter
 date: February 4, 2023
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Text
+title: Text in SwiftUI
 date: November 13, 2022
 ---
 

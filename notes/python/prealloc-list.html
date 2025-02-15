@@ -9,7 +9,7 @@
     <meta property="og:url" content="https://gavinw.me/notes/python/prealloc-list.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Pre-allocate list">
+    <meta property="og:description" content="Pre-allocate a Python list">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -45,15 +45,10 @@
     </p>
     <hr>
 
-    <h2>Pre-allocate list</h2>
+    <h2>Pre-allocate a Python list</h2>
     <h6>Written on November 8, 2022</h6>
 
-    <p>If the size of a list is known, then pre-allocating the list can provide
-performance improvements; especially for a large list. The example below
-measures the performance of appending items to an empty list. Pre-allocating
-a list of known size and assigning items to it gives better performance than
-appending to the list. The list comprehension approach (see Example 3) gives
-the best elapsed time.</p>
+    <p>If the size of a list is known, then pre-allocating the list can provide performance improvements; especially for a large list. The example below measures the performance of appending items to an empty list. Pre-allocating a list of known size and assigning items to it gives better performance than appending to the list. The list comprehension approach (see Example 3) gives the best elapsed time.</p>
 <ul>
 <li>Example 1 = 11.6552 ms</li>
 <li>Example 2 = 8.9583 ms</li>
