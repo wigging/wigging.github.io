@@ -1,5 +1,5 @@
 ---
-title: Create a package
+title: Create a Swift package
 date: February 18, 2024
 ---
 

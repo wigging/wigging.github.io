@@ -1,5 +1,5 @@
 ---
-title: Elapsed time
+title: Elapsed time for Swift code
 date: June 24, 2024
 example: swift-macos/swift-scripts/elapsedtime.swift
 ---

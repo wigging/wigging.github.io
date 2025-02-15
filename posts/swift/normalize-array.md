@@ -1,5 +1,5 @@
 ---
-title: Normalize array values
+title: Normalize array values in Swift
 date: July 17, 2023
 example: swift-macos/xcode-playgrounds/NormalizeArray.playground
 ---

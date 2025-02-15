@@ -1,5 +1,5 @@
 ---
-title: Flat indexing an N-dimensional array
+title: Flat indexing an N-dimensional array in Swift
 date: August 7, 2024
 example: swift-macos/swift-scripts/flat-indexing.swift
 ---

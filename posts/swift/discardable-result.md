@@ -1,5 +1,5 @@
 ---
-title: Discardable result
+title: Discardable result in Swift
 date: October 7, 2024
 ---
 

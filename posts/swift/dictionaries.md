@@ -1,5 +1,5 @@
 ---
-title: Dictionaries
+title: Dictionaries in Swift
 date: November 12, 2022
 ---
 

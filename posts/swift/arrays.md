@@ -1,5 +1,5 @@
 ---
-title: Arrays
+title: Arrays in Swift
 date: July 14, 2023
 ---
 

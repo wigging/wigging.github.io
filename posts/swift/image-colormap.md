@@ -1,5 +1,5 @@
 ---
-title: Image from colormap filter
+title: Image from colormap filter in Swift
 date: July 19, 2023
 example: swift-macos/xcode-playgrounds/ImageColormap.playground
 ---

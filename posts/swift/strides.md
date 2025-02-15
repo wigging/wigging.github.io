@@ -1,5 +1,5 @@
 ---
-title: Strides
+title: Strides in Swift
 date: November 12, 2022
 ---
 

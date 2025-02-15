@@ -1,5 +1,5 @@
 ---
-title: Compiler optimizations
+title: Swift compiler optimizations
 date: February 24, 2024
 ---
 

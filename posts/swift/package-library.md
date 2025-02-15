@@ -1,5 +1,5 @@
 ---
-title: Package a library
+title: Package a Swift library
 date: March 15, 2024
 ---
 
