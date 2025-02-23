@@ -642,20 +642,6 @@
             "content_html": "<p>Here is a simple example of a C++ program in a file named <code>helloworld.cpp</code>.</p><p><a href=\"https://gavinw.me/notes/cpp/helloworld.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/cpp/cmake-install.html",
-            "url": "https://gavinw.me/notes/cpp/cmake-install.html",
-            "title": "CMake install",
-            "date_published": "2022-12-13T00:00:00Z",
-            "content_html": "<p>Below is an example C++ project. The CMakeLists file contains instructions for building and installing the project using the CMake command line tool.</p><p><a href=\"https://gavinw.me/notes/cpp/cmake-install.html\">Continue reading...</a></p>"
-        },
-        {
-            "id": "https://gavinw.me/notes/cpp/cmake-build.html",
-            "url": "https://gavinw.me/notes/cpp/cmake-build.html",
-            "title": "CMake build",
-            "date_published": "2022-12-13T00:00:00Z",
-            "content_html": "<p>Below is an example C++ project. The CMakeLists file contains instructions for building the project using the CMake command line tool.</p><p><a href=\"https://gavinw.me/notes/cpp/cmake-build.html\">Continue reading...</a></p>"
-        },
-        {
             "id": "https://gavinw.me/notes/cpp/numbers.html",
             "url": "https://gavinw.me/notes/cpp/numbers.html",
             "title": "Numbers in C++",
@@ -668,6 +654,13 @@
             "title": "Command line arguments with C++",
             "date_published": "2022-12-13T00:00:00Z",
             "content_html": "<p>To pass command line arguments to a program, define <code>main()</code> with two arguments. The <code>argc</code> argument is the number of command line arguments including the program name while <code>argv</code> is the list of arguments passed to the program.</p><p><a href=\"https://gavinw.me/notes/cpp/commandline.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/cpp/cmake.html",
+            "url": "https://gavinw.me/notes/cpp/cmake.html",
+            "title": "CMake build and install",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Use CMake to build and/or install code for a C++ project. The build and install steps are discussed individually in each section below. This discussion assumes a project structure as shown in the file tree diagram.</p><p><a href=\"https://gavinw.me/notes/cpp/cmake.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/swiftui/twocol-navsplit.html",
