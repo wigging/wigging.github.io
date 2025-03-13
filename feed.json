@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/flask/config.html",
+            "url": "https://gavinw.me/notes/flask/config.html",
+            "title": "Flask app configuration",
+            "date_published": "2025-03-12T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://pypi.org/project/python-dotenv/\">dotenv</a> package can be used to load configuration settings for a Flask app. The configuration is defined in a <code>.env</code> file which is ignored by version control to ensure items like API keys and passwords are not shared with others.</p><p><a href=\"https://gavinw.me/notes/flask/config.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/projects-uv.html",
             "url": "https://gavinw.me/notes/python/projects-uv.html",
             "title": "Python projects with uv",
