@@ -1,7 +1,0 @@
-# Configuration file used by genja to generate this website.
-# See https://github.com/wigging/genja for more info about genja.
-
-base_url = "https://gavinw.me"
-posts_output = "notes"
-site_output = "."
-title = "Gavin Wiggins"
