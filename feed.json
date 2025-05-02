@@ -26,6 +26,41 @@
             "content_html": "<p>The <a href=\"https://docs.python.org/3/library/functools.html\">functools</a> module provides a <code>@cache</code> decorator to store the results of an expensive function; also known as memoize.</p><p><a href=\"https://gavinw.me/posts/python/cache-function.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/numpy/gauss.html",
+            "url": "https://gavinw.me/posts/numpy/gauss.html",
+            "title": "Gauss-Legendre Points and Weights with NumPy",
+            "date_published": "2023-08-31T00:00:00Z",
+            "content_html": "<p>The function below returns the Gauss-Legendre integration points and weights for a 2D quadrilateral using values from a 1D quadrature. The 1D values are obtained from NumPy's <code>leggauss()</code> function.</p><p><a href=\"https://gavinw.me/posts/numpy/gauss.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/imshow-plot.html",
+            "url": "https://gavinw.me/posts/matplotlib/imshow-plot.html",
+            "title": "Imshow Plot with Matplotlib",
+            "date_published": "2023-05-10T00:00:00Z",
+            "content_html": "<p>Display data as an image using Matplotlib's imshow method.</p><p><a href=\"https://gavinw.me/posts/matplotlib/imshow-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/matshow-plot.html",
+            "url": "https://gavinw.me/posts/matplotlib/matshow-plot.html",
+            "title": "Matshow Plot with Matplotlib",
+            "date_published": "2023-05-10T00:00:00Z",
+            "content_html": "<p>Visualize an array using Matplotlib's matshow function. The first example shown below plots a 2D array and the second example plots a diagonal array.</p><p><a href=\"https://gavinw.me/posts/matplotlib/matshow-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/bar-plot.html",
+            "url": "https://gavinw.me/posts/matplotlib/bar-plot.html",
+            "title": "Bar Plot with Matplotlib",
+            "date_published": "2023-02-09T00:00:00Z",
+            "content_html": "<p>The example below creates a bar plot and adds value labels to each bar.</p><p><a href=\"https://gavinw.me/posts/matplotlib/bar-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/index-max.html",
+            "url": "https://gavinw.me/posts/numpy/index-max.html",
+            "title": "Index of Max Value with NumPy",
+            "date_published": "2023-02-06T00:00:00Z",
+            "content_html": "<p>Use NumPy's <code>argmax()</code> function to get the index of the maximum value in an array.</p><p><a href=\"https://gavinw.me/posts/numpy/index-max.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/flask/form-htmx.html",
             "url": "https://gavinw.me/posts/flask/form-htmx.html",
             "title": "Form Input with Htmx and Flask",
@@ -82,6 +117,41 @@
             "content_html": "<p>An HTML form collects user input on a web page. Using Flask, the input can be evaluated in Python and used elsewhere in the web application. As an example, in the <code>app.py</code> file shown below, the index or home page renders the HTML form. The input from the form is handled as two numbers. The sum, product, and fraction of the numbers are calculated then passed to the results page.</p><p><a href=\"https://gavinw.me/posts/flask/form-input.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/numpy/large-array-memory.html",
+            "url": "https://gavinw.me/posts/numpy/large-array-memory.html",
+            "title": "Memory Usage of a Large NumPy Array",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>In the examples below, a 500x2000x2000 three-dimensional NumPy array named <code>a</code> is initialized with zeros. At each iteration, a random two-dimensional array <code>r</code> is inserted into array <code>a</code>. This approach could represent a larger piece of code where the <code>r</code> array would be created from various calculations during each iteration of the for-loop. Consequently, each slice in the z dimension of the <code>a</code> array is calculated at each iteration.</p><p><a href=\"https://gavinw.me/posts/numpy/large-array-memory.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/line-plot.html",
+            "url": "https://gavinw.me/posts/matplotlib/line-plot.html",
+            "title": "Line Plot with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Below is a simple example of plotting a line using Matplotlib.</p><p><a href=\"https://gavinw.me/posts/matplotlib/line-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/animation.html",
+            "url": "https://gavinw.me/posts/matplotlib/animation.html",
+            "title": "Animation with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Matplotlib provides two animation classes for animating a plot figure. The example below uses the ArtistAnimation class. The animation can be displayed just like any other Matplotlib figure and saved to file as various video formats.</p><p><a href=\"https://gavinw.me/posts/matplotlib/animation.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/contour-smoothing.html",
+            "url": "https://gavinw.me/posts/matplotlib/contour-smoothing.html",
+            "title": "Contour Plot Smoothing with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>The example below generates a contour plot of sparse data.</p><p><a href=\"https://gavinw.me/posts/matplotlib/contour-smoothing.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/matplotlib/mosaic-grid.html",
+            "url": "https://gavinw.me/posts/matplotlib/mosaic-grid.html",
+            "title": "Mosaic Grid of Plots with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of using Matplotlib <code>subplot_mosaic()</code> to create a grid of plots.</p><p><a href=\"https://gavinw.me/posts/matplotlib/mosaic-grid.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/dask/arrays.html",
             "url": "https://gavinw.me/posts/dask/arrays.html",
             "title": "Dask Arrays",
@@ -122,6 +192,48 @@
             "title": "Boolean Indexing with NumPy",
             "date_published": "2022-11-07T00:00:00Z",
             "content_html": "<p>Use boolean indexing in NumPy arrays to assign values. The example below assigns a zero to array items that are less than zero.</p><p><a href=\"https://gavinw.me/posts/numpy/bool-index.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/full-array.html",
+            "url": "https://gavinw.me/posts/numpy/full-array.html",
+            "title": "Full Array in NumPy",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>Use the <code>full</code> function in NumPy to create a new array filled with a given value.</p><p><a href=\"https://gavinw.me/posts/numpy/full-array.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/maximum-array.html",
+            "url": "https://gavinw.me/posts/numpy/maximum-array.html",
+            "title": "Maximum Array with NumPy",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>The <code>maximum</code> function returns a new array that contains the maximum values of the two given arrays.</p><p><a href=\"https://gavinw.me/posts/numpy/maximum-array.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/difference.html",
+            "url": "https://gavinw.me/posts/numpy/difference.html",
+            "title": "Set Difference of Two NumPy Arrays",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>The <code>setdiff1d</code> function returns the unique values in array 1 that are not in array 2.</p><p><a href=\"https://gavinw.me/posts/numpy/difference.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/loop-columns.html",
+            "url": "https://gavinw.me/posts/numpy/loop-columns.html",
+            "title": "Loop Over Columns with NumPy",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>Loop over columns in an array by iterating over the transpose of the array.</p><p><a href=\"https://gavinw.me/posts/numpy/loop-columns.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/compare-inv-solve.html",
+            "url": "https://gavinw.me/posts/numpy/compare-inv-solve.html",
+            "title": "Compare inv and solve Functions in NumPy",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>Solve equation <code>A*x=b</code> for <code>x</code> and compare results using the <code>np.linalg.solve()</code> function to the <code>np.linalg.inv()</code> approach.</p><p><a href=\"https://gavinw.me/posts/numpy/compare-inv-solve.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/save-load-arrays.html",
+            "url": "https://gavinw.me/posts/numpy/save-load-arrays.html",
+            "title": "Save and Load NumPy Arrays",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>NumPy arrays can be saved and loaded using different file formats. Examples of using the NumPy file formats <code>.npy</code> and <code>.npz</code> as well as a plain text format are given below.</p><p><a href=\"https://gavinw.me/posts/numpy/save-load-arrays.html\">Continue reading...</a></p>"
         }
     ]
 }
