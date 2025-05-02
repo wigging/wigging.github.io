@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/python/cache-function.html">
+    <meta property="og:url" content="https://gavinw.me/posts/python/textwrap-dedent.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Cache Function in Python">
+    <meta property="og:description" content="Dedent Text with Python">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.jpg">
 
     <!-- Bootstrap -->
@@ -46,76 +46,45 @@
     </p>
     <hr>
 
-    <h1>Cache Function in Python</h1>
-    <h6>Written on January 13, 2024</h6>
+    <h1>Dedent Text with Python</h1>
+    <h6>Written on February 29, 2024</h6>
     <br>
 
-    <p>The <a href="https://docs.python.org/3/library/functools.html">functools</a> module provides a <code>@cache</code> decorator to store the results of an expensive function; also known as memoize.</p>
-<h2>No function cache</h2>
-<p>This example calls a function several times. The function sleeps for 2 seconds to represent an expensive task being performed.</p>
-<pre><code class="language-python">import time
-
-
-def coeffs_one(method):
+    <p>Remove leading whitespace from every line in a string with the <code>textwrap.dedent()</code> function. The first example shown below prints a multiline string that is defined in a function. The second example prints the same string but removes the leading whitespace.</p>
+<p>This example prints a multiline string. The string is indented on each line due to the indentation of the function body.</p>
+<pre><code class="language-python">def printer():
+    s = &quot;&quot;&quot;
+    This is a really long string
+    with multiple lines
+    of text.
     &quot;&quot;&quot;
-    Get the a and b coefficients for a given method.
-    &quot;&quot;&quot;
-    time.sleep(2)
+    print(s)
 
-    if method == &quot;yaws&quot;:
-        a, b = 1, 2
-    elif method == &quot;graham&quot;:
-        a, b = 2, 4
-    else:
-        a, b = 0, 0
-
-    return a, b
-
-
-for _ in range(3):
-    ti = time.perf_counter()
-    a, b = coeffs_one(&quot;graham&quot;)
-    tf = time.perf_counter()
-    print(f&quot;a is {a} | b is {b} | Elapsed {tf - ti:.4f} s&quot;)
+printer()
 </code></pre>
-<p>The output is shown below. Notice the elapsed time for each run is 2 seconds.</p>
-<pre><code class="language-text">a is 2 | b is 4 | Elapsed 2.0036 s
-a is 2 | b is 4 | Elapsed 2.0032 s
-a is 2 | b is 4 | Elapsed 2.0044 s
+<p>The output is shown below. Notice the output includes the indentation from the string.</p>
+<pre><code class="language-text">    This is a really long string
+    with multiple lines
+    of text.
 </code></pre>
-<h2>Using function cache</h2>
-<p>This example calls a function several times and uses the <code>@cache</code> decorator to store the results.</p>
-<pre><code class="language-python">import time
-from functools import cache
+<p>This example uses the <code>textwrap.dedent()</code> function to remove the leading whitespace from every line in the string.</p>
+<pre><code class="language-python">from textwrap import dedent
 
-
-@cache
-def coeffs_two(method):
+def printer():
+    s = &quot;&quot;&quot;
+    This is a really long string
+    with multiple lines
+    of text.
     &quot;&quot;&quot;
-    Get the a and b coefficients for a given method.
-    &quot;&quot;&quot;
-    time.sleep(2)
+    v = dedent(s)
+    print(v)
 
-    if method == &quot;yaws&quot;:
-        a, b = 1, 2
-    elif method == &quot;graham&quot;:
-        a, b = 2, 4
-    else:
-        a, b = 0, 0
-
-    return a, b
-
-
-for _ in range(3):
-    ti = time.perf_counter()
-    a, b = coeffs_two(&quot;graham&quot;)
-    tf = time.perf_counter()
-    print(f&quot;a is {a} | b is {b} | Elapsed {tf - ti:.4f} s&quot;)
+printer()
 </code></pre>
-<p>The output for this example is shown below. Notice the elapsed time for the second and third runs is zero because the function results are cached.</p>
-<pre><code class="language-text">a is 2 | b is 4 | Elapsed 2.0001 s
-a is 2 | b is 4 | Elapsed 0.0000 s
-a is 2 | b is 4 | Elapsed 0.0000 s
+<p>The output for the dedent example is shown below. Notice the leading white space has been removed from the output.</p>
+<pre><code class="language-text">This is a really long string
+with multiple lines
+of text.
 </code></pre>
 
 </div>  <!-- End col-md -->

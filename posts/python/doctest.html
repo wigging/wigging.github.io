@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/python/cache-function.html">
+    <meta property="og:url" content="https://gavinw.me/posts/python/doctest.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Cache Function in Python">
+    <meta property="og:description" content="Doctest with Python">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.jpg">
 
     <!-- Bootstrap -->
@@ -46,76 +46,117 @@
     </p>
     <hr>
 
-    <h1>Cache Function in Python</h1>
-    <h6>Written on January 13, 2024</h6>
+    <h1>Doctest with Python</h1>
+    <h6>Written on November 17, 2023</h6>
     <br>
 
-    <p>The <a href="https://docs.python.org/3/library/functools.html">functools</a> module provides a <code>@cache</code> decorator to store the results of an expensive function; also known as memoize.</p>
-<h2>No function cache</h2>
-<p>This example calls a function several times. The function sleeps for 2 seconds to represent an expensive task being performed.</p>
-<pre><code class="language-python">import time
+    <p>The docstring of the <code>adder()</code> function shown below contains two examples of how to use the function. The function resides in a file named <code>example.py</code>. Use the <code>doctest</code> module to test the examples in this docstring.</p>
+<pre><code class="language-python"># This function resides in a file named example.py
 
-
-def coeffs_one(method):
+def adder(x, y):
     &quot;&quot;&quot;
-    Get the a and b coefficients for a given method.
+    Add two numbers.
+
+    Parameters
+    ----------
+    x : int or float
+        First number.
+    y : int or float
+        Second number.
+
+    Returns
+    -------
+    z : int or float
+        The result of adding two numbers.
+
+    Example
+    -------
+    &gt;&gt;&gt; adder(1, 2)
+    3
+
+    &gt;&gt;&gt; adder(1.5, 8)
+    9.5
     &quot;&quot;&quot;
-    time.sleep(2)
-
-    if method == &quot;yaws&quot;:
-        a, b = 1, 2
-    elif method == &quot;graham&quot;:
-        a, b = 2, 4
-    else:
-        a, b = 0, 0
-
-    return a, b
-
-
-for _ in range(3):
-    ti = time.perf_counter()
-    a, b = coeffs_one(&quot;graham&quot;)
-    tf = time.perf_counter()
-    print(f&quot;a is {a} | b is {b} | Elapsed {tf - ti:.4f} s&quot;)
+    z = x + y
+    return z
 </code></pre>
-<p>The output is shown below. Notice the elapsed time for each run is 2 seconds.</p>
-<pre><code class="language-text">a is 2 | b is 4 | Elapsed 2.0036 s
-a is 2 | b is 4 | Elapsed 2.0032 s
-a is 2 | b is 4 | Elapsed 2.0044 s
+<p>Running doctest on the example produces the following output:</p>
+<pre><code class="language-text">$ python -m doctest -v example.py
+
+Trying:
+    adder(1, 2)
+Expecting:
+    3
+ok
+Trying:
+    adder(1.5, 8)
+Expecting:
+    9.5
+ok
+1 items had no tests:
+    example
+1 items passed all tests:
+   2 tests in example.adder
+2 tests in 2 items.
+2 passed and 0 failed.
+Test passed.
 </code></pre>
-<h2>Using function cache</h2>
-<p>This example calls a function several times and uses the <code>@cache</code> decorator to store the results.</p>
-<pre><code class="language-python">import time
-from functools import cache
+<p>This docstring imports NumPy where it is used to add two arrays.</p>
+<pre><code class="language-python"># This function resides in a file named example.py
 
-
-@cache
-def coeffs_two(method):
+def array_adder(x, y):
     &quot;&quot;&quot;
-    Get the a and b coefficients for a given method.
+    Add two arrays.
+
+    Parameters
+    ----------
+    x : ndarray
+        First array.
+    y : ndarray
+        Second array.
+
+    Returns
+    -------
+    z : ndarray
+        The result of adding two arrays.
+
+    Example
+    -------
+    &gt;&gt;&gt; import numpy as np
+    &gt;&gt;&gt; a = np.array([1, 2, 3])
+    &gt;&gt;&gt; b = np.array([5, 6, 7])
+    &gt;&gt;&gt; array_adder(a, b)
+    array([ 6,  8, 10])
     &quot;&quot;&quot;
-    time.sleep(2)
-
-    if method == &quot;yaws&quot;:
-        a, b = 1, 2
-    elif method == &quot;graham&quot;:
-        a, b = 2, 4
-    else:
-        a, b = 0, 0
-
-    return a, b
-
-
-for _ in range(3):
-    ti = time.perf_counter()
-    a, b = coeffs_two(&quot;graham&quot;)
-    tf = time.perf_counter()
-    print(f&quot;a is {a} | b is {b} | Elapsed {tf - ti:.4f} s&quot;)
+    z = x + y
+    return z
 </code></pre>
-<p>The output for this example is shown below. Notice the elapsed time for the second and third runs is zero because the function results are cached.</p>
-<pre><code class="language-text">a is 2 | b is 4 | Elapsed 2.0001 s
-a is 2 | b is 4 | Elapsed 0.0000 s
-a is 2 | b is 4 | Elapsed 0.0000 s
+<pre><code class="language-text">$ python -m doctest -v example.py
+
+Trying:
+    import numpy as np
+Expecting nothing
+ok
+Trying:
+    a = np.array([1, 2, 3])
+Expecting nothing
+ok
+Trying:
+    b = np.array([5, 6, 7])
+Expecting nothing
+ok
+Trying:
+    array_adder(a, b)
+Expecting:
+    array([ 6,  8, 10])
+ok
+1 items had no tests:
+    example
+1 items passed all tests:
+   4 tests in example.array_adder
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
 </code></pre>
 
 </div>  <!-- End col-md -->
