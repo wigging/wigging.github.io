@@ -1,0 +1,36 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Gavin Wiggins",
+    "home_page_url": "https://gavinw.me",
+    "feed_url": "https://gavinw.me/feed.json",
+    "items": [
+        {
+            "id": "https://gavinw.me/posts/python/argparse.html",
+            "url": "https://gavinw.me/posts/python/argparse.html",
+            "title": "Command-line Arguments with Python",
+            "date_published": "2024-09-28T00:00:00Z",
+            "content_html": "<p>The <code>argparse</code> module provides an interface to write command-line programs in Python. It is part of the Python standard library so there's no need for external dependencies. A basic example is given below that demonstrates positional and optional arguments. The second example shows the use of subparsers to create subcommands.</p><p><a href=\"https://gavinw.me/posts/python/argparse.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/cache-function.html",
+            "url": "https://gavinw.me/posts/python/cache-function.html",
+            "title": "Cache a Function in Python",
+            "date_published": "2024-01-13T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://docs.python.org/3/library/functools.html\">functools</a> module provides a <code>@cache</code> decorator to store the results of an expensive function; also known as memoize.</p><p><a href=\"https://gavinw.me/posts/python/cache-function.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/clip-array.html",
+            "url": "https://gavinw.me/posts/numpy/clip-array.html",
+            "title": "Clip Array Values with NumPy",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>The <code>clip</code> function limits the values in an array based on a given interval or minimum or maximum value.</p><p><a href=\"https://gavinw.me/posts/numpy/clip-array.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/numpy/bool-index.html",
+            "url": "https://gavinw.me/posts/numpy/bool-index.html",
+            "title": "Boolean Indexing with NumPy",
+            "date_published": "2022-11-07T00:00:00Z",
+            "content_html": "<p>Use boolean indexing in NumPy arrays to assign values. The example below assigns a zero to array items that are less than zero.</p><p><a href=\"https://gavinw.me/posts/numpy/bool-index.html\">Continue reading...</a></p>"
+        }
+    ]
+}
