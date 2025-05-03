@@ -278,6 +278,48 @@
             "content_html": "<p>A list of dictionaries can be sorted using the keys in the dictionaries, while a list of tuples can be sorted using the tuple's index.</p><p><a href=\"https://gavinw.me/posts/python/sorted-list.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/tkinter/label.html",
+            "url": "https://gavinw.me/posts/tkinter/label.html",
+            "title": "Update Label Text in Tkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of updating a Label's text in Tkinter.</p><p><a href=\"https://gavinw.me/posts/tkinter/label.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/tkinter/ttkbootstrap.html",
+            "url": "https://gavinw.me/posts/tkinter/ttkbootstrap.html",
+            "title": "Theme ttkbootstrap",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of a Tkinter app using the ttkbootstrap theme. More information about\nthe theme is available on GitHub at <a href=\"https://github.com/israel-dryer/ttkbootstrap\">israel-dryer/ttkbootstrap</a>.</p><p><a href=\"https://gavinw.me/posts/tkinter/ttkbootstrap.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/tkinter/customtkinter.html",
+            "url": "https://gavinw.me/posts/tkinter/customtkinter.html",
+            "title": "Theme customtkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of a Tkinter app using the customtkinter theme. This theme will automatically change to light or dark mode when the macOS appearance changes. More information about the theme is available on GitHub at <a href=\"https://github.com/TomSchimansky/CustomTkinter\">TomSchimansky/CustomTkinter</a>.</p><p><a href=\"https://gavinw.me/posts/tkinter/customtkinter.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/tkinter/open-json-file.html",
+            "url": "https://gavinw.me/posts/tkinter/open-json-file.html",
+            "title": "Open JSON File in Tkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of opening a JSON file and reading its contents in a Tkinter app. See\nthe <a href=\"https://docs.python.org/3/library/dialog.html\">Python Tkinter docs</a> for\nmore information about file selection dialogs.</p><p><a href=\"https://gavinw.me/posts/tkinter/open-json-file.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/tkinter/matplotlib.html",
+            "url": "https://gavinw.me/posts/tkinter/matplotlib.html",
+            "title": "View Data with Matplotlib in Tkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Below is an example of using Matplotlib to plot data in a Tkinter app. The plot figure is shown in a separate window when the button is pressed.</p><p><a href=\"https://gavinw.me/posts/tkinter/matplotlib.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/tkinter/basic-app.html",
+            "url": "https://gavinw.me/posts/tkinter/basic-app.html",
+            "title": "Basic Tkinter Application",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>This example demonstrates the structure of a basic Tkinter application.</p><p><a href=\"https://gavinw.me/posts/tkinter/basic-app.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/numpy/large-array-memory.html",
             "url": "https://gavinw.me/posts/numpy/large-array-memory.html",
             "title": "Memory Usage of a Large NumPy Array",
