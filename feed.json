@@ -5,11 +5,53 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/config/ghostty.html",
+            "url": "https://gavinw.me/posts/config/ghostty.html",
+            "title": "Ghostty Configuration",
+            "date_published": "2025-04-28T00:00:00Z",
+            "content_html": "<p>Ghostty is the best terminal application for the Mac. See below for my configuration settings. More\ninformation about Ghostty is available at <a href=\"https://ghostty.org\">ghostty.org</a>.</p><p><a href=\"https://gavinw.me/posts/config/ghostty.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/dynamic-config.html",
             "url": "https://gavinw.me/posts/python/dynamic-config.html",
             "title": "Dynamic Python Class from TOML",
             "date_published": "2025-04-21T00:00:00Z",
             "content_html": "<p>Python's standard library provides functionality to read a TOML configuration file and dynamically create class instances based on the parameters defined in that file. This is useful for command line tools and web applications.</p><p><a href=\"https://gavinw.me/posts/python/dynamic-config.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/git/undo.html",
+            "url": "https://gavinw.me/posts/git/undo.html",
+            "title": "Undo Changes with Git",
+            "date_published": "2025-04-17T00:00:00Z",
+            "content_html": "<p>Undo an accidental git pull.</p><p><a href=\"https://gavinw.me/posts/git/undo.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/git/config.html",
+            "url": "https://gavinw.me/posts/git/config.html",
+            "title": "Git Configuration",
+            "date_published": "2025-04-17T00:00:00Z",
+            "content_html": "<p>Set global username and email address.</p><p><a href=\"https://gavinw.me/posts/git/config.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/git/log.html",
+            "url": "https://gavinw.me/posts/git/log.html",
+            "title": "Git Log Commands",
+            "date_published": "2025-04-17T00:00:00Z",
+            "content_html": "<p>Limit log output to only show four commits.</p><p><a href=\"https://gavinw.me/posts/git/log.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/git/branch.html",
+            "url": "https://gavinw.me/posts/git/branch.html",
+            "title": "Branch and Remote Git Commands",
+            "date_published": "2025-04-17T00:00:00Z",
+            "content_html": "<p>Rename a local branch.</p><p><a href=\"https://gavinw.me/posts/git/branch.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/git/commit.html",
+            "url": "https://gavinw.me/posts/git/commit.html",
+            "title": "Commit Changes with Git",
+            "date_published": "2025-04-17T00:00:00Z",
+            "content_html": "<p>Change last commit message.</p><p><a href=\"https://gavinw.me/posts/git/commit.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/pyzmq/test-client-server.html",
