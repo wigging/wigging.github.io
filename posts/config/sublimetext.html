@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://gavinw.me/posts/config/sublimetext.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gavin Wiggins">
+    <meta property="og:description" content="Sublime Text Settings">
+    <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- JSON Feed -->
+    <link href="https://gavinw.me/feed.json" rel="alternate" type="application/feed+json" title="Gavin Wiggins">
+
+    <!-- Highlightjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/julia.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../styles.css">
+
+    <title>Gavin Wiggins</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md">
+
+    <h1 class="mt-4 text-center">Gavin Wiggins</h1>
+    <p class="my-3 text-center">
+        <a href="../../index.html">Home</a> /
+        <a href="../../presentations.html">Presentations</a> /
+        <a href="../../publications.html">Publications</a> /
+        <a href="../../software.html">Software</a>
+    </p>
+    <hr>
+
+    <h1>Sublime Text Settings</h1>
+    <h6>Written on May 4, 2025</h6>
+    <br>
+
+    <p>Sublime Text is an excellent editor for writing code. It can be extended with various packages to support many programming languages. The sections below give general settings, key bindings, and LSP configuration on macOS.</p>
+<h2>Preferences</h2>
+<p>In the menu select Sublime Text, Settings..., then Settings or press Command-Comma to edit the main settings (preferences) for Sublime Text.</p>
+<pre><code class="language-json">// Preferences.sublime-settings
+
+{
+    &quot;color_scheme&quot;: &quot;Mariana.sublime-color-scheme&quot;,
+    &quot;hot_exit&quot;: &quot;disabled&quot;,
+    &quot;trim_trailing_white_space_on_save&quot;: &quot;all&quot;,
+    &quot;ignored_packages&quot;:
+    [
+        &quot;Vintage&quot;,
+    ],
+    &quot;font_size&quot;: 13,
+    &quot;folder_exclude_patterns&quot;: [
+        &quot;.svn&quot;,
+        &quot;.git&quot;,
+        &quot;.hg&quot;,
+        &quot;CVS&quot;,
+        &quot;__pycache__&quot;
+    ],
+    &quot;translate_tabs_to_spaces&quot;: true,
+    &quot;update_check&quot;: true,
+    &quot;index_files&quot;: true,
+    &quot;scroll_past_end&quot;: 0.5,
+}
+</code></pre>
+<h2>Key bindings</h2>
+<p>In the menu select Sublime Text, Settings..., then Key Bindings to define default macOS key bindings for Sublime Text.</p>
+<pre><code class="language-json">[
+    { &quot;keys&quot;: [&quot;super+alt+q&quot;], &quot;command&quot;: &quot;wrap_lines&quot; , &quot;args&quot;: {&quot;width&quot;: 100} },
+]
+</code></pre>
+<h2>LSP settings</h2>
+<p>Go to Sublime Text, Settings..., Package Settings, LSP, Servers, LSP-pyright to configure Pyright for Python in Sublime Text.</p>
+<pre><code class="language-json">// LSP-pyright.sublime-settings
+
+{
+    &quot;settings&quot;: {
+        &quot;pyright.disableOrganizeImports&quot;: true,
+        &quot;pyright.disableTaggedHints&quot;: true,
+        &quot;python.analysis.diagnosticSeverityOverrides&quot;: {
+            &quot;reportUndefinedVariable&quot;: false,
+        }
+    }
+}
+
+</code></pre>
+<h2>Further reading</h2>
+<p>Visit <a href="https://www.sublimetext.com">sublimetext.com</a> for more information about Sublime Text. See <a href="https://lsp.sublimetext.io">LSP for Sublime Text</a> to learn more about LSP features and configuration.</p>
+
+</div>  <!-- End col-md -->
+</div>  <!-- End row -->
+
+<div class="row my-5">
+<div class="col-md">
+    <p class="text-center small my-5">
+        Gavin Wiggins © 2025.
+        <br>Made on a <a href="https://www.apple.com/mac/">Mac</a> with <a href="https://genja.readthedocs.io">Genja</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.
+    </p>
+</div>
+</div>
+
+</div>  <!-- End container -->
+</body>
+</html>

@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/config/sublimetext.html",
+            "url": "https://gavinw.me/posts/config/sublimetext.html",
+            "title": "Sublime Text Settings",
+            "date_published": "2025-05-04T00:00:00Z",
+            "content_html": "<p>Sublime Text is an excellent editor for writing code. It can be extended with various packages to support many programming languages. The sections below give general settings, key bindings, and LSP configuration on macOS.</p><p><a href=\"https://gavinw.me/posts/config/sublimetext.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/config/ghostty.html",
             "url": "https://gavinw.me/posts/config/ghostty.html",
             "title": "Ghostty Configuration",
