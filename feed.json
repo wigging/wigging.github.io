@@ -5,6 +5,20 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/config/vim.html",
+            "url": "https://gavinw.me/posts/config/vim.html",
+            "title": "Vim Configuration",
+            "date_published": "2025-05-05T00:00:00Z",
+            "content_html": "<p>Vim is a terminal editor that is available on almost every computer. The configuration file shown below is located at <code>~/.vimrc</code>.</p><p><a href=\"https://gavinw.me/posts/config/vim.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/config/zed.html",
+            "url": "https://gavinw.me/posts/config/zed.html",
+            "title": "Zed Configuration",
+            "date_published": "2025-05-05T00:00:00Z",
+            "content_html": "<p>Zed is a modern text editor that is well suited for developers. Settings for macOS are shown below and are available via the Command+Comma keyboard shortcut.</p><p><a href=\"https://gavinw.me/posts/config/zed.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/config/starship.html",
             "url": "https://gavinw.me/posts/config/starship.html",
             "title": "Starship Prompt Configuration",
