@@ -47,7 +47,7 @@ In the menu select Sublime Text, Settings..., then Key Bindings to define defaul
 
 ## LSP settings
 
-Go to Sublime Text, Settings..., Package Settings, LSP, Servers, LSP-pyright to configure Pyright for Python in Sublime Text.
+Go to Sublime Text, Settings..., Package Settings, LSP, Servers, LSP-pyright to configure Pyright for Python in Sublime Text. These settings are ignored if they are defined in a `pyproject.toml` or `pyrightconfig.json` file. See the [Pyright docs] (https://microsoft.github.io/pyright) for more information about these settings.
 
 ```json
 // LSP-pyright.sublime-settings

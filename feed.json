@@ -5,6 +5,20 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/config/starship.html",
+            "url": "https://gavinw.me/posts/config/starship.html",
+            "title": "Starship Prompt Configuration",
+            "date_published": "2025-05-05T00:00:00Z",
+            "content_html": "<p>The Starship prompt is a modern shell prompt with git support. On macOS, the configuration file is located at <code>~/.config/starship.toml</code>.</p><p><a href=\"https://gavinw.me/posts/config/starship.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/config/zsh.html",
+            "url": "https://gavinw.me/posts/config/zsh.html",
+            "title": "Zsh Configuration",
+            "date_published": "2025-05-05T00:00:00Z",
+            "content_html": "<p>Zsh or z-shell is the default shell on macOS. The <code>.zshrc</code> file shown below uses coreutils, Sublime Text, and the Starship prompt. The zsh config file is located at <code>~/.zshrc</code>.</p><p><a href=\"https://gavinw.me/posts/config/zsh.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/config/sublimetext.html",
             "url": "https://gavinw.me/posts/config/sublimetext.html",
             "title": "Sublime Text Settings",
