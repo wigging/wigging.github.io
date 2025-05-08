@@ -27,31 +27,27 @@
 <div class="row">
 <div class="col-md">
 
-    <h1 class="mt-3">
+    <h1 class="mt-3 display-6">
         <img src="https://avatars.githubusercontent.com/u/6828967" style="max-width:60px;">
         Gavin Wiggins
     </h1>
 
     <nav class="my-3 mx-auto" style="max-width:700px;">
-        <span style="font-weight:500">Home</span> /
-        <a href="presentations.html">Presentations</a> /
-        <a href="publications.html">Publications</a> /
-        <a href="software.html">Software</a>
+        <span style="font-weight:500">Home</span> &nbsp; / &nbsp;
+        <a href="about.html">About</a> &nbsp; / &nbsp;
+        <a href="archive.html">Archive</a>
     </nav>
 
     <hr>
 
-    <p class="mt-4">Hello, I'm a research scientist at the Oak Ridge National Laboratory involved in various modeling, simulation, and programming activities. I currently work on remote instrument control, machine learning, and large language model applications. Previous areas of research include fluidized bed reactors, battery cells and battery packs, rotor dynamics, water treatment, and biomass pyrolysis. I am also creator of the Numerix Swift package, Un1ts macOS app, Chemics Python package, BioComp web app, and the Genja static website generator. Lastly, I'm the former organizer of the KnoxPy Python users group and the Knoxville CocoaHeads group for iOS and macOS developers.</p>
-
-    <p>Contact me via <a href="mailto:mailATgavinwDOTme" onclick = "this.href=this.href.replace(/AT/,'&#64;').replace(/DOT/,'&#46;')">Email</a> or <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a>. Donations to support my open-source work can be made through <a href="https://github.com/sponsors/wigging">GitHub Sponsors</a>, <a href="https://www.patreon.com/wigging">Patreon</a>, <a href="https://www.buymeacoffee.com/wigging">Buy Me A Coffee</a>, or <a href="https://www.paypal.me/gavinwiggins">PayPal</a>.</p>
-
-    <p>Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
+    <p class="mt-4">My recent posts are listed below. See the <a href="archive.html">Archive</a> page for all of my posts. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader. See the <a href="about.html">About</a> page for more information about myself.</p>
 
     <h2>Recent Posts</h2>
-    <hr>
+
+    <hr class="mb-4">
 
     {% for post in posts | sort(attribute='iso_date', reverse=true) %}
-    {% if loop.index0 < 10 %}
+    {% if loop.index0 < 20 %}
     <div class="row mx-auto mb-2" style="max-width:700px;">
         <div class="col-md px-0">
             <a href="{{ post.link }}">{{ post.title }}</a>
@@ -63,134 +59,7 @@
     {% endif %}
     {% endfor %}
 
-    <h2>All Posts by Category</h2>
-    <hr>
-
-    <h4>Configuration</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'config' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>Dask and Ray</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'dask' or post.category == 'ray' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>Flask</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'flask' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>Git</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'git' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>Matplotlib</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'matplotlib' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>NumPy and SciPy</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'numpy' or post.category == 'scipy' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>Python</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'python' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>PyZMQ</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'pyzmq' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h4>Tkinter</h4>
-    {% for post in posts | sort(attribute='title') %}
-    {% if post.category == 'tkinter' %}
-    <div class="row mx-auto mb-2" style="max-width:700px;">
-        <div class="col-md px-0">
-            <a href="{{ post.link }}">{{ post.title }}</a>
-        </div>
-        <div class="col-md text-md-end px-0">
-            {{ post.date }}
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
+    <p class="mt-5">See more posts on the <a href="archive.html">Archive</a> page.</p>
 
 </div>  <!-- End col-md -->
 </div>  <!-- End row -->

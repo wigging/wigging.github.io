@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://gavinw.me">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gavin Wiggins">
+    <meta property="og:description" content="Programming and software development">
+    <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- JSON Feed -->
+    <link href="https://gavinw.me/feed.json" rel="alternate" type="application/feed+json" title="Gavin Wiggins">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Gavin Wiggins</title>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md">
+
+    <h1 class="mt-3 display-6">
+        <img src="https://avatars.githubusercontent.com/u/6828967" style="max-width:60px;">
+        Gavin Wiggins
+    </h1>
+
+    <nav class="my-3 mx-auto" style="max-width:700px;">
+        <a href="index.html">Home</a> &nbsp; / &nbsp;
+        <a href="about.html">About</a> &nbsp; / &nbsp;
+        <span style="font-weight:500">Archive</span>
+    </nav>
+
+    <hr>
+
+    <p class="mt-4">An archive of my posts is given below. Posts are organized by category in alphabetical order. Subscribe using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
+
+    <h2>All Posts by Category</h2>
+    <hr>
+
+    <h4>Configuration</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/config/ghostty.html">Ghostty Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 28, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/config/starship.html">Starship Prompt Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 5, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/config/sublimetext.html">Sublime Text Settings</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 4, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/config/vim.html">Vim Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 5, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/config/zed.html">Zed Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 5, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/config/zsh.html">Zsh Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 5, 2025
+        </div>
+    </div>
+
+    <h4>Dask and Ray</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/dask/arrays.html">Dask Arrays</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/ray/actors.html">Ray Actors</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/ray/functions.html">Ray Functions</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/dask/run-as-script.html">Run Dask Code as a Script</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+
+    <h4>Flask</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/bokeh-graph.html">Bokeh Graph with Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/bokeh-htmx.html">Bokeh Graph with Htmx and Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/config.html">Flask App Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            March 12, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/form-input.html">Form Input with Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/form-htmx.html">Form Input with Htmx and Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/plotly-restyle.html">Plotly Graph Restyle with Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/plotly-graph.html">Plotly Graph with Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/plotly-htmx.html">Plotly Graph with Htmx and Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/flask/ajax.html">Update Page with Ajax and Flask</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+
+    <h4>Git</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/git/branch.html">Branch and Remote Git Commands</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 17, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/git/commit.html">Commit Changes with Git</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 17, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/git/config.html">Git Configuration</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 17, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/git/log.html">Git Log Commands</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 17, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/git/undo.html">Undo Changes with Git</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 17, 2025
+        </div>
+    </div>
+
+    <h4>Matplotlib</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/animation.html">Animation with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/bar-plot.html">Bar Plot with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 9, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/contour-smoothing.html">Contour Plot Smoothing with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/imshow-plot.html">Imshow Plot with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 10, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/line-plot.html">Line Plot with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/matshow-plot.html">Matshow Plot with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 10, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/matplotlib/mosaic-grid.html">Mosaic Grid of Plots with Matplotlib</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+
+    <h4>NumPy and SciPy</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/bool-index.html">Boolean Indexing with NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/clip-array.html">Clip Array Values with NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/compare-inv-solve.html">Compare inv and solve Functions in NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/full-array.html">Full Array in NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/gauss.html">Gauss-Legendre Points and Weights with NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            August 31, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/index-max.html">Index of Max Value with NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 6, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/loop-columns.html">Loop Over Columns with NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/maximum-array.html">Maximum Array with NumPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/large-array-memory.html">Memory Usage of a Large NumPy Array</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/save-load-arrays.html">Save and Load NumPy Arrays</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/numpy/difference.html">Set Difference of Two NumPy Arrays</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 7, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/scipy/sparse-diag.html">Sparse Diagonal Matrix with SciPy</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+
+    <h4>Python</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/cache-function.html">Cache Function in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            January 13, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/cached-class-property.html">Cached Class Property in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            January 13, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/argparse.html">Command-line Arguments with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            September 28, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/conda-env.html">Conda Environments</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            June 15, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/config-dataclass.html">Configuration Using a Python dataclass</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 21, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/count-letters.html">Count Letters with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 15, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/counter.html">Counter in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/cprofile.html">cProfile for Python Code</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/debugger.html">Debugger in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            July 18, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/textwrap-dedent.html">Dedent Text with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 29, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/log-file.html">Delay Log File Creation</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            March 27, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/dictionaries.html">Dictionaries in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 15, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/doctest.html">Doctest with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 17, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/dynamic-import.html">Dynamic Package Import in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 9, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/dynamic-config.html">Dynamic Python Class from TOML</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 21, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/fizzbuzz.html">Fizz Buzz in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            May 14, 2020
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/json.html">JSON with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/lists.html">Lists in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/makefiles.html">Makefiles for Python Projects</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            March 14, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/xml.html">Parsing XML with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/prealloc-list.html">Pre-allocate a Python List</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/protocol.html">Protocols in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            July 13, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/package-name.html">Python Package Name</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            June 11, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/package-data.html">Python Package with Data</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 24, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/projects-uv.html">Python Projects with uv</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            January 7, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/run-script-uv.html">Run Python Scripts with uv</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            January 6, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/secrets.html">Secrets in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/sorted-list.html">Sorted List of Items with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/strings.html">Strings in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 11, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/sublime-project.html">Sublime Text for Python Projects</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 25, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/test-examples.html">Test Examples with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/tuples.html">Tuples in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/unittest-csv.html">Unittest CSV Files with Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 8, 2022
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/version.html">Version Number in Python</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            November 30, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/virtual-env.html">Virtual Environments</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 16, 2024
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/python/virtual-env-uv.html">Virtual Environments with uv</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            January 5, 2025
+        </div>
+    </div>
+
+    <h4>PyZMQ</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/pyzmq/request-reply.html">Request-Reply Pattern with PyZMQ</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 10, 2025
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/pyzmq/test-client-server.html">Testing a PyZMQ Client and Server</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            April 12, 2025
+        </div>
+    </div>
+
+    <h4>Tkinter</h4>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/tkinter/basic-app.html">Basic Tkinter Application</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/tkinter/open-json-file.html">Open JSON File in Tkinter</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/tkinter/customtkinter.html">Theme customtkinter</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/tkinter/ttkbootstrap.html">Theme ttkbootstrap</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/tkinter/label.html">Update Label Text in Tkinter</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+    <div class="row mx-auto mb-2" style="max-width:700px;">
+        <div class="col-md px-0">
+            <a href="posts/tkinter/matplotlib.html">View Data with Matplotlib in Tkinter</a>
+        </div>
+        <div class="col-md text-md-end px-0">
+            February 4, 2023
+        </div>
+    </div>
+
+</div>  <!-- End col-md -->
+</div>  <!-- End row -->
+
+<div class="row my-5">
+<div class="col-md">
+    <p class="text-center small my-5">
+        Gavin Wiggins © 2025.
+        <br>Made on a <a href="https://www.apple.com/mac/">Mac</a> with <a href="https://genja.readthedocs.io">Genja</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.
+    </p>
+</div>
+</div>
+
+</div>  <!-- End container -->
+</body>
+</html>
