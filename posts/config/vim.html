@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/julia.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/languages/vim.min.js"></script>
     <script>hljs.highlightAll();</script>
 
     <!-- MathJax -->
@@ -51,11 +52,11 @@
     <hr>
 
     <h1>Vim Configuration</h1>
-    <h6>Written on May 5, 2025</h6>
+    <h6>Written on May 12, 2025</h6>
     <br>
 
     <p>Vim is a terminal editor that is available on almost every computer. The configuration file shown below is located at <code>~/.vimrc</code>.</p>
-<pre><code class="language-text">&quot; Use Vim settings, which are much better than Vi settings. Vi is for grandpas.
+<pre><code class="language-vim">&quot; Use Vim settings, which are much better than Vi settings. Vi is for grandpas.
 &quot; This must be first, because it changes other options as a side effect.
 set nocompatible
 
@@ -92,10 +93,13 @@ set laststatus=2
 &quot; Press jj to exit from insert mode
 imap jj &lt;Esc&gt;
 
-&quot; change cursor to vertical bar in insert mode when using Terminal on Mac
+&quot; Change cursor to vertical bar in insert mode
 if $TERM_PROGRAM =~ &quot;Apple_Terminal&quot;
   let &amp;t_SI = &quot;\&lt;Esc&gt;]50;CursorShape=1\x7&quot; &quot; vertical bar in insert mode
   let &amp;t_EI = &quot;\&lt;Esc&gt;]50;CursorShape=0\x7&quot; &quot; block in normal mode
+else
+  let &amp;t_SI = &quot;\e[6 q&quot;
+  let &amp;t_EI = &quot;\e[2 q&quot;
 endif
 </code></pre>
 
