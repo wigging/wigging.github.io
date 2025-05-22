@@ -474,11 +474,116 @@
             "content_html": "<p>Example of using Matplotlib <code>subplot_mosaic()</code> to create a grid of plots.</p><p><a href=\"https://gavinw.me/posts/matplotlib/mosaic-grid.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/rust/vectors.html",
+            "url": "https://gavinw.me/posts/rust/vectors.html",
+            "title": "Vectors in Rust",
+            "date_published": "2023-01-30T00:00:00Z",
+            "content_html": "<p>A vector is a resizable collection that stores items of the same type. Its values are stored next to each other in memory. The <code>vec!</code> macro can be used to initialize a vector.</p><p><a href=\"https://gavinw.me/posts/rust/vectors.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/enums.html",
+            "url": "https://gavinw.me/posts/rust/enums.html",
+            "title": "Enums in Rust",
+            "date_published": "2023-01-30T00:00:00Z",
+            "content_html": "<p>An enum (or enumeration) represents data that is one of several possible variants. Each variant in the enum can optionally have data associated with it. An enumeration is declared using the <code>enum</code> keyword.</p><p><a href=\"https://gavinw.me/posts/rust/enums.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/hashmaps.html",
+            "url": "https://gavinw.me/posts/rust/hashmaps.html",
+            "title": "Hash Maps in Rust",
+            "date_published": "2022-12-18T00:00:00Z",
+            "content_html": "<p>A hash map stores a key/value pair into memory. This is similar to a hash table or dictionary in other programming languages. The example below creates a new hash map, adds elements to it, then gets a value associated with a key.</p><p><a href=\"https://gavinw.me/posts/rust/hashmaps.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/strings.html",
+            "url": "https://gavinw.me/posts/rust/strings.html",
+            "title": "Rust Strings",
+            "date_published": "2022-12-18T00:00:00Z",
+            "content_html": "<p>A string literal uses double quotes <code>\" \"</code> and represents a string slice <code>str</code> or <code>&amp;str</code>.</p><p><a href=\"https://gavinw.me/posts/rust/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/fizzbuzz.html",
+            "url": "https://gavinw.me/posts/rust/fizzbuzz.html",
+            "title": "FizzBuzz in Rust",
+            "date_published": "2022-12-11T00:00:00Z",
+            "content_html": "<p>Examples of the classic fizzbuzz problem are implemented below. The first example uses if-else statements while the second example uses pattern matching.</p><p><a href=\"https://gavinw.me/posts/rust/fizzbuzz.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/dictionaries.html",
             "url": "https://gavinw.me/posts/python/dictionaries.html",
             "title": "Dictionaries in Python",
             "date_published": "2022-11-15T00:00:00Z",
             "content_html": "<p>A dictionary can be created with comma-separated key:value pairs within braces or by using the dict type constructor. A value is accessed by specifying its key in square brackets. The order of items in a dictionary is guaranteed as of Python 3.7.</p><p><a href=\"https://gavinw.me/posts/python/dictionaries.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/structs.html",
+            "url": "https://gavinw.me/posts/rust/structs.html",
+            "title": "Structs in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A <code>struct</code> is a custom data type that contains related values. Below are some examples of creating structs and accessing its values.</p><p><a href=\"https://gavinw.me/posts/rust/structs.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/loops.html",
+            "url": "https://gavinw.me/posts/rust/loops.html",
+            "title": "Loops in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Rust provides three kinds of loops: <code>loop</code>, <code>while</code>, and <code>for</code>. Use the <code>loop</code> keyword to execute code repeatedly until <code>break</code> is called.</p><p><a href=\"https://gavinw.me/posts/rust/loops.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/compile-run.html",
+            "url": "https://gavinw.me/posts/rust/compile-run.html",
+            "title": "Compile and Run Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Below is the contents of a simple Rust program contained in a file named <code>sayhello.rs</code>.</p><p><a href=\"https://gavinw.me/posts/rust/compile-run.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/slices.html",
+            "url": "https://gavinw.me/posts/rust/slices.html",
+            "title": "Slices in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A slice is a reference to a sequence of elements in a collection such as a string or array. In this example, the <code>s</code> string is sliced to obtain a reference of the first word and second word in the string.</p><p><a href=\"https://gavinw.me/posts/rust/slices.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/tuples.html",
+            "url": "https://gavinw.me/posts/rust/tuples.html",
+            "title": "Tuples in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A tuple groups together values where each value can have a different type. Tuples have a fixed length and the first index is 0. In this example, a tuple is defined with three values of different types. The value is accessed using a period.</p><p><a href=\"https://gavinw.me/posts/rust/tuples.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/references.html",
+            "url": "https://gavinw.me/posts/rust/references.html",
+            "title": "Rust Reference Pointers",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A reference is denoted by an ampersand <code>&amp;</code>. In the example below, a reference of the string <code>s1</code> is passed to the <code>calculate_length</code> function. The <code>&amp;s1</code> refers to the value of <code>s1</code> without owning it.</p><p><a href=\"https://gavinw.me/posts/rust/references.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/arrays.html",
+            "url": "https://gavinw.me/posts/rust/arrays.html",
+            "title": "Arrays in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>An array is a collection of values where every element must have the same type. The length of an array is fixed and the first item is at index 0.</p><p><a href=\"https://gavinw.me/posts/rust/arrays.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/functions.html",
+            "url": "https://gavinw.me/posts/rust/functions.html",
+            "title": "Rust Functions",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Functions in Rust are defined with <code>fn</code>. The function name and its input arguments should be lowercase with underscores to separate words. Some examples of functions are shown below.</p><p><a href=\"https://gavinw.me/posts/rust/functions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/ifexpressions.html",
+            "url": "https://gavinw.me/posts/rust/ifexpressions.html",
+            "title": "If Expressions in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Use an <code>if</code> expression to check if a condition is met or not met. The <code>else</code> expression is used to check for multiple conditions.</p><p><a href=\"https://gavinw.me/posts/rust/ifexpressions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/numbers.html",
+            "url": "https://gavinw.me/posts/rust/numbers.html",
+            "title": "Numbers in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p><p><a href=\"https://gavinw.me/posts/rust/numbers.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/swift/dictionaries.html",
