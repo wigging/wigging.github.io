@@ -40,6 +40,13 @@
             "content_html": "<p>Sublime Text is an excellent editor for writing code. It can be extended with various packages to support many programming languages. The sections below give general settings, key bindings, and LSP configuration on macOS.</p><p><a href=\"https://gavinw.me/posts/config/sublimetext.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/swift/suppress-print.html",
+            "url": "https://gavinw.me/posts/swift/suppress-print.html",
+            "title": "Suppress Print Output in Swift",
+            "date_published": "2025-04-29T00:00:00Z",
+            "content_html": "<p>Suppressing print output is useful for functions that accept a block of code as input. An example\nwould be a benchmark function that accepts a block of code for profiling. The code may contain\nprint statements that would print to the screen during each benchmark iteration. By suppressing the\nprint output, the benchmark does not pollute the screen with unnecessary output.</p><p><a href=\"https://gavinw.me/posts/swift/suppress-print.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/config/ghostty.html",
             "url": "https://gavinw.me/posts/config/ghostty.html",
             "title": "Ghostty Configuration",
@@ -173,6 +180,13 @@
             "content_html": "<p>The <code>argparse</code> module provides an interface to write command-line programs in Python. It is part of the Python standard library so there's no need for external dependencies. A basic example is given below that demonstrates positional and optional arguments. The second example shows the use of subparsers to create subcommands.</p><p><a href=\"https://gavinw.me/posts/python/argparse.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/swift/flat-indexing.html",
+            "url": "https://gavinw.me/posts/swift/flat-indexing.html",
+            "title": "Flat Indexing an N-dimensional Swift Array",
+            "date_published": "2024-08-07T00:00:00Z",
+            "content_html": "<p>An N-dimensional or multi-dimensional array is a data structure with one or more dimensions. An index for each dimension must be provided to access a particular element's value. Since the array's data is stored in one-dimensional memory, the indices must be converted to a flat index (one-dimension) to access the corresponding memory location.</p><p><a href=\"https://gavinw.me/posts/swift/flat-indexing.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/protocol.html",
             "url": "https://gavinw.me/posts/python/protocol.html",
             "title": "Protocols in Python",
@@ -185,6 +199,13 @@
             "title": "Elapsed Time in Swift",
             "date_published": "2024-06-24T00:00:00Z",
             "content_html": "<p>The functions shown below are examples of measuring elapsed time in Swift. The sleep function is used to delay the code execution for 4 seconds. Consequently, the elapsed time for each example is approximately 4 seconds.</p><p><a href=\"https://gavinw.me/posts/swift/elapsed-time.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift/package-library.html",
+            "url": "https://gavinw.me/posts/swift/package-library.html",
+            "title": "Package a Swift Library",
+            "date_published": "2024-03-15T00:00:00Z",
+            "content_html": "<p>There are two ways to create a Swift package for a library: using the command line and using Xcode. Each approach is discussed in the following sections.</p><p><a href=\"https://gavinw.me/posts/swift/package-library.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/makefiles.html",
@@ -264,11 +285,32 @@
             "content_html": "<p>The function below returns the Gauss-Legendre integration points and weights for a 2D quadrilateral using values from a 1D quadrature. The 1D values are obtained from NumPy's <code>leggauss()</code> function.</p><p><a href=\"https://gavinw.me/posts/numpy/gauss.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/swift/image-colormap.html",
+            "url": "https://gavinw.me/posts/swift/image-colormap.html",
+            "title": "Image from Colormap Filter in Swift",
+            "date_published": "2023-07-19T00:00:00Z",
+            "content_html": "<p>A colormap can be applied to an image using a Core Image filter. The first step in this process, is to create a gradient image that represents the colormap. The function shown below creates a linear gradient image of the viridis colormap.</p><p><a href=\"https://gavinw.me/posts/swift/image-colormap.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/debugger.html",
             "url": "https://gavinw.me/posts/python/debugger.html",
             "title": "Debugger in Python",
             "date_published": "2023-07-18T00:00:00Z",
             "content_html": "<p>The <a href=\"https://docs.python.org/3/library/pdb.html\">pdb</a> module provides an interactive debugger for Python programs. It supports breakpoints and stepping through the source code. To demonstrate using the debugger and setting a breakpoint, first consider the example shown below.</p><p><a href=\"https://gavinw.me/posts/python/debugger.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift/image-data.html",
+            "url": "https://gavinw.me/posts/swift/image-data.html",
+            "title": "Image from Swift Array Data",
+            "date_published": "2023-07-18T00:00:00Z",
+            "content_html": "<p>An image can be created from numerical data using the Core Graphics and Accelerate frameworks. The sections below demonstrate how to create a gray scale image from normalized data and color images from RGB data.</p><p><a href=\"https://gavinw.me/posts/swift/image-data.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift/normalize-array.html",
+            "url": "https://gavinw.me/posts/swift/normalize-array.html",
+            "title": "Normalize Swift Array Values",
+            "date_published": "2023-07-17T00:00:00Z",
+            "content_html": "<p>In this example, values in an array are normalized to be in the range 0 to 1. The normalized values are calculated using the maximum and minimum values from the original array.</p><p><a href=\"https://gavinw.me/posts/swift/normalize-array.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/swift/arrays.html",
@@ -488,6 +530,13 @@
             "content_html": "<p>An enum (or enumeration) represents data that is one of several possible variants. Each variant in the enum can optionally have data associated with it. An enumeration is declared using the <code>enum</code> keyword.</p><p><a href=\"https://gavinw.me/posts/rust/enums.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/swift/element-array-addition.html",
+            "url": "https://gavinw.me/posts/swift/element-array-addition.html",
+            "title": "Element-wise Array Addition in Swift",
+            "date_published": "2023-01-16T00:00:00Z",
+            "content_html": "<p>There are several ways to perform element-wise array addition with Swift arrays. One approach is to use a for-loop, another approach is to use the Accelerate framework, and yet another approach is to use a Metal GPU compute kernel. An example of each approach is given below and an elapsed time comparison for adding two large arrays is given in the Summary section.</p><p><a href=\"https://gavinw.me/posts/swift/element-array-addition.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/rust/hashmaps.html",
             "url": "https://gavinw.me/posts/rust/hashmaps.html",
             "title": "Hash Maps in Rust",
@@ -593,11 +642,32 @@
             "content_html": "<p>A dictionary in Swift is a list of key-value pairs separated by colons and surrounded by square brackets such as <code>[key: value]</code>. Values returned from a dictionary are optional because the key may not exist in the dictionary.</p><p><a href=\"https://gavinw.me/posts/swift/dictionaries.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/swift/strides.html",
+            "url": "https://gavinw.me/posts/swift/strides.html",
+            "title": "Strides in Swift",
+            "date_published": "2022-11-12T00:00:00Z",
+            "content_html": "<p>Use the stride function to step over values between two limits or boundaries. The stride functions can also be used to build arrays with a certain range of numbers.</p><p><a href=\"https://gavinw.me/posts/swift/strides.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift/strings.html",
+            "url": "https://gavinw.me/posts/swift/strings.html",
+            "title": "Strings in Swift",
+            "date_published": "2022-11-12T00:00:00Z",
+            "content_html": "<p>A string in Swift is represented by characters wrapped with double quotation marks <code>\" \"</code>. Multiline strings are wrapped with three double quotation marks <code>\"\"\" \"\"\"</code>. Use a backslash <code>\\</code> to ignore a line break in a multiline string.</p><p><a href=\"https://gavinw.me/posts/swift/strings.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/swift/date-formatting.html",
             "url": "https://gavinw.me/posts/swift/date-formatting.html",
             "title": "Date Formatting in Swift",
             "date_published": "2022-11-12T00:00:00Z",
             "content_html": "<p>Examples of creating a formatted date string are shown below. The output of each print function is given as a comment below the function.</p><p><a href=\"https://gavinw.me/posts/swift/date-formatting.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift/range.html",
+            "url": "https://gavinw.me/posts/swift/range.html",
+            "title": "Range in Swift",
+            "date_published": "2022-11-12T00:00:00Z",
+            "content_html": "<p>Check if a value is within a given range using the contains method.</p><p><a href=\"https://gavinw.me/posts/swift/range.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/strings.html",
