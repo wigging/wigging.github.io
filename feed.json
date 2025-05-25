@@ -201,6 +201,20 @@
             "content_html": "<p>The functions shown below are examples of measuring elapsed time in Swift. The sleep function is used to delay the code execution for 4 seconds. Consequently, the elapsed time for each example is approximately 4 seconds.</p><p><a href=\"https://gavinw.me/posts/swift/elapsed-time.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/accelerate/complex-multiplication.html",
+            "url": "https://gavinw.me/posts/accelerate/complex-multiplication.html",
+            "title": "Complex Multiplication with Accelerate",
+            "date_published": "2024-05-11T00:00:00Z",
+            "content_html": "<p>Use the <code>cblas_cgemv</code> function in Accelerate to multiply a matrix and vector with single-precision complex values. For this example, a structure named <code>Complex</code> with <code>real</code> and <code>imag</code> properties is utilized but <code>DSPComplex</code> can also be used.</p><p><a href=\"https://gavinw.me/posts/accelerate/complex-multiplication.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/accelerate/matrix-multiplication.html",
+            "url": "https://gavinw.me/posts/accelerate/matrix-multiplication.html",
+            "title": "Matrix Multiplication with Accelerate",
+            "date_published": "2024-05-04T00:00:00Z",
+            "content_html": "<p>Accelerate provides two functions for performing matrix multiplication. The first is the <code>vDSP_mmulD</code> function which is demonstrated below.</p><p><a href=\"https://gavinw.me/posts/accelerate/matrix-multiplication.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/swift/package-library.html",
             "url": "https://gavinw.me/posts/swift/package-library.html",
             "title": "Package a Swift Library",
@@ -668,6 +682,27 @@
             "title": "Range in Swift",
             "date_published": "2022-11-12T00:00:00Z",
             "content_html": "<p>Check if a value is within a given range using the contains method.</p><p><a href=\"https://gavinw.me/posts/swift/range.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/accelerate/absolute-value.html",
+            "url": "https://gavinw.me/posts/accelerate/absolute-value.html",
+            "title": "Absolute Value with Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Get the absolute values of a vector using the vDSP.absolute function.</p><p><a href=\"https://gavinw.me/posts/accelerate/absolute-value.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/accelerate/sort.html",
+            "url": "https://gavinw.me/posts/accelerate/sort.html",
+            "title": "Sort Array Values with Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Sort the values in an array by ascending or descending order. Values of the array must be Float or Double.</p><p><a href=\"https://gavinw.me/posts/accelerate/sort.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/accelerate/reverse.html",
+            "url": "https://gavinw.me/posts/accelerate/reverse.html",
+            "title": "Reverse Array Elements using Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Reverse the order of elements in an array using the vDSP.reverse function. Values in the array must be Float or Double.</p><p><a href=\"https://gavinw.me/posts/accelerate/reverse.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/strings.html",
