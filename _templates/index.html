@@ -40,11 +40,9 @@
 
     <hr>
 
-    <p class="mt-4">My recent posts are listed below. See the <a href="archive.html">Archive</a> page for all of my posts. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader. See the <a href="about.html">About</a> page for more information about myself.</p>
+    <p class="mt-4">My recent posts are listed below. See the <a href="archive.html">Archive</a> page for all of my posts and the <a href="about.html">About</a> page for more information about myself. Subscribe to this site using the <a href="https://gavinw.me/feed.json">JSON Feed</a> with your favorite RSS reader.</p>
 
-    <h2>Recent Posts</h2>
-
-    <hr class="mb-4">
+    <br>
 
     {% for post in posts | sort(attribute='iso_date', reverse=true) %}
     {% if loop.index0 < 20 %}
