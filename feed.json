@@ -1,0 +1,29 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Gavin Wiggins",
+    "home_page_url": "https://gavinw.me",
+    "feed_url": "https://gavinw.me/feed.json",
+    "items": [
+        {
+            "id": "https://gavinw.me/posts/git-notes.html",
+            "url": "https://gavinw.me/posts/git-notes.html",
+            "title": "Git notes",
+            "date_published": "2025-07-27T00:00:00Z",
+            "content_html": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a href=\"https://gavinw.me/posts/git-notes.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift-command-line.html",
+            "url": "https://gavinw.me/posts/swift-command-line.html",
+            "title": "Command-line Arguments in Swift",
+            "date_published": "2025-07-09T00:00:00Z",
+            "content_html": "<p>Use the <code>CommandLine</code> enumeration in Swift to get command-line arguments when executing a program. The arguments are obtained as an array of strings. The example below prints all the arguments passed to the program. The name of the executed program is the first argument. The second argument is expected to be an integer <code>n</code> and the third argument is a string <code>t</code>.</p><p><a href=\"https://gavinw.me/posts/swift-command-line.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/swift-compiler.html",
+            "url": "https://gavinw.me/posts/swift-compiler.html",
+            "title": "Swift Compiler Optimizations",
+            "date_published": "2024-02-24T00:00:00Z",
+            "content_html": "<p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p><p><a href=\"https://gavinw.me/posts/swift-compiler.html\">Continue reading...</a></p>"
+        }
+    ]
+}
