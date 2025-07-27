@@ -26,19 +26,28 @@
 <div class="col-md">
     <h1 class="display-6">
         <img src="https://avatars.githubusercontent.com/u/6828967" style="max-width:60px;margin-right:10px;">
-        Gavin Wiggins
+        <a href="/" style="color: inherit;">Gavin Wiggins</a>
     </h1>
 
     <hr class="mb-5">
 
-    <p>Hello, I'm Gavin and this is my personal website where I share notes on various programming topics. My recent posts are listed below or go to the <a href="archive.html">Archive</a> page to view all my notes. See the <a href="about.html">About</a> page to learn more about myself.</p>
+    <p>An archive of my notes is shown below organized by topic.</p>
 
-    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
-    <p class="py-2">
-        <span class="float-start"><a href=" {{ post.link }}">{{ post.title }}</a></span>
-        <span class="float-end d-none d-sm-block">{{ post.date }}</span>
-    </p>
-    {% endfor %}
+    <h4>Git, GitHub, GitLab</h4>
+    <ul>
+        <li><a href="posts/git-notes.html">Git notes</a></li>
+    </ul>
+
+    <h4>Python</h4>
+    <ul>
+        <li><a href="posts/python-dynamic-class.html">Dynamic Python Class from TOML</a></li>
+    </ul>
+
+    <h4>Swift</h4>
+    <ul>
+        <li><a href="posts/swift-compiler.html">Swift Compiler Optimizations</a></li>
+        <li><a href="posts/swift-command-line.html">Command-line Arguments in Swift</a></li>
+    </ul>
 
     <br>
 
