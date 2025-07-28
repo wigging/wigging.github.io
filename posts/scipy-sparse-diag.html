@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/scipy-sparse-diag.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Sparse Diagonal Matrix with SciPy">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,28 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Sparse Diagonal Matrix with SciPy</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on November 8, 2022</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
+    <p>The <code>diags</code> function from SciPy can be used to create a sparse diagonal matrix. The matrix is constructed from lists or NumPy arrays that represent the diagonals of the matrix. The <code>offsets</code> argument sets the placement of the diagonals within the matrix where <code>k = 0</code> is the main diagonal, <code>k &lt; 0</code> is the kth lower diagonal, and <code>k &gt; 0</code> is the kth upper diagonal.</p>
+<pre><code class="language-python">from scipy.sparse import diags
 
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
+# Diagonals as lists or NumPy arrays
+a = [33, 33, 33, 33]
+b = [44, 44, 44, 44, 44]
+c = [55, 55, 55, 55]
 
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+# Create a sparse diagonal matrix
+z = diags([a, b, c], offsets=[1, 0, -1]).toarray()
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
-</code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>Where <code>z</code> is a NumPy array containing the diagonals</p>
+<pre><code class="language-python">&gt;&gt;&gt; z
+array([[44, 33,  0,  0,  0],
+       [55, 44, 33,  0,  0],
+       [ 0, 55, 44, 33,  0],
+       [ 0,  0, 55, 44, 33],
+       [ 0,  0,  0, 55, 44]])
 </code></pre>
 
     <br>

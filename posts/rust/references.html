@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/references.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Rust References">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,23 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Rust References</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
+    <p>A reference is denoted by an ampersand <code>&amp;</code>. In the example below, a reference of the string <code>s1</code> is passed to the <code>calculate_length</code> function. The <code>&amp;s1</code> refers to the value of <code>s1</code> without owning it.</p>
+<pre><code class="language-rust">fn main() {
+    let s1 = String::from(&quot;hello&quot;);
+    let len = calculate_length(&amp;s1);
+    println!(&quot;The length of {s1} is {len}&quot;);
+}
 
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
-
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+fn calculate_length(s: &amp;String) -&gt; usize {
+    return s.len();
+}
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
-</code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>Running the above example generates the output shown below.</p>
+<pre><code>The length of hello is 5
 </code></pre>
 
     <br>

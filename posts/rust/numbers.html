@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/numbers.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Numbers in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,29 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Numbers in Rust</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
-
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
-
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+    <p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p>
+<pre><code class="language-rust">// Examples of signed integers
+let a: i8 = -23;
+let b: i32 = -41;
+let c: i64 = -52;
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
+<p>Unsigned integer types are <code>u8</code> (8-bit), <code>u16</code> (16-bit), <code>u32</code> (32-bit), <code>u64</code> (64-bit), and <code>u128</code> (128-bit). Numbers represented as unsigned integers must have a positive value.</p>
+<pre><code class="language-rust">// Examples of unsigned integers
+let a: u8 = 58;
+let b: u32 = 81;
+let c: u64 = 95;
 </code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>Floating point number types are <code>f32</code> (single precision) and <code>f64</code> (double precision). The default float type is <code>f64</code>.</p>
+<pre><code class="language-rust">// Examples of floating point numbers
+let a: f32 = 12.809;
+let b = 34.1;
+</code></pre>
+<p>Use an underscore to visually separate a number.</p>
+<pre><code class="language-rust">let c = 9_800.25;
 </code></pre>
 
     <br>

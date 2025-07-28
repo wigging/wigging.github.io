@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/vectors.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Vectors in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,67 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Vectors in Rust</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on January 30, 2023</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
+    <p>A vector is a resizable collection that stores items of the same type. Its values are stored next to each other in memory. The <code>vec!</code> macro can be used to initialize a vector.</p>
+<pre><code class="language-rust">// Create a vector of numbers
+let v1 = vec![3, 5, 8, 10, 12, 9];
 
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
-
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+// Create a vector of strings
+let v2 = vec![&quot;one&quot;, &quot;two&quot;, &quot;three&quot;];
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
+<p>Below is an example of creating an empty vector and adding values to it.</p>
+<pre><code class="language-rust">// Add elements to an empty vector
+let mut v3 = Vec::new();
+v3.push(1.5);
+v3.push(3.0);
+v3.push(8.2);
+
+println!(&quot;v3 is {:?}&quot;, v3);
+// This prints:
+// v3 is [1.5, 3.0, 8.2]
 </code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>Use indexing to get values from a vector. Notice the first element is at index zero.</p>
+<pre><code class="language-rust">// Read elements from a vector
+let v4 = vec![22, 38, 42, 50];
+let first = &amp;v4[0];
+let third = v4[2];
+let last = v4.last().unwrap();
+
+println!(&quot;v4 is {:?}&quot;, v4);
+println!(&quot;first is {}&quot;, first);
+println!(&quot;third is {}&quot;, third);
+println!(&quot;last is {}&quot;, last);
+// This prints:
+// v4 is [22, 38, 42, 50]
+// first is 22
+// third is 42
+// last is 50
+</code></pre>
+<p>Use of <code>for</code> loop to iterate over the values in a vector.</p>
+<pre><code class="language-rust">// Iterate over elements in a vector
+let v5 = vec![3, 4, 5, 6, 8, 12];
+
+for v in v5 {
+    println!(&quot;v in v5 is {}&quot;, v);
+}
+// This prints:
+// v in v5 is 3
+// v in v5 is 4
+// v in v5 is 5
+// v in v5 is 6
+// v in v5 is 8
+// v in v5 is 12
+
+// Iterate over elements in a vector by reference
+let v5 = vec![3, 4, 5, 6, 8, 12];
+
+for v in &amp;v5 {
+    println!(&quot;v in v5 is {}&quot;, v);
+}
+// This prints the same as above.
 </code></pre>
 
     <br>

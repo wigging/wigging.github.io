@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/tuples.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Tuples in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,27 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Tuples in Rust</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
+    <p>A tuple groups together values where each value can have a different type. Tuples have a fixed length and the first index is 0. In this example, a tuple is defined with three values of different types. The value is accessed using a period.</p>
+<pre><code class="language-rust">// Tuple with a variety of types
+let tup: (i8, f64, u16) = (12, 4.05, 5);
 
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
+// Access a tuple element using a period
+let first_item = tup.0;
 
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+println!(&quot;First item is {first_item}&quot;);
+// First item is 12
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
-</code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>The values in a tuple can be extracted to separate variables as shown below.</p>
+<pre><code class="language-rust">// Extract tuple values to three separate variables
+let tup = (12, 54, 102);
+let (a, b, c) = tup;
+
+println!(&quot;a is {a}, b is {b}, c is {c}&quot;);
+// a is 12, b is 54, c is 102
 </code></pre>
 
     <br>

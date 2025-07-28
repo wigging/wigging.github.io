@@ -5,32 +5,102 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
-            "id": "https://gavinw.me/posts/git-notes.html",
-            "url": "https://gavinw.me/posts/git-notes.html",
-            "title": "Git notes",
-            "date_published": "2025-07-27T00:00:00Z",
-            "content_html": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\nproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a href=\"https://gavinw.me/posts/git-notes.html\">Continue reading...</a></p>"
+            "id": "https://gavinw.me/posts/rust/enums.html",
+            "url": "https://gavinw.me/posts/rust/enums.html",
+            "title": "Enums in Rust",
+            "date_published": "2023-01-30T00:00:00Z",
+            "content_html": "<p>An enum (or enumeration) represents data that is one of several possible variants. Each variant in the enum can optionally have data associated with it. An enumeration is declared using the <code>enum</code> keyword.</p><p><a href=\"https://gavinw.me/posts/rust/enums.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/posts/swift-command-line.html",
-            "url": "https://gavinw.me/posts/swift-command-line.html",
-            "title": "Command-line Arguments in Swift",
-            "date_published": "2025-07-09T00:00:00Z",
-            "content_html": "<p>Use the <code>CommandLine</code> enumeration in Swift to get command-line arguments when executing a program. The arguments are obtained as an array of strings. The example below prints all the arguments passed to the program. The name of the executed program is the first argument. The second argument is expected to be an integer <code>n</code> and the third argument is a string <code>t</code>.</p><p><a href=\"https://gavinw.me/posts/swift-command-line.html\">Continue reading...</a></p>"
+            "id": "https://gavinw.me/posts/rust/hashmaps.html",
+            "url": "https://gavinw.me/posts/rust/hashmaps.html",
+            "title": "Hash Maps in Rust",
+            "date_published": "2022-12-18T00:00:00Z",
+            "content_html": "<p>A hash map stores a key/value pair into memory. This is similar to a hash table or dictionary in other programming languages. The example below creates a new hash map, adds elements to it, then gets a value associated with a key.</p><p><a href=\"https://gavinw.me/posts/rust/hashmaps.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/posts/python-dynamic-class.html",
-            "url": "https://gavinw.me/posts/python-dynamic-class.html",
-            "title": "Dynamic Python Class from TOML",
-            "date_published": "2025-04-21T00:00:00Z",
-            "content_html": "<p>Python's standard library provides functionality to read a TOML configuration file and dynamically create class instances based on the parameters defined in that file. This is useful for command line tools and web applications.</p><p><a href=\"https://gavinw.me/posts/python-dynamic-class.html\">Continue reading...</a></p>"
+            "id": "https://gavinw.me/posts/rust/strings.html",
+            "url": "https://gavinw.me/posts/rust/strings.html",
+            "title": "Strings in Rust",
+            "date_published": "2022-12-18T00:00:00Z",
+            "content_html": "<p>A string literal uses double quotes <code>\" \"</code> and represents a string slice <code>str</code> or <code>&amp;str</code>.</p><p><a href=\"https://gavinw.me/posts/rust/strings.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/posts/swift-compiler.html",
-            "url": "https://gavinw.me/posts/swift-compiler.html",
-            "title": "Swift Compiler Optimizations",
-            "date_published": "2024-02-24T00:00:00Z",
-            "content_html": "<p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p><p><a href=\"https://gavinw.me/posts/swift-compiler.html\">Continue reading...</a></p>"
+            "id": "https://gavinw.me/posts/rust/fizzbuzz.html",
+            "url": "https://gavinw.me/posts/rust/fizzbuzz.html",
+            "title": "FizzBuzz in Rust",
+            "date_published": "2022-12-11T00:00:00Z",
+            "content_html": "<p>Examples of the classic fizzbuzz problem are implemented below. The first example uses if-else statements while the second example uses pattern matching.</p><p><a href=\"https://gavinw.me/posts/rust/fizzbuzz.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/arrays-vectors.html",
+            "url": "https://gavinw.me/posts/rust/arrays-vectors.html",
+            "title": "Arrays and Vectors in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>In Rust, arrays and vectors are both collections that store multiple elements of the same type. Arrays are fixed-size collections allocated on the stack. Vectors are dynamic arrays allocated on the heap that can grow and shrink at runtime.</p><p><a href=\"https://gavinw.me/posts/rust/arrays-vectors.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/structs.html",
+            "url": "https://gavinw.me/posts/rust/structs.html",
+            "title": "Structs in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A <code>struct</code> is a custom data type that contains related values. Below are some examples of creating structs and accessing its values.</p><p><a href=\"https://gavinw.me/posts/rust/structs.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/loops.html",
+            "url": "https://gavinw.me/posts/rust/loops.html",
+            "title": "Rust Loops",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Rust provides three kinds of loops: <code>loop</code>, <code>while</code>, and <code>for</code>. Use the <code>loop</code> keyword to execute code repeatedly until <code>break</code> is called.</p><p><a href=\"https://gavinw.me/posts/rust/loops.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/slices.html",
+            "url": "https://gavinw.me/posts/rust/slices.html",
+            "title": "Slices in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A slice is a reference to a sequence of elements in a collection such as a string or array. In this example, the <code>s</code> string is sliced to obtain a reference of the first word and second word in the string.</p><p><a href=\"https://gavinw.me/posts/rust/slices.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/tuples.html",
+            "url": "https://gavinw.me/posts/rust/tuples.html",
+            "title": "Tuples in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A tuple groups together values where each value can have a different type. Tuples have a fixed length and the first index is 0. In this example, a tuple is defined with three values of different types. The value is accessed using a period.</p><p><a href=\"https://gavinw.me/posts/rust/tuples.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/references.html",
+            "url": "https://gavinw.me/posts/rust/references.html",
+            "title": "Rust References",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A reference is denoted by an ampersand <code>&amp;</code>. In the example below, a reference of the string <code>s1</code> is passed to the <code>calculate_length</code> function. The <code>&amp;s1</code> refers to the value of <code>s1</code> without owning it.</p><p><a href=\"https://gavinw.me/posts/rust/references.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/run-file.html",
+            "url": "https://gavinw.me/posts/rust/run-file.html",
+            "title": "Compile and Run a Rust File",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Below is the contents of a simple Rust program contained in a file named <code>sayhello.rs</code>.</p><p><a href=\"https://gavinw.me/posts/rust/run-file.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/functions.html",
+            "url": "https://gavinw.me/posts/rust/functions.html",
+            "title": "Rust Functions",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Functions in Rust are defined with <code>fn</code>. The function name and its input arguments should be lowercase with underscores to separate words. Some examples of functions are shown below.</p><p><a href=\"https://gavinw.me/posts/rust/functions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/ifexpressions.html",
+            "url": "https://gavinw.me/posts/rust/ifexpressions.html",
+            "title": "If Expressions in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Use an <code>if</code> expression to check if a condition is met or not met. The <code>else</code> expression is used to check for multiple conditions.</p><p><a href=\"https://gavinw.me/posts/rust/ifexpressions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/numbers.html",
+            "url": "https://gavinw.me/posts/rust/numbers.html",
+            "title": "Numbers in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p><p><a href=\"https://gavinw.me/posts/rust/numbers.html\">Continue reading...</a></p>"
         }
     ]
 }

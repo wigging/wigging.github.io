@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/loops.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Rust Loops">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,59 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Rust Loops</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
+    <p>Rust provides three kinds of loops: <code>loop</code>, <code>while</code>, and <code>for</code>. Use the <code>loop</code> keyword to execute code repeatedly until <code>break</code> is called.</p>
+<pre><code class="language-rust">let mut counter = 0;
 
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
+let result = loop {
+    counter += 1;
 
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+    if counter == 10 {
+        let count = counter * 2;
+        break count
+    }
+};
+
+println!(&quot;The result is {result}&quot;);
+// The result is 20
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
+<p>Use a <code>while</code> loop to run code while a condition is true.</p>
+<pre><code class="language-rust">let mut number = 3;
+
+while number != 0 {
+    println!(&quot;{number}...&quot;);
+
+    number -= 1;
+}
+
+println!(&quot;Blast off!&quot;);
+// 3...
+// 2...
+// 1...
+// Blast off!
 </code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>Use <code>for</code> to loop through each element in a collection.</p>
+<pre><code class="language-rust">let numbers = [10, 20, 30, 40, 50];
+
+for n in numbers {
+    println!(&quot;The number is: {n}&quot;);
+}
+// The number is: 10
+// The number is: 20
+// The number is: 30
+// The number is: 40
+// The number is: 50
+</code></pre>
+<p>Use <code>for</code> to execute some code for a certain number of times.</p>
+<pre><code class="language-rust">for i in 1..4 {
+    println!(&quot;Number is {i}&quot;);
+}
+// Number is 1
+// Number is 2
+// Number is 3
 </code></pre>
 
     <br>

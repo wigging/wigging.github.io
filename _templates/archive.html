@@ -24,7 +24,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md">
-    <h1 class="display-6">
+    <h1>
         <img src="https://avatars.githubusercontent.com/u/6828967" style="max-width:60px;margin-right:10px;">
         <a href="/" style="color: inherit;">Gavin Wiggins</a>
     </h1>
@@ -33,19 +33,19 @@
 
     <p>An archive of my notes is shown below organized by topic.</p>
 
-    <h4>Git, GitHub, GitLab</h4>
+    <h4>Python</h4>
     <ul>
         {% for post in posts %}
-        {% if 'git' in post.tags %}
+        {% if 'python' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
 
-    <h4>Python</h4>
+    <h4>Rust</h4>
     <ul>
         {% for post in posts %}
-        {% if 'python' in post.tags %}
+        {% if 'rust' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
         {% endfor %}
@@ -64,9 +64,8 @@
 
     <p class="text-center small my-5">
         Gavin Wiggins © 2025<br>
-        Made on a <a href="https://www.apple.com/mac/">Mac</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.
+        Made on a <a href="https://www.apple.com/mac/">Mac</a> with <a href="https://github.com/wigging/genja">Genja</a>. Hosted on <a href="https://pages.github.com">GitHub Pages</a>.
     </p>
-
 </div> <!-- end col-md -->
 </div> <!-- end row -->
 </div> <!-- end container -->

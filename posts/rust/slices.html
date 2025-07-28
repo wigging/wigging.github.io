@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/posts/swift-compiler.html">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/slices.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Swift Compiler Optimizations">
+    <meta property="og:description" content="Slices in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,29 +40,41 @@
 
     <hr class="mb-5">
 
-    <h1>Swift Compiler Optimizations</h1>
+    <h1>Slices in Rust</h1>
 
-    <h6 class="text-secondary">Written on February 24, 2024</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    <p>The Swift compiler <code>swiftc</code> provides options such as <code>-O</code>, <code>-Osize</code>, and <code>-Ounchecked</code> to build code with optimizations turned on. Use optimizations such as <code>-Osize</code> to target small code size and the <code>-Ounchecked</code> to remove runtime safety checks.</p>
-<p>The example below creates an array of size <code>n</code> that contains random numbers in the range from 1 to 10. The sum of the array is calculated then information about the result is printed to the screen.</p>
-<pre><code class="language-swift">// main.swift
-
-let n = 2_000_000
-let x = (1...n).map { _ in Float.random(in: 1...10) }
-let s = x.reduce(0, +)
-
-print(&quot;first item \(x[0])&quot;)
-print(&quot;last item \(x[n-1])&quot;)
-print(&quot;sum \(s)&quot;)
+    <p>A slice is a reference to a sequence of elements in a collection such as a string or array. In this example, the <code>s</code> string is sliced to obtain a reference of the first word and second word in the string.</p>
+<pre><code class="language-rust">let s = String::from(&quot;hello there&quot;);
+let firstword = &amp;s[0..5];
+let secondword = &amp;s[6..11];
+println!(&quot;phrase is: {s}&quot;);
+println!(&quot;first word is: {firstword}&quot;);
+println!(&quot;second word is: {secondword}&quot;);
 </code></pre>
-<p>Compiling without optimizations and timing the code execution is shown below. The execution time is 1.84 seconds on a 2019 MacBook Pro with a 2.6 GHz Intel CPU and 32 GB of RAM.</p>
-<pre><code class="language-text">swiftc main.swift
-time ./main
+<p>The above example prints the following:</p>
+<pre><code>phrase is: hello there
+first word is: hello
+second word is: there
 </code></pre>
-<p>Compiling with optimizations and timing the code execution is shown below. The execution time is 0.26 seconds. The code executes about 7 times faster when it is compiled with optimizations.</p>
-<pre><code class="language-text">swiftc main.swift -Ounchecked -o main_opt
-time ./main_opt
+<p>The range syntax can omit the first index when starting at index zero. It can also omit the last index if the last item is included in the range.</p>
+<pre><code class="language-rust">let firstword = &amp;s[..5];
+let secondword = &amp;s[6..];
+println!(&quot;first word is: {firstword}&quot;);
+println!(&quot;second word is: {secondword}\n&quot;);
+</code></pre>
+<p>This prints the same output as the previous example:</p>
+<pre><code>first word is: hello
+second word is: there
+</code></pre>
+<p>Slices can be applied to arrays as shown below.</p>
+<pre><code class="language-rust">let items = [1, 2, 3, 4, 5];
+let slice = &amp;items[1..4];
+println!(&quot;items are: {:?}&quot;, items);
+println!(&quot;items slice is: {:?}&quot;, slice);
+</code></pre>
+<pre><code>items are: [1, 2, 3, 4, 5]
+items slice is: [2, 3, 4]
 </code></pre>
 
     <br>
