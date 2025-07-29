@@ -31,12 +31,12 @@
 
     <hr class="mb-5">
 
-    <p>An archive of my notes is shown below organized by topic.</p>
+    <p>Here is an archive of all my notes. The notes are organized by tag therefore some notes may appear in several sections depending on the topic. Subscribe to the JSON feed or follow me on Mastodon to get notified about new posts.</p>
 
-    <h4>Python</h4>
+    <h4>Julia</h4>
     <ul>
         {% for post in posts %}
-        {% if 'python' in post.tags %}
+        {% if 'julia' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
         {% endfor %}
@@ -46,15 +46,6 @@
     <ul>
         {% for post in posts %}
         {% if 'rust' in post.tags %}
-        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-
-    <h4>Swift</h4>
-    <ul>
-        {% for post in posts %}
-        {% if 'swift' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
         {% endfor %}

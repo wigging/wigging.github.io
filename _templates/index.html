@@ -34,10 +34,12 @@
     <p>Hello, I'm Gavin and this is my personal website where I share notes on various programming topics. My recent posts are listed below or go to the <a href="archive.html">Archive</a> page to view all my notes. See the <a href="about.html">About</a> page to learn more about myself.</p>
 
     {% for post in posts | sort(attribute='iso_date', reverse=true) %}
+    {% if loop.index0 < 20 %}
     <p class="py-2">
         <span class="float-start"><a href=" {{ post.link }}">{{ post.title }}</a></span>
         <span class="float-end d-none d-sm-block">{{ post.date }}</span>
     </p>
+    {% endif %}
     {% endfor %}
 
     <br>
