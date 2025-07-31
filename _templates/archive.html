@@ -26,7 +26,7 @@
 <div class="col-md">
     <h1>
         <img src="https://avatars.githubusercontent.com/u/6828967" style="max-width:60px;margin-right:10px;">
-        <a href="/" style="color: inherit;">Gavin Wiggins</a>
+        <a href="/" style="color: inherit; font-weight: normal;">Gavin Wiggins</a>
     </h1>
 
     <hr class="mb-5">
@@ -37,6 +37,15 @@
     <ul>
         {% for post in posts %}
         {% if 'cpp' in post.tags %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h4>JavaScript</h4>
+    <ul>
+        {% for post in posts %}
+        {% if 'javascript' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
         {% endfor %}
