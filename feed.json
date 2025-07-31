@@ -5,6 +5,20 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/cpp/array2d.html",
+            "url": "https://gavinw.me/posts/cpp/array2d.html",
+            "title": "Two-Dimensional Array in C++",
+            "date_published": "2023-08-13T00:00:00Z",
+            "content_html": "<p>A two-dimensional array can be created using the traditional C-style array or with the C++ standard array container. Both approaches are demonstrated below.</p><p><a href=\"https://gavinw.me/posts/cpp/array2d.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/include-function.html",
+            "url": "https://gavinw.me/posts/cpp/include-function.html",
+            "title": "Include a Function from a C++ File",
+            "date_published": "2023-07-25T00:00:00Z",
+            "content_html": "<p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p><p><a href=\"https://gavinw.me/posts/cpp/include-function.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/rust/enums.html",
             "url": "https://gavinw.me/posts/rust/enums.html",
             "title": "Enums in Rust",
@@ -24,6 +38,55 @@
             "title": "Strings in Rust",
             "date_published": "2022-12-18T00:00:00Z",
             "content_html": "<p>A string literal uses double quotes <code>\" \"</code> and represents a string slice <code>str</code> or <code>&amp;str</code>.</p><p><a href=\"https://gavinw.me/posts/rust/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/strings.html",
+            "url": "https://gavinw.me/posts/cpp/strings.html",
+            "title": "Strings in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Examples of working with strings are given below.</p><p><a href=\"https://gavinw.me/posts/cpp/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/clang-macos.html",
+            "url": "https://gavinw.me/posts/cpp/clang-macos.html",
+            "title": "Clang on macOS",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Check if the clang compiler is installed on your Mac using the following terminal command:</p><p><a href=\"https://gavinw.me/posts/cpp/clang-macos.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/helloworld.html",
+            "url": "https://gavinw.me/posts/cpp/helloworld.html",
+            "title": "Hello World in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Here is a simple example of a C++ program in a file named <code>helloworld.cpp</code>.</p><p><a href=\"https://gavinw.me/posts/cpp/helloworld.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/cmake-install.html",
+            "url": "https://gavinw.me/posts/cpp/cmake-install.html",
+            "title": "Use CMake to Build and Install a C++ Project",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Below is an example C++ project. The CMakeLists file contains instructions for building and installing the project using the CMake command line tool.</p><p><a href=\"https://gavinw.me/posts/cpp/cmake-install.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/cmake-build.html",
+            "url": "https://gavinw.me/posts/cpp/cmake-build.html",
+            "title": "Use CMake to Build a C++ Project",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Below is an example C++ project. The CMakeLists file contains instructions for building the project using the CMake command line tool.</p><p><a href=\"https://gavinw.me/posts/cpp/cmake-build.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/numbers.html",
+            "url": "https://gavinw.me/posts/cpp/numbers.html",
+            "title": "Numbers in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Examples of integer, float, and double numbers are given below. An integer is just a whole number (no decimals). A float is a number with up to 7 decimal digits and a double is up to 15 decimal digits of precision.</p><p><a href=\"https://gavinw.me/posts/cpp/numbers.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/commandline.html",
+            "url": "https://gavinw.me/posts/cpp/commandline.html",
+            "title": "Command Line Arguments in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>To pass command line arguments to a program, define <code>main()</code> with two arguments. The <code>argc</code> argument is the number of command line arguments including the program name while <code>argv</code> is the list of arguments passed to the program.</p><p><a href=\"https://gavinw.me/posts/cpp/commandline.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/rust/fizzbuzz.html",
