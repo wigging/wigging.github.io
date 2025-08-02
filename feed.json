@@ -26,6 +26,20 @@
             "content_html": "<p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p><p><a href=\"https://gavinw.me/posts/cpp/include-function.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/matplotlib-imshow-plot.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-imshow-plot.html",
+            "title": "Imshow Plot with Matplotlib",
+            "date_published": "2023-05-10T00:00:00Z",
+            "content_html": "<p>Display data as an image using Matplotlib's imshow method.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-imshow-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-matshow-plot.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-matshow-plot.html",
+            "title": "Matshow Plot with Matplotlib",
+            "date_published": "2023-05-10T00:00:00Z",
+            "content_html": "<p>Visualize an array using Matplotlib's matshow function. The first example shown below plots a 2D array and the second example plots a diagonal array.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-matshow-plot.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/javascript/node.html",
             "url": "https://gavinw.me/posts/javascript/node.html",
             "title": "Create a JavaScript Environment with Node",
@@ -103,6 +117,13 @@
             "content_html": "<p><a href=\"https://bokeh.org\">Bokeh</a> is a visualization library for Python that makes it easy to plot data in Jupyter notebooks or web pages. <a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The examples in the following sections demonstrate using Flask with Bokeh graphs and Htmx interactivity.</p><p><a href=\"https://gavinw.me/posts/python/flask-bokeh-graph.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/matplotlib-contour-smoothing.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-contour-smoothing.html",
+            "title": "Contour Plot Smoothing with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>The example below generates a contour plot of sparse data.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-contour-smoothing.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/flask-plotly-graph.html",
             "url": "https://gavinw.me/posts/python/flask-plotly-graph.html",
             "title": "Plotly Graphs and Htmx with Flask",
@@ -124,11 +145,25 @@
             "content_html": "<p>This Flask webapp example uses Ajax to update the page with results from the post request. The results are returned as JSON which is used to update the div tags.</p><p><a href=\"https://gavinw.me/posts/python/flask-ajax.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/matplotlib-animation.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-animation.html",
+            "title": "Animation with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Matplotlib provides two animation classes for animating a plot figure. The example below uses the ArtistAnimation class. The animation can be displayed just like any other Matplotlib figure and saved to file as various video formats.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-animation.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/flask-plotly-restyle.html",
             "url": "https://gavinw.me/posts/python/flask-plotly-restyle.html",
             "title": "Plotly Graph Restyle with Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. The example below demonstrates using the Plotly JavaScript library in a Flask app. When the page first loads, a default line graph is shown. New data points are added to the graph using the form inputs. The <code>Plotly.restyle</code> function is used to redraw the graph when new data points are submitted; this approach avoids recreating an entirely new Plotly graph each time the data is updated.</p><p><a href=\"https://gavinw.me/posts/python/flask-plotly-restyle.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-mosaic-grid.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-mosaic-grid.html",
+            "title": "Mosaic Grid of Plots with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of using Matplotlib <code>subplot_mosaic()</code> to create a grid of plots.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-mosaic-grid.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/rust/enums.html",
