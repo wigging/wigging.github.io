@@ -60,6 +60,15 @@
         {% endfor %}
     </ul>
 
+    <h4>Python</h4>
+    <ul>
+        {% for post in posts %}
+        {% if 'python' in post.tags %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
     <h4>Rust</h4>
     <ul>
         {% for post in posts %}

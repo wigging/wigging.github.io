@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/python/flask-config.html",
+            "url": "https://gavinw.me/posts/python/flask-config.html",
+            "title": "Flask App Configuration with Dotenv",
+            "date_published": "2025-03-12T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://pypi.org/project/python-dotenv/\">dotenv</a> package can be used to load configuration settings for a Flask app. The configuration is defined in a <code>.env</code> file which is ignored by version control to ensure items like API keys and passwords are not shared with others.</p><p><a href=\"https://gavinw.me/posts/python/flask-config.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/cpp/array2d.html",
             "url": "https://gavinw.me/posts/cpp/array2d.html",
             "title": "Two-Dimensional Array in C++",
@@ -87,6 +94,41 @@
             "title": "JavaScript Modules",
             "date_published": "2023-02-27T00:00:00Z",
             "content_html": "<p>A module is a single JavaScript file where its variables and functions can be accessed from other JavaScript files. A local web server must be used to test modules in the browser; otherwise, opening the web page locally will not work.</p><p><a href=\"https://gavinw.me/posts/javascript/modules.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-bokeh-graph.html",
+            "url": "https://gavinw.me/posts/python/flask-bokeh-graph.html",
+            "title": "Bokeh Graphs and Htmx with Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p><a href=\"https://bokeh.org\">Bokeh</a> is a visualization library for Python that makes it easy to plot data in Jupyter notebooks or web pages. <a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The examples in the following sections demonstrate using Flask with Bokeh graphs and Htmx interactivity.</p><p><a href=\"https://gavinw.me/posts/python/flask-bokeh-graph.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-plotly-graph.html",
+            "url": "https://gavinw.me/posts/python/flask-plotly-graph.html",
+            "title": "Plotly Graphs and Htmx with Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. <a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The following sections demonstrate a Plotly graph and Htmx with Flask.</p><p><a href=\"https://gavinw.me/posts/python/flask-plotly-graph.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-form-input.html",
+            "url": "https://gavinw.me/posts/python/flask-form-input.html",
+            "title": "Form Input with Htmx and Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>An HTML form collects user input on a web page. Using Flask, the input can be evaluated in Python and used elsewhere in the web application. The examples in the following sections demonstrate a basic form with Flask and using Htmx for interactivity.</p><p><a href=\"https://gavinw.me/posts/python/flask-form-input.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-ajax.html",
+            "url": "https://gavinw.me/posts/python/flask-ajax.html",
+            "title": "Update a Webpage with Ajax and Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>This Flask webapp example uses Ajax to update the page with results from the post request. The results are returned as JSON which is used to update the div tags.</p><p><a href=\"https://gavinw.me/posts/python/flask-ajax.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-plotly-restyle.html",
+            "url": "https://gavinw.me/posts/python/flask-plotly-restyle.html",
+            "title": "Plotly Graph Restyle with Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. The example below demonstrates using the Plotly JavaScript library in a Flask app. When the page first loads, a default line graph is shown. New data points are added to the graph using the form inputs. The <code>Plotly.restyle</code> function is used to redraw the graph when new data points are submitted; this approach avoids recreating an entirely new Plotly graph each time the data is updated.</p><p><a href=\"https://gavinw.me/posts/python/flask-plotly-restyle.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/rust/enums.html",
@@ -234,6 +276,20 @@
             "title": "Numbers in Rust",
             "date_published": "2022-11-14T00:00:00Z",
             "content_html": "<p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p><p><a href=\"https://gavinw.me/posts/rust/numbers.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/dask-arrays.html",
+            "url": "https://gavinw.me/posts/python/dask-arrays.html",
+            "title": "Dask Arrays",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>Dask Array is similar to a NumPy array and allows cutting up a large array into smaller arrays (chunks). This enables working with arrays that are larger than memory. Computations can be applied in parallel for fast execution. Below is an example of using Dask array <code>map_blocks()</code> to map a function that returns a single value. Using an 8 CPU core MacBook Pro running macOS v11.6, the serial elapsed time is 513.51 seconds and the Dask elapsed time is 3.21 seconds.</p><p><a href=\"https://gavinw.me/posts/python/dask-arrays.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/dask-script.html",
+            "url": "https://gavinw.me/posts/python/dask-script.html",
+            "title": "Run Dask Code as a Script",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>Since most Dask examples are demonstrated using Jupyter notebooks, here's an example of using Dask in a Python file or script. Notice how the Dask code must be in the <code>__main__</code> block or called from within a function.</p><p><a href=\"https://gavinw.me/posts/python/dask-script.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/julia/testing.html",
