@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/javascript/node.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Create a JavaScript Environment with Node">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,30 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Create a JavaScript Environment with Node</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on April 28, 2023</h6>
 
-    {{ content }}
+    <p>Node.js is a JavaScript run-time environment for developing command line tools and server-side applications outside the browser. See <a href="https://nodejs.dev">https://nodejs.dev</a> or <a href="https://nodejs.org">https://nodejs.org</a> for more information. The recommended way to install Node.js is with the Node Version Manager (nvm). See the installation steps at <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a>.</p>
+<p>Once Node.js is installed, a JavaScript file can be run from the command line as shown below:</p>
+<pre><code>node myexample.js
+</code></pre>
+<p>Running the node command without providing a file will start a Read-Evaluate-Print-Loop (REPL) session.</p>
+<pre><code>node
+&gt;
+</code></pre>
+<p>Enter some JavaScript code in the REPL to execute that code and see the output. For example, the JavaScript code shown below will print <code>hello there</code> to the terminal and show the return type as <code>undefined</code>.</p>
+<pre><code>node
+&gt; console.log('hello there')
+hello there
+undefined
+</code></pre>
+<p>To upgrade to the latest stable (LTS) version of node use the following command:</p>
+<pre><code>nvm install &quot;lts/*&quot; --reinstall-packages-from=&quot;$(nvm current)&quot;
+</code></pre>
+<p>To remove an older version use this command shown below where <code>[old version]</code> would be something like <code>v19.6.1</code></p>
+<pre><code>nvm uninstall [old version]
+</code></pre>
 
     <br>
 

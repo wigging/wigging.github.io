@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/enums.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Enums in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,47 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Enums in Rust</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on January 30, 2023</h6>
 
-    {{ content }}
+    <p>An enum (or enumeration) represents data that is one of several possible variants. Each variant in the enum can optionally have data associated with it. An enumeration is declared using the <code>enum</code> keyword.</p>
+<pre><code class="language-rust">enum Fruit {
+    Apple,
+    Orange,
+    Lemon,
+    Mellon,
+}
+
+fn selection(fruit: Fruit) {
+    match fruit {
+        Fruit::Apple =&gt; println!(&quot;Selected the Apple fruit&quot;),
+        Fruit::Orange =&gt; println!(&quot;You chose the Orange fruit&quot;),
+        Fruit::Mellon =&gt; println!(&quot;You selected a Watermelon&quot;),
+        Fruit::Lemon =&gt; println!(&quot;Selected a Lemon fruit&quot;),
+    }
+}
+
+fn main() {
+    let item1 = Fruit::Orange;
+    selection(item1);
+
+    let item2 = Fruit::Apple;
+    selection(item2);
+
+    let item3 = Fruit::Mellon;
+    selection(item3);
+
+    let item4 = Fruit::Lemon;
+    selection(item4);
+}
+</code></pre>
+<p>The output from the above example is shown below.</p>
+<pre><code>You chose the Orange fruit
+Selected the Apple fruit
+You selected a Watermelon
+Selected a Lemon fruit
+</code></pre>
 
     <br>
 

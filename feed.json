@@ -1,0 +1,414 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Gavin Wiggins",
+    "home_page_url": "https://gavinw.me",
+    "feed_url": "https://gavinw.me/feed.json",
+    "items": [
+        {
+            "id": "https://gavinw.me/posts/python/flask-config.html",
+            "url": "https://gavinw.me/posts/python/flask-config.html",
+            "title": "Flask App Configuration with Dotenv",
+            "date_published": "2025-03-12T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://pypi.org/project/python-dotenv/\">dotenv</a> package can be used to load configuration settings for a Flask app. The configuration is defined in a <code>.env</code> file which is ignored by version control to ensure items like API keys and passwords are not shared with others.</p><p><a href=\"https://gavinw.me/posts/python/flask-config.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/array2d.html",
+            "url": "https://gavinw.me/posts/cpp/array2d.html",
+            "title": "Two-Dimensional Array in C++",
+            "date_published": "2023-08-13T00:00:00Z",
+            "content_html": "<p>A two-dimensional array can be created using the traditional C-style array or with the C++ standard array container. Both approaches are demonstrated below.</p><p><a href=\"https://gavinw.me/posts/cpp/array2d.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/include-function.html",
+            "url": "https://gavinw.me/posts/cpp/include-function.html",
+            "title": "Include a Function from a C++ File",
+            "date_published": "2023-07-25T00:00:00Z",
+            "content_html": "<p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p><p><a href=\"https://gavinw.me/posts/cpp/include-function.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-imshow-plot.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-imshow-plot.html",
+            "title": "Imshow Plot with Matplotlib",
+            "date_published": "2023-05-10T00:00:00Z",
+            "content_html": "<p>Display data as an image using Matplotlib's imshow method.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-imshow-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-matshow-plot.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-matshow-plot.html",
+            "title": "Matshow Plot with Matplotlib",
+            "date_published": "2023-05-10T00:00:00Z",
+            "content_html": "<p>Visualize an array using Matplotlib's matshow function. The first example shown below plots a 2D array and the second example plots a diagonal array.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-matshow-plot.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/node.html",
+            "url": "https://gavinw.me/posts/javascript/node.html",
+            "title": "Create a JavaScript Environment with Node",
+            "date_published": "2023-04-28T00:00:00Z",
+            "content_html": "<p>Node.js is a JavaScript run-time environment for developing command line tools and server-side applications outside the browser. See <a href=\"https://nodejs.dev\">https://nodejs.dev</a> or <a href=\"https://nodejs.org\">https://nodejs.org</a> for more information. The recommended way to install Node.js is with the Node Version Manager (nvm). See the installation steps at <a href=\"https://github.com/nvm-sh/nvm\">https://github.com/nvm-sh/nvm</a>.</p><p><a href=\"https://gavinw.me/posts/javascript/node.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/load-html.html",
+            "url": "https://gavinw.me/posts/javascript/load-html.html",
+            "title": "Use JavaScript to Load HTML Content",
+            "date_published": "2023-03-26T00:00:00Z",
+            "content_html": "<p>Content from HTML files can be loaded asynchronously using the <code>fetch()</code> method. In the example below, the content of the left and right columns are loaded from HTML files. The column layout is from the <a href=\"https://getbootstrap.com\">Bootstrap</a> CSS.</p><p><a href=\"https://gavinw.me/posts/javascript/load-html.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/scroll-columns.html",
+            "url": "https://gavinw.me/posts/javascript/scroll-columns.html",
+            "title": "Scroll Columns with JavaScript",
+            "date_published": "2023-03-24T00:00:00Z",
+            "content_html": "<p>Set the max height and overflow styles of <a href=\"https://getbootstrap.com\">Bootstrap</a> columns to independently scroll the columns. This isn't JavaScript, but it's related to website layout so it might be useful for designing web applications.</p><p><a href=\"https://gavinw.me/posts/javascript/scroll-columns.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/select-results.html",
+            "url": "https://gavinw.me/posts/javascript/select-results.html",
+            "title": "Select Results with JavaScript",
+            "date_published": "2023-03-23T00:00:00Z",
+            "content_html": "<p>In this example, number inputs are used as width and height parameters. These parameters are used to calculate area and perimeter results. The result views are in separate HTML files that are fetched with JavaScript.</p><p><a href=\"https://gavinw.me/posts/javascript/select-results.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/strings.html",
+            "url": "https://gavinw.me/posts/javascript/strings.html",
+            "title": "Strings in JavaScript",
+            "date_published": "2023-03-19T00:00:00Z",
+            "content_html": "<p>A string in JavaScript is represented by single or double quotes.</p><p><a href=\"https://gavinw.me/posts/javascript/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/plotly-graph.html",
+            "url": "https://gavinw.me/posts/javascript/plotly-graph.html",
+            "title": "Plotly Graphs in JavaScript",
+            "date_published": "2023-03-19T00:00:00Z",
+            "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is an open-source graphing library for JavaScript and other programming languages. Two basic examples are given below. The first graph uses a custom background color to match the web page. The second graph turns off some of the grid lines and uses the default background color.</p><p><a href=\"https://gavinw.me/posts/javascript/plotly-graph.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/input-number.html",
+            "url": "https://gavinw.me/posts/javascript/input-number.html",
+            "title": "Input Numbers with JavaScript",
+            "date_published": "2023-03-18T00:00:00Z",
+            "content_html": "<p>The example below demonstrates how to calculate the area from width and length inputs. Notice the type of each input is defined as number. Click the button to calculate the area or use an event listener to automatically run the area function.</p><p><a href=\"https://gavinw.me/posts/javascript/input-number.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/fizzbuzz.html",
+            "url": "https://gavinw.me/posts/javascript/fizzbuzz.html",
+            "title": "Fizz buzz in Javascript",
+            "date_published": "2023-03-18T00:00:00Z",
+            "content_html": "<p>This is a typical fizz buzz example written in JavaScript that runs in a web page. The input defines the number of iterations. A number divisible by 3 displays the word \"Fizz\", a number divisible by 5 displays \"Buzz\", and a number divisible by both 3 and 5 displays \"Fizz Buzz\".</p><p><a href=\"https://gavinw.me/posts/javascript/fizzbuzz.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/select-units.html",
+            "url": "https://gavinw.me/posts/javascript/select-units.html",
+            "title": "Select Units with JavaScript",
+            "date_published": "2023-03-17T00:00:00Z",
+            "content_html": "<p>In this example, the select element is used to change the units associated with the input parameter. As shown in the image below, the diameter is entered as 4.5 inches and is automatically converted to meters as shown in the Results section. The same conversion to meters is done for the height parameter. Finally, the parameters (in units of meters) are used to calculate the cylinder volume in cubic meters (m<sup>3</sup>).</p><p><a href=\"https://gavinw.me/posts/javascript/select-units.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/javascript/modules.html",
+            "url": "https://gavinw.me/posts/javascript/modules.html",
+            "title": "JavaScript Modules",
+            "date_published": "2023-02-27T00:00:00Z",
+            "content_html": "<p>A module is a single JavaScript file where its variables and functions can be accessed from other JavaScript files. A local web server must be used to test modules in the browser; otherwise, opening the web page locally will not work.</p><p><a href=\"https://gavinw.me/posts/javascript/modules.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-bokeh-graph.html",
+            "url": "https://gavinw.me/posts/python/flask-bokeh-graph.html",
+            "title": "Bokeh Graphs and Htmx with Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p><a href=\"https://bokeh.org\">Bokeh</a> is a visualization library for Python that makes it easy to plot data in Jupyter notebooks or web pages. <a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The examples in the following sections demonstrate using Flask with Bokeh graphs and Htmx interactivity.</p><p><a href=\"https://gavinw.me/posts/python/flask-bokeh-graph.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-contour-smoothing.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-contour-smoothing.html",
+            "title": "Contour Plot Smoothing with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>The example below generates a contour plot of sparse data.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-contour-smoothing.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-plotly-graph.html",
+            "url": "https://gavinw.me/posts/python/flask-plotly-graph.html",
+            "title": "Plotly Graphs and Htmx with Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. <a href=\"https://htmx.org\">Htmx</a> allows you to develop dynamic, interactive web pages without complex JavaScript. The following sections demonstrate a Plotly graph and Htmx with Flask.</p><p><a href=\"https://gavinw.me/posts/python/flask-plotly-graph.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-form-input.html",
+            "url": "https://gavinw.me/posts/python/flask-form-input.html",
+            "title": "Form Input with Htmx and Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>An HTML form collects user input on a web page. Using Flask, the input can be evaluated in Python and used elsewhere in the web application. The examples in the following sections demonstrate a basic form with Flask and using Htmx for interactivity.</p><p><a href=\"https://gavinw.me/posts/python/flask-form-input.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-ajax.html",
+            "url": "https://gavinw.me/posts/python/flask-ajax.html",
+            "title": "Update a Webpage with Ajax and Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>This Flask webapp example uses Ajax to update the page with results from the post request. The results are returned as JSON which is used to update the div tags.</p><p><a href=\"https://gavinw.me/posts/python/flask-ajax.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-animation.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-animation.html",
+            "title": "Animation with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Matplotlib provides two animation classes for animating a plot figure. The example below uses the ArtistAnimation class. The animation can be displayed just like any other Matplotlib figure and saved to file as various video formats.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-animation.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/flask-plotly-restyle.html",
+            "url": "https://gavinw.me/posts/python/flask-plotly-restyle.html",
+            "title": "Plotly Graph Restyle with Flask",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. The example below demonstrates using the Plotly JavaScript library in a Flask app. When the page first loads, a default line graph is shown. New data points are added to the graph using the form inputs. The <code>Plotly.restyle</code> function is used to redraw the graph when new data points are submitted; this approach avoids recreating an entirely new Plotly graph each time the data is updated.</p><p><a href=\"https://gavinw.me/posts/python/flask-plotly-restyle.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/matplotlib-mosaic-grid.html",
+            "url": "https://gavinw.me/posts/python/matplotlib-mosaic-grid.html",
+            "title": "Mosaic Grid of Plots with Matplotlib",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of using Matplotlib <code>subplot_mosaic()</code> to create a grid of plots.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-mosaic-grid.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/enums.html",
+            "url": "https://gavinw.me/posts/rust/enums.html",
+            "title": "Enums in Rust",
+            "date_published": "2023-01-30T00:00:00Z",
+            "content_html": "<p>An enum (or enumeration) represents data that is one of several possible variants. Each variant in the enum can optionally have data associated with it. An enumeration is declared using the <code>enum</code> keyword.</p><p><a href=\"https://gavinw.me/posts/rust/enums.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/hashmaps.html",
+            "url": "https://gavinw.me/posts/rust/hashmaps.html",
+            "title": "Hash Maps in Rust",
+            "date_published": "2022-12-18T00:00:00Z",
+            "content_html": "<p>A hash map stores a key/value pair into memory. This is similar to a hash table or dictionary in other programming languages. The example below creates a new hash map, adds elements to it, then gets a value associated with a key.</p><p><a href=\"https://gavinw.me/posts/rust/hashmaps.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/strings.html",
+            "url": "https://gavinw.me/posts/rust/strings.html",
+            "title": "Strings in Rust",
+            "date_published": "2022-12-18T00:00:00Z",
+            "content_html": "<p>A string literal uses double quotes <code>\" \"</code> and represents a string slice <code>str</code> or <code>&amp;str</code>.</p><p><a href=\"https://gavinw.me/posts/rust/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/strings.html",
+            "url": "https://gavinw.me/posts/cpp/strings.html",
+            "title": "Strings in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Examples of working with strings are given below.</p><p><a href=\"https://gavinw.me/posts/cpp/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/clang-macos.html",
+            "url": "https://gavinw.me/posts/cpp/clang-macos.html",
+            "title": "Clang on macOS",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Check if the clang compiler is installed on your Mac using the following terminal command:</p><p><a href=\"https://gavinw.me/posts/cpp/clang-macos.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/helloworld.html",
+            "url": "https://gavinw.me/posts/cpp/helloworld.html",
+            "title": "Hello World in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Here is a simple example of a C++ program in a file named <code>helloworld.cpp</code>.</p><p><a href=\"https://gavinw.me/posts/cpp/helloworld.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/cmake-install.html",
+            "url": "https://gavinw.me/posts/cpp/cmake-install.html",
+            "title": "Use CMake to Build and Install a C++ Project",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Below is an example C++ project. The CMakeLists file contains instructions for building and installing the project using the CMake command line tool.</p><p><a href=\"https://gavinw.me/posts/cpp/cmake-install.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/cmake-build.html",
+            "url": "https://gavinw.me/posts/cpp/cmake-build.html",
+            "title": "Use CMake to Build a C++ Project",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Below is an example C++ project. The CMakeLists file contains instructions for building the project using the CMake command line tool.</p><p><a href=\"https://gavinw.me/posts/cpp/cmake-build.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/numbers.html",
+            "url": "https://gavinw.me/posts/cpp/numbers.html",
+            "title": "Numbers in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>Examples of integer, float, and double numbers are given below. An integer is just a whole number (no decimals). A float is a number with up to 7 decimal digits and a double is up to 15 decimal digits of precision.</p><p><a href=\"https://gavinw.me/posts/cpp/numbers.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/cpp/commandline.html",
+            "url": "https://gavinw.me/posts/cpp/commandline.html",
+            "title": "Command Line Arguments in C++",
+            "date_published": "2022-12-13T00:00:00Z",
+            "content_html": "<p>To pass command line arguments to a program, define <code>main()</code> with two arguments. The <code>argc</code> argument is the number of command line arguments including the program name while <code>argv</code> is the list of arguments passed to the program.</p><p><a href=\"https://gavinw.me/posts/cpp/commandline.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/fizzbuzz.html",
+            "url": "https://gavinw.me/posts/rust/fizzbuzz.html",
+            "title": "FizzBuzz in Rust",
+            "date_published": "2022-12-11T00:00:00Z",
+            "content_html": "<p>Examples of the classic fizzbuzz problem are implemented below. The first example uses if-else statements while the second example uses pattern matching.</p><p><a href=\"https://gavinw.me/posts/rust/fizzbuzz.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/arrays-vectors.html",
+            "url": "https://gavinw.me/posts/rust/arrays-vectors.html",
+            "title": "Arrays and Vectors in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>In Rust, arrays and vectors are both collections that store multiple elements of the same type. Arrays are fixed-size collections allocated on the stack. Vectors are dynamic arrays allocated on the heap that can grow and shrink at runtime.</p><p><a href=\"https://gavinw.me/posts/rust/arrays-vectors.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/structs.html",
+            "url": "https://gavinw.me/posts/rust/structs.html",
+            "title": "Structs in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A <code>struct</code> is a custom data type that contains related values. Below are some examples of creating structs and accessing its values.</p><p><a href=\"https://gavinw.me/posts/rust/structs.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/loops.html",
+            "url": "https://gavinw.me/posts/rust/loops.html",
+            "title": "Rust Loops",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Rust provides three kinds of loops: <code>loop</code>, <code>while</code>, and <code>for</code>. Use the <code>loop</code> keyword to execute code repeatedly until <code>break</code> is called.</p><p><a href=\"https://gavinw.me/posts/rust/loops.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/slices.html",
+            "url": "https://gavinw.me/posts/rust/slices.html",
+            "title": "Slices in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A slice is a reference to a sequence of elements in a collection such as a string or array. In this example, the <code>s</code> string is sliced to obtain a reference of the first word and second word in the string.</p><p><a href=\"https://gavinw.me/posts/rust/slices.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/tuples.html",
+            "url": "https://gavinw.me/posts/rust/tuples.html",
+            "title": "Tuples in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A tuple groups together values where each value can have a different type. Tuples have a fixed length and the first index is 0. In this example, a tuple is defined with three values of different types. The value is accessed using a period.</p><p><a href=\"https://gavinw.me/posts/rust/tuples.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/references.html",
+            "url": "https://gavinw.me/posts/rust/references.html",
+            "title": "Rust References",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>A reference is denoted by an ampersand <code>&amp;</code>. In the example below, a reference of the string <code>s1</code> is passed to the <code>calculate_length</code> function. The <code>&amp;s1</code> refers to the value of <code>s1</code> without owning it.</p><p><a href=\"https://gavinw.me/posts/rust/references.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/run-file.html",
+            "url": "https://gavinw.me/posts/rust/run-file.html",
+            "title": "Compile and Run a Rust File",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Below is the contents of a simple Rust program contained in a file named <code>sayhello.rs</code>.</p><p><a href=\"https://gavinw.me/posts/rust/run-file.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/functions.html",
+            "url": "https://gavinw.me/posts/rust/functions.html",
+            "title": "Rust Functions",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Functions in Rust are defined with <code>fn</code>. The function name and its input arguments should be lowercase with underscores to separate words. Some examples of functions are shown below.</p><p><a href=\"https://gavinw.me/posts/rust/functions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/ifexpressions.html",
+            "url": "https://gavinw.me/posts/rust/ifexpressions.html",
+            "title": "If Expressions in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Use an <code>if</code> expression to check if a condition is met or not met. The <code>else</code> expression is used to check for multiple conditions.</p><p><a href=\"https://gavinw.me/posts/rust/ifexpressions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/rust/numbers.html",
+            "url": "https://gavinw.me/posts/rust/numbers.html",
+            "title": "Numbers in Rust",
+            "date_published": "2022-11-14T00:00:00Z",
+            "content_html": "<p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p><p><a href=\"https://gavinw.me/posts/rust/numbers.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/dask-arrays.html",
+            "url": "https://gavinw.me/posts/python/dask-arrays.html",
+            "title": "Dask Arrays",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>Dask Array is similar to a NumPy array and allows cutting up a large array into smaller arrays (chunks). This enables working with arrays that are larger than memory. Computations can be applied in parallel for fast execution. Below is an example of using Dask array <code>map_blocks()</code> to map a function that returns a single value. Using an 8 CPU core MacBook Pro running macOS v11.6, the serial elapsed time is 513.51 seconds and the Dask elapsed time is 3.21 seconds.</p><p><a href=\"https://gavinw.me/posts/python/dask-arrays.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/dask-script.html",
+            "url": "https://gavinw.me/posts/python/dask-script.html",
+            "title": "Run Dask Code as a Script",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>Since most Dask examples are demonstrated using Jupyter notebooks, here's an example of using Dask in a Python file or script. Notice how the Dask code must be in the <code>__main__</code> block or called from within a function.</p><p><a href=\"https://gavinw.me/posts/python/dask-script.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/testing.html",
+            "url": "https://gavinw.me/posts/julia/testing.html",
+            "title": "Testing Julia Code",
+            "date_published": "2021-06-26T00:00:00Z",
+            "content_html": "<p>To demonstrate testing functions in Julia, two functions are defined below. A small program that uses the functions is also shown.</p><p><a href=\"https://gavinw.me/posts/julia/testing.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/docstrings.html",
+            "url": "https://gavinw.me/posts/julia/docstrings.html",
+            "title": "Docstrings in Julia Code",
+            "date_published": "2021-06-24T00:00:00Z",
+            "content_html": "<p>Any string appearing directly above an object is interpreted as a docstring for that object. This documentation is treated as Markdown therefore code blocks and other Markdown supported features are supported. An example docstring for a function is shown below.</p><p><a href=\"https://gavinw.me/posts/julia/docstrings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/debugging.html",
+            "url": "https://gavinw.me/posts/julia/debugging.html",
+            "title": "Debugging Julia Code",
+            "date_published": "2021-06-22T00:00:00Z",
+            "content_html": "<p>One way to debug Julia code is to use the <a href=\"https://github.com/JuliaDebug/Infiltrator.jl\">Infiltrator.jl package</a>.  As shown in the example file below, a breakpoint is set with the <code>@infiltrate</code> macro.</p><p><a href=\"https://gavinw.me/posts/julia/debugging.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/arrays.html",
+            "url": "https://gavinw.me/posts/julia/arrays.html",
+            "title": "Arrays in Julia",
+            "date_published": "2021-06-20T00:00:00Z",
+            "content_html": "<p>An array is a collection of items surrounded by square brackets <code>[ ]</code>. Arrays in Julia are 1-based therefore the first item in an array is at the 1-index.</p><p><a href=\"https://gavinw.me/posts/julia/arrays.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/conditionals.html",
+            "url": "https://gavinw.me/posts/julia/conditionals.html",
+            "title": "Conditional Statements in Julia",
+            "date_published": "2021-06-13T00:00:00Z",
+            "content_html": "<p>A conditional statement is written with the <code>if-elseif-else</code> syntax. The ternary operator <code>? :</code> offers a concise syntax for a conditional expression.</p><p><a href=\"https://gavinw.me/posts/julia/conditionals.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/modules.html",
+            "url": "https://gavinw.me/posts/julia/modules.html",
+            "title": "Modules for Julia Code",
+            "date_published": "2021-06-08T00:00:00Z",
+            "content_html": "<p>Modules help organize code that can be easily used in another program. The <code>MyModule</code> shown below is an example of a user defined module which includes functions from the <code>funcA</code> and <code>funcB</code> files. For this example the module and its associated files are contained in a folder called MyModule.</p><p><a href=\"https://gavinw.me/posts/julia/modules.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/json-parsing.html",
+            "url": "https://gavinw.me/posts/julia/json-parsing.html",
+            "title": "JSON Parsing with Julia",
+            "date_published": "2021-06-08T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://juliapackages.com/p/json\">JSON.jl package</a> provides JSON parsing and printing capabilities in Julia. See the package's documentation for installation and usage information. The example below parses the <code>vehicles.json</code> file which contains</p><p><a href=\"https://gavinw.me/posts/julia/json-parsing.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/functions.html",
+            "url": "https://gavinw.me/posts/julia/functions.html",
+            "title": "Functions in Julia",
+            "date_published": "2021-05-27T00:00:00Z",
+            "content_html": "<p>In Julia, a function is an object where input arguments provide a return value.</p><p><a href=\"https://gavinw.me/posts/julia/functions.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/loops.html",
+            "url": "https://gavinw.me/posts/julia/loops.html",
+            "title": "Loops in Julia",
+            "date_published": "2021-05-25T00:00:00Z",
+            "content_html": "<p>Use a for-loop for repeated tasks and to iterate over arrays.</p><p><a href=\"https://gavinw.me/posts/julia/loops.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/tuples.html",
+            "url": "https://gavinw.me/posts/julia/tuples.html",
+            "title": "Tuples in Julia",
+            "date_published": "2021-05-23T00:00:00Z",
+            "content_html": "<p>A tuple is a fixed-length immutable container represented by parentheses <code>( )</code>. Values in a tuple are accessed with indexing. A single item tuple must contain a comma.</p><p><a href=\"https://gavinw.me/posts/julia/tuples.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/dictionaries.html",
+            "url": "https://gavinw.me/posts/julia/dictionaries.html",
+            "title": "Dictionaries in Julia",
+            "date_published": "2021-05-22T00:00:00Z",
+            "content_html": "<p>The <code>Dict()</code> constructor is used to create dictionaries in Julia. A dictionary is constructed using key value pairs separated with <code>=&gt;</code> or as tuples.</p><p><a href=\"https://gavinw.me/posts/julia/dictionaries.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/julia/strings.html",
+            "url": "https://gavinw.me/posts/julia/strings.html",
+            "title": "Strings in Julia",
+            "date_published": "2021-05-22T00:00:00Z",
+            "content_html": "<p>Strings can be represented by double quotes or by triple double quotes. A character or group of characters are extracted from a string using an index or range. Combining strings can be accomplished with <code>$</code>, <code>string</code>, and <code>*</code>.</p><p><a href=\"https://gavinw.me/posts/julia/strings.html\">Continue reading...</a></p>"
+        }
+    ]
+}

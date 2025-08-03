@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/cpp/array2d.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Two-Dimensional Array in C++">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,50 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Two-Dimensional Array in C++</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on August 13, 2023</h6>
 
-    {{ content }}
+    <p>A two-dimensional array can be created using the traditional C-style array or with the C++ standard array container. Both approaches are demonstrated below.</p>
+<h2>Using a C-style array</h2>
+<p>A traditional C-style array can be used to create a 2D array. The array in this example has 3 rows and 4 columns with integer values.</p>
+<pre><code class="language-cpp">int arr[3][4] = {{10, 11, 12, 13},
+                 {14, 15, 16, 17},
+                 {18, 19, 20, 21}};
+
+for (int i = 0; i &lt; 3; ++i) {
+    for (int j = 0; j &lt; 4; ++j) {
+        std::cout &lt;&lt; arr[i][j] &lt;&lt; &quot; &quot;;
+    }
+    std::cout &lt;&lt; std::endl;
+}
+</code></pre>
+<p>The output from this example is shown below:</p>
+<pre><code>10 11 12 13
+14 15 16 17
+18 19 20 21
+</code></pre>
+<h2>Using the standard array container</h2>
+<p>The <code>std::array</code> container can also be used to create a 2D array.</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;array&gt;
+
+std::array&lt;std::array&lt;int, 4&gt;, 3&gt; arr = {{{10, 11, 12, 13},
+                                          {14, 15, 16, 17},
+                                          {18, 19, 20, 21}}};
+
+for (int i = 0; i &lt; 3; ++i) {
+    for (int j = 0; j &lt; 4; ++j) {
+        std::cout &lt;&lt; arr.at(i).at(j) &lt;&lt; &quot; &quot;;
+    }
+    std::cout &lt;&lt; std::endl;
+}
+</code></pre>
+<p>This outputs the following:</p>
+<pre><code class="language-text">10 11 12 13
+14 15 16 17
+18 19 20 21
+</code></pre>
 
     <br>
 

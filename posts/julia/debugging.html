@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/julia/debugging.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Debugging Julia Code">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,39 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Debugging Julia Code</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on June 22, 2021</h6>
 
-    {{ content }}
+    <p>One way to debug Julia code is to use the <a href="https://github.com/JuliaDebug/Infiltrator.jl">Infiltrator.jl package</a>.  As shown in the example file below, a breakpoint is set with the <code>@infiltrate</code> macro.</p>
+<pre><code class="language-julia"># debugging.jl
+
+using Infiltrator
+
+function calcs(x, y)
+    a = x + y^2
+    @infiltrate
+    b = (a + 3) / x^2
+    return b
+end
+
+z = calcs(2, 9)
+println(&quot;z is $z&quot;)
+</code></pre>
+<p>To debug the file, open a Julia REPL then run the file in the REPL to enter the debugger mode <code>infil&gt;</code>. View a list of local variables in the debugger with <code>@locals</code> or use <code>?</code> to see the other available commands. Local variables can also be viewed and manipulated by just entering them into the debugger REPL.</p>
+<pre><code class="language-julia">julia&gt; include(&quot;debugging.jl&quot;)
+
+julia&gt; include(&quot;debugging.jl&quot;)
+Infiltrating calcs(x::Int64, y::Int64) at debugging.jl:10:
+
+infil&gt; @locals
+- a::Int64 = 83
+- y::Int64 = 9
+- x::Int64 = 2
+
+infil&gt; x
+2
+</code></pre>
 
     <br>
 

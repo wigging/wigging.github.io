@@ -29,13 +29,29 @@
         <a href="/" style="color: inherit; font-weight: normal;">Gavin Wiggins</a>
     </h1>
 
-    <hr class="mb-5">
+    <hr class="mb-4">
 
-    <p>Here is an archive of all my notes. The notes are organized by tag therefore some notes may appear in several sections depending on the topic. Subscribe to the JSON feed or follow me on Mastodon to get notified about new posts.</p>
+    <p>Here are my recent notes about programming and other tech related topics. Subscribe to the <a href="https://gavinw.me/feed.json">JSON feed</a> or follow me on <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a> to get notified about new posts. Scroll down for an archive of all my notes.</p>
+
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
+    {% if loop.index0 < 20 %}
+    <p class="py-2">
+        <span class="float-start"><a href=" {{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end d-none d-sm-block">{{ post.date }}</span>
+    </p>
+    {% endif %}
+    {% endfor %}
+
+    <br>
+
+    <h2>Archive</h2>
+    <hr>
+
+    <p>See the sections below for an archive of all my notes. The notes are organized by tag therefore some notes may appear in several sections depending on the topic.</p>
 
     <h4>C++</h4>
     <ul>
-        {% for post in posts %}
+        {% for post in posts | sort(attribute='title') %}
         {% if 'cpp' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
@@ -44,7 +60,7 @@
 
     <h4>JavaScript</h4>
     <ul>
-        {% for post in posts %}
+        {% for post in posts | sort(attribute='title') %}
         {% if 'javascript' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
@@ -53,7 +69,7 @@
 
     <h4>Julia</h4>
     <ul>
-        {% for post in posts %}
+        {% for post in posts | sort(attribute='title') %}
         {% if 'julia' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
@@ -62,7 +78,7 @@
 
     <h4>Python</h4>
     <ul>
-        {% for post in posts %}
+        {% for post in posts | sort(attribute='title') %}
         {% if 'python' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}
@@ -71,7 +87,7 @@
 
     <h4>Rust</h4>
     <ul>
-        {% for post in posts %}
+        {% for post in posts | sort(attribute='title') %}
         {% if 'rust' in post.tags %}
         <li><a href="{{ post.link }}">{{ post.title }}</a></li>
         {% endif %}

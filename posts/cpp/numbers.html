@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/cpp/numbers.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Numbers in C++">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,33 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Numbers in C++</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on December 13, 2022</h6>
 
-    {{ content }}
+    <p>Examples of integer, float, and double numbers are given below. An integer is just a whole number (no decimals). A float is a number with up to 7 decimal digits and a double is up to 15 decimal digits of precision.</p>
+<pre><code class="language-cpp">// numbers.cpp
+
+#include &lt;iostream&gt;
+
+int main()
+{
+    int a = 9;
+    float b = 3.14;
+    double c = 3.14159;
+
+    std::cout &lt;&lt; &quot;a is &quot; &lt;&lt; a &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;b is &quot; &lt;&lt; b &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;c is &quot; &lt;&lt; c &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+<p>The above code example will print the output shown below.</p>
+<pre><code>a is 9
+b is 3.14
+c is 3.14159
+</code></pre>
 
     <br>
 

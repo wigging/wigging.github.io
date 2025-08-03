@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/julia/testing.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Testing Julia Code">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,55 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Testing Julia Code</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on June 26, 2021</h6>
 
-    {{ content }}
+    <p>To demonstrate testing functions in Julia, two functions are defined below. A small program that uses the functions is also shown.</p>
+<pre><code class="language-julia"># adder.jl
+
+function adder(x, y)
+    a = x + y
+    return a
+end
+</code></pre>
+<pre><code class="language-julia"># divider.jl
+
+function divider(s, t)
+    d = s / t
+    return d
+end
+</code></pre>
+<pre><code class="language-julia"># main.jl
+
+include(&quot;adder.jl&quot;)
+include(&quot;divider.jl&quot;)
+
+a = adder(2, 5)
+println(&quot;a is $a&quot;)
+
+d = divider(10, 3.5)
+println(&quot;d is $d&quot;)
+</code></pre>
+<p>Testing the functions can be done with the Test package.</p>
+<pre><code class="language-julia"># tests.jl
+
+using Test
+
+include(&quot;adder.jl&quot;)
+include(&quot;divider.jl&quot;)
+
+@testset &quot;All the tests&quot; begin
+    @test adder(2, 5) == 7
+    @test divider(10, 3) ≈ 3.333333333
+end
+</code></pre>
+<p>Running the tests from the command line produces the following results:</p>
+<pre><code class="language-julia">$ julia tests.jl
+
+Test Summary: | Pass  Total
+All the tests |    2      2
+</code></pre>
 
     <br>
 

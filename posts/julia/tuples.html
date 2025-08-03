@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/julia/tuples.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Tuples in Julia">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,36 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Tuples in Julia</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on May 23, 2021</h6>
 
-    {{ content }}
+    <p>A tuple is a fixed-length immutable container represented by parentheses <code>( )</code>. Values in a tuple are accessed with indexing. A single item tuple must contain a comma.</p>
+<pre><code class="language-julia"># Tuple of strings
+people = (&quot;Marge&quot;, &quot;Homer&quot;, &quot;Bart&quot;, &quot;Lisa&quot;)
+
+julia&gt; people[2]
+&quot;Homer&quot;
+
+# Tuple with one item
+item = (2,)
+
+julia&gt; item[1]
+2
+</code></pre>
+<p>A named tuple assigns names for each item in the tuple. Indexing a named tuple is accomplished with dot syntax or the regular indexing syntax.</p>
+<pre><code class="language-julia"># Named tuple
+vehicle = (make=&quot;Ford&quot;, model=&quot;Bronco&quot;, year=2021)
+
+julia&gt; vehicle.make
+&quot;Ford&quot;
+
+julia&gt; vehicle[1]
+&quot;Ford&quot;
+
+julia&gt; vehicle.year
+2021
+</code></pre>
 
     <br>
 

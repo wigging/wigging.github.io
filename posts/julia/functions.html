@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/julia/functions.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Functions in Julia">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,44 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Functions in Julia</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on May 27, 2021</h6>
 
-    {{ content }}
+    <p>In Julia, a function is an object where input arguments provide a return value.</p>
+<pre><code class="language-julia"># A typical function in Julia
+function sayhello(x)
+    println(&quot;Hello $x&quot;)
+end
+
+julia&gt; sayhello(&quot;Batman&quot;)
+Hello Batman
+
+# A compact form of the above function
+sayhello2(y) = println(&quot;Hello there $y&quot;)
+
+julia&gt; sayhello2(&quot;Superman&quot;)
+Hello there Superman
+
+# Another compact form of the above function
+sayhello3 = z -&gt; println(&quot;Hello again $z&quot;)
+
+julia&gt; sayhello3(&quot;Krusty&quot;)
+Hello again Krusty
+</code></pre>
+<p>The built-in <code>sort()</code> function orders items in an array.</p>
+<pre><code class="language-julia"># Create a new sorted array
+v1 = [4, 1, 9, 2, 5]
+println(&quot;v1 = $v1&quot;)
+println(&quot;sort(v1) = $(sort(v1))&quot;)
+println(&quot;v1 = $v1&quot;)
+
+# Sort an array (sort and modify the array)
+v2 = [4, 1, 9, 2, 5]
+println(&quot;v2 = $v2&quot;)
+println(&quot;sort!(v2) = $(sort!(v2))&quot;)
+println(&quot;v2 = $v2&quot;)
+</code></pre>
 
     <br>
 

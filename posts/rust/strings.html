@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/rust/strings.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Strings in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,63 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Strings in Rust</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on December 18, 2022</h6>
 
-    {{ content }}
+    <p>A string literal uses double quotes <code>" "</code> and represents a string slice <code>str</code> or <code>&amp;str</code>.</p>
+<pre><code class="language-rust">// String literal which is a string slice str or &amp;str
+let s1 = &quot;hello there&quot;;
+
+// String literal with emoji smiley face
+let s2 = &quot;hello there 😀&quot;;
+</code></pre>
+<p>Loop through the characters in a string.</p>
+<pre><code class="language-rust">let s3 = &quot;hello&quot;;
+
+for c in s3.chars() {
+    println!(&quot;char is {c}&quot;);
+}
+
+// Prints the following:
+// char is h
+// char is e
+// char is l
+// char is l
+// char is o
+</code></pre>
+<p>Get the second character in a string.</p>
+<pre><code class="language-rust">let s4 = &quot;strawberry&quot;;
+println!(&quot;second char is {}&quot;, s4.chars().nth(1).unwrap());
+
+// Prints the following:
+// second char is t
+</code></pre>
+<p>Create a <code>String</code> type from a string literal.</p>
+<pre><code class="language-rust">let s5 = String::from(&quot;hello again&quot;);
+</code></pre>
+<p>Create an empty <code>String</code> type and append to it.</p>
+<pre><code class="language-rust">let mut s6 = String::new();
+s6.push_str(&quot;one&quot;);
+s6.push_str(&quot;two&quot;);
+
+println!(&quot;s6 is {s6}&quot;);
+
+// Prints the following:
+// s6 is onetwo
+</code></pre>
+<p>Use the <code>format!</code> macro to combine strings.</p>
+<pre><code class="language-rust">let a = String::from(&quot;tic&quot;);
+let b = String::from(&quot;tac&quot;);
+let c = String::from(&quot;toe&quot;);
+
+let s = format!(&quot;{a}-{b}-{c}&quot;);
+
+println!(&quot;s is {s}&quot;);
+
+// Prints the following:
+// s is tic-tac-toe
+</code></pre>
 
     <br>
 

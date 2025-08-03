@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/cpp/cmake-build.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Use CMake to Build a C++ Project">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,47 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Use CMake to Build a C++ Project</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on December 13, 2022</h6>
 
-    {{ content }}
+    <p>Below is an example C++ project. The CMakeLists file contains instructions for building the project using the CMake command line tool.</p>
+<pre><code>MyProject
+├── CMakeLists.txt
+└── src
+    ├── adder.cpp
+    ├── adder.h
+    └── main.cpp
+</code></pre>
+<p>Use the commands shown here to build the project with CMake. After building the project, the executable named AdderExample is available in the build directory.</p>
+<pre><code class="language-bash"># Configure the project and generate a native build system
+# This creates a directory named `build`
+$ cd MyProject
+$ cmake -S . -B build
+
+# Call the build system to compile/link the project
+$ cmake --build build
+
+# Run the executable
+$ ./build/AdderExample
+</code></pre>
+<p>The structure of the project after running the build command is shown below.</p>
+<pre><code>MyProject
+├── CMakeLists.txt
+├── build
+│   ├── AdderExample
+│   ├── CMakeCache.txt
+│   ├── CMakeFiles
+│   ├── Makefile
+│   └── cmake_install.cmake
+└── src
+    ├── adder.cpp
+    ├── adder.h
+    └── main.cpp
+</code></pre>
+<p>Remove the build directory to clear the project of built files and other output generated from CMake.</p>
+<pre><code class="language-bash">$ rm -rf build
+</code></pre>
 
     <br>
 

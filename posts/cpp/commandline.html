@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/posts/cpp/commandline.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Command Line Arguments in C++">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -40,11 +40,34 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Command Line Arguments in C++</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on December 13, 2022</h6>
 
-    {{ content }}
+    <p>To pass command line arguments to a program, define <code>main()</code> with two arguments. The <code>argc</code> argument is the number of command line arguments including the program name while <code>argv</code> is the list of arguments passed to the program.</p>
+<pre><code class="language-cpp">// commandline.cpp
+
+#include &lt;iostream&gt;
+
+int main(int argc, char const *argv[])
+{
+    /* code */
+    std::cout &lt;&lt; &quot;argc is &quot; &lt;&lt; argc &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;argv 0 is &quot; &lt;&lt; argv[0] &lt;&lt; std::endl;
+    std::cout &lt;&lt; &quot;argv 1 is &quot; &lt;&lt; argv[1] &lt;&lt; std::endl;
+
+    return 0;
+}
+</code></pre>
+<p>Compile and run the program and pass an argument to it.</p>
+<pre><code class="language-bash">clang++ commandline.cpp -o commandline
+./commandline hellothere
+</code></pre>
+<p>The printed output for the above example is shown below.</p>
+<pre><code>argc is 2
+argv 0 is ./commandline
+argv 1 is hellothere
+</code></pre>
 
     <br>
 
