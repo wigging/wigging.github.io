@@ -278,6 +278,27 @@
             "content_html": "<p>Use NumPy's <code>argmax()</code> function to get the index of the maximum value in an array.</p><p><a href=\"https://gavinw.me/posts/python/numpy-index-max.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/tkinter-label.html",
+            "url": "https://gavinw.me/posts/python/tkinter-label.html",
+            "title": "Update Label Text in Tkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of updating a Label's text in Tkinter.</p><p><a href=\"https://gavinw.me/posts/python/tkinter-label.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/tkinter-customtkinter.html",
+            "url": "https://gavinw.me/posts/python/tkinter-customtkinter.html",
+            "title": "Tkinter with the CustomTkinter Theme",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of a Tkinter app using the customtkinter theme. This theme will automatically change to light or dark mode when the macOS appearance changes. More information about the theme is available on GitHub at <a href=\"https://github.com/TomSchimansky/CustomTkinter\">TomSchimansky/CustomTkinter</a>.</p><p><a href=\"https://gavinw.me/posts/python/tkinter-customtkinter.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/tkinter-open-json-file.html",
+            "url": "https://gavinw.me/posts/python/tkinter-open-json-file.html",
+            "title": "Open JSON File in Tkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of opening a JSON file and reading its contents in a Tkinter app. See\nthe <a href=\"https://docs.python.org/3/library/dialog.html\">Python Tkinter docs</a> for\nmore information about file selection dialogs.</p><p><a href=\"https://gavinw.me/posts/python/tkinter-open-json-file.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/flask-bokeh-graph.html",
             "url": "https://gavinw.me/posts/python/flask-bokeh-graph.html",
             "title": "Bokeh Graphs and Htmx with Flask",
@@ -306,11 +327,25 @@
             "content_html": "<p>In the examples below, a 500x2000x2000 three-dimensional NumPy array named <code>a</code> is initialized with zeros. At each iteration, a random two-dimensional array <code>r</code> is inserted into array <code>a</code>. This approach could represent a larger piece of code where the <code>r</code> array would be created from various calculations during each iteration of the for-loop. Consequently, each slice in the z dimension of the <code>a</code> array is calculated at each iteration.</p><p><a href=\"https://gavinw.me/posts/python/numpy-large-array-memory.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/tkinter-ttkbootstrap.html",
+            "url": "https://gavinw.me/posts/python/tkinter-ttkbootstrap.html",
+            "title": "Tkinter Theme with ttkbootstrap",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Example of a Tkinter app using the ttkbootstrap theme. More information about\nthe theme is available on GitHub at <a href=\"https://github.com/israel-dryer/ttkbootstrap\">israel-dryer/ttkbootstrap</a>.</p><p><a href=\"https://gavinw.me/posts/python/tkinter-ttkbootstrap.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/flask-form-input.html",
             "url": "https://gavinw.me/posts/python/flask-form-input.html",
             "title": "Form Input with Htmx and Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p>An HTML form collects user input on a web page. Using Flask, the input can be evaluated in Python and used elsewhere in the web application. The examples in the following sections demonstrate a basic form with Flask and using Htmx for interactivity.</p><p><a href=\"https://gavinw.me/posts/python/flask-form-input.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/tkinter-basic-app.html",
+            "url": "https://gavinw.me/posts/python/tkinter-basic-app.html",
+            "title": "Tkinter Application",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>This example demonstrates the structure of a basic Tkinter application.</p><p><a href=\"https://gavinw.me/posts/python/tkinter-basic-app.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/flask-ajax.html",
@@ -332,6 +367,13 @@
             "title": "Plotly Graph Restyle with Flask",
             "date_published": "2023-02-04T00:00:00Z",
             "content_html": "<p><a href=\"https://plotly.com\">Plotly</a> is a great graphing library for scientific applications. The example below demonstrates using the Plotly JavaScript library in a Flask app. When the page first loads, a default line graph is shown. New data points are added to the graph using the form inputs. The <code>Plotly.restyle</code> function is used to redraw the graph when new data points are submitted; this approach avoids recreating an entirely new Plotly graph each time the data is updated.</p><p><a href=\"https://gavinw.me/posts/python/flask-plotly-restyle.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/tkinter-matplotlib.html",
+            "url": "https://gavinw.me/posts/python/tkinter-matplotlib.html",
+            "title": "View Data with Matplotlib in Tkinter",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>Below is an example of using Matplotlib to plot data in a Tkinter app. The plot figure is shown in a separate window when the button is pressed.</p><p><a href=\"https://gavinw.me/posts/python/tkinter-matplotlib.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/matplotlib-mosaic-grid.html",
