@@ -5,11 +5,123 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/posts/python/dynamic-config.html",
+            "url": "https://gavinw.me/posts/python/dynamic-config.html",
+            "title": "Dynamic Python Class from TOML",
+            "date_published": "2025-04-21T00:00:00Z",
+            "content_html": "<p>Python's standard library provides functionality to read a TOML configuration file and dynamically create class instances based on the parameters defined in that file. This is useful for command line tools and web applications.</p><p><a href=\"https://gavinw.me/posts/python/dynamic-config.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/dynamic-import.html",
+            "url": "https://gavinw.me/posts/python/dynamic-import.html",
+            "title": "Dynamic Package Import in Python",
+            "date_published": "2025-04-09T00:00:00Z",
+            "content_html": "<p>Use the <code>importlib</code> package to dynamically import a Python module by its name. Similarly, use the <code>getattr</code> function to get a class or function by name. This is useful in plugin architectures or when loading things based on configuration files.</p><p><a href=\"https://gavinw.me/posts/python/dynamic-import.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/log-file.html",
+            "url": "https://gavinw.me/posts/python/log-file.html",
+            "title": "Delay Log File Creation",
+            "date_published": "2025-03-27T00:00:00Z",
+            "content_html": "<p>Use the delay argument for Python's log file handler to avoid creating unnecessary log files. This ensures that a log file is created only for the desired log levels.</p><p><a href=\"https://gavinw.me/posts/python/log-file.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/flask-config.html",
             "url": "https://gavinw.me/posts/python/flask-config.html",
             "title": "Flask App Configuration with Dotenv",
             "date_published": "2025-03-12T00:00:00Z",
             "content_html": "<p>The <a href=\"https://pypi.org/project/python-dotenv/\">dotenv</a> package can be used to load configuration settings for a Flask app. The configuration is defined in a <code>.env</code> file which is ignored by version control to ensure items like API keys and passwords are not shared with others.</p><p><a href=\"https://gavinw.me/posts/python/flask-config.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/uv-projects.html",
+            "url": "https://gavinw.me/posts/python/uv-projects.html",
+            "title": "Python Projects with uv",
+            "date_published": "2025-01-07T00:00:00Z",
+            "content_html": "<p>Managing a virtual environment and its dependencies can be a hassle for Python projects. Choosing between the different techniques to install Python and different package managers can be a daunting task. Luckily, uv makes this process much easier.</p><p><a href=\"https://gavinw.me/posts/python/uv-projects.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/uv-scripts.html",
+            "url": "https://gavinw.me/posts/python/uv-scripts.html",
+            "title": "Run Python Scripts with uv",
+            "date_published": "2025-01-06T00:00:00Z",
+            "content_html": "<p>A Python script is a file intended for standalone execution. The uv tool can be used to directly run a script even if other Python packages are needed to run it. This offers a more streamlined approach for running scripts compared to manually managing a virtual environment and its dependencies.</p><p><a href=\"https://gavinw.me/posts/python/uv-scripts.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/package-data.html",
+            "url": "https://gavinw.me/posts/python/package-data.html",
+            "title": "Python Package with Data",
+            "date_published": "2024-11-24T00:00:00Z",
+            "content_html": "<p>The file structure below represents a project for a Python package named <code>mypackage</code> that includes data files. The data files in this example are CSV text files located in the package's source directory at <code>src/mypackage/data/</code>. The package can be installed using <code>pip install .</code> from the root level of the project.</p><p><a href=\"https://gavinw.me/posts/python/package-data.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/config-dataclass.html",
+            "url": "https://gavinw.me/posts/python/config-dataclass.html",
+            "title": "Configuration Using a Python dataclass",
+            "date_published": "2024-11-21T00:00:00Z",
+            "content_html": "<p>A data class in Python can be used to store configuration settings for an application or service. Default configuration values are assigned to fields on the data class. However, the user can overload those values by using a class method to load the configuration settings from a file.</p><p><a href=\"https://gavinw.me/posts/python/config-dataclass.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/argparse.html",
+            "url": "https://gavinw.me/posts/python/argparse.html",
+            "title": "Command-line Arguments with Python",
+            "date_published": "2024-09-28T00:00:00Z",
+            "content_html": "<p>The <code>argparse</code> module provides an interface to write command-line programs in Python. It is part of the Python standard library so there's no need for external dependencies. A basic example is given below that demonstrates positional and optional arguments. The second example shows the use of subparsers to create subcommands.</p><p><a href=\"https://gavinw.me/posts/python/argparse.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/protocol.html",
+            "url": "https://gavinw.me/posts/python/protocol.html",
+            "title": "Protocols in Python",
+            "date_published": "2024-07-13T00:00:00Z",
+            "content_html": "<p>A protocol is a way to define structural typing or \"duck typing\" in Python. It defines a set of attributes and/or methods that an object must have in order to be considered compatible with that protocol. Below is a protocol defined as an <code>Activity</code> class which must have <code>name</code> and <code>duration</code> attributes along with a <code>get_message</code> method.</p><p><a href=\"https://gavinw.me/posts/python/protocol.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/makefiles.html",
+            "url": "https://gavinw.me/posts/python/makefiles.html",
+            "title": "Makefiles for Python Projects",
+            "date_published": "2024-03-14T00:00:00Z",
+            "content_html": "<p>Makefiles are typically used for C and C++ projects to build source code but they can be useful for Python projects too. A Makefile is just a text file used by the GNU Make tool to run commands. For a Python project, these commands can run unit tests, format your code, or publish a package to PyPI.</p><p><a href=\"https://gavinw.me/posts/python/makefiles.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/textwrap-dedent.html",
+            "url": "https://gavinw.me/posts/python/textwrap-dedent.html",
+            "title": "Dedent Text with Python",
+            "date_published": "2024-02-29T00:00:00Z",
+            "content_html": "<p>Remove leading whitespace from every line in a string with the <code>textwrap.dedent()</code> function. The first example shown below prints a multiline string that is defined in a function. The second example prints the same string but removes the leading whitespace.</p><p><a href=\"https://gavinw.me/posts/python/textwrap-dedent.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/virtual-env.html",
+            "url": "https://gavinw.me/posts/python/virtual-env.html",
+            "title": "Virtual Environments",
+            "date_published": "2024-02-16T00:00:00Z",
+            "content_html": "<p>The <code>venv</code> module included with Python is used to create and manage virtual environments. This page provides some useful commands for creating and working with virtual environments. A virtual environment should not be checked into source control via Git or other such systems.</p><p><a href=\"https://gavinw.me/posts/python/virtual-env.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/cached-class-property.html",
+            "url": "https://gavinw.me/posts/python/cached-class-property.html",
+            "title": "Cached Class Property in Python",
+            "date_published": "2024-01-13T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://docs.python.org/3/library/functools.html\">functools</a> module provides a <code>@cached_property</code> decorator to store the value of a class property.</p><p><a href=\"https://gavinw.me/posts/python/cached-class-property.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/cache-function.html",
+            "url": "https://gavinw.me/posts/python/cache-function.html",
+            "title": "Cache Function in Python",
+            "date_published": "2024-01-13T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://docs.python.org/3/library/functools.html\">functools</a> module provides a <code>@cache</code> decorator to store the results of an expensive function; also known as memoize.</p><p><a href=\"https://gavinw.me/posts/python/cache-function.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/version.html",
+            "url": "https://gavinw.me/posts/python/version.html",
+            "title": "Version Number in Python",
+            "date_published": "2023-11-30T00:00:00Z",
+            "content_html": "<p>Use the <a href=\"https://docs.python.org/3/library/importlib.metadata.html\">importlib.metadata</a> library in Python to get the version number of a package. The example below gets the version of the ipython package that has been installed in the environment.</p><p><a href=\"https://gavinw.me/posts/python/version.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/doctest.html",
+            "url": "https://gavinw.me/posts/python/doctest.html",
+            "title": "Doctest with Python",
+            "date_published": "2023-11-17T00:00:00Z",
+            "content_html": "<p>The docstring of the <code>adder()</code> function shown below contains two examples of how to use the function. The function resides in a file named <code>example.py</code>. Use the <code>doctest</code> module to test the examples in this docstring.</p><p><a href=\"https://gavinw.me/posts/python/doctest.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/numpy-gauss.html",
@@ -33,6 +145,27 @@
             "content_html": "<p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p><p><a href=\"https://gavinw.me/posts/cpp/include-function.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/debugger.html",
+            "url": "https://gavinw.me/posts/python/debugger.html",
+            "title": "Debugger in Python",
+            "date_published": "2023-07-18T00:00:00Z",
+            "content_html": "<p>The <a href=\"https://docs.python.org/3/library/pdb.html\">pdb</a> module provides an interactive debugger for Python programs. It supports breakpoints and stepping through the source code. To demonstrate using the debugger and setting a breakpoint, first consider the example shown below.</p><p><a href=\"https://gavinw.me/posts/python/debugger.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/conda-env.html",
+            "url": "https://gavinw.me/posts/python/conda-env.html",
+            "title": "Conda Environments",
+            "date_published": "2023-06-15T00:00:00Z",
+            "content_html": "<p>Similar to Python's <code>venv</code> module, Conda can also create virtual environments but these environments support languages other than Python.</p><p><a href=\"https://gavinw.me/posts/python/conda-env.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/package-name.html",
+            "url": "https://gavinw.me/posts/python/package-name.html",
+            "title": "Python Package Name",
+            "date_published": "2023-06-11T00:00:00Z",
+            "content_html": "<p>The distribution name of a Python package can be different than the import name. Below is an example of a repository named <code>sklearn-model</code> which contains the <code>skmodel</code> package.</p><p><a href=\"https://gavinw.me/posts/python/package-name.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/matplotlib-imshow-plot.html",
             "url": "https://gavinw.me/posts/python/matplotlib-imshow-plot.html",
             "title": "Imshow Plot with Matplotlib",
@@ -52,6 +185,13 @@
             "title": "Create a JavaScript Environment with Node",
             "date_published": "2023-04-28T00:00:00Z",
             "content_html": "<p>Node.js is a JavaScript run-time environment for developing command line tools and server-side applications outside the browser. See <a href=\"https://nodejs.dev\">https://nodejs.dev</a> or <a href=\"https://nodejs.org\">https://nodejs.org</a> for more information. The recommended way to install Node.js is with the Node Version Manager (nvm). See the installation steps at <a href=\"https://github.com/nvm-sh/nvm\">https://github.com/nvm-sh/nvm</a>.</p><p><a href=\"https://gavinw.me/posts/javascript/node.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/count-letters.html",
+            "url": "https://gavinw.me/posts/python/count-letters.html",
+            "title": "Count Letters with Python",
+            "date_published": "2023-04-15T00:00:00Z",
+            "content_html": "<p>Given the string <code>Mary had a little Mommy lamb</code>, count the number of times a letter appears in the string. See the examples below for different approaches.</p><p><a href=\"https://gavinw.me/posts/python/count-letters.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/javascript/load-html.html",
@@ -187,6 +327,13 @@
             "content_html": "<p>Example of using Matplotlib <code>subplot_mosaic()</code> to create a grid of plots.</p><p><a href=\"https://gavinw.me/posts/python/matplotlib-mosaic-grid.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/sorted-list.html",
+            "url": "https://gavinw.me/posts/python/sorted-list.html",
+            "title": "Sorted List of Items with Python",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>A list of dictionaries can be sorted using the keys in the dictionaries, while a list of tuples can be sorted using the tuple's index.</p><p><a href=\"https://gavinw.me/posts/python/sorted-list.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/rust/enums.html",
             "url": "https://gavinw.me/posts/rust/enums.html",
             "title": "Enums in Rust",
@@ -264,6 +411,13 @@
             "content_html": "<p>Examples of the classic fizzbuzz problem are implemented below. The first example uses if-else statements while the second example uses pattern matching.</p><p><a href=\"https://gavinw.me/posts/rust/fizzbuzz.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/dictionaries.html",
+            "url": "https://gavinw.me/posts/python/dictionaries.html",
+            "title": "Dictionaries in Python",
+            "date_published": "2022-11-15T00:00:00Z",
+            "content_html": "<p>A dictionary can be created with comma-separated key:value pairs within braces or by using the dict type constructor. A value is accessed by specifying its key in square brackets. The order of items in a dictionary is guaranteed as of Python 3.7.</p><p><a href=\"https://gavinw.me/posts/python/dictionaries.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/rust/arrays-vectors.html",
             "url": "https://gavinw.me/posts/rust/arrays-vectors.html",
             "title": "Arrays and Vectors in Rust",
@@ -334,6 +488,48 @@
             "content_html": "<p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p><p><a href=\"https://gavinw.me/posts/rust/numbers.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/strings.html",
+            "url": "https://gavinw.me/posts/python/strings.html",
+            "title": "Strings in Python",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Some basic examples of creating strings in Python.</p><p><a href=\"https://gavinw.me/posts/python/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/secrets.html",
+            "url": "https://gavinw.me/posts/python/secrets.html",
+            "title": "Secrets in Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>Use the <code>secrets</code> module to generate cryptographically strong random passwords containing letters, numbers, and punctuation.</p><p><a href=\"https://gavinw.me/posts/python/secrets.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/counter.html",
+            "url": "https://gavinw.me/posts/python/counter.html",
+            "title": "Counter in Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>The <code>Counter</code> class counts the number of times an item appears in a list or hashable object. For example, you can count the number of times a string appears in a list or how often a letter occurs in a string.</p><p><a href=\"https://gavinw.me/posts/python/counter.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/unittest-csv.html",
+            "url": "https://gavinw.me/posts/python/unittest-csv.html",
+            "title": "Unittest CSV Files with Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>The example below demonstrates a unit test for a function that writes data in a dictionary to CSV files.</p><p><a href=\"https://gavinw.me/posts/python/unittest-csv.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/json.html",
+            "url": "https://gavinw.me/posts/python/json.html",
+            "title": "JSON with Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>JavaScript Object Notation (JSON) is a common data format that is supported natively in Python. The format is built on name/value pairs and ordered list values. Visit <a href=\"https://www.json.org/json-en.html\">json.org</a> to learn more about the JSON format.</p><p><a href=\"https://gavinw.me/posts/python/json.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/prealloc-list.html",
+            "url": "https://gavinw.me/posts/python/prealloc-list.html",
+            "title": "Pre-allocate a Python List",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>If the size of a list is known, then pre-allocating the list can provide performance improvements; especially for a large list. The example below measures the performance of appending items to an empty list. Pre-allocating a list of known size and assigning items to it gives better performance than appending to the list. The list comprehension approach (see Example 3) gives the best elapsed time.</p><p><a href=\"https://gavinw.me/posts/python/prealloc-list.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/dask-arrays.html",
             "url": "https://gavinw.me/posts/python/dask-arrays.html",
             "title": "Dask Arrays",
@@ -341,11 +537,46 @@
             "content_html": "<p>Dask Array is similar to a NumPy array and allows cutting up a large array into smaller arrays (chunks). This enables working with arrays that are larger than memory. Computations can be applied in parallel for fast execution. Below is an example of using Dask array <code>map_blocks()</code> to map a function that returns a single value. Using an 8 CPU core MacBook Pro running macOS v11.6, the serial elapsed time is 513.51 seconds and the Dask elapsed time is 3.21 seconds.</p><p><a href=\"https://gavinw.me/posts/python/dask-arrays.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/tuples.html",
+            "url": "https://gavinw.me/posts/python/tuples.html",
+            "title": "Tuples in Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>A tuple is a number of items separated by commas.</p><p><a href=\"https://gavinw.me/posts/python/tuples.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/cprofile.html",
+            "url": "https://gavinw.me/posts/python/cprofile.html",
+            "title": "cProfile for Python Code",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>The <code>cProfile</code> module provides an interface to profile Python programs. A single function or an entire script or module can be profiled. As an example, the script shown below contains two functions that suspend execution for 2 and 4.5 seconds.</p><p><a href=\"https://gavinw.me/posts/python/cprofile.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/lists.html",
+            "url": "https://gavinw.me/posts/python/lists.html",
+            "title": "Lists in Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>A list is used to group numbers, strings, or objects together. It is written as a pair of square brackets containing comma-separated items. A list typically contains items of similar type but it can contain items of different types too. Unlike tuples, lists are mutable therefore the content of a list can be modified.</p><p><a href=\"https://gavinw.me/posts/python/lists.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/test-examples.html",
+            "url": "https://gavinw.me/posts/python/test-examples.html",
+            "title": "Test Examples with Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>Example scripts are often available for Python packages to demonstrate how to use the package. The examples are typically part of the repository where the package is developed. Tests should be written to ensure the examples continue to work with new versions of the package.</p><p><a href=\"https://gavinw.me/posts/python/test-examples.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/dask-script.html",
             "url": "https://gavinw.me/posts/python/dask-script.html",
             "title": "Run Dask Code as a Script",
             "date_published": "2022-11-08T00:00:00Z",
             "content_html": "<p>Since most Dask examples are demonstrated using Jupyter notebooks, here's an example of using Dask in a Python file or script. Notice how the Dask code must be in the <code>__main__</code> block or called from within a function.</p><p><a href=\"https://gavinw.me/posts/python/dask-script.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/xml.html",
+            "url": "https://gavinw.me/posts/python/xml.html",
+            "title": "Parsing XML with Python",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>There are several XML parsers available in the Python standard library. Below is an example of using the ElementTree module.</p><p><a href=\"https://gavinw.me/posts/python/xml.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/numpy-loop-columns.html",
@@ -486,6 +717,13 @@
             "title": "Strings in Julia",
             "date_published": "2021-05-22T00:00:00Z",
             "content_html": "<p>Strings can be represented by double quotes or by triple double quotes. A character or group of characters are extracted from a string using an index or range. Combining strings can be accomplished with <code>$</code>, <code>string</code>, and <code>*</code>.</p><p><a href=\"https://gavinw.me/posts/julia/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/fizzbuzz.html",
+            "url": "https://gavinw.me/posts/python/fizzbuzz.html",
+            "title": "Fizz Buzz in Python",
+            "date_published": "2020-05-14T00:00:00Z",
+            "content_html": "<p>This is the classic fizz buzz example where a number divisible by 3 is replaced with Fizz, a number divisible by 5 is replaced with Buzz, and a number divisible by both 3 and 5 (divisible by 15) is replaced with Fizz Buzz.</p><p><a href=\"https://gavinw.me/posts/python/fizzbuzz.html\">Continue reading...</a></p>"
         }
     ]
 }
