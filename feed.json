@@ -12,6 +12,20 @@
             "content_html": "<p>Python's standard library provides functionality to read a TOML configuration file and dynamically create class instances based on the parameters defined in that file. This is useful for command line tools and web applications.</p><p><a href=\"https://gavinw.me/posts/python/dynamic-config.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/pyzmq-test-client-server.html",
+            "url": "https://gavinw.me/posts/python/pyzmq-test-client-server.html",
+            "title": "Testing a PyZMQ Client and Server",
+            "date_published": "2025-04-12T00:00:00Z",
+            "content_html": "<p>The ZeroMQ context and socket for PyZMQ code can be patched and mocked using pytest and pytest-mock. This allows the code to be tested without having to run the server and connect the client. For the example discussed below, the client sends a request to the server, the request message is used by the server to execute a command, and the result of this command is sent back to the client. Finally, tests are demonstrated for the client and server codes.</p><p><a href=\"https://gavinw.me/posts/python/pyzmq-test-client-server.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/pyzmq-request-reply.html",
+            "url": "https://gavinw.me/posts/python/pyzmq-request-reply.html",
+            "title": "Request-Reply Pattern with PyZMQ",
+            "date_published": "2025-04-10T00:00:00Z",
+            "content_html": "<p>This demonstrates a simple request-reply pattern using the <a href=\"https://pyzmq.readthedocs.io/en/latest/\">PyZMQ</a> package for Python. In the example, the client sends a message to the server which replies back to the client.</p><p><a href=\"https://gavinw.me/posts/python/pyzmq-request-reply.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/dynamic-import.html",
             "url": "https://gavinw.me/posts/python/dynamic-import.html",
             "title": "Dynamic Package Import in Python",
@@ -495,11 +509,25 @@
             "content_html": "<p>Some basic examples of creating strings in Python.</p><p><a href=\"https://gavinw.me/posts/python/strings.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/posts/python/ray-functions.html",
+            "url": "https://gavinw.me/posts/python/ray-functions.html",
+            "title": "Ray Functions",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>To parallelize a function with the <a href=\"https://www.ray.io\">Ray</a> framework, decorate the function with <code>@ray.remote</code> to run the function remotely. Call the function with <code>.remote()</code> instead of calling it normally. The remote call yields a future that must be fetched with <code>ray.get</code>. The example below compares a parallel Ray function to a standard non-parallel function. A computationally expensive task is simulated by using the <code>sleep()</code> function.</p><p><a href=\"https://gavinw.me/posts/python/ray-functions.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/posts/python/secrets.html",
             "url": "https://gavinw.me/posts/python/secrets.html",
             "title": "Secrets in Python",
             "date_published": "2022-11-08T00:00:00Z",
             "content_html": "<p>Use the <code>secrets</code> module to generate cryptographically strong random passwords containing letters, numbers, and punctuation.</p><p><a href=\"https://gavinw.me/posts/python/secrets.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/ray-actors.html",
+            "url": "https://gavinw.me/posts/python/ray-actors.html",
+            "title": "Ray Actors",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p><a href=\"https://www.ray.io\">Ray</a> actors are used to parallelize a class instance to perform stateful operations in parallel. Ray will start a remote instance of the class and then execute remote method calls and maintain its own internal state. The example below compares a parallel Ray actor approach to a standard class approach. A computationally expensive task is simulated by using the <code>sleep()</code> function.</p><p><a href=\"https://gavinw.me/posts/python/ray-actors.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/counter.html",
@@ -577,6 +605,13 @@
             "title": "Parsing XML with Python",
             "date_published": "2022-11-08T00:00:00Z",
             "content_html": "<p>There are several XML parsers available in the Python standard library. Below is an example of using the ElementTree module.</p><p><a href=\"https://gavinw.me/posts/python/xml.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/posts/python/scipy-sparse-diag.html",
+            "url": "https://gavinw.me/posts/python/scipy-sparse-diag.html",
+            "title": "Sparse Diagonal Matrix with SciPy",
+            "date_published": "2022-11-08T00:00:00Z",
+            "content_html": "<p>The <code>diags</code> function from SciPy can be used to create a sparse diagonal matrix. The matrix is constructed from lists or NumPy arrays that represent the diagonals of the matrix. The <code>offsets</code> argument sets the placement of the diagonals within the matrix where <code>k = 0</code> is the main diagonal, <code>k &lt; 0</code> is the kth lower diagonal, and <code>k &gt; 0</code> is the kth upper diagonal.</p><p><a href=\"https://gavinw.me/posts/python/scipy-sparse-diag.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/posts/python/numpy-loop-columns.html",
