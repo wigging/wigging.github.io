@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/julia/conditionals.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Conditional Statements in Julia">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,36 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Conditional Statements in Julia</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on June 13, 2021</h6>
 
-    {{ content }}
+    <p>A conditional statement is written with the <code>if-elseif-else</code> syntax. The ternary operator <code>? :</code> offers a concise syntax for a conditional expression.</p>
+<pre><code class="language-julia">x = 10
+y = 17.2
+
+# An if-else statement
+if x &gt; y
+    println(&quot;the x &gt; y&quot;)
+else
+    println(&quot;the x &lt; y&quot;)
+end
+
+# An if-elseif-else statement
+if x &gt; y
+    println(&quot;the x &gt; y&quot;)
+elseif x &lt; y
+    println(&quot;the x &lt; y&quot;)
+else
+    println(&quot;x and y are equal&quot;)
+end
+
+# Ternary operator for an if-else statement
+(x &gt; y) ? println(&quot;the x &gt; y&quot;) : println(&quot;the x &lt; y&quot;)
+
+# Can also write the above ternary statement as follows
+println((x &gt; y) ? &quot;the x &gt; y&quot; : &quot;the x &lt; y&quot;)
+</code></pre>
 
     <br>
 

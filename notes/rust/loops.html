@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/rust/loops.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Rust Loops">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,60 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Rust Loops</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    {{ content }}
+    <p>Rust provides three kinds of loops: <code>loop</code>, <code>while</code>, and <code>for</code>. Use the <code>loop</code> keyword to execute code repeatedly until <code>break</code> is called.</p>
+<pre><code class="language-rust">let mut counter = 0;
+
+let result = loop {
+    counter += 1;
+
+    if counter == 10 {
+        let count = counter * 2;
+        break count
+    }
+};
+
+println!(&quot;The result is {result}&quot;);
+// The result is 20
+</code></pre>
+<p>Use a <code>while</code> loop to run code while a condition is true.</p>
+<pre><code class="language-rust">let mut number = 3;
+
+while number != 0 {
+    println!(&quot;{number}...&quot;);
+
+    number -= 1;
+}
+
+println!(&quot;Blast off!&quot;);
+// 3...
+// 2...
+// 1...
+// Blast off!
+</code></pre>
+<p>Use <code>for</code> to loop through each element in a collection.</p>
+<pre><code class="language-rust">let numbers = [10, 20, 30, 40, 50];
+
+for n in numbers {
+    println!(&quot;The number is: {n}&quot;);
+}
+// The number is: 10
+// The number is: 20
+// The number is: 30
+// The number is: 40
+// The number is: 50
+</code></pre>
+<p>Use <code>for</code> to execute some code for a certain number of times.</p>
+<pre><code class="language-rust">for i in 1..4 {
+    println!(&quot;Number is {i}&quot;);
+}
+// Number is 1
+// Number is 2
+// Number is 3
+</code></pre>
 
     <br>
 

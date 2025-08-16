@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/conda-env.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Conda Environments">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,33 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Conda Environments</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on June 15, 2023</h6>
 
-    {{ content }}
+    <p>Similar to Python's <code>venv</code> module, Conda can also create virtual environments but these environments support languages other than Python.</p>
+<pre><code class="language-bash"># Create a Python environment named `myenv`, can also use `-n` for `--name`
+$ conda create --name myenv python
+
+# Activate the `myenv` environment
+$ conda activate myenv
+
+# Command prompt for the activated environment
+(myenv) $
+
+# Deactivate the current environment
+(myenv) $ conda deactivate
+
+# Remove an environment named `myenv`, can also use `-n` for `--name`
+$ conda env remove --name myenv
+
+# Create an environment using a config file
+$ conda env create --file environment.yml
+</code></pre>
+<p>If you want to run a single command using a conda environment (but don't want to activate the environment first), you can use <code>conda run</code> as shown below:</p>
+<pre><code class="language-bash"># Run a command in an environment without activating the environment first
+$ conda run -n myenv python --version
+</code></pre>
 
     <br>
 

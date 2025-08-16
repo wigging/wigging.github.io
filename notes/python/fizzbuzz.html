@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/fizzbuzz.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Fizz Buzz in Python">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,56 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Fizz Buzz in Python</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on May 14, 2020</h6>
 
-    {{ content }}
+    <p>This is the classic fizz buzz example where a number divisible by 3 is replaced with Fizz, a number divisible by 5 is replaced with Buzz, and a number divisible by both 3 and 5 (divisible by 15) is replaced with Fizz Buzz.</p>
+<pre><code class="language-python">for i in range(1, 35):
+    if i % 15 == 0:
+        print('Fizz Buzz')
+    elif i % 5 == 0:
+        print('Buzz')
+    elif i % 3 == 0:
+        print('Fizz')
+    else:
+        print(i)
+</code></pre>
+<pre><code>1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+Fizz Buzz
+16
+17
+Fizz
+19
+Buzz
+Fizz
+22
+23
+Fizz
+Buzz
+26
+Fizz
+28
+29
+Fizz Buzz
+31
+32
+Fizz
+34
+</code></pre>
 
     <br>
 

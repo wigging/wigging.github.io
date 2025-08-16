@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/numpy-maximum-array.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Maximum Array with NumPy">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,24 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Maximum Array with NumPy</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 7, 2022</h6>
 
-    {{ content }}
+    <p>The <code>maximum</code> function returns a new array that contains the maximum values of the two given arrays.</p>
+<pre><code class="language-python">&gt;&gt;&gt; import numpy as np
+
+# Create an array using maximum values from two arrays
+&gt;&gt;&gt; a = np.array([3, 5, 8, -1, 4.1, -8.5])
+&gt;&gt;&gt; b = np.array([10, 2, 8.1, -2, 5, 3])
+&gt;&gt;&gt; np.maximum(a, b)
+array([10, 5, 8.1, -1, 5, 3])
+
+# Create an array without negative values
+&gt;&gt;&gt; a = np.array([3, 5, 8, -1, 4.1, -8.5])
+&gt;&gt;&gt; np.maximum(a, 0)
+array([3, 5, 8, 0, 4.1, 0])
+</code></pre>
 
     <br>
 

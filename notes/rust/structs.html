@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/rust/structs.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Structs in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,87 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Structs in Rust</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    {{ content }}
+    <p>A <code>struct</code> is a custom data type that contains related values. Below are some examples of creating structs and accessing its values.</p>
+<h2>A basic struct</h2>
+<p>A basic example of defining a struct and accessing its values is given below.</p>
+<pre><code class="language-rust">// A basic struct
+
+struct Point {
+    x: i32,
+    y: i32
+}
+
+fn main() {
+
+    // Using a basic struct
+
+    let p = Point {
+        x: 13,
+        y: 8
+    };
+
+    println!(&quot;x is {}, y is {}&quot;, p.x, p.y);
+}
+</code></pre>
+<p>Output from the above example.</p>
+<pre><code>x is 13, y is 8
+</code></pre>
+<h2>Tuple structs</h2>
+<p>Here is an example of a tuple struct.</p>
+<pre><code class="language-rust">// A tuple struct
+
+struct PointTuple(i32, i32);
+
+fn main() {
+
+    // Using a tuple struct
+
+    let pt = PointTuple(32, 16);
+
+    println!(&quot;x is {}, y is {}&quot;, pt.0, pt.1);
+}
+</code></pre>
+<pre><code>x is 32, y is 16
+</code></pre>
+<h2>Methods</h2>
+<p>And here is an example of defining methods associated with a struct.</p>
+<pre><code class="language-rust">// A struct with methods (functions)
+
+struct Shape {
+    width: u32,
+    height: u32
+}
+
+impl Shape {
+
+    fn area(&amp;self) -&gt; u32 {
+        self.width * self.height
+    }
+
+    fn volume(&amp;self, v: u32) -&gt; u32 {
+        self.width * self.height * v
+    }
+}
+
+fn main() {
+
+    // Using a struct with methods
+
+    let shape = Shape { width: 2, height: 3 };
+    let area = shape.area();
+    let volume = shape.volume(2);
+
+    println!(&quot;Area is: {area}&quot;);
+    println!(&quot;Volume is: {volume}&quot;);
+}
+</code></pre>
+<pre><code>Area is: 6
+Volume is: 12
+</code></pre>
 
     <br>
 

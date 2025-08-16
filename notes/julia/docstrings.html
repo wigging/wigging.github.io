@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/julia/docstrings.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Docstrings in Julia Code">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,64 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Docstrings in Julia Code</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on June 24, 2021</h6>
 
-    {{ content }}
+    <p>Any string appearing directly above an object is interpreted as a docstring for that object. This documentation is treated as Markdown therefore code blocks and other Markdown supported features are supported. An example docstring for a function is shown below.</p>
+<pre><code class="language-julia"># example.jl
+
+&quot;&quot;&quot;
+    sayhello(x, y)
+
+Print a hello greeting given a first `x` and last `y` name.
+
+# Inputs
+
+- `x`: the first name.
+- `y`: the last name.
+
+### Examples
+
+```
+julia&gt; sayhello(&quot;Bart&quot;, &quot;Simpson&quot;)
+Saying hello to Bart Simpson.
+```
+
+&quot;&quot;&quot;
+function sayhello(x, y)
+    s = &quot;Saying hello to $x $y.&quot;
+    println(s)
+end
+
+
+a = &quot;Bart&quot;
+b = &quot;Simpson&quot;
+sayhello(a, b)
+</code></pre>
+<p>The docstring for the above function can be rendered in the Julia REPL by typing <code>?</code> then the name of the function.</p>
+<pre><code class="language-julia">julia&gt; include(&quot;example.jl&quot;)
+julia&gt; ?
+help?&gt; sayhello
+search: sayhello
+
+  sayhello(x, y)
+
+  Print a hello greeting given a first x and last y name.
+
+  Inputs
+  ≡≡≡≡≡≡≡≡
+
+    •  x: the first name.
+
+    •  y: the last name.
+
+  Examples
+  ––––––––––
+
+  julia&gt; sayhello(&quot;Bart&quot;, &quot;Simpson&quot;)
+  Saying hello to Bart Simpson.
+</code></pre>
 
     <br>
 

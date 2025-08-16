@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/tkinter-basic-app.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Tkinter Application">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,39 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Tkinter Application</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on February 4, 2023</h6>
 
-    {{ content }}
+    <p>This example demonstrates the structure of a basic Tkinter application.</p>
+<pre><code class="language-python">import tkinter as tk
+from tkinter import ttk
+
+
+class MyApp:
+
+    def __init__(self, root):
+        self.root = root
+        self.configure_window()
+        self.create_widgets()
+
+    def configure_window(self):
+        self.root.title('Example App')
+        self.root.geometry('400x300')
+        self.root.resizable(True, False)
+
+    def create_widgets(self):
+        ttk.Label(text='This is an example app.').pack(pady=10)
+        ttk.Button(text='hello').pack()
+        ttk.Button(text='there').pack()
+
+
+if __name__ == '__main__':
+    root = tk.Tk()
+    MyApp(root)
+    root.mainloop()
+</code></pre>
+<p><img src="../../assets/images/tkinter-app.png" style="max-width: 400px;" alt="basic tkinter app"></p>
 
     <br>
 

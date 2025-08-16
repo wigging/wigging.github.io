@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/rust/numbers.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Numbers in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,30 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Numbers in Rust</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    {{ content }}
+    <p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p>
+<pre><code class="language-rust">// Examples of signed integers
+let a: i8 = -23;
+let b: i32 = -41;
+let c: i64 = -52;
+</code></pre>
+<p>Unsigned integer types are <code>u8</code> (8-bit), <code>u16</code> (16-bit), <code>u32</code> (32-bit), <code>u64</code> (64-bit), and <code>u128</code> (128-bit). Numbers represented as unsigned integers must have a positive value.</p>
+<pre><code class="language-rust">// Examples of unsigned integers
+let a: u8 = 58;
+let b: u32 = 81;
+let c: u64 = 95;
+</code></pre>
+<p>Floating point number types are <code>f32</code> (single precision) and <code>f64</code> (double precision). The default float type is <code>f64</code>.</p>
+<pre><code class="language-rust">// Examples of floating point numbers
+let a: f32 = 12.809;
+let b = 34.1;
+</code></pre>
+<p>Use an underscore to visually separate a number.</p>
+<pre><code class="language-rust">let c = 9_800.25;
+</code></pre>
 
     <br>
 

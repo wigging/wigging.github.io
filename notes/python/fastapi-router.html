@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/fastapi-router.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="FastAPI Router for Path Operations">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,45 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>FastAPI Router for Path Operations</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on August 9, 2025</h6>
 
-    {{ content }}
+    <p>The <code>APIRouter</code> class in FastAPI is used to group path operations for an app. This allows paths to be defined in multiple files which is useful for large applications. The example below defines fruits and veggies paths for the router.</p>
+<pre><code class="language-python"># routes.py
+
+from fastapi import APIRouter
+
+router = APIRouter()
+
+
+@router.get(&quot;/fruits&quot;)
+async def get_fruits():
+    return {&quot;fruits&quot;: [&quot;apples&quot;, &quot;oranges&quot;, &quot;lemons&quot;]}
+
+
+@router.get(&quot;/veggies&quot;)
+async def get_veggies():
+    return {&quot;veggies&quot;: [&quot;beans&quot;, &quot;peas&quot;, &quot;celery&quot;]}
+</code></pre>
+<p>In the main app module shown below, the router is imported and included with the app instance. Notice a path is also defined in this file too thus paths are not all defined in the same file.</p>
+<pre><code class="language-python"># app.py
+
+from fastapi import FastAPI
+from routes import router
+
+app = FastAPI()
+
+app.include_router(router)
+
+
+@app.get(&quot;/&quot;)
+async def home():
+    return {&quot;message&quot;: &quot;hello there&quot;}
+</code></pre>
+<p>In summary, the paths for this application are <code>/</code>, <code>/fruits</code>, and <code>/veggies</code> which are defined in the <code>app.py</code> and <code>routes.py</code> files.</p>
+<h2>Further reading</h2>
+<p>See the <a href="https://fastapi.tiangolo.com/reference/apirouter/">APIRouter</a> documentation for more details about the router class. Also see the <a href="https://fastapi.tiangolo.com/tutorial/bigger-applications/">FastAPI</a> tutorial about using a routers subpackage for bigger applications.</p>
 
     <br>
 

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/config-dataclass.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Configuration Using a Python dataclass">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,56 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Configuration Using a Python dataclass</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 21, 2024</h6>
 
-    {{ content }}
+    <p>A data class in Python can be used to store configuration settings for an application or service. Default configuration values are assigned to fields on the data class. However, the user can overload those values by using a class method to load the configuration settings from a file.</p>
+<p>The configuration data class shown below defines <code>price</code> and <code>quantity</code> fields with default values. The <code>load_toml</code> class method is used to read the configuration settings from a TOML file.</p>
+<pre><code class="language-python">import tomllib
+from dataclasses import dataclass
+
+
+@dataclass
+class Config:
+    &quot;&quot;&quot;Configuration dataclass.&quot;&quot;&quot;
+
+    price: float = 12.89
+    quantity: int = 4
+
+    @classmethod
+    def load_toml(cls, file: str):
+        &quot;&quot;&quot;Load configuration settings from a TOML file.&quot;&quot;&quot;
+
+        with open(file, &quot;rb&quot;) as f:
+            conf = tomllib.load(f)
+
+        return cls(**conf)
+</code></pre>
+<p>Examples of using this data class are shown next. The first example creates a config object with default values. The second example loads the configuration from a TOML file.</p>
+<pre><code class="language-python">conf = Config()
+
+print(f&quot;{conf.price=}&quot;)
+print(f&quot;{conf.quantity=}&quot;)
+
+# This prints the following:
+# conf.price=12.89
+# conf.quantity=4
+
+conf2 = Config.load_toml(&quot;conf.toml&quot;)
+
+print(f&quot;{conf2.price=}&quot;)
+print(f&quot;{conf2.quantity=}&quot;)
+
+# This prints the following:
+# conf2.price=5.99
+# conf2.quantity=2
+</code></pre>
+<p>The contents of the TOML file used in the example is:</p>
+<pre><code class="language-toml"># Configuration settings
+price = 5.99
+quantity = 2
+</code></pre>
 
     <br>
 

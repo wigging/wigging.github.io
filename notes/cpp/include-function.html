@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/cpp/include-function.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Include a Function from a C++ File">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,51 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Include a Function from a C++ File</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on July 25, 2023</h6>
 
-    {{ content }}
+    <p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p>
+<pre><code class="language-cpp">// main.cpp
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+#include &quot;logger.h&quot;
+
+int main() {
+    std::cout &lt;&lt; &quot;Logger program&quot; &lt;&lt; std::endl;
+
+    std::string message = &quot;Hello from the logger&quot;;
+    Log(message);
+}
+</code></pre>
+<pre><code class="language-cpp">// logger.cpp
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+#include &quot;logger.h&quot;
+
+void Log(const std::string&amp; input) {
+    std::cout &lt;&lt; input &lt;&lt; std::endl;
+}
+</code></pre>
+<pre><code class="language-cpp">// logger.h
+
+#pragma once
+
+#include &lt;string&gt;
+
+void Log(const std::string&amp; input);
+</code></pre>
+<p>The output from running this example is shown below.</p>
+<pre><code class="language-text">$ clang++ main.cpp logger.cpp -o main
+$ ./main
+
+Logger program
+Hello from the logger
+</code></pre>
 
     <br>
 

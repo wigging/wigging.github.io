@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/numpy-gauss.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Gauss-Legendre Points and Weights with NumPy">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,54 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Gauss-Legendre Points and Weights with NumPy</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on August 31, 2023</h6>
 
-    {{ content }}
+    <p>The function below returns the Gauss-Legendre integration points and weights for a 2D quadrilateral using values from a 1D quadrature. The 1D values are obtained from NumPy's <code>leggauss()</code> function.</p>
+<pre><code class="language-python">def gauss2D(n):
+
+    x, w = np.polynomial.legendre.leggauss(n)
+
+    weights = []
+    gauss_pts = []
+
+    for i in range(n):
+        for j in range(n):
+            wts = w[i] * w[j]
+            weights.append(wts)
+
+            g = [x[i], x[j]]
+            gauss_pts.append(g)
+
+    return np.array(weights), np.array(gauss_pts)
+</code></pre>
+<p>Here is an example of using the function for <code>n = 2</code> sample points. The printed output is also shown below.</p>
+<pre><code class="language-python">n = 2
+w, g = gauss2D(n)
+print('weights\n', w)
+print('gauss points\n', g)
+</code></pre>
+<pre><code class="language-text">weights
+ [1. 1. 1. 1.]
+gauss points
+ [[-0.57735027 -0.57735027]
+ [-0.57735027  0.57735027]
+ [ 0.57735027 -0.57735027]
+ [ 0.57735027  0.57735027]]
+</code></pre>
+<p>The for-loops can be removed by using some NumPy tricks as shown below. This returns the same results as the previous function.</p>
+<pre><code class="language-python">def gauss2Dnumpy(n):
+
+    x, w = np.polynomial.legendre.leggauss(n)
+
+    mesh = np.meshgrid(x, x, indexing='ij')
+    gauss_pts = np.array(mesh).reshape(2, -1).T
+
+    weights = (w * w[:, None]).ravel()
+
+    return weights, gauss_pts
+</code></pre>
 
     <br>
 

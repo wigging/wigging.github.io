@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/rust/ifexpressions.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="If Expressions in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,42 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>If Expressions in Rust</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    {{ content }}
+    <p>Use an <code>if</code> expression to check if a condition is met or not met. The <code>else</code> expression is used to check for multiple conditions.</p>
+<pre><code class="language-rust">fn main() {
+
+    let item = 3.5;
+
+    // Basic `if` expression
+    if item == 3.5 {
+        println!(&quot;Item is 3.5&quot;);
+    }
+
+    // A simple if-else expression
+    if item &lt; 3.0 {
+        println!(&quot;Less than 3&quot;);
+    } else {
+        println!(&quot;Greater than 3&quot;);
+    }
+
+    // Check multiple conditions
+    if item / 3.0 == 0.0 {
+        println!(&quot;Item is divisible by 3&quot;);
+    } else if item &lt; 3.0 {
+        println!(&quot;Less than 3&quot;);
+    } else {
+        println!(&quot;Item not divisible by 3 or less than 3&quot;);
+    }
+
+    // Use `if` in a `let` statement
+    let high = true;
+    let condition = if high { &quot;yes&quot; } else { &quot;no&quot; };
+    println!(&quot;Are you high: {condition}&quot;);
+}
+</code></pre>
 
     <br>
 

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/tkinter-ttkbootstrap.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Tkinter Theme with ttkbootstrap">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,57 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Tkinter Theme with ttkbootstrap</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on February 4, 2023</h6>
 
-    {{ content }}
+    <p>Example of a Tkinter app using the ttkbootstrap theme. More information about
+the theme is available on GitHub at <a href="https://github.com/israel-dryer/ttkbootstrap">israel-dryer/ttkbootstrap</a>.</p>
+<pre><code class="language-python">import ttkbootstrap as ttk
+import matplotlib.pyplot as plt
+
+
+class MyApp:
+
+    def __init__(self, root):
+        self.root = root
+        self.configure_window()
+        self.create_widgets()
+
+    def configure_window(self):
+        self.root.title('Example App')
+        self.root.geometry('400x300')
+        self.root.resizable(False, False)
+
+    def create_widgets(self):
+        ttk.Label(text='Below is Entry widget').pack(pady=10)
+        ttk.Entry().pack()
+        ttk.Button(text='Hello there', bootstyle='success').pack(pady=10)
+        ttk.Button(text='Plot data', command=self.create_plot).pack(pady=20)
+
+    def create_plot(self):
+        # Numbers to plot
+        numbers = [1, 2, 5, 4, 8, 10, 7]
+
+        # Create plot
+        fig, ax = plt.subplots(tight_layout=True)
+        ax.plot(numbers)
+        ax.set_xlabel('X axis')
+        ax.set_ylabel('Y axis')
+        ax.grid(color='0.8')
+        ax.set_frame_on(False)
+        ax.tick_params(color='0.8')
+
+        # Show window containing the plot figure
+        plt.show()
+
+
+if __name__ == '__main__':
+    root = ttk.Window(themename='darkly')
+    MyApp(root)
+    root.mainloop()
+</code></pre>
+<p><img src="../../assets/images/tkinter-ttkbootstrap.png" style="max-width: 400px;" alt="ttkbootstrap"></p>
 
     <br>
 

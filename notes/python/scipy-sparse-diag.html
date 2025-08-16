@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/scipy-sparse-diag.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Sparse Diagonal Matrix with SciPy">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,29 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Sparse Diagonal Matrix with SciPy</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 8, 2022</h6>
 
-    {{ content }}
+    <p>The <code>diags</code> function from SciPy can be used to create a sparse diagonal matrix. The matrix is constructed from lists or NumPy arrays that represent the diagonals of the matrix. The <code>offsets</code> argument sets the placement of the diagonals within the matrix where <code>k = 0</code> is the main diagonal, <code>k &lt; 0</code> is the kth lower diagonal, and <code>k &gt; 0</code> is the kth upper diagonal.</p>
+<pre><code class="language-python">from scipy.sparse import diags
+
+# Diagonals as lists or NumPy arrays
+a = [33, 33, 33, 33]
+b = [44, 44, 44, 44, 44]
+c = [55, 55, 55, 55]
+
+# Create a sparse diagonal matrix
+z = diags([a, b, c], offsets=[1, 0, -1]).toarray()
+</code></pre>
+<p>Where <code>z</code> is a NumPy array containing the diagonals</p>
+<pre><code class="language-python">&gt;&gt;&gt; z
+array([[44, 33,  0,  0,  0],
+       [55, 44, 33,  0,  0],
+       [ 0, 55, 44, 33,  0],
+       [ 0,  0, 55, 44, 33],
+       [ 0,  0,  0, 55, 44]])
+</code></pre>
 
     <br>
 

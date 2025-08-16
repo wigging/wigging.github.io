@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/dask-script.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Run Dask Code as a Script">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,43 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Run Dask Code as a Script</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 8, 2022</h6>
 
-    {{ content }}
+    <p>Since most Dask examples are demonstrated using Jupyter notebooks, here's an example of using Dask in a Python file or script. Notice how the Dask code must be in the <code>__main__</code> block or called from within a function.</p>
+<pre><code class="language-python">import time
+from distributed import Client
+
+def adder(x):
+    &quot;&quot;&quot;
+    Some function to run in parallel using Dask.
+    &quot;&quot;&quot;
+    time.sleep(1)
+    y = x + 1
+    return y
+
+def main():
+    &quot;&quot;&quot;
+    Use the Dask distributed client to run a function in parallel.
+    &quot;&quot;&quot;
+    client = Client(n_workers=8)
+
+    numbers = [3, 4, 5, 8, 12, 18, 25]
+    futures = []
+
+    for n in numbers:
+        a = client.submit(adder, n)
+        futures.append(a)
+
+    results = client.gather(futures)
+    print(results)
+
+    client.close()
+
+if __name__ == '__main__':
+    main()
+</code></pre>
 
     <br>
 

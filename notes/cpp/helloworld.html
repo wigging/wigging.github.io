@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/cpp/helloworld.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Hello World in C++">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,24 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Hello World in C++</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on December 13, 2022</h6>
 
-    {{ content }}
+    <p>Here is a simple example of a C++ program in a file named <code>helloworld.cpp</code>.</p>
+<pre><code class="language-cpp">// helloworld.cpp
+
+#include &lt;iostream&gt;
+
+int main()
+{
+    std::cout &lt;&lt; &quot;Hello world!&quot; &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+<p>Use the terminal command shown below to build and run the program. You should see the words <code>Hello world!</code> printed in the terminal.</p>
+<pre><code class="language-bash">clang++ helloworld.cpp -o helloworld; ./helloworld
+</code></pre>
 
     <br>
 

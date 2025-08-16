@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/numpy-bool-index.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Boolean Indexing with NumPy">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,17 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Boolean Indexing with NumPy</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 7, 2022</h6>
 
-    {{ content }}
+    <p>Use boolean indexing in NumPy arrays to assign values. The example below assigns a zero to array items that are less than zero.</p>
+<pre><code class="language-python">&gt;&gt;&gt; import numpy as np
+&gt;&gt;&gt; nums = np.array([-1, 3, 6, -0.2, -4])
+&gt;&gt;&gt; nums[nums &lt; 0] = 0
+&gt;&gt;&gt; nums
+array([0., 3., 6., 0., 0.])
+</code></pre>
 
     <br>
 

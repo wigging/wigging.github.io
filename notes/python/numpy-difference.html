@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/numpy-difference.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Set Difference of Two NumPy Arrays">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,23 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Set Difference of Two NumPy Arrays</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 7, 2022</h6>
 
-    {{ content }}
+    <p>The <code>setdiff1d</code> function returns the unique values in array 1 that are not in array 2.</p>
+<pre><code class="language-python">&gt;&gt;&gt; import numpy as np
+
+# Array 1
+&gt;&gt;&gt; a = np.array([4, 5, 6.2, 8, 10])
+
+# Array 2
+&gt;&gt;&gt; b = np.array([4, 5, 6, 7, 8])
+
+# Return unique values in `a` that are not in `b`
+&gt;&gt;&gt; np.setdiff1d(a, b)
+array([6.2, 10])
+</code></pre>
 
     <br>
 

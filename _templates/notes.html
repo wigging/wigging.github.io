@@ -25,10 +25,29 @@
 <div class="row">
 <div class="col-md">
     <h1><a href="/" style="color: inherit;">Gavin Wiggins</a></h1>
-    <p style="font-weight: 500;"><a href="about.html">About</a> &nbsp; / &nbsp; Archive &nbsp; / &nbsp; <a href="contact.html">Contact</a></p>
+
+    <p style="font-weight: 500;">
+        Notes &nbsp; / &nbsp;
+        <a href="links.html">Links</a> &nbsp; / &nbsp;
+        <a href="contact.html">Contact</a>
+    </p>
+
     <hr class="mb-5">
 
-    <p>See the sections below for an archive of all my notes. The notes are organized by topic therefore some notes may appear in several sections. Subscribe to the <a href="https://gavinw.me/feed.json">JSON feed</a> or follow me on <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a> to get notified about new posts.</p>
+    <p>This page contains my notes on various programming and tech related topics. Recent notes are listed below. Subscribe to the <a href="https://gavinw.me/feed.json">JSON feed</a> or follow me on <a rel="me" href="https://fosstodon.org/@wigging">Mastodon</a> to get notified about new posts.</p>
+
+    <h4>Recent Notes</h4>
+
+    {% for post in posts | sort(attribute='iso_date', reverse=true) %}
+    {% if loop.index0 < 20 %}
+    <p class="py-2">
+        <span class="float-start"><a href=" {{ post.link }}">{{ post.title }}</a></span>
+        <span class="float-end d-none d-sm-block">{{ post.date }}</span>
+    </p>
+    {% endif %}
+    {% endfor %}
+
+    <p class="mt-5">See the sections below for an archive of all my notes. The notes are organized by topic therefore some notes may appear in several sections.</p>
 
     <h4>C++</h4>
     <ul>

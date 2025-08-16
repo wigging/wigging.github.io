@@ -2,6 +2,6 @@
 # See https://github.com/wigging/genja for more info about Genja
 
 base_url = "https://gavinw.me"
-posts_output = "posts"
+posts_output = "notes"
 site_output = "."
 title = "Gavin Wiggins"

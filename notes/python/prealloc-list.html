@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/prealloc-list.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Pre-allocate a Python List">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,60 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Pre-allocate a Python List</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 8, 2022</h6>
 
-    {{ content }}
+    <p>If the size of a list is known, then pre-allocating the list can provide performance improvements; especially for a large list. The example below measures the performance of appending items to an empty list. Pre-allocating a list of known size and assigning items to it gives better performance than appending to the list. The list comprehension approach (see Example 3) gives the best elapsed time.</p>
+<ul>
+<li>Example 1 = 11.6552 ms</li>
+<li>Example 2 = 8.9583 ms</li>
+<li>Example 3 = 4.5061 ms</li>
+</ul>
+<pre><code class="language-python">import time
+
+# Size of the list
+n = 100_000
+
+# Example 1. Create an empty list and append items to it.
+# ----------------------------------------------------------------------------
+
+tic = time.perf_counter_ns()
+
+list_one = []
+
+for i in range(n):
+    list_one.append(i)
+
+toc = time.perf_counter_ns()
+print(f'Ex 1 elapsed time {(toc - tic) / 1_000_000:.4f} ms')
+print(f'list_one = {list_one[:3]}...{list_one[-3:]}\n')
+
+# Example 2. Pre-allocate list of None items then assign items at each index.
+# ----------------------------------------------------------------------------
+
+tic = time.perf_counter_ns()
+
+list_two = [None] * n
+
+for i in range(n):
+    list_two[i] = i
+
+toc = time.perf_counter_ns()
+print(f'Ex 2 elapsed time {(toc - tic) / 1_000_000:.4f} ms')
+print(f'list_two = {list_two[:3]}...{list_two[-3:]}\n')
+
+# Example 3. Pre-allocate list and assign items using list comprehension.
+# ----------------------------------------------------------------------------
+
+tic = time.perf_counter_ns()
+
+list_three = [i for i in range(n)]
+
+toc = time.perf_counter_ns()
+print(f'Ex 3 elapsed time {(toc - tic) / 1_000_000:.4f} ms')
+print(f'list_three = {list_three[:3]}...{list_three[-3:]}')
+</code></pre>
 
     <br>
 

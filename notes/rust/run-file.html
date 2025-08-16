@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/rust/run-file.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Compile and Run a Rust File">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,25 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Compile and Run a Rust File</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    {{ content }}
+    <p>Below is the contents of a simple Rust program contained in a file named <code>sayhello.rs</code>.</p>
+<pre><code class="language-rust">// Contents of sayhello.rs that prints text to the screen.
+
+fn main() {
+    println!(&quot;Hello there&quot;);
+}
+</code></pre>
+<p>To compile and run the file use the <code>rustc</code> command in the terminal.</p>
+<pre><code class="language-bash"># Compile a file
+$ rustc sayhello.rs
+
+# Run the compiled file to print text to the screen
+$ ./sayhello
+Hello there
+</code></pre>
 
     <br>
 

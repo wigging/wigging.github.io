@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/counter.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Counter in Python">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,31 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Counter in Python</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 8, 2022</h6>
 
-    {{ content }}
+    <p>The <code>Counter</code> class counts the number of times an item appears in a list or hashable object. For example, you can count the number of times a string appears in a list or how often a letter occurs in a string.</p>
+<pre><code class="language-python">&gt;&gt;&gt; from collections import Counter
+
+# Example 1
+
+&gt;&gt;&gt; fruits = ['apple', 'orange', 'lemon', 'orange', 'apple', 'apple']
+&gt;&gt;&gt; counts = Counter(fruits)
+
+&gt;&gt;&gt; counts
+Counter({'apple': 3, 'orange': 2, 'lemon': 1})
+
+&gt;&gt;&gt; counts['orange']
+2
+
+# Example 2
+
+&gt;&gt;&gt; string = 'Hello world of worlds'
+&gt;&gt;&gt; counts = Counter(string)
+&gt;&gt;&gt; counts['o']
+4
+</code></pre>
 
     <br>
 

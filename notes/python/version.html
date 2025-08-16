@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/python/version.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Version Number in Python">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,20 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Version Number in Python</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 30, 2023</h6>
 
-    {{ content }}
+    <p>Use the <a href="https://docs.python.org/3/library/importlib.metadata.html">importlib.metadata</a> library in Python to get the version number of a package. The example below gets the version of the ipython package that has been installed in the environment.</p>
+<pre><code class="language-python">&gt;&gt;&gt; from importlib.metadata import version
+&gt;&gt;&gt; version('ipython')
+'8.15.0'
+</code></pre>
+<p>In a package, instead of defining <code>__version__</code> somewhere in the package, the version number can just be defined in the <code>pyproject.toml</code> file as shown below. Then <code>importlib.metadata</code> can be used to get the version number of that package. This approach has been adopted by <a href="https://github.com/pallets/flask/pull/5242/files">Flask</a>.</p>
+<pre><code class="language-toml">[project]
+name = &quot;MyPackage&quot;
+version = &quot;3.1&quot;
+</code></pre>
 
     <br>
 

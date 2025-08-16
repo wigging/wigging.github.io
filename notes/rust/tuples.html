@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="{{ meta.url }}">
+    <meta property="og:url" content="https://gavinw.me/notes/rust/tuples.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="{{ meta.title }}">
+    <meta property="og:description" content="Tuples in Rust">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,11 +43,28 @@
 
     <hr class="mb-5">
 
-    <h1>{{ meta.title }}</h1>
+    <h1>Tuples in Rust</h1>
 
-    <h6 class="text-secondary">Written on {{ meta.date }}</h6>
+    <h6 class="text-secondary">Written on November 14, 2022</h6>
 
-    {{ content }}
+    <p>A tuple groups together values where each value can have a different type. Tuples have a fixed length and the first index is 0. In this example, a tuple is defined with three values of different types. The value is accessed using a period.</p>
+<pre><code class="language-rust">// Tuple with a variety of types
+let tup: (i8, f64, u16) = (12, 4.05, 5);
+
+// Access a tuple element using a period
+let first_item = tup.0;
+
+println!(&quot;First item is {first_item}&quot;);
+// First item is 12
+</code></pre>
+<p>The values in a tuple can be extracted to separate variables as shown below.</p>
+<pre><code class="language-rust">// Extract tuple values to three separate variables
+let tup = (12, 54, 102);
+let (a, b, c) = tup;
+
+println!(&quot;a is {a}, b is {b}, c is {c}&quot;);
+// a is 12, b is 54, c is 102
+</code></pre>
 
     <br>
 
