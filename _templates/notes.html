@@ -94,6 +94,15 @@
         {% endfor %}
     </ul>
 
+    <h4>Swift</h4>
+    <ul>
+        {% for post in posts | sort(attribute='title') %}
+        {% if 'swift' in post.tags %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
     <br>
 
     <p class="text-center small my-5">

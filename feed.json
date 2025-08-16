@@ -96,6 +96,20 @@
             "content_html": "<p>A protocol is a way to define structural typing or \"duck typing\" in Python. It defines a set of attributes and/or methods that an object must have in order to be considered compatible with that protocol. Below is a protocol defined as an <code>Activity</code> class which must have <code>name</code> and <code>duration</code> attributes along with a <code>get_message</code> method.</p><p><a href=\"https://gavinw.me/notes/python/protocol.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/notes/swift/complex-multiplication.html",
+            "url": "https://gavinw.me/notes/swift/complex-multiplication.html",
+            "title": "Complex Multiplication with Accelerate",
+            "date_published": "2024-05-11T00:00:00Z",
+            "content_html": "<p>Use the <code>cblas_cgemv</code> function in Accelerate to multiply a matrix and vector with single-precision complex values. For this example, a structure named <code>Complex</code> with <code>real</code> and <code>imag</code> properties is utilized but <code>DSPComplex</code> can also be used.</p><p><a href=\"https://gavinw.me/notes/swift/complex-multiplication.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/matrix-multiplication.html",
+            "url": "https://gavinw.me/notes/swift/matrix-multiplication.html",
+            "title": "Matrix Multiplication with Accelerate",
+            "date_published": "2024-05-04T00:00:00Z",
+            "content_html": "<p>Accelerate provides two functions for performing matrix multiplication. The first is the <code>vDSP_mmulD</code> function which is demonstrated below.</p><p><a href=\"https://gavinw.me/notes/swift/matrix-multiplication.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/makefiles.html",
             "url": "https://gavinw.me/notes/python/makefiles.html",
             "title": "Makefiles for Python Projects",
@@ -556,6 +570,27 @@
             "title": "Strings in Python",
             "date_published": "2022-11-11T00:00:00Z",
             "content_html": "<p>Some basic examples of creating strings in Python.</p><p><a href=\"https://gavinw.me/notes/python/strings.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/absolute-value.html",
+            "url": "https://gavinw.me/notes/swift/absolute-value.html",
+            "title": "Absolute Value with Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Get the absolute values of a vector using the vDSP.absolute function.</p><p><a href=\"https://gavinw.me/notes/swift/absolute-value.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/sort.html",
+            "url": "https://gavinw.me/notes/swift/sort.html",
+            "title": "Sort Array Values with Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Sort the values in an array by ascending or descending order. Values of the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/swift/sort.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/reverse.html",
+            "url": "https://gavinw.me/notes/swift/reverse.html",
+            "title": "Reverse Array Elements using Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Reverse the order of elements in an array using the vDSP.reverse function. Values in the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/swift/reverse.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/python/ray-functions.html",
