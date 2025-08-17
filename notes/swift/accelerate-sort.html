@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Open Graph -->
-    <meta property="og:url" content="https://gavinw.me/notes/swift/absolute-value.html">
+    <meta property="og:url" content="https://gavinw.me/notes/swift/accelerate-sort.html">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gavin Wiggins">
-    <meta property="og:description" content="Absolute Value with Accelerate">
+    <meta property="og:description" content="Sort Array Values with Accelerate">
     <meta property="og:image" content="https://gavinw.me/assets/images/opengraph.png">
 
     <!-- Bootstrap -->
@@ -43,17 +43,21 @@
 
     <hr class="mb-5">
 
-    <h1>Absolute Value with Accelerate</h1>
+    <h1>Sort Array Values with Accelerate</h1>
 
     <h6 class="text-secondary">Written on November 11, 2022</h6>
 
-    <p>Get the absolute values of a vector using the vDSP.absolute function.</p>
+    <p>Sort the values in an array by ascending or descending order. Values of the array must be Float or Double.</p>
 <pre><code class="language-swift">import Accelerate
 
-let x = [-3.1, -0.08, 12.1, -9, 2.4]
-let y = vDSP.absolute(x)
+var y: [Float] = [8, 3.5, 0, 7, 9, 2, 6, 1]
+vDSP.sort(&amp;y, sortOrder: .ascending)
 
-// where y is [3.1, 0.08, 12.1, 9.0, 2.4]
+// y becomes [0.0, 1.0, 2.0, 3.5, 6.0, 7.0, 8.0, 9.0]
+
+vDSP.sort(&amp;y, sortOrder: .descending)
+
+// y becomes [9.0, 8.0, 7.0, 6.0, 3.5, 2.0, 1.0, 0.0]
 </code></pre>
 
     <br>

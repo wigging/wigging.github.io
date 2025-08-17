@@ -96,18 +96,25 @@
             "content_html": "<p>A protocol is a way to define structural typing or \"duck typing\" in Python. It defines a set of attributes and/or methods that an object must have in order to be considered compatible with that protocol. Below is a protocol defined as an <code>Activity</code> class which must have <code>name</code> and <code>duration</code> attributes along with a <code>get_message</code> method.</p><p><a href=\"https://gavinw.me/notes/python/protocol.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/swift/complex-multiplication.html",
-            "url": "https://gavinw.me/notes/swift/complex-multiplication.html",
+            "id": "https://gavinw.me/notes/swift/accelerate-complex-multiplication.html",
+            "url": "https://gavinw.me/notes/swift/accelerate-complex-multiplication.html",
             "title": "Complex Multiplication with Accelerate",
             "date_published": "2024-05-11T00:00:00Z",
-            "content_html": "<p>Use the <code>cblas_cgemv</code> function in Accelerate to multiply a matrix and vector with single-precision complex values. For this example, a structure named <code>Complex</code> with <code>real</code> and <code>imag</code> properties is utilized but <code>DSPComplex</code> can also be used.</p><p><a href=\"https://gavinw.me/notes/swift/complex-multiplication.html\">Continue reading...</a></p>"
+            "content_html": "<p>Use the <code>cblas_cgemv</code> function in Accelerate to multiply a matrix and vector with single-precision complex values. For this example, a structure named <code>Complex</code> with <code>real</code> and <code>imag</code> properties is utilized but <code>DSPComplex</code> can also be used.</p><p><a href=\"https://gavinw.me/notes/swift/accelerate-complex-multiplication.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/swift/matrix-multiplication.html",
-            "url": "https://gavinw.me/notes/swift/matrix-multiplication.html",
+            "id": "https://gavinw.me/notes/swift/accelerate-matrix-multiplication.html",
+            "url": "https://gavinw.me/notes/swift/accelerate-matrix-multiplication.html",
             "title": "Matrix Multiplication with Accelerate",
             "date_published": "2024-05-04T00:00:00Z",
-            "content_html": "<p>Accelerate provides two functions for performing matrix multiplication. The first is the <code>vDSP_mmulD</code> function which is demonstrated below.</p><p><a href=\"https://gavinw.me/notes/swift/matrix-multiplication.html\">Continue reading...</a></p>"
+            "content_html": "<p>Accelerate provides two functions for performing matrix multiplication. The first is the <code>vDSP_mmulD</code> function which is demonstrated below.</p><p><a href=\"https://gavinw.me/notes/swift/accelerate-matrix-multiplication.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/metal-matrix-multiplication.html",
+            "url": "https://gavinw.me/notes/swift/metal-matrix-multiplication.html",
+            "title": "Matrix Multiplication with Metal",
+            "date_published": "2024-05-03T00:00:00Z",
+            "content_html": "<p>Metal Performance Shaders provide <code>MPSMatrix</code> and <code>MPSMatrixMultiplication</code> objects to perform matrix multiplication on the GPU. The code below demonstrates multiplication of two matrices.</p><p><a href=\"https://gavinw.me/notes/swift/metal-matrix-multiplication.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/python/makefiles.html",
@@ -159,11 +166,53 @@
             "content_html": "<p>The docstring of the <code>adder()</code> function shown below contains two examples of how to use the function. The function resides in a file named <code>example.py</code>. Use the <code>doctest</code> module to test the examples in this docstring.</p><p><a href=\"https://gavinw.me/notes/python/doctest.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/notes/swift/metal-sampler.html",
+            "url": "https://gavinw.me/notes/swift/metal-sampler.html",
+            "title": "Sampler in Metal",
+            "date_published": "2023-10-10T00:00:00Z",
+            "content_html": "<p>This example uses a Metal <code>sampler</code> to upscale a noise texture as the Metal view increases in size. The left image shown below represents the actual size of the texture. The right image is the sampled (upscaled) texture due to the larger window size which increases the size of the Metal view.</p><p><a href=\"https://gavinw.me/notes/swift/metal-sampler.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/metal-noise.html",
+            "url": "https://gavinw.me/notes/swift/metal-noise.html",
+            "title": "Noise with Metal",
+            "date_published": "2023-09-29T00:00:00Z",
+            "content_html": "<p>This example creates noise using a shader function that is based on the Golden Ratio. It is adapted from a function on the <a href=\"https://www.shadertoy.com/view/ltB3zD\">Shadertoy</a> website.</p><p><a href=\"https://gavinw.me/notes/swift/metal-noise.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/metal-triangle.html",
+            "url": "https://gavinw.me/notes/swift/metal-triangle.html",
+            "title": "Basic Triangle in Metal",
+            "date_published": "2023-09-19T00:00:00Z",
+            "content_html": "<p>This example creates a triangle using vertex and fragment shaders.</p><p><a href=\"https://gavinw.me/notes/swift/metal-triangle.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/metal-clear-color.html",
+            "url": "https://gavinw.me/notes/swift/metal-clear-color.html",
+            "title": "Clear Color in Metal",
+            "date_published": "2023-09-10T00:00:00Z",
+            "content_html": "<p>This example sets the clear color to blue for the Metal view. This color is like the background color of the view.</p><p><a href=\"https://gavinw.me/notes/swift/metal-clear-color.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/metal-color-compute.html",
+            "url": "https://gavinw.me/notes/swift/metal-color-compute.html",
+            "title": "Color View with Metal Compute Kernel",
+            "date_published": "2023-09-08T00:00:00Z",
+            "content_html": "<p>Here is a basic example of using Metal to change the color of a view using a compute function (kernel). The pixels in the view are represented in Metal as a grid. The sliders change the RGB color values for each pixel in the grid.</p><p><a href=\"https://gavinw.me/notes/swift/metal-color-compute.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/numpy-gauss.html",
             "url": "https://gavinw.me/notes/python/numpy-gauss.html",
             "title": "Gauss-Legendre Points and Weights with NumPy",
             "date_published": "2023-08-31T00:00:00Z",
             "content_html": "<p>The function below returns the Gauss-Legendre integration points and weights for a 2D quadrilateral using values from a 1D quadrature. The 1D values are obtained from NumPy's <code>leggauss()</code> function.</p><p><a href=\"https://gavinw.me/notes/python/numpy-gauss.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/metal-particles.html",
+            "url": "https://gavinw.me/notes/swift/metal-particles.html",
+            "title": "Particles Using Metal",
+            "date_published": "2023-08-29T00:00:00Z",
+            "content_html": "<p>This example uses Metal to draw particles (pixels) in a view. The particles move throughout the view based on their position and velocity. This example is inspired by the <a href=\"https://metalkit.org/2017/11/30/working-with-particles-in-metal-part-3/\">Working with Particles in Metal part 3</a> article by Marius Horga. However, this example is implemented with SwiftUI for macOS whereas Marius' example runs in an Xcode playground.</p><p><a href=\"https://gavinw.me/notes/swift/metal-particles.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/cpp/array2d.html",
@@ -572,25 +621,25 @@
             "content_html": "<p>Some basic examples of creating strings in Python.</p><p><a href=\"https://gavinw.me/notes/python/strings.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/swift/absolute-value.html",
-            "url": "https://gavinw.me/notes/swift/absolute-value.html",
-            "title": "Absolute Value with Accelerate",
-            "date_published": "2022-11-11T00:00:00Z",
-            "content_html": "<p>Get the absolute values of a vector using the vDSP.absolute function.</p><p><a href=\"https://gavinw.me/notes/swift/absolute-value.html\">Continue reading...</a></p>"
-        },
-        {
-            "id": "https://gavinw.me/notes/swift/sort.html",
-            "url": "https://gavinw.me/notes/swift/sort.html",
+            "id": "https://gavinw.me/notes/swift/accelerate-sort.html",
+            "url": "https://gavinw.me/notes/swift/accelerate-sort.html",
             "title": "Sort Array Values with Accelerate",
             "date_published": "2022-11-11T00:00:00Z",
-            "content_html": "<p>Sort the values in an array by ascending or descending order. Values of the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/swift/sort.html\">Continue reading...</a></p>"
+            "content_html": "<p>Sort the values in an array by ascending or descending order. Values of the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/swift/accelerate-sort.html\">Continue reading...</a></p>"
         },
         {
-            "id": "https://gavinw.me/notes/swift/reverse.html",
-            "url": "https://gavinw.me/notes/swift/reverse.html",
+            "id": "https://gavinw.me/notes/swift/accelerate-absolute-value.html",
+            "url": "https://gavinw.me/notes/swift/accelerate-absolute-value.html",
+            "title": "Absolute Value with Accelerate",
+            "date_published": "2022-11-11T00:00:00Z",
+            "content_html": "<p>Get the absolute values of a vector using the vDSP.absolute function.</p><p><a href=\"https://gavinw.me/notes/swift/accelerate-absolute-value.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/accelerate-reverse.html",
+            "url": "https://gavinw.me/notes/swift/accelerate-reverse.html",
             "title": "Reverse Array Elements using Accelerate",
             "date_published": "2022-11-11T00:00:00Z",
-            "content_html": "<p>Reverse the order of elements in an array using the vDSP.reverse function. Values in the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/swift/reverse.html\">Continue reading...</a></p>"
+            "content_html": "<p>Reverse the order of elements in an array using the vDSP.reverse function. Values in the array must be Float or Double.</p><p><a href=\"https://gavinw.me/notes/swift/accelerate-reverse.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/python/ray-functions.html",
