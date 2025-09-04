@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/streamlit-cli.html",
+            "url": "https://gavinw.me/notes/python/streamlit-cli.html",
+            "title": "Streamlit CLI Entry Point",
+            "date_published": "2025-09-04T00:00:00Z",
+            "content_html": "<p>Putting a Streamlit app in a Python package provides a nice user interface to the package's features. However, a Streamlit app is typically run as an individual Python script instead of a package's command line entry point. To call the Streamlit app using a package's command line interface (CLI), the cli module in Streamlit can be invoked to run the app from within the Python code.</p><p><a href=\"https://gavinw.me/notes/python/streamlit-cli.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/fastapi-router.html",
             "url": "https://gavinw.me/notes/python/fastapi-router.html",
             "title": "FastAPI Router for Path Operations",
