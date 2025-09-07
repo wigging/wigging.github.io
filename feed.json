@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/download-files.html",
+            "url": "https://gavinw.me/notes/python/download-files.html",
+            "title": "Download Files with Requests",
+            "date_published": "2025-09-06T00:00:00Z",
+            "content_html": "<p>The Requests package can be used to download a file using the URL of the file's remote location. The example below loops through a list of URLs and downloads each file one-by-one. While this is fine for one or two files, it can be slow when downloading multiple large files because only one downlaod occurs at a time.</p><p><a href=\"https://gavinw.me/notes/python/download-files.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/streamlit-cli.html",
             "url": "https://gavinw.me/notes/python/streamlit-cli.html",
             "title": "Streamlit CLI Entry Point",
