@@ -5,6 +5,13 @@
     "feed_url": "https://gavinw.me/feed.json",
     "items": [
         {
+            "id": "https://gavinw.me/notes/python/test-config.html",
+            "url": "https://gavinw.me/notes/python/test-config.html",
+            "title": "Testing a Python Configuration Module",
+            "date_published": "2025-09-21T00:00:00Z",
+            "content_html": "<p>A configuration (config) module is useful for storing configuration settings in a Python package or application. Values such as API keys and passwords are often defined as environment variables which are used in the module. An example of a config module is shown below. For this example, the module is part of a Python package named <code>mypkg</code>.</p><p><a href=\"https://gavinw.me/notes/python/test-config.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/terminal/git-commands.html",
             "url": "https://gavinw.me/notes/terminal/git-commands.html",
             "title": "Git Commands",
