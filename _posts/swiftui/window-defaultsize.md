@@ -45,4 +45,4 @@ struct ContentView: View {
 }
 ```
 
-<img src="../images/window-defaultsize.png" style="max-width:400px;" alt="window default size">
+<img src="../../assets/images/swiftui-window-defaultsize.png" style="max-width:400px;" alt="window default size">

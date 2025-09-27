@@ -6,7 +6,7 @@ tags: swiftui
 
 Place a menu in a toolbar item to display a dropdown when the toolbar item is clicked.
 
-<p><img src="../images/toolbar-dropdown.png" style="max-width:400px;" alt="toolbar dropdown"></p>
+<p><img src="../../assets/images/swiftui-toolbar-dropdown.png" style="max-width:400px;" alt="toolbar dropdown"></p>
 
 ```swift
 import SwiftUI

@@ -6,7 +6,7 @@ tags: swiftui
 
 To open a window using SwiftUI, first add a WindowGroup that will display the window's view. Use the handlesExternalEvents modifier to indicate the event that is used to display the window.
 
-<p><img src="../images/window-open1.png" style="max-width:600px;" alt="open a window"></p>
+<p><img src="../../assets/images/swiftui-window-open1.png" style="max-width:600px;" alt="open a window"></p>
 
 ```swift
 import SwiftUI
@@ -61,4 +61,4 @@ struct ContentView: View {
 
 Finally, to get all of this to work properly, define the URL scheme in the Xcode project's settings at Target &rarr; Info &rarr; URL Types.
 
-<img src="../images/window-open2.png" style="max-width:1000px;" alt="url scheme">
+<img src="../../assets/images/swiftui-window-open2.png" style="max-width:1000px;" alt="url scheme">

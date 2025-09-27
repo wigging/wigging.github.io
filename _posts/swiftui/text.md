@@ -6,7 +6,7 @@ tags: swiftui
 
 A Text view displays one or more lines of read-only text.
 
-<p><img src="../images/text1.png" style="max-width:400px;" alt="text"></p>
+<p><img src="../../assets/images/swiftui-text1.png" style="max-width:400px;" alt="text"></p>
 
 ```swift
 import SwiftUI
@@ -30,7 +30,7 @@ struct ContentView: View {
 
 Use the font instance method to apply a specific font to an individual Text view.
 
-<p><img src="../images/text2.png" style="max-width:400px;" alt="text font"></p>
+<p><img src="../../assets/images/swiftui-text2.png" style="max-width:400px;" alt="text font"></p>
 
 ```swift
 import SwiftUI
@@ -84,7 +84,7 @@ struct ContentView: View {
 
 The Text view in SwiftUI provides several modifiers to customize the appearance and style of the text.
 
-<p><img src="../images/text3.png" style="max-width:400px;" alt="text styles"></p>
+<p><img src="../../assets/images/swiftui-text3.png" style="max-width:400px;" alt="text styles"></p>
 
 ```swift
 import SwiftUI
@@ -117,7 +117,7 @@ struct ContentView: View {
 
 Vertical text can be accomplished by rotating a text view 90 degrees. To rotate the frame of the text view, the fixed size modifier must be implemented along with defining the frame size.
 
-<p><img src="../images/text4.png" style="max-width:400px;" alt="vertical text"></p>
+<p><img src="../../assets/images/swiftui-text4.png" style="max-width:400px;" alt="vertical text"></p>
 
 ```swift
 import SwiftUI

@@ -6,7 +6,7 @@ tags: swiftui
 
 The TextField structure is a control that provides an editable text field. Various modifiers are available to customize the appearance and text alignment. Actions can be performed when editing begins and ends for the text field or when the return key is pressed.
 
-<p><img src="../images/textfield.png" style="max-width:400px;" alt="text field"></p>
+<p><img src="../../assets/images/swiftui-textfield.png" style="max-width:400px;" alt="text field"></p>
 
 ```swift
 import SwiftUI

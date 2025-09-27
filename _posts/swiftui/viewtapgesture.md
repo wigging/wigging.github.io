@@ -34,4 +34,4 @@ struct ContentView: View {
 }
 ```
 
-<p><img src="../images/viewtapgesture.png" style="max-width:400px;" alt="view tap gesture"></p>
+<p><img src="../../assets/images/swiftui-viewtapgesture.png" style="max-width:400px;" alt="view tap gesture"></p>

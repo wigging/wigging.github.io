@@ -6,7 +6,7 @@ tags: swiftui
 
 A two column NavigationView creates a sidebar with a list of items and a content view. In the example shown below, selecting an item in the sidebar will change the content view. An @AppStorage property is used to remember the selected item.
 
-<p><img src="../images/two-column-nav1.png" style="max-width:400px;" alt="two column navigation"></p>
+<p><img src="../../assets/images/swiftui-two-column-nav1.png" style="max-width:400px;" alt="two column navigation"></p>
 
 ```swift
 import SwiftUI
@@ -61,7 +61,7 @@ struct ContentView: View {
 
 To fill the entire content view, set the frame's max width and max height to infinity. This is demonstarated by the red and orange views shown below.
 
-<p><img src="../images/two-column-nav2.png" style="max-width:400px;" alt="two column navigation"></p>
+<p><img src="../../assets/images/swiftui-two-column-nav2.png" style="max-width:400px;" alt="two column navigation"></p>
 
 ```swift
 import SwiftUI

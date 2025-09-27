@@ -6,7 +6,7 @@ tags: swiftui
 
 A three column NavigationView is created using a similar approach as the two column NavigationView. The middle column has a fixed minimum width of 200 but the frame's minWidth can be specified with a value greater than 200.
 
-<p><img src="../images/three-column-nav.png" style="max-width:600px;" alt="three column navigation"></p>
+<p><img src="../../assets/images/swiftui-three-column-nav.png" style="max-width:600px;" alt="three column navigation"></p>
 
 ```swift
 import SwiftUI
