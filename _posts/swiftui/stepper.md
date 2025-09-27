@@ -6,7 +6,7 @@ tags: swiftui
 
 The stepper control increments and decrements a value. A closed range can be used to limit the applicable stepper values.
 
-<p><img src="../images/stepper.png" style="max-width:400px;" alt="stepper"></p>
+<p><img src="../../assets/images/swiftui-stepper.png" style="max-width:400px;" alt="stepper"></p>
 
 ```swift
 import SwiftUI

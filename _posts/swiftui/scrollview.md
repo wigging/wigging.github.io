@@ -6,7 +6,7 @@ tags: swiftui
 
 The scroll view displays its content within a scrollable area of the window.
 
-<p><img src="../images/scrollview.png" style="max-width:400px;" alt="scroll view"></p>
+<p><img src="../../assets/images/swiftui-scrollview.png" style="max-width:400px;" alt="scroll view"></p>
 
 ```swift
 import SwiftUI

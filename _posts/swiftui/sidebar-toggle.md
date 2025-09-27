@@ -6,7 +6,7 @@ tags: swiftui
 
 A sidebar view can be displayed or hidden using the toggleSidebar() feature from an NSSplitViewController. At the time of writing this article, SwiftUI does not have this feature but hopefully an upcoming WWDC will offer a SwiftUI solution.
 
-<p><img src="../images/sidebar-toggle.png" style="max-width:400px;" alt="sidebar toggle"></p>
+<p><img src="../../assets/images/swiftui-sidebar-toggle.png" style="max-width:400px;" alt="sidebar toggle"></p>
 
 ```swift
 import SwiftUI

@@ -6,7 +6,7 @@ tags: swiftui
 
 The typical way to copy text is to select it with the mouse then press ⌘C. To do this in code, use the NSPasteboard class to transfer text to the pasteboard server.
 
-<p><img src="../images/nspasteboard.png" style="max-width:400px;" alt="pasteboard"></p>
+<p><img src="../../assets/images/swiftui-nspasteboard.png" style="max-width:400px;" alt="pasteboard"></p>
 
 ```swift
 import SwiftUI

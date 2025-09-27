@@ -6,7 +6,7 @@ tags: swiftui
 
 To organize our sidebar view, we can use DisclosureGroup. We can create different sections and specify if they are expanded by default when the application launches.
 
-<p><img src="../images/sidebar-disclosuregroup.png" style="max-width:400px;" alt="sidebar disclosuregroup"></p>
+<p><img src="../../assets/images/swiftui-sidebar-disclosuregroup.png" style="max-width:400px;" alt="sidebar disclosuregroup"></p>
 
 ```swift
 import SwiftUI

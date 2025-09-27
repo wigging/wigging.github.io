@@ -6,7 +6,7 @@ tags: swiftui
 
 Markers can be added to a line path by stacking two views in a ZStack. The line is drawn as a path using LineShape while the markers (filled circles) are created in the MarkersView.
 
-<p><img src="../images/path-markers.png" style="max-width:400px;" alt="path markers"></p>
+<p><img src="../../assets/images/swiftui-path-markers.png" style="max-width:400px;" alt="path markers"></p>
 
 ```swift
 import SwiftUI
