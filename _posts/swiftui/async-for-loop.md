@@ -6,7 +6,7 @@ tags: swiftui
 
 Use an asynchronous operation to update a SwiftUI Text view from a for-in loop. In this example, the `step` variable is updated for each iteration on the main thread. This allows the variable to update the Text view.
 
-<img src="../images/asyncforloop.png" style="max-width:400px;border:1px solid lightgrey;border-radius:12px;" alt="async for loop">
+<img src="../../assets/images/swiftui-asyncforloop.png" style="max-width:400px;border:1px solid lightgrey;border-radius:12px;" alt="async for loop">
 
 ```swift
 import SwiftUI

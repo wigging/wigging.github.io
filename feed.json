@@ -306,6 +306,13 @@
             "content_html": "<p>This example uses Metal to draw particles (pixels) in a view. The particles move throughout the view based on their position and velocity. This example is inspired by the <a href=\"https://metalkit.org/2017/11/30/working-with-particles-in-metal-part-3/\">Working with Particles in Metal part 3</a> article by Marius Horga. However, this example is implemented with SwiftUI for macOS whereas Marius' example runs in an Xcode playground.</p><p><a href=\"https://gavinw.me/notes/swift/metal-particles.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/notes/swiftui/display-scale.html",
+            "url": "https://gavinw.me/notes/swiftui/display-scale.html",
+            "title": "Display Scale of a SwiftUI Environment",
+            "date_published": "2023-08-28T00:00:00Z",
+            "content_html": "<p>Get the display scale of the environment with the <code>displayScale</code> value. This can be used to convert a view's dimensions in points to pixels as seen in the example below.</p><p><a href=\"https://gavinw.me/notes/swiftui/display-scale.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/cpp/array2d.html",
             "url": "https://gavinw.me/notes/cpp/array2d.html",
             "title": "Two-Dimensional Array in C++",
@@ -318,6 +325,13 @@
             "title": "Include a Function from a C++ File",
             "date_published": "2023-07-25T00:00:00Z",
             "content_html": "<p>This example uses a function defined in another file. The <code>main.cpp</code> example uses the <code>Log()</code> function to print a string to the screen. This function is implemented in <code>logger.cpp</code> and <code>logger.h</code>.</p><p><a href=\"https://gavinw.me/notes/cpp/include-function.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/image-colormap.html",
+            "url": "https://gavinw.me/notes/swiftui/image-colormap.html",
+            "title": "Image from a Colormap Filter",
+            "date_published": "2023-07-22T00:00:00Z",
+            "content_html": "<p>This SwiftUI example demonstrates creating a gray scale image from numerical data. Data is provided as a linear ramp from 0 to 1 (see top image) or as random numbers in the range of 0 to 1 (see bottom image). A colormap filter applies color to the gray scale image using RGB values from the viridis colormap.</p><p><a href=\"https://gavinw.me/notes/swiftui/image-colormap.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/swift/image-colormap.html",
@@ -355,11 +369,25 @@
             "content_html": "<p>An array in Swift is an ordered collection of values. It is written as <code>Array&lt;Element&gt;</code> or in a shorthand form using square brackets <code>[Element]</code> where element is the type of values stored in the array.</p><p><a href=\"https://gavinw.me/notes/swift/arrays.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/notes/swiftui/heatmap-chart.html",
+            "url": "https://gavinw.me/notes/swiftui/heatmap-chart.html",
+            "title": "Heat Maps with SwiftUI and Charts",
+            "date_published": "2023-07-08T00:00:00Z",
+            "content_html": "<p>Use a <code>RectangleMark()</code> in a Swift Chart to create a 2D heat map of data. In this example, the data is represented using a <code>Grid</code> struct that contains an array of <code>Point</code> structs. The <code>Point</code> struct defines the x and y coordinate of the associated value. The x coordinate is a range based on the number of columns, the y coordinate is a range based on the number of columns, and the value is a random number from 0 to 1. Faint lines may appear on the chart if the frame size is not evenly divisible by the number of rows and columns defined by the <code>Grid</code> struct; this is likely caused by each <code>RectangleMark()</code> not perfectly aligning to the screen pixels.</p><p><a href=\"https://gavinw.me/notes/swiftui/heatmap-chart.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/conda-env.html",
             "url": "https://gavinw.me/notes/python/conda-env.html",
             "title": "Conda Environments",
             "date_published": "2023-06-15T00:00:00Z",
             "content_html": "<p>Similar to Python's <code>venv</code> module, Conda can also create virtual environments but these environments support languages other than Python.</p><p><a href=\"https://gavinw.me/notes/python/conda-env.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/async-for-loop.html",
+            "url": "https://gavinw.me/notes/swiftui/async-for-loop.html",
+            "title": "Async Loop in a SwiftUI View",
+            "date_published": "2023-06-13T00:00:00Z",
+            "content_html": "<p>Use an asynchronous operation to update a SwiftUI Text view from a for-in loop. In this example, the <code>step</code> variable is updated for each iteration on the main thread. This allows the variable to update the Text view.</p><p><a href=\"https://gavinw.me/notes/swiftui/async-for-loop.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/python/package-name.html",
@@ -402,6 +430,13 @@
             "title": "Count Letters with Python",
             "date_published": "2023-04-15T00:00:00Z",
             "content_html": "<p>Given the string <code>Mary had a little Mommy lamb</code>, count the number of times a letter appears in the string. See the examples below for different approaches.</p><p><a href=\"https://gavinw.me/notes/python/count-letters.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/line-chart.html",
+            "url": "https://gavinw.me/notes/swiftui/line-chart.html",
+            "title": "Line Graphs with SwiftUI and Charts",
+            "date_published": "2023-03-28T00:00:00Z",
+            "content_html": "<p>All of the examples on this page have the window resizability set to the content size. This allows the size of the window to be defined by the chart view.</p><p><a href=\"https://gavinw.me/notes/swiftui/line-chart.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/javascript/load-html.html",
@@ -465,6 +500,20 @@
             "title": "JavaScript Modules",
             "date_published": "2023-02-27T00:00:00Z",
             "content_html": "<p>A module is a single JavaScript file where its variables and functions can be accessed from other JavaScript files. A local web server must be used to test modules in the browser; otherwise, opening the web page locally will not work.</p><p><a href=\"https://gavinw.me/notes/javascript/modules.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/window-defaultsize.html",
+            "url": "https://gavinw.me/notes/swiftui/window-defaultsize.html",
+            "title": "Default Size in SwiftUI",
+            "date_published": "2023-02-22T00:00:00Z",
+            "content_html": "<p>The default window size in this example is set to 400x200. If the window size is changed by dragging the corner or side, then the new size becomes the default size when the app is relaunched. Delete the app's container to restore the app to its default state.</p><p><a href=\"https://gavinw.me/notes/swiftui/window-defaultsize.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/window-resizability.html",
+            "url": "https://gavinw.me/notes/swiftui/window-resizability.html",
+            "title": "Window Resizability in SwiftUI",
+            "date_published": "2023-02-21T00:00:00Z",
+            "content_html": "<p>The desired window size is determined by the <code>windowResizability</code> method of the <code>WindowGroup</code>. The example below uses the frame of the content view to fix the window size to 300x200.</p><p><a href=\"https://gavinw.me/notes/swiftui/window-resizability.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/python/numpy-index-max.html",
@@ -586,6 +635,27 @@
             "content_html": "<p>A list of dictionaries can be sorted using the keys in the dictionaries, while a list of tuples can be sorted using the tuple's index.</p><p><a href=\"https://gavinw.me/notes/python/sorted-list.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/notes/swiftui/blur-effect.html",
+            "url": "https://gavinw.me/notes/swiftui/blur-effect.html",
+            "title": "Blur Effect in SwiftUI",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>The blur modifier, denoted by <code>.blur</code>, can be used to blur a view.</p><p><a href=\"https://gavinw.me/notes/swiftui/blur-effect.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/sine-wave.html",
+            "url": "https://gavinw.me/notes/swiftui/sine-wave.html",
+            "title": "Sine Wave in SwiftUI",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>To draw a sine wave, create a shape that draws a line using x and y values. The values must be converted to the proper points within the view's frame. Markers represent points on the drawn line.</p><p><a href=\"https://gavinw.me/notes/swiftui/sine-wave.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/grid-lines.html",
+            "url": "https://gavinw.me/notes/swiftui/grid-lines.html",
+            "title": "Grid Lines in SwiftUI",
+            "date_published": "2023-02-04T00:00:00Z",
+            "content_html": "<p>A GeometryReader can be used to equally space lines in a view even when that view changes size. This is accomplished by using the width and height of the container view to determine the spacing of the lines.</p><p><a href=\"https://gavinw.me/notes/swiftui/grid-lines.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/rust/enums.html",
             "url": "https://gavinw.me/notes/rust/enums.html",
             "title": "Enums in Rust",
@@ -670,6 +740,13 @@
             "content_html": "<p>Examples of the classic fizzbuzz problem are implemented below. The first example uses if-else statements while the second example uses pattern matching.</p><p><a href=\"https://gavinw.me/notes/rust/fizzbuzz.html\">Continue reading...</a></p>"
         },
         {
+            "id": "https://gavinw.me/notes/swiftui/twocol-navsplit.html",
+            "url": "https://gavinw.me/notes/swiftui/twocol-navsplit.html",
+            "title": "Two Column NavigationSplitView with SwiftUI",
+            "date_published": "2022-11-30T00:00:00Z",
+            "content_html": "<p>A two column <code>NavigationSplitView</code> creates a sidebar with a list of items and a detail view. In the example shown below, selecting an item in the sidebar will change the contents of the detail view. Notice the <code>SidebarCommands()</code> enables Hide Sidebar and Show Sidebar items in the View menu.</p><p><a href=\"https://gavinw.me/notes/swiftui/twocol-navsplit.html\">Continue reading...</a></p>"
+        },
+        {
             "id": "https://gavinw.me/notes/python/dictionaries.html",
             "url": "https://gavinw.me/notes/python/dictionaries.html",
             "title": "Dictionaries in Python",
@@ -745,6 +822,209 @@
             "title": "Numbers in Rust",
             "date_published": "2022-11-14T00:00:00Z",
             "content_html": "<p>Signed integer types are <code>i8</code> (8-bit), <code>i16</code> (16-bit), <code>i32</code> (32-bit), <code>i64</code> (64-bit), and <code>i128</code> (128-bit). The default integer type is i32. Numbers represented by signed integers can have a positive or negative value.</p><p><a href=\"https://gavinw.me/notes/rust/numbers.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swift/credits.html",
+            "url": "https://gavinw.me/notes/swift/credits.html",
+            "title": "Credits for a Mac App",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The About window in a Mac application is viewed by selecting the app's name in the top menu bar, then choosing the About item in the menu. The image below displays Safari's About window.</p><p><a href=\"https://gavinw.me/notes/swift/credits.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/text.html",
+            "url": "https://gavinw.me/notes/swiftui/text.html",
+            "title": "Text in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A Text view displays one or more lines of read-only text.</p><p><a href=\"https://gavinw.me/notes/swiftui/text.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/label.html",
+            "url": "https://gavinw.me/notes/swiftui/label.html",
+            "title": "SwiftUI Label",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>Use a Label to show text and an icon side by side. The icon can be either an SF Symbol or your own image. The label can be scaled with the font modifier. A completely custom label can be created using custom views for the text and icon.</p><p><a href=\"https://gavinw.me/notes/swiftui/label.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/nspasteboard.html",
+            "url": "https://gavinw.me/notes/swiftui/nspasteboard.html",
+            "title": "NSPasteboard with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The typical way to copy text is to select it with the mouse then press \u2318C. To do this in code, use the NSPasteboard class to transfer text to the pasteboard server.</p><p><a href=\"https://gavinw.me/notes/swiftui/nspasteboard.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/viewtapgesture.html",
+            "url": "https://gavinw.me/notes/swiftui/viewtapgesture.html",
+            "title": "View Tap Gesture in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>Use a view's tap gesture modifier to perform an action when the view is tapped (clicked). The count parameter defines how many taps (or clicks) are needed to perform the action.</p><p><a href=\"https://gavinw.me/notes/swiftui/viewtapgesture.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/sidebar-toggle.html",
+            "url": "https://gavinw.me/notes/swiftui/sidebar-toggle.html",
+            "title": "Sidebar Toggle with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A sidebar view can be displayed or hidden using the toggleSidebar() feature from an NSSplitViewController. At the time of writing this article, SwiftUI does not have this feature but hopefully an upcoming WWDC will offer a SwiftUI solution.</p><p><a href=\"https://gavinw.me/notes/swiftui/sidebar-toggle.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/window-toolbar-style.html",
+            "url": "https://gavinw.me/notes/swiftui/window-toolbar-style.html",
+            "title": "Window and Toolbar Style in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The window and toolbar style can be defined with the windowStyle() and windowToolbarStyle() modifiers for the WindowGroup in the main app struct. Some of the styles are demonstrated below.</p><p><a href=\"https://gavinw.me/notes/swiftui/window-toolbar-style.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/toggle-animation.html",
+            "url": "https://gavinw.me/notes/swiftui/toggle-animation.html",
+            "title": "Toggle SwiftUI Animation",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>An example of fading text in and out using a toggle is given below. Without the animation modifier, the text would just appear or disappear below the toggle button.</p><p><a href=\"https://gavinw.me/notes/swiftui/toggle-animation.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/appstorage.html",
+            "url": "https://gavinw.me/notes/swiftui/appstorage.html",
+            "title": "AppStorage in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The <code>@AppStorage</code> property wrapper reads and writes values from user defaults. The example below saves a fruit name (a string) to the fruit key in user defaults. When the app is relaunched, the saved fruit name will be displayed in the text label. Enter a fruit in the text field then click the save fruit button to save a new fruit to the fruit key in user defaults.</p><p><a href=\"https://gavinw.me/notes/swiftui/appstorage.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/scrollview.html",
+            "url": "https://gavinw.me/notes/swiftui/scrollview.html",
+            "title": "ScrollView with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The scroll view displays its content within a scrollable area of the window.</p><p><a href=\"https://gavinw.me/notes/swiftui/scrollview.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/button-styles.html",
+            "url": "https://gavinw.me/notes/swiftui/button-styles.html",
+            "title": "Button Styles with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>Several built-in button styles are available for macOS such as the PlainButtonStyle, LinkButtonStyle, and BorderlessButtonStyle. The BorderedButtonStyle is also the default button style. To create a custom appearance for a button, use the ButtonStyle protocol. To fully customize the button's appearance and behavior, use the PrimitiveButtonStyle protocol.</p><p><a href=\"https://gavinw.me/notes/swiftui/button-styles.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/path-markers.html",
+            "url": "https://gavinw.me/notes/swiftui/path-markers.html",
+            "title": "Path Markers in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>Markers can be added to a line path by stacking two views in a ZStack. The line is drawn as a path using LineShape while the markers (filled circles) are created in the MarkersView.</p><p><a href=\"https://gavinw.me/notes/swiftui/path-markers.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/webview.html",
+            "url": "https://gavinw.me/notes/swiftui/webview.html",
+            "title": "WebView in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A WKWebView from the WebKit framework is used to display web content in a window. The web view can be wrapped with NSViewRepresentable to make it usable with SwiftUI. Content for the web view can be loaded from an HTML file, from a string containing HTML, or from a URL representing a website address. Don't forget to enable \"Outgoing Connections\" in the target's \"App Sandbox\"; otherwise, the website will not display in the app.</p><p><a href=\"https://gavinw.me/notes/swiftui/webview.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/textfield.html",
+            "url": "https://gavinw.me/notes/swiftui/textfield.html",
+            "title": "TextField in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The TextField structure is a control that provides an editable text field. Various modifiers are available to customize the appearance and text alignment. Actions can be performed when editing begins and ends for the text field or when the return key is pressed.</p><p><a href=\"https://gavinw.me/notes/swiftui/textfield.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/table.html",
+            "url": "https://gavinw.me/notes/swiftui/table.html",
+            "title": "Tables in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A Table presents rows and columns of data that can be selected and sorted. A basic example is shown below.</p><p><a href=\"https://gavinw.me/notes/swiftui/table.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/viewbuilder.html",
+            "url": "https://gavinw.me/notes/swiftui/viewbuilder.html",
+            "title": "SwiftUI ViewBuilder",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The <code>@ViewBuilder</code> attribute can be used to build views from closures. To demonstrate, three views are defined as shown below:</p><p><a href=\"https://gavinw.me/notes/swiftui/viewbuilder.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/three-column-nav.html",
+            "url": "https://gavinw.me/notes/swiftui/three-column-nav.html",
+            "title": "Three Column NavigationView in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A three column NavigationView is created using a similar approach as the two column NavigationView. The middle column has a fixed minimum width of 200 but the frame's minWidth can be specified with a value greater than 200.</p><p><a href=\"https://gavinw.me/notes/swiftui/three-column-nav.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/progressview.html",
+            "url": "https://gavinw.me/notes/swiftui/progressview.html",
+            "title": "ProgressView with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A ProgressView represents completion of a task or the occurance of an activity with an unknown completion time. A default value of 1.0 is used for the total value when tracking completion progress. As the example demonstrates below, different configurations of a progress view are possible.</p><p><a href=\"https://gavinw.me/notes/swiftui/progressview.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/toolbar-dropdown.html",
+            "url": "https://gavinw.me/notes/swiftui/toolbar-dropdown.html",
+            "title": "Toolbar Dropdown with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>Place a menu in a toolbar item to display a dropdown when the toolbar item is clicked.</p><p><a href=\"https://gavinw.me/notes/swiftui/toolbar-dropdown.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/picker-control.html",
+            "url": "https://gavinw.me/notes/swiftui/picker-control.html",
+            "title": "Picker Control with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The picker control selects an item from a set of values. The appearance of the picker can be changed by using different styles and modifiers.</p><p><a href=\"https://gavinw.me/notes/swiftui/picker-control.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/images-symbols.html",
+            "url": "https://gavinw.me/notes/swiftui/images-symbols.html",
+            "title": "SwiftUI Images and Symbols",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>An Image view is used to display an image. For the example below, an image named \"homer\" is added to the Assets catalog then the image is displayed in the window while preserving its aspect ratio.</p><p><a href=\"https://gavinw.me/notes/swiftui/images-symbols.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/stepper.html",
+            "url": "https://gavinw.me/notes/swiftui/stepper.html",
+            "title": "Stepper in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The stepper control increments and decrements a value. A closed range can be used to limit the applicable stepper values.</p><p><a href=\"https://gavinw.me/notes/swiftui/stepper.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/sidebar-disclosuregroup.html",
+            "url": "https://gavinw.me/notes/swiftui/sidebar-disclosuregroup.html",
+            "title": "Sidebar DisclosureGroup with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>To organize our sidebar view, we can use DisclosureGroup. We can create different sections and specify if they are expanded by default when the application launches.</p><p><a href=\"https://gavinw.me/notes/swiftui/sidebar-disclosuregroup.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/prefs-window.html",
+            "url": "https://gavinw.me/notes/swiftui/prefs-window.html",
+            "title": "Preferences Window with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A preferences window is typically used to present and configure the settings associated with a Mac application. In apps built with SwiftUI, these settings are stored and set using the AppStorage property wrapper. To add a preferenes window to your application, you need to add a Settings group to the main App struct.</p><p><a href=\"https://gavinw.me/notes/swiftui/prefs-window.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/labeledcontent.html",
+            "url": "https://gavinw.me/notes/swiftui/labeledcontent.html",
+            "title": "LabeledContent in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The LabeledContent view is comprised of a label and content. Usually, it displays the label on the leading edge and the content on the trailing edge. This is similar to using an HStack containing two views.</p><p><a href=\"https://gavinw.me/notes/swiftui/labeledcontent.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/window-open.html",
+            "url": "https://gavinw.me/notes/swiftui/window-open.html",
+            "title": "Open a Window with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>To open a window using SwiftUI, first add a WindowGroup that will display the window's view. Use the handlesExternalEvents modifier to indicate the event that is used to display the window.</p><p><a href=\"https://gavinw.me/notes/swiftui/window-open.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/menu-items.html",
+            "url": "https://gavinw.me/notes/swiftui/menu-items.html",
+            "title": "Menu Items with SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>Menus in Mac apps are typically located at the top of the screen in the menu bar. Menu items can be added to an app's menu using the commands modifier on the WindowGroup.</p><p><a href=\"https://gavinw.me/notes/swiftui/menu-items.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/two-column-nav.html",
+            "url": "https://gavinw.me/notes/swiftui/two-column-nav.html",
+            "title": "Two Column NavigationView in SwiftUI",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>A two column NavigationView creates a sidebar with a list of items and a content view. In the example shown below, selecting an item in the sidebar will change the content view. An @AppStorage property is used to remember the selected item.</p><p><a href=\"https://gavinw.me/notes/swiftui/two-column-nav.html\">Continue reading...</a></p>"
+        },
+        {
+            "id": "https://gavinw.me/notes/swiftui/cursors.html",
+            "url": "https://gavinw.me/notes/swiftui/cursors.html",
+            "title": "Cursors in a Mac App",
+            "date_published": "2022-11-13T00:00:00Z",
+            "content_html": "<p>The mouse pointer (or cursor) is represented by an arrow on the screen. Different cursors are available in macOS to indicate actions that the user can take with the mouse. See the <a href=\"https://developer.apple.com/documentation/appkit/nscursor\">NSCursor documentation</a> for a list of all the available cursors.</p><p><a href=\"https://gavinw.me/notes/swiftui/cursors.html\">Continue reading...</a></p>"
         },
         {
             "id": "https://gavinw.me/notes/swift/dictionaries.html",
