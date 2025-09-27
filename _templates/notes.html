@@ -103,6 +103,15 @@
         {% endfor %}
     </ul>
 
+    <h4>SwiftUI</h4>
+    <ul>
+        {% for post in posts | sort(attribute='title') %}
+        {% if 'swiftui' in post.tags %}
+        <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
     <h4>Terminal</h4>
     <ul>
         {% for post in posts | sort(attribute='title') %}
