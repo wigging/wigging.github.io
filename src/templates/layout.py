@@ -1,8 +1,29 @@
 """Shared document layout for site pages and notes."""
 
-import htmlkit as h
+from htmlkit import (
+    Child,
+    Element,
+    Fragment,
+    Raw,
+    a,
+    body,
+    button,
+    footer,
+    h1,
+    head,
+    header,
+    html,
+    li,
+    link,
+    main,
+    meta,
+    nav,
+    ol,
+    script,
+    title,
+)
 
-MENU_ICON = h.Raw("""<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+MENU_ICON = Raw("""<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   <path d="M4 5h16" />
@@ -11,26 +32,26 @@ MENU_ICON = h.Raw("""<svg xmlns="http://www.w3.org/2000/svg" width="24" height="
 </svg>""")
 
 HIGHLIGHT_URL = "https://unpkg.com/@highlightjs/cdn-assets@11.11.1"
-HIGHLIGHT_ASSETS = h.Fragment(
-    h.link(
+HIGHLIGHT_ASSETS = Fragment(
+    link(
         href=f"{HIGHLIGHT_URL}/styles/github.min.css",
         rel="stylesheet",
         media="(prefers-color-scheme: light)",
     ),
-    h.link(
+    link(
         href=f"{HIGHLIGHT_URL}/styles/github-dark.min.css",
         rel="stylesheet",
         media="(prefers-color-scheme: dark)",
     ),
-    h.script(src=f"{HIGHLIGHT_URL}/highlight.min.js"),
-    h.script(src=f"{HIGHLIGHT_URL}/languages/julia.min.js"),
+    script(src=f"{HIGHLIGHT_URL}/highlight.min.js"),
+    script(src=f"{HIGHLIGHT_URL}/languages/julia.min.js"),
 )
 
 
-def navigation(prefix: str) -> h.Element:
+def navigation(prefix: str) -> Element:
     """Build the menu with links relative to the current page."""
-    return h.nav(
-        h.button(
+    return nav(
+        button(
             MENU_ICON,
             class_="nav-toggle",
             type="button",
@@ -38,10 +59,10 @@ def navigation(prefix: str) -> h.Element:
             aria_controls="site-navigation",
             aria_label="Toggle navigation",
         ),
-        h.ol(
-            h.li(h.a("About", href="/")),
+        ol(
+            li(a("About", href="/")),
             [
-                h.li(h.a(label, href=f"{prefix}{label.lower()}.html"))
+                li(a(label, href=f"{prefix}{label.lower()}.html"))
                 for label in ("Links", "Notes", "Publications", "Software", "Talks")
             ],
             id="site-navigation",
@@ -49,35 +70,35 @@ def navigation(prefix: str) -> h.Element:
     )
 
 
-def layout(content: h.Child, *, note: bool = False) -> h.Element:
+def layout(content: Child, *, note: bool = False) -> Element:
     """Wrap content in the site layout, with syntax highlighting for notes."""
     prefix = "../" if note else ""
-    return h.html(
-        h.head(
-            h.meta(charset="UTF-8"),
-            h.meta(name="viewport", content="width=device-width, initial-scale=1"),
-            h.title("Gavin Wiggins"),
-            h.link(
+    return html(
+        head(
+            meta(charset="UTF-8"),
+            meta(name="viewport", content="width=device-width, initial-scale=1"),
+            title("Gavin Wiggins"),
+            link(
                 href=f"{prefix}feed.json",
                 rel="alternate",
                 type="application/feed+json",
                 title="Gavin Wiggins",
             ),
-            h.link(
+            link(
                 href=f"{prefix}rss.xml",
                 rel="alternate",
                 type="application/rss+xml",
                 title="Gavin Wiggins",
             ),
-            h.link(href=f"{prefix}styles.css", rel="stylesheet"),
+            link(href=f"{prefix}styles.css", rel="stylesheet"),
             HIGHLIGHT_ASSETS if note else None,
         ),
-        h.body(
-            h.header(h.h1("Gavin Wiggins"), navigation(prefix or "./")),
-            h.main(content),
-            h.footer("© 2026 Gavin Wiggins"),
-            h.script("hljs.highlightAll();") if note else None,
-            h.script(src=f"{prefix}navigation.js"),
+        body(
+            header(h1("Gavin Wiggins"), navigation(prefix or "./")),
+            main(content),
+            footer("© 2026 Gavin Wiggins"),
+            script("hljs.highlightAll();") if note else None,
+            script(src=f"{prefix}navigation.js"),
         ),
         lang="en",
     )
