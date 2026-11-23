@@ -22,7 +22,7 @@ uv run src/build.py --serve
 
 ## Project directories
 
-All HTML, CSS, templates, and static files needed to build the website reside in the `src/` directory. All build output is placed in the `dist/` directory. Contents of the `dist/` directory is used by GitHub Pages to host the website.
+The shared page layout and notes index are Python templates in `src/templates/`, built with [htmlkit](https://github.com/wigging/htmlkit). Other top-level page bodies are HTML in `src/page-content/`; notes are Markdown in `src/note-content/`. GitHub Pages serves the generated files from `dist/`.
 
 ## Add notes
 

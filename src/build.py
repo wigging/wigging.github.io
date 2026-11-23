@@ -1,6 +1,7 @@
 # /// script
 # requires-python = ">=3.14"
 # dependencies = [
+#     "htmlkit==26.11.1",
 #     "markdown>=3.10.3",
 # ]
 # ///
@@ -21,7 +22,11 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urljoin
 
+from htmlkit import Raw
 from markdown import Markdown
+
+from templates.layout import layout
+from templates.notes import notes_index
 
 SOURCE_DIR = Path("src")
 DIST_DIR = Path("dist")
@@ -32,11 +37,8 @@ STATIC_DIR = SOURCE_DIR / "static"
 ASSETS_DIR = SOURCE_DIR / "assets"
 TALKS_DIR = SOURCE_DIR / "talks"
 
-PAGE_TEMPLATE = SOURCE_DIR / "templates" / "page.html"
-
-NOTE_TEMPLATE = SOURCE_DIR / "templates" / "note.html"
 NOTE_OUTPUT_DIR = DIST_DIR / "notes"
-NOTES_SOURCE = PAGE_CONTENT_DIR / "notes.html"
+NOTES_INDEX = DIST_DIR / "notes.html"
 
 JSON_FEED_OUTPUT = DIST_DIR / "feed.json"
 RSS_FEED_OUTPUT = DIST_DIR / "rss.xml"
@@ -78,56 +80,6 @@ class NoteTitleParser(HTMLParser):
             self.text = []
 
 
-class NotesParser(HTMLParser):
-    """Parse feed metadata from note articles in an HTML document."""
-
-    def __init__(self):
-        """Initialize the parser and its note collection state."""
-        super().__init__()
-        self.notes = []
-        self.note = None
-        self.field = None
-        self.text = []
-
-    def handle_starttag(self, tag, attrs):
-        """Collect metadata from the start tag of a note element."""
-        attributes = dict(attrs)
-        classes = attributes.get("class", "").split()
-
-        if tag == "article" and "note" in classes:
-            self.note = {}
-        elif self.note is not None and tag == "a" and self.field is None:
-            self.note["url"] = attributes.get("href", "")
-            self.field = "title"
-            self.text = []
-        elif self.note is not None and tag == "p" and "summary" not in self.note:
-            self.field = "summary"
-            self.text = []
-        elif self.note is not None and tag == "time":
-            self.note["date_published"] = attributes.get("datetime", "")
-
-    def handle_data(self, data):
-        """Collect text for the active note field."""
-        if self.field:
-            self.text.append(data)
-
-    def handle_endtag(self, tag):
-        """Finish the active field or save a completed note article."""
-        if self.note is None:
-            return
-
-        if (tag == "a" and self.field == "title") or (
-            tag == "p" and self.field == "summary"
-        ):
-            self.note[self.field] = " ".join("".join(self.text).split())
-            self.field = None
-            self.text = []
-        elif tag == "article":
-            if self.note.get("url") and self.note["url"] != "#":
-                self.notes.append(self.note)
-            self.note = None
-
-
 def render_note(source_path):
     """Render a Markdown note and return its HTML and metadata."""
     source = source_path.read_text(encoding="utf-8")
@@ -164,87 +116,52 @@ def render_note(source_path):
     return body, metadata
 
 
-def render_source(source_path):
-    """Read an HTML source or convert a Markdown source to note HTML."""
-    if source_path.suffix == ".html":
-        return source_path.read_text(encoding="utf-8").strip()
-
-    content, _ = render_note(source_path)
-
-    return content
+def write_page(output_path, content, *, note=False):
+    """Write content inside the shared site layout."""
+    page = layout(content, note=note)
+    output_path.write_text(str(page) + "\n", encoding="utf-8")
+    print(f"Built {output_path}")
 
 
-def build(source_directory, template_path, output_directory, replacements=None):
-    """Render each HTML or Markdown source file into the output directory."""
-    template = template_path.read_text(encoding="utf-8")
+def build_pages(source_directory, output_directory, *, note=False):
+    """Build pages from HTML or Markdown and return metadata for the notes index."""
     output_directory.mkdir(parents=True, exist_ok=True)
-
-    source_paths = sorted(
-        path for path in source_directory.iterdir() if path.suffix in {".html", ".md"}
-    )
-
-    for source_path in source_paths:
-        content = render_source(source_path)
-
-        for placeholder, replacement in (replacements or {}).items():
-            content = content.replace(placeholder, replacement)
-
-        output_path = output_directory / source_path.with_suffix(".html").name
-        output_path.write_text(
-            template.replace("      {{ content }}", content), encoding="utf-8"
-        )
-
-        print(f"Built {output_path}")
-
-
-def generate_note_articles(source_directory):
-    """Generate note index articles from the metadata in each note document."""
     notes = []
 
-    for source_path in sorted(source_directory.glob("*.md")):
-        _, metadata = render_note(source_path)
-        notes.append((source_path, metadata))
+    for source_path in sorted(source_directory.iterdir()):
+        output_path = output_directory / source_path.with_suffix(".html").name
+        if source_path.suffix == ".html":
+            content = source_path.read_text(encoding="utf-8").strip()
+        elif source_path.suffix == ".md":
+            content, metadata = render_note(source_path)
+            if note:
+                metadata["url"] = output_path.relative_to(DIST_DIR).as_posix()
+                notes.append(metadata)
+        else:
+            continue
 
-    notes.sort(key=lambda note: note[1]["date_published"], reverse=True)
-    articles = []
+        write_page(output_path, Raw(content), note=note)
 
-    for source_path, metadata in notes:
-        output_name = source_path.with_suffix(".html").name
-        articles.append(
-            '<article class="note">\n'
-            f'  <h4><a href="{NOTE_OUTPUT_DIR.name}/{escape(output_name, quote=True)}">'
-            f"{escape(metadata['title'])}</a></h4>\n"
-            f"  <p>{escape(metadata['description'])}</p>\n"
-            f'  <time datetime="{escape(metadata["date_published"], quote=True)}">'
-            f"{escape(metadata['date_label'])}</time>\n"
-            "</article>"
-        )
-
-    return "\n\n".join(articles)
+    return notes
 
 
-def get_feed_items(source, base_url):
-    """Parse notes from the source file and return feed items newest first."""
-    parser = NotesParser()
-    parser.feed(source.read_text(encoding="utf-8"))
-
+def get_feed_items(notes, base_url):
+    """Convert ordered note metadata into JSON and RSS feed items."""
     items = []
 
-    for note in parser.notes:
+    for note in notes:
         item_url = urljoin(base_url, note["url"])
-        published = date.fromisoformat(note["date_published"]).isoformat()
+        summary = " ".join(note["description"].split())
         items.append(
             {
                 "id": item_url,
                 "url": item_url,
                 "title": note["title"],
-                "summary": note.get("summary", ""),
-                "content_text": note.get("summary", ""),
-                "date_published": f"{published}T00:00:00Z",
+                "summary": summary,
+                "content_text": summary,
+                "date_published": f"{note['date_published']}T00:00:00Z",
             }
         )
-
-    items.sort(key=lambda item: item["date_published"], reverse=True)
 
     return items
 
@@ -334,15 +251,10 @@ def build_site():
     """Build the complete website, feeds, and sitemap into the dist directory."""
     shutil.rmtree(DIST_DIR, ignore_errors=True)
 
-    note_articles = generate_note_articles(NOTE_CONTENT_DIR)
-    build(
-        PAGE_CONTENT_DIR,
-        PAGE_TEMPLATE,
-        DIST_DIR,
-        replacements={"{{ note_articles }}": note_articles},
-    )
-
-    build(NOTE_CONTENT_DIR, NOTE_TEMPLATE, NOTE_OUTPUT_DIR)
+    build_pages(PAGE_CONTENT_DIR, DIST_DIR)
+    notes = build_pages(NOTE_CONTENT_DIR, NOTE_OUTPUT_DIR, note=True)
+    notes.sort(key=lambda note: note["date_published"], reverse=True)
+    write_page(NOTES_INDEX, notes_index(notes))
 
     shutil.copytree(STATIC_DIR, DIST_DIR, dirs_exist_ok=True)
     print(f"Copied static files to {DIST_DIR}")
@@ -353,7 +265,7 @@ def build_site():
     shutil.copytree(TALKS_DIR, DIST_DIR / TALKS_DIR.name)
     print(f"Copied talks to {DIST_DIR / TALKS_DIR.name}")
 
-    items = get_feed_items(DIST_DIR / NOTES_SOURCE.name, BASE_URL)
+    items = get_feed_items(notes, BASE_URL)
     generate_json_feed(items, JSON_FEED_OUTPUT, BASE_URL)
     generate_rss_feed(items, RSS_FEED_OUTPUT, BASE_URL)
     generate_sitemap(DIST_DIR, SITEMAP_OUTPUT, BASE_URL)
