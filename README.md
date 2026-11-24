@@ -14,7 +14,7 @@ Build the website along with its JSON and RSS feeds and XML sitemap using the `b
 uv run src/build.py
 ```
 
-Use the `--serve` option to serve the website locally from the `dist/` directory. This will automatically open the web browser to view the website.
+Use `--serve` to open the local website at <http://127.0.0.1:8000> in your browser. When you save a file in `src/`, LiveReload rebuilds `dist/` and refreshes the open page. No browser extension is needed.
 
 ```bash
 uv run src/build.py --serve

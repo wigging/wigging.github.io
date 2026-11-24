@@ -2,6 +2,7 @@
 # requires-python = ">=3.14"
 # dependencies = [
 #     "htmlkit==26.11.1",
+#     "livereload==2.7.1",
 #     "markdown>=3.10.3",
 # ]
 # ///
@@ -11,14 +12,13 @@
 import argparse
 import json
 import shutil
-import webbrowser
+import subprocess
+import sys
 import xml.etree.ElementTree as ET
 from datetime import UTC, date, datetime, time
 from email.utils import format_datetime
-from functools import partial
 from html import escape
 from html.parser import HTMLParser
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -273,26 +273,32 @@ def build_site():
 
 
 def serve():
-    """Serve the contents of the dist directory."""
-    handler = partial(SimpleHTTPRequestHandler, directory=DIST_DIR)
-    address = (SERVER_HOST, SERVER_PORT)
+    """Serve dist and reload the browser when a source file changes."""
+    from livereload import Server
+    from livereload.handlers import LiveReloadHandler
 
-    with ThreadingHTTPServer(address, handler) as server:
-        url = f"http://{SERVER_HOST}:{SERVER_PORT}"
-        print(f"Serving website from {DIST_DIR}/ at {url}")
-        webbrowser.open(url)
+    def rebuild():
+        """Run a fresh build so edits to imported templates take effect."""
+        subprocess.run([sys.executable, __file__], check=True)
 
-        try:
-            server.serve_forever()
-        except KeyboardInterrupt:
-            pass
+    # The default throttle drops refreshes for saves less than three seconds apart.
+    LiveReloadHandler.DEFAULT_RELOAD_TIME = 0
+    server = Server()
+    server.watch(str(SOURCE_DIR), rebuild)
+    server.serve(
+        root=str(DIST_DIR),
+        host=SERVER_HOST,
+        port=SERVER_PORT,
+        open_url_delay=0.5,
+        live_css=False,
+    )
 
 
 def main():
     """Build the website and optionally serve it locally."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--serve", action="store_true", help="serve the built website locally"
+        "--serve", action="store_true", help="serve locally and live-reload on changes"
     )
     args = parser.parse_args()
 
