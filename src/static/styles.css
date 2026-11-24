@@ -52,6 +52,22 @@ header {
   border-bottom: 1px solid light-dark(#cccccc, #555555);
 }
 
+header h1 {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: clamp(1.5rem, 8.5vw, 2em);
+}
+
+header h1::before {
+  content: "";
+  flex: none;
+  width: 1.125em;
+  aspect-ratio: 1;
+  background-color: currentColor;
+  mask: url("gw.svg") center / contain no-repeat;
+}
+
 .nav-toggle {
   display: none;
 }

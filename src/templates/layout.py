@@ -78,6 +78,7 @@ def layout(content: Child, *, note: bool = False) -> Element:
             meta(charset="UTF-8"),
             meta(name="viewport", content="width=device-width, initial-scale=1"),
             title("Gavin Wiggins"),
+            link(href=f"{prefix}gw.svg", rel="icon", type="image/svg+xml", sizes="any"),
             link(
                 href=f"{prefix}feed.json",
                 rel="alternate",
