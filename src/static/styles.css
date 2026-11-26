@@ -177,16 +177,20 @@ time {
 }
 
 .publication {
-  margin-block: 1rem;
+  margin-block: 1.4rem;
 }
 
-.publication h4 {
-  display: inline;
-  font-weight: normal;
+.publication h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+  text-wrap: pretty;
 }
 
 .publication p {
-  display: inline;
+  margin: 0.25rem 0 0;
+  color: color-mix(in srgb, currentColor 68%, transparent);
+  line-height: 1.5;
 }
 
 .software {
