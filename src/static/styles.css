@@ -205,6 +205,23 @@ time {
   display: inline;
 }
 
+.talk {
+  margin-block: 1.4rem;
+}
+
+.talk h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.talk p {
+  margin: 0.25rem 0 0;
+  color: color-mix(in srgb, currentColor 65%, transparent);
+  line-height: 1.5;
+}
+
 footer {
   max-width: 45rem;
   margin-block: 4rem;
