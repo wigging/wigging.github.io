@@ -182,14 +182,14 @@ time {
 
 .publication h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.35;
   text-wrap: pretty;
 }
 
 .publication p {
   margin: 0.25rem 0 0;
-  color: color-mix(in srgb, currentColor 68%, transparent);
+  color: color-mix(in srgb, currentColor 65%, transparent);
   line-height: 1.5;
 }
 
