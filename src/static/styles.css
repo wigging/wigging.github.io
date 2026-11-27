@@ -164,20 +164,51 @@ time {
   opacity: 0.5;
 }
 
+.link-shelves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+}
+
+.link-shelves > * {
+  flex: 1 1 15rem;
+}
+
+.link-shelves section + section {
+  margin-block-start: 1.5rem;
+}
+
+.link-shelves ul {
+  display: grid;
+  gap: 0.75rem;
+  line-height: 1.4;
+}
+
+.link-shelves a {
+  font-weight: 500;
+}
+
+.link-shelves h3,
 .note-year h3 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin: 1.25rem 0 0.5rem;
+  margin: 0 0 0.5rem;
   line-height: 1.35;
 }
 
+.note-year h3 {
+  margin-top: 1.25rem;
+}
+
+.link-shelves h3::after,
 .note-year h3::after {
   content: "";
   flex: 1;
   border-block-start: 1px solid light-dark(#cccccc, #555555);
 }
 
+.link-shelves ul,
 .note-year ul {
   list-style: none;
   margin: 0;
@@ -199,6 +230,7 @@ time {
   opacity: 0.68;
 }
 
+.link-shelves p,
 .note-year p {
   margin: 0.125rem 0 0;
   color: color-mix(in srgb, currentColor 72%, transparent);
