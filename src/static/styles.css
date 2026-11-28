@@ -1,13 +1,33 @@
+/* Base elements */
+
 html {
   color-scheme: light dark;
+  --page-background: light-dark(rgb(249, 249, 249), Canvas);
+  --site-border: 1px solid light-dark(#cccccc, #555555);
 }
 
 body {
-  background-color: light-dark(rgb(249, 249, 249), Canvas);
-  /* font-family: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif !important; */
+  background-color: var(--page-background);
   font-family: system-ui;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  margin-bottom: 0;
 }
 
 a,
@@ -30,7 +50,6 @@ code {
 pre code {
   border: 1px solid light-dark(#e6e6e6, #252930);
   border-radius: 0.5rem;
-  font-size: 0.95rem;
 }
 
 img {
@@ -44,33 +63,30 @@ ul {
   list-style-position: outside;
 }
 
-h1 {
-  font-weight: 500;
+time {
+  font-size: 1rem;
+  opacity: 0.5;
 }
 
-h2 {
-  font-weight: 600;
-  margin-bottom: 0;
-}
+/* Page layout */
 
-h3 {
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-h4 {
-  font-weight: 600;
-}
-
-b,
-strong {
-  font-weight: 600;
-}
-
-header {
+header,
+main,
+footer {
   max-width: 45rem;
   margin-inline: auto;
-  border-bottom: 1px solid light-dark(#cccccc, #555555);
+}
+
+footer {
+  margin-block: 4rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Header and navigation */
+
+header {
+  border-bottom: var(--site-border);
 }
 
 header h1 {
@@ -122,7 +138,7 @@ nav ol {
   .nav-toggle {
     display: block;
     padding: 0.4rem;
-    border: 1px solid light-dark(#cccccc, #555555);
+    border: var(--site-border);
     border-radius: 0.3rem;
     color: inherit;
     background: none;
@@ -144,9 +160,9 @@ nav ol {
     gap: 0.5rem;
     min-width: max-content;
     padding: 0.75rem 1rem;
-    border: 1px solid light-dark(#cccccc, #555555);
+    border: var(--site-border);
     border-radius: 0.5rem;
-    background-color: light-dark(rgb(249, 249, 249), Canvas);
+    background-color: var(--page-background);
   }
 
   .nav-toggle[aria-expanded="true"] + ol {
@@ -154,15 +170,40 @@ nav ol {
   }
 }
 
-main {
-  max-width: 45rem;
-  margin-inline: auto;
+/* Shared link and note lists */
+
+.link-shelves h3,
+.note-year h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
 }
 
-time {
-  font-size: 1rem;
-  opacity: 0.5;
+.link-shelves h3::after,
+.note-year h3::after {
+  content: "";
+  flex: 1;
+  border-block-start: var(--site-border);
 }
+
+.link-shelves ul,
+.note-year ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-shelves p,
+.note-year p {
+  margin: 0.125rem 0 0;
+  color: color-mix(in srgb, currentColor 72%, transparent);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+/* Links page */
 
 .link-shelves {
   display: flex;
@@ -188,31 +229,10 @@ time {
   font-weight: 500;
 }
 
-.link-shelves h3,
-.note-year h3 {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin: 0 0 0.5rem;
-  line-height: 1.35;
-}
+/* Notes index */
 
 .note-year h3 {
   margin-top: 1.25rem;
-}
-
-.link-shelves h3::after,
-.note-year h3::after {
-  content: "";
-  flex: 1;
-  border-block-start: 1px solid light-dark(#cccccc, #555555);
-}
-
-.link-shelves ul,
-.note-year ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .note-year li {
@@ -230,30 +250,29 @@ time {
   opacity: 0.68;
 }
 
-.link-shelves p,
-.note-year p {
-  margin: 0.125rem 0 0;
-  color: color-mix(in srgb, currentColor 72%, transparent);
-  font-size: 1rem;
-  line-height: 1.45;
-}
+/* Publications and talks */
 
-.publication {
+.publication,
+.talk {
   margin-block: 1.4rem;
 }
 
-.publication h3 {
+.publication h3,
+.talk h3 {
   margin: 0;
   font-size: 1.1rem;
   line-height: 1.35;
   text-wrap: pretty;
 }
 
-.publication p {
+.publication p,
+.talk p {
   margin: 0.25rem 0 0;
   color: color-mix(in srgb, currentColor 65%, transparent);
   line-height: 1.5;
 }
+
+/* Software page */
 
 .software {
   margin-block: 1rem;
@@ -265,29 +284,4 @@ time {
 
 .software p {
   display: inline;
-}
-
-.talk {
-  margin-block: 1.4rem;
-}
-
-.talk h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.35;
-  text-wrap: pretty;
-}
-
-.talk p {
-  margin: 0.25rem 0 0;
-  color: color-mix(in srgb, currentColor 65%, transparent);
-  line-height: 1.5;
-}
-
-footer {
-  max-width: 45rem;
-  margin-block: 4rem;
-  margin-inline: auto;
-  font-size: 0.875rem;
-  text-align: center;
 }
