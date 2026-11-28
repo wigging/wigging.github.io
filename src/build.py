@@ -31,8 +31,8 @@ from templates.notes import notes_index
 SOURCE_DIR = Path("src")
 DIST_DIR = Path("dist")
 
-PAGE_CONTENT_DIR = SOURCE_DIR / "page-content"
-NOTE_CONTENT_DIR = SOURCE_DIR / "note-content"
+PAGES_DIR = SOURCE_DIR / "pages"
+NOTES_DIR = SOURCE_DIR / "notes"
 STATIC_DIR = SOURCE_DIR / "static"
 ASSETS_DIR = SOURCE_DIR / "assets"
 TALKS_DIR = SOURCE_DIR / "talks"
@@ -251,8 +251,8 @@ def build_site():
     """Build the complete website, feeds, and sitemap into the dist directory."""
     shutil.rmtree(DIST_DIR, ignore_errors=True)
 
-    build_pages(PAGE_CONTENT_DIR, DIST_DIR)
-    notes = build_pages(NOTE_CONTENT_DIR, NOTE_OUTPUT_DIR, note=True)
+    build_pages(PAGES_DIR, DIST_DIR)
+    notes = build_pages(NOTES_DIR, NOTE_OUTPUT_DIR, note=True)
     notes.sort(key=lambda note: note["date_published"], reverse=True)
     write_page(NOTES_INDEX, notes_index(notes))
 

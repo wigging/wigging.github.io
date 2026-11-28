@@ -22,11 +22,11 @@ uv run src/build.py --serve
 
 ## Project directories
 
-The shared page layout and notes index are Python templates in `src/templates/`, built with [htmlkit](https://github.com/wigging/htmlkit). Other top-level page bodies are HTML in `src/page-content/`; notes are Markdown in `src/note-content/`. GitHub Pages serves the generated files from `dist/`.
+The shared page layout and notes index are Python templates in `src/templates/`, built with [htmlkit](https://github.com/wigging/htmlkit). Other top-level page bodies are HTML in `src/pages/`; notes are Markdown in `src/notes/`. GitHub Pages serves the generated files from `dist/`.
 
 ## Add notes
 
-Use the Markdown structure shown below to add a note to the website. Give a short description about the note at the top of the Markdown file along with the publication date and tags. The title of the note is the `##` element. All notes go in the `src/note-content` directory. Just commit the note and push up the changes to GitHub and the GitHub Actions workflow will automatically build the website.
+Use the Markdown structure shown below to add a note to the website. Give a short description about the note at the top of the Markdown file along with the publication date and tags. The title of the note is the `##` element. All notes go in the `src/notes` directory. Just commit the note and push up the changes to GitHub and the GitHub Actions workflow will automatically build the website.
 
 ```markdown
 ---
